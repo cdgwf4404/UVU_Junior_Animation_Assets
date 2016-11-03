@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: AnimationCharacter.ma
-//Last modified: Thu, Nov 03, 2016 02:05:02 PM
+//Last modified: Thu, Nov 03, 2016 02:11:59 PM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -2377,7 +2377,7 @@ createNode mesh -n "pSphereShape4" -p "pSphere4";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pSphere5";
 	rename -uid "D1FFFE45-4622-AFA3-ED7E-2C810E87FEF1";
-	setAttr ".t" -type "double3" -5.4433186153605355 8.2737759100201043 -5.6082822439956104 ;
+	setAttr ".t" -type "double3" -5.0959233960273842 7.2936900184722919 -0.13134777309828127 ;
 createNode mesh -n "pSphereShape5" -p "pSphere5";
 	rename -uid "73EBFE59-4602-5850-AE67-F987F1FBD5FF";
 	setAttr -k off ".v";
@@ -4644,19 +4644,19 @@ createNode mesh -n "pSphereShape6" -p "pSphere6";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "045F0556-48D2-D7DF-9459-B6BEEDEF6E9D";
+	rename -uid "A942E2ED-4051-FA9A-6A14-AFBA1E3D45E5";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8D24BBF4-4C05-09DB-A001-138F33621E38";
+	rename -uid "81681007-4C9B-249F-B19E-148F137440CA";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "880F6AC7-4A09-9847-3BCD-EEAC465C3450";
+	rename -uid "D610EFAD-4E38-41F6-07FF-1681F4643466";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "5E152DD7-4724-F29D-F001-398E4CAD788C";
+	rename -uid "6CFDD5D1-41AF-846B-1FD7-DAADC9A08067";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "0BF53D48-4F72-6A86-CE41-6C9BE7F5C6BB";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C3DFA133-470A-04E5-CFD4-F1BE9D374E47";
+	rename -uid "C20C0A0D-4519-5AE7-18D2-E28550ED5084";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "EE755306-4A81-61C7-421B-0480321807B5";
 	setAttr ".g" yes;
