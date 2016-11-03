@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
 //Name: AnimationCharacter.ma
-//Last modified: Thu, Nov 03, 2016 02:47:43 PM
+//Last modified: Thu, Nov 03, 2016 02:58:42 PM
 //Codeset: 1252
 requires maya "2016";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "E23D1593-440B-3C37-F493-1B87AF9C0A6A";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.3379608424005873 10.404983318533908 30.477801701031442 ;
+	setAttr ".t" -type "double3" 3.5851202463305989 13.104900812734298 38.342541456912947 ;
 	setAttr ".r" -type "double3" -18.938352729600599 1.7999999999997052 -7.955312169986438e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D3E478D5-414A-D94D-8398-BA95E8D7E661";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 36.502929003858576;
+	setAttr ".coi" 44.821869662030345;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2369,7 +2369,7 @@ createNode mesh -n "pSphereShape4" -p "pSphere4";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "pSphere5";
 	rename -uid "D1FFFE45-4622-AFA3-ED7E-2C810E87FEF1";
-	setAttr ".t" -type "double3" -5.0959233960273842 7.2936900184722919 -0.13134777309828127 ;
+	setAttr ".t" -type "double3" 1.9103717099821083 7.8065816473651575 -0.52760205491418777 ;
 createNode mesh -n "pSphereShape5" -p "pSphere5";
 	rename -uid "73EBFE59-4602-5850-AE67-F987F1FBD5FF";
 	setAttr -k off ".v";
@@ -4646,7 +4646,7 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "391560E2-4D77-57ED-C023-D68EEBEDDF2B";
+	rename -uid "3791F378-4A68-BA0D-77E7-7990B46E639C";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
@@ -4654,11 +4654,11 @@ createNode shapeEditorManager -n "shapeEditorManager";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
 	rename -uid "D610EFAD-4E38-41F6-07FF-1681F4643466";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "126C35F1-43EE-30DC-1CFC-7390FCD5DBE2";
+	rename -uid "B75E4727-4B29-F4C8-36AD-D4B357AB90AC";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "0BF53D48-4F72-6A86-CE41-6C9BE7F5C6BB";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C85E1F9B-4C1E-F517-3CBA-2EBD1D942E52";
+	rename -uid "EF568608-4824-8629-017C-04955C7A736A";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "EE755306-4A81-61C7-421B-0480321807B5";
 	setAttr ".g" yes;
