@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: FloorMonitor_Model.ma
-//Last modified: Sat, Jan 21, 2017 10:35:46 AM
+//Last modified: Wed, Jan 25, 2017 12:54:35 PM
 //Codeset: 1252
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -251,7 +251,7 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 		0.067494944 0.15060666 0.32278636 0.13648209 0.15926367 0.31298655 0.13032503 0.19087294 
 		0.30764097 0.087378651 0.21707058 0.32996354 0.091491356 0.21831365 0.34322762 0.097245723 
 		0.1943914 0.35305721 0.10340235 0.16266112 0.332133 0.10949946 0.15710686 0.30616397 
-		0.10529751 0.15422826 0.29193515 0.098516494 0.18357432 0.2851024 0.08411938 0.20789433 
+		0.10529752 0.15422826 0.29193515 0.098516494 0.18357432 0.2851024 0.08411938 0.20789433 
 		0.33741254 0.048407607 0.21975641 0.28977469 0.049076006 0.2079514 0.33642015 -0.0118838 
 		0.20993908 0.29024541 -0.018180214 0.20120545 0.36354619 -0.013031501 0.148577 0.31620425 
 		-0.018180214 0.13626049 0.36308441 0.054891512 0.15523738 0.31507528 -0.018180214 
@@ -296,7 +296,7 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 		0.27892286 -0.31971294 -0.15442674 0.28912899 -0.30590516 -0.15050028 0.26879492 
 		-0.26491833 -0.097694561 0.10315455 0.15033358 -0.10023203 0.10863543 0.18186012 
 		-0.10029073 0.10052048 0.18669707 -0.1007688 0.058958974 0.18004198 -0.10484849 -0.0043056128 
-		0.18060564 -0.10496587 -0.0043056128 0.17431656 -0.16439079 -0.0043051997 -0.31613374 
+		0.18060564 -0.10496588 -0.0043056128 0.17431656 -0.16439079 -0.0043051997 -0.31613374 
 		-0.16459908 -0.0043051997 -0.37228921 -0.33606026 0.22630295 -0.28916213 -0.32789475 
 		0.27892816 -0.25920838 -0.3265934 0.28913552 -0.24797679 -0.31826812 0.26877618 -0.22768107 
 		-0.20610474 0.10315455 0.15871672 -0.21148413 0.10863543 0.19104166 -0.2117189 0.10052048 
@@ -363,7 +363,7 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 		 0.0111681 0.00099784997 -0.0066680098 0.01260551 0.0023522701 -0.0053410297 0.01091123 0.00255985 -0.00596395
 		 0.01252254 0.00179964 -0.0036895 0.0107049 0.0020210301 -0.00421202 0.01277941 0.00023763999 -0.0043935599
 		 0.0119156 0.00261053 -0.0057099299 0.01147463 0.0019801799 -0.0038405498 0.011960699 0.00019633 -0.0046006199
-		 0.012172479 0.00104852 -0.0064139999 0.01271186 0.0022046298 -0.0045189201 0.01296874 0.00064263004 -0.0052229799
+		 0.012172478 0.00104852 -0.0064139999 0.01271186 0.0022046298 -0.0045189201 0.01296874 0.00064263004 -0.0052229799
 		 0.01208629 0.00064410002 -0.0055482201 0.01100372 0.00064623001 -0.0059479098 0.01065958 0.00233449 -0.0049239798
 		 0.01166396 0.00238517 -0.0046699699 0.01282904 0.00149213 -0.0048400699 0.01280469 0.00184552 -0.0056329602
 		 0.01203277 0.0018980301 -0.0060310899 0.0110284 0.00184735 -0.0062850998 0.010826319 0.00172501 -0.0054616602
@@ -373,9 +373,9 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 		 -0.013203469 -0.0051689204 -0.0065740598 0.01320697 -0.0051689204 -0.0065684402 -0.01272185 0.00041576999 -0.0062243803
 		 -0.0080264602 -0.00361597 0.00472451 0.00804953 -0.0036117199 0.0047235102 0.01263877 0.00041538998 -0.00622366
 		 -0.0124333 0.00175806 -0.0054933401 -0.0079445001 -0.00259166 0.0048881304 0.00792911 -0.0025903902 0.0048865699
-		 0.01242636 0.00175806 -0.0054933401 -0.01237831 0.0017754399 -0.0051860102 -0.01250717 0.00158564 -0.0052819196
+		 0.01242636 0.00175806 -0.0054933401 -0.01237831 0.0017754398 -0.0051860102 -0.01250717 0.00158564 -0.0052819196
 		 -0.01288035 0.00018214001 -0.00606714 -0.013266129 -0.0051689204 -0.0063004303 0.013269629 -0.0051689204 -0.0062964796
-		 0.01280143 0.00018159 -0.0060655898 0.01250069 0.0015862701 -0.0052822698 0.01238078 0.0017754399 -0.0051860102
+		 0.01280143 0.00018159 -0.0060655898 0.01250069 0.0015862701 -0.0052822698 0.01238078 0.0017754398 -0.0051860102
 		 0.0079894699 -0.00235323 0.0047667501 -0.0080096098 -0.0023552 0.0047674398 -0.0080739101 -0.00246722 0.0047313999
 		 -0.00816142 -0.0035427201 0.00455205 -0.0084450198 -0.0051689302 0.0047391201 0.00842488 -0.0051689302 0.0047391201
 		 0.0081826197 -0.0035361701 0.00455165 0.0080583105 -0.00246412 0.0047313999 0.0078998897 -0.00361594 0.0048787799
@@ -388,20 +388,20 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 		 -0.0079014702 -0.0036170399 0.0048813401 -0.0081723202 -0.0051689302 0.0048940899
 		 -0.0081815002 -0.0051689302 0.0047391201 -0.01285161 -0.0051689204 -0.0062304302
 		 -0.01286788 -0.0051689204 -0.0067168497 -0.01356039 -0.00365605 -0.0067947698 -0.01188159 -0.0036506399 -0.0073657604
-		 -0.01346417 -0.0051280702 -0.0067777298 -0.01189059 -0.0052966601 -0.0074078399 -0.013397761 -0.0055093598 -0.0051371502
+		 -0.01346417 -0.0051280702 -0.0067777298 -0.01189059 -0.0052966601 -0.0074078399 -0.013397762 -0.0055093598 -0.0051371502
 		 -0.01171695 -0.0055093598 -0.0056878501 -0.01338876 -0.0037004398 -0.0050950702 -0.012840919 -0.0052966601 -0.0072044702
 		 -0.01244361 -0.0055093598 -0.00534786 -0.01261411 -0.0037004398 -0.0052608401 -0.01283191 -0.0036506399 -0.0071623898
-		 -0.01358509 -0.0055093598 -0.0060125398 -0.013576079 -0.0036770401 -0.0059704501
+		 -0.01358509 -0.0055093598 -0.0060125398 -0.013576078 -0.0036770401 -0.0059704501
 		 -0.01274208 -0.0036743199 -0.0062554302 -0.01171895 -0.00367096 -0.0066057499 -0.01168061 -0.0055093598 -0.0064266096
-		 -0.012630939 -0.0055093598 -0.0062232399 -0.013580981 -0.0045722402 -0.0059933402
+		 -0.012630939 -0.0055093598 -0.0062232399 -0.013580982 -0.0045722402 -0.0059933402
 		 -0.01356528 -0.00455125 -0.00681765 -0.01283681 -0.00454584 -0.0071852799 -0.01188648 -0.00454584 -0.0073886402
-		 -0.01172517 -0.00480776 -0.0066348203 -0.0117129 -0.0048447498 -0.0056689102 -0.012620401 -0.0048494698 -0.0052902196
+		 -0.01172517 -0.00480776 -0.0066348203 -0.0117129 -0.0048447498 -0.0056689102 -0.012620402 -0.0048494698 -0.0052902196
 		 -0.01339365 -0.0045956504 -0.0051179598 0.0081961397 -0.00363004 0.00523098 0.0087627703 -0.00333779 0.0038654802
 		 0.0080071501 -0.0022899201 0.00534824 0.0085787205 -0.0018454901 0.00409642 0.0069118999 -0.00231862 0.0052041099
 		 0.0074295802 -0.00180795 0.00388677 0.0070950799 -0.0038013 0.00497668 0.0083375396 -0.00199655 0.0048749601
 		 0.0071262503 -0.0019455799 0.00445907 0.0072909803 -0.00367816 0.0043448699 0.0085215904 -0.0034888601 0.00464402
 		 0.0074646901 -0.0022386501 0.0054301601 0.0076483204 -0.0037213298 0.0052008997 0.0079301102 -0.0035856101 0.0045249402
-		 0.0082763797 -0.0034072199 0.0036953101 0.0079199402 -0.0017145399 0.0039077201 0.0076794899 -0.00186561 0.0046832901
+		 0.0082763797 -0.0034072199 0.0036953101 0.0079199402 -0.0017145398 0.0039077201 0.0076794899 -0.00186561 0.0046832901
 		 0.0075483299 -0.0029193501 0.0053260797 0.0080960402 -0.0028184399 0.00535658 0.00842149 -0.00267725 0.00476962
 		 0.0086626699 -0.0025261899 0.00399108 0.00814927 -0.0023765902 0.0038547998 0.0075120903 -0.0024796901 0.0037841699
 		 0.0071629696 -0.0026460702 0.0045042098 0.0069953199 -0.0029993199 0.0051009296 0.0082788095 -0.0038755501 0.0053919796
@@ -413,7 +413,7 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 		 0.0074252202 -0.0055093598 0.0039627999 0.0080357995 -0.0055093598 0.0042324699 0.0086452803 -0.0047087502 0.0045794998
 		 0.0082849804 -0.0047819302 0.00530311 0.0077256695 -0.00478554 0.0052929902 0.0071165501 -0.0047655199 0.0050093802
 		 0.0073508602 -0.00493555 0.0042525399 0.0077535496 -0.0048609199 0.0034149 0.0084166704 -0.0048635099 0.00349613
-		 0.00891486 -0.0046228399 0.0037200497 -0.0088287406 -0.0054153297 0.0040579601 -0.0078362497 -0.0055093598 0.00341047
+		 0.00891486 -0.0046228399 0.0037200495 -0.0088287406 -0.0054153297 0.0040579601 -0.0078362497 -0.0055093598 0.00341047
 		 -0.0080803605 -0.0053169001 0.0053236401 -0.0070635201 -0.0055093598 0.0048479401
 		 -0.0081125805 -0.0036679199 0.00551946 -0.0070102001 -0.0039287703 0.0050699101 -0.0088908495 -0.00368868 0.0040614801
 		 -0.00760864 -0.0055093598 0.0052302699 -0.0074437703 -0.0037052198 0.0053710802 -0.0084415497 -0.00373038 0.00376818
@@ -425,12 +425,12 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 		 -0.0084675802 -0.00367216 0.00485441 -0.01222915 0.0017891299 -0.0040845298 -0.01050529 0.0019874601 -0.0046293498
 		 -0.01262406 0.00219563 -0.0054647601 -0.01103614 0.00252329 -0.0061139599 -0.01312756 0.00069853 -0.0060247397
 		 -0.01148749 0.00095074996 -0.0067969603 -0.01259671 0.0001627 -0.00454013 -0.0119749 0.00252329 -0.0057782899
-		 -0.01226237 0.00077794999 -0.0065822601 -0.011831489 0.0001627 -0.0048137503 -0.01144405 0.0019874601 -0.0042936797
+		 -0.01226237 0.00077794999 -0.0065822601 -0.011831488 0.0001627 -0.0048137503 -0.01144405 0.0019874601 -0.0042936797
 		 -0.013029439 0.0015560199 -0.0057503404 -0.01249859 0.0010201799 -0.0042657303 -0.0116418 0.0011199299 -0.00453609
 		 -0.010590469 0.00124299 -0.00486759 -0.011225491 0.00163543 -0.00664353 -0.012164249 0.00163543 -0.0063078497
 		 -0.0127873 0.0013116001 -0.0050731497 -0.01251786 0.00208055 -0.0048919497 -0.01173276 0.00227888 -0.0051011001
 		 -0.010794 0.00227888 -0.0054367697 -0.0109571 0.0016130599 -0.0058929198 -0.01124854 0.00070954999 -0.00612868
-		 -0.01220206 0.00053674 -0.0058501 -0.012885421 0.00045411999 -0.0053475499 -0.0081164399 -0.00357245 0.0054505197
+		 -0.01220206 0.00053674 -0.0058501 -0.012885422 0.00045411999 -0.0053475499 -0.0081164399 -0.00357245 0.0054505197
 		 -0.0070011402 -0.0037493601 0.0051887999 -0.0079496093 -0.00215035 0.0053467602 -0.00684878 -0.0021585301 0.0051665097
 		 -0.0086383298 -0.00190661 0.0039222301 -0.0075067799 -0.0018549999 0.0036502001 -0.0087925205 -0.00350706 0.0039365599
 		 -0.0074228197 -0.0020586899 0.0054310099 -0.0080314903 -0.0017698001 0.0036839 -0.0083190603 -0.0035884401 0.0037450599
@@ -440,7 +440,7 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 		 -0.0080325799 -0.0027020299 0.0054427302 -0.0074928198 -0.00278873 0.0054389797 -0.0069182403 -0.0028885601 0.0051768301
 		 -0.0071527199 -0.0026325602 0.0044651399 -0.0075759399 -0.0025754201 0.00365769 -0.0082114302 -0.00247122 0.0037350601
 		 -0.0087086596 -0.0026366401 0.0039287703 -0.00392156 0.00048932002 -0.0087569393
-		 -0.0038066301 0.0017804099 -0.00784453 -0.0037890403 0.0020308299 -0.00750574 -0.0036927001 0.00153191 -0.0065000802
+		 -0.0038066301 0.0017804099 -0.00784453 -0.0037890405 0.0020308299 -0.00750574 -0.0036927001 0.00153191 -0.0065000802
 		 -0.0023970499 -0.00253227 0.0036886099 -0.00245931 -0.0023977899 0.0044621499 -0.0024607501 -0.0025968999 0.0045808302
 		 -0.0024724798 -0.0036166599 0.00441754 -0.00257258 -0.0051689302 0.0044313697 -0.0025754601 -0.0051689302 0.0042770598
 		 -0.0040335199 -0.0051689204 -0.0077567101 -0.0040386301 -0.0051689204 -0.0091345496
@@ -453,13 +453,13 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 		 0.01269974 -0.00014867001 -0.0063588298 0.012851669 -0.00036564001 -0.00618973 0.0082086101 -0.00370277 0.0045717703
 		 0.0080743404 -0.0037702201 0.0047448701 0.0079241507 -0.0037739801 0.0048804898 -0.0024832299 -0.0037746301 0.0044188402
 		 -0.0052614403 -0.0037748001 0.0046512298 -0.0079305395 -0.0037749698 0.0048833201
-		 -0.0080559095 -0.0037740099 0.0047457903 -0.00819185 -0.0037086201 0.00457212 -0.012921739 -0.00036502999 -0.00619152
-		 -0.012773519 -0.00014816 -0.0063600498 -0.01245007 -7.817e-005 -0.0064764703 -0.0082773902 -7.8180004e-005 -0.00684065
+		 -0.0080559095 -0.0037740099 0.0047457903 -0.00819185 -0.0037086201 0.00457212 -0.012921738 -0.00036502999 -0.00619152
+		 -0.012773518 -0.00014816 -0.0063600498 -0.01245007 -7.817e-005 -0.0064764703 -0.0082773902 -7.8180004e-005 -0.00684065
 		 -0.00401993 -0.0043005501 -0.00917642 0.012741719 -0.0043005501 -0.0067563597 0.01311622 -0.0043066903 -0.0066129602
 		 0.01319485 -0.0043353601 -0.00634966 0.00838619 -0.0049066101 0.00470918 0.0082438104 -0.0049186801 0.0048910999
 		 0.0080899 -0.0049193501 0.00489141 -0.0025565901 -0.0049194698 0.0044276998 -0.0053986399 -0.0049195001 0.0046684598
 		 -0.0081290603 -0.0049195299 0.0048921602 -0.0082570501 -0.0049193599 0.0048911399
-		 -0.0083997296 -0.0049076499 0.00470924 -0.01320451 -0.0043353499 -0.00635324 -0.013126549 -0.00430666 -0.0066178101
+		 -0.0083997296 -0.0049076499 0.00470924 -0.01320451 -0.0043353499 -0.00635324 -0.013126548 -0.00430666 -0.0066178101
 		 -0.01279312 -0.0043005501 -0.0067585702 -0.0084943995 -0.0043005501 -0.0070802202
 		 0.0040755202 -7.8220008e-005 -0.0088948999 0.0042316699 -0.0043005501 -0.0091757104
 		 0.0042657 -0.0051689204 -0.0091337003 0.00426031 -0.0051689204 -0.0077559203 0.0026972801 -0.0051689302 0.0042770598
@@ -478,14 +478,14 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 		 0.0055865902 -0.00056379999 -0.0059410399 0.0056585902 -0.0043005501 -0.0061703199
 		 0.0077641997 -0.00056381 -0.0052858903 0.0079019899 -0.0043005501 -0.0055019404 0.00393207 0.00186279 -0.0064407601
 		 -0.0037241501 0.00186232 -0.0064384802 -0.0078757694 0.0018620699 -0.0055389898 -0.01186433 0.0018618201 -0.0051745898
-		 -0.01240534 0.0020664199 -0.0052302801 -0.012483049 0.0016419301 -0.0053509404 -0.012828601 0.00025842001 -0.0061184801
-		 -0.012873351 -0.00029421999 -0.0062465398 -0.01317906 -0.0043259901 -0.0064396202
-		 -0.013245669 -0.0051689204 -0.0063897599 -0.012856919 -0.0051689204 -0.0063892398
+		 -0.01240534 0.0020664199 -0.0052302801 -0.012483048 0.0016419301 -0.0053509404 -0.012828601 0.00025842001 -0.0061184801
+		 -0.012873352 -0.00029421999 -0.0062465398 -0.01317906 -0.0043259901 -0.0064396202
+		 -0.013245668 -0.0051689204 -0.0063897599 -0.012856918 -0.0051689204 -0.0063892398
 		 -0.00853441 -0.0051689204 -0.0067014801 -0.0040351902 -0.0051689204 -0.0079274401
 		 0.0042620702 -0.0051689204 -0.0079266299 0.0091541996 -0.0051689204 -0.0065903701
-		 0.0128192 -0.0051689204 -0.0063867201 0.01324917 -0.0051689204 -0.0063852696 0.013169181 -0.0043259999 -0.0064356201
+		 0.0128192 -0.0051689204 -0.0063867201 0.01324917 -0.0051689204 -0.0063852696 0.013169182 -0.0043259999 -0.0064356201
 		 0.01280207 -0.0002948 -0.00624493 0.01274833 0.00025792001 -0.0061171902 0.01247642 0.00164235 -0.0053511797
-		 0.0124078 0.00206646 -0.0052303202 0.01182809 0.00186327 -0.0051756399 0.0084462399 0.0018630699 -0.0054183002
+		 0.0124078 0.00206646 -0.0052303202 0.01182809 0.00186327 -0.0051756399 0.0084462399 0.0018630698 -0.0054183002
 		 -0.00227806 -0.00235974 0.0031086502 0.00227806 -0.00235974 0.0031086502 -0.00227806 -0.0020461001 0.0032269601
 		 0.00227806 -0.0020461001 0.0032269601 -0.00227806 -0.00165758 0.0021969499 0.00227806 -0.00165758 0.0021969499
 		 -0.00227806 -0.0019712099 0.00207864 0.00227806 -0.0019712099 0.00207864 -0.0095688403 -0.0025885499 -0.00539748
@@ -1902,15 +1902,16 @@ createNode mesh -n "FloorMonitor_Model:Monitor:polySurface10Shape" -p "FloorMoni
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "5DB72582-46C5-5790-A8E2-B0B65C407EE2";
+	rename -uid "F80B5C07-4DB6-510D-1B85-A3AEF1F4B316";
 	setAttr -s 673 ".lnk";
 	setAttr -s 673 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8C2DC3C8-44A4-7F06-6457-B9BF55C0AA5F";
+	rename -uid "51F6B124-4736-A8BF-7FBD-0CB98E55BEF0";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "ADB9072D-4417-AA96-1355-5EAC24BC7C35";
+	rename -uid "79A0BEAD-4527-DBB0-F410-AB8A33D7C534";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "691851CB-47F2-65DA-EB81-599EFD0CEB7A";
+	rename -uid "E646F97C-429A-ED80-32A5-FEA76260F58B";
+	setAttr ".cdl" 51;
 	setAttr -s 115 ".dli[1:114]"  1 2 3 4 5 6 7 8 
 		9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 
 		26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 
@@ -1919,11 +1920,10 @@ createNode displayLayerManager -n "layerManager";
 		77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 
 		94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 
 		111 112 113 114;
-	setAttr -s 115 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "8C66CF71-49D6-2C2B-0D75-23836115AD1E";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5B620161-4589-8BA4-3D8C-7A89112A9051";
+	rename -uid "D56D03B8-4EB4-052A-C951-489552B46B61";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "46D849ED-4295-1392-76A2-458D44710EC5";
 	setAttr ".g" yes;
@@ -1953,10 +1953,10 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n"
 		+ "                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n"
 		+ "                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n"
-		+ "                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1136\n                -height 742\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n"
+		+ "                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1128\n                -height 732\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n"
 		+ "            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n"
-		+ "            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1136\n            -height 742\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
+		+ "            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1128\n            -height 732\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
 		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n"
 		+ "                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n"
 		+ "                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -renderFilterIndex 0\n                -selectionOrder \"chronological\" \n                -expandAttribute 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n"
@@ -2002,8 +2002,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n"
 		+ "                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n"
 		+ "                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1136\\n    -height 742\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1136\\n    -height 742\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1128\\n    -height 732\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1128\\n    -height 732\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -2042,9 +2042,6 @@ createNode shadingEngine -n "Coyote_Model:elepant_rig_0011:Fixed_legs_0002:maleE
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "48FACB1A-4A85-07B6-9CD8-1C988A55D105";
-createNode displayLayer -n "Coyote_Model:elepant_rig_0011:layer1";
-	rename -uid "C137AC05-4F92-3EDC-95C9-839635BCDBC0";
-	setAttr ".do" 1;
 createNode timeEditorTracks -n "Coyote_Model:elepant_rig_0011:Composition1";
 	rename -uid "55A51185-4152-4680-3EAD-F9AEAD0F8DAC";
 createNode groupId -n "Coyote_Model:groupId20";
@@ -2297,13 +2294,6 @@ createNode shadingEngine -n "Coyote_Model:lp_elephant_Complete_0018:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "B43B12C7-4A30-3F62-7557-A5914FE46409";
-createNode displayLayer -n "Coyote_Model:lp_elephant_Complete_0018:layer1";
-	rename -uid "2D2510AF-4D6C-E6FF-BE00-359F142605BD";
-	setAttr ".do" 1;
-createNode displayLayer -n "Coyote_Model:lp_elephant_Complete_0018:layer2";
-	rename -uid "FE41D52F-4407-28AC-9D65-1A8D5D97C05A";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "2BAD5B79-4C2F-48FD-101B-3798F56D58D5";
 createNode shadingEngine -n "Coyote_Model:lp_elephant_Complete_0018:elephant_BodySG";
@@ -2349,12 +2339,6 @@ createNode shadingEngine -n "Elephant_Model:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model:materialInfo2";
 	rename -uid "999473AD-486D-7903-1831-769E72FCF3AA";
-createNode displayLayer -n "Elephant_Model:layer1";
-	rename -uid "99EBEA09-4AB9-CB1A-02FB-F39FBB605532";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model:layer2";
-	rename -uid "9BCB0EC7-48B1-894D-8C12-35B289C16722";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model:Fixed_legs_0002:lambert3";
 	rename -uid "A2BB1ED5-4BDA-CE49-C3E9-01AF088E0007";
 createNode shadingEngine -n "Elephant_Model:elephant_BodySG";
@@ -2395,9 +2379,6 @@ createNode materialInfo -n "Elephant_Model:elephant1:materialInfo1";
 	rename -uid "36E81833-4F80-F33D-506F-FC907FF77BDA";
 createNode lambert -n "Elephant_Model:elephant1:elephant_BodySG2";
 	rename -uid "3809C6D0-4684-E70C-B923-7D9AE8A362BE";
-createNode displayLayer -n "Elephant_Model:skeleton:layer1";
-	rename -uid "7F7BB4B6-40E9-3858-F9D3-678C9FB5F320";
-	setAttr ".do" 1;
 createNode condition -n "Elephant_Model:condition1";
 	rename -uid "8AAF6F12-447D-881D-9EF7-21B86B8D6B22";
 	setAttr ".op" 2;
@@ -2429,12 +2410,6 @@ createNode shadingEngine -n "Elephant_Model:Eleplant_UV_Rigg_ready:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo2";
 	rename -uid "548C1B2F-4BF9-4DA4-4DBD-3C87141CC025";
-createNode displayLayer -n "Elephant_Model:Eleplant_UV_Rigg_ready:layer1";
-	rename -uid "59010B6B-498E-56FE-3D3E-15AD558A4E11";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model:Eleplant_UV_Rigg_ready:layer2";
-	rename -uid "3F397E37-4F73-7BE4-D06E-568C66899DC8";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3";
 	rename -uid "7EBF89CE-47AE-61D3-D81A-3E94AF8D1BED";
 createNode shadingEngine -n "Elephant_Model:Eleplant_UV_Rigg_ready:elephant_BodySG";
@@ -2571,9 +2546,6 @@ createNode shadingEngine -n "Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve1
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo15";
 	rename -uid "381A4398-43BC-B6F3-1A1B-D1966E586ED7";
-createNode displayLayer -n "Elephant_Model:Eleplant_UV_Rigg_ready:Bottom";
-	rename -uid "65F5AA01-4F65-D005-3B74-B1982AE6FC0E";
-	setAttr ".do" 3;
 createNode lambert -n "Elephant_Model:Eleplant_UV_Rigg_ready:Right_Tusk";
 	rename -uid "8F885C74-4EDA-2629-341C-8DADA2979FC0";
 	setAttr ".c" -type "float3" 1 1 1 ;
@@ -2964,12 +2936,6 @@ createNode shadingEngine -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2";
 	rename -uid "3E937272-46DB-3710-DD9D-42BDEE0F5E9C";
-createNode displayLayer -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:layer1";
-	rename -uid "3CC14E89-4BA3-E35E-7F26-AE84C2037FEC";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:layer2";
-	rename -uid "59B2ADFF-48C7-385D-0A4A-BCBBC7D29AF2";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3";
 	rename -uid "142D20AE-4CC4-BA5C-1B5F-F89600E86D7F";
 createNode shadingEngine -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG";
@@ -3042,12 +3008,6 @@ createNode shadingEngine -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2";
 	rename -uid "F9C892A8-4327-619B-86F5-6398AB93657C";
-createNode displayLayer -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1";
-	rename -uid "2EDFAF7D-47E6-E922-0696-3E88951DFF02";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2";
-	rename -uid "24687D66-4037-8B5C-31D5-4BB28B633F6A";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3";
 	rename -uid "A07064DD-4A76-C917-E679-7FA0D43B5A5D";
 createNode shadingEngine -n "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG";
@@ -3237,12 +3197,6 @@ createNode nodeGraphEditorInfo -n "Elephant_Model:MayaNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[7].x" -480.95236206054687;
 	setAttr ".tgi[0].ni[7].y" 315.47616577148437;
 	setAttr ".tgi[0].ni[7].nvs" 18304;
-createNode displayLayer -n "Elephant_Model:layer3";
-	rename -uid "D9685551-493B-D174-4DEE-3FA994D2B1B2";
-	setAttr ".do" 4;
-createNode displayLayer -n "Elephant_Model:layer4";
-	rename -uid "068C9E54-4421-5D38-63C9-C1A152B73FA4";
-	setAttr ".do" 5;
 createNode renderLayerManager -n "Coyote_Model1:renderLayerManager";
 	rename -uid "5ADCC43D-4E0D-8BD5-A08B-3E9D6EEB99FB";
 createNode renderLayer -n "Coyote_Model1:defaultRenderLayer";
@@ -3275,9 +3229,6 @@ createNode shadingEngine -n "Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:male
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "B856C0AC-446E-81AE-8BFC-30946D3FED3F";
-createNode displayLayer -n "Coyote_Model1:elepant_rig_0011:layer1";
-	rename -uid "3BE80593-495B-E7EE-FD95-E89992EA2CFD";
-	setAttr ".do" 1;
 createNode timeEditorTracks -n "Coyote_Model1:elepant_rig_0011:Composition1";
 	rename -uid "2FFD62C0-4FD7-94D0-EF53-63B655F0D88A";
 createNode groupId -n "Coyote_Model1:groupId20";
@@ -3530,13 +3481,6 @@ createNode shadingEngine -n "Coyote_Model1:lp_elephant_Complete_0018:pSphere1SG"
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model1:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "C8433322-4A38-FD78-1363-F5B73AA1FC84";
-createNode displayLayer -n "Coyote_Model1:lp_elephant_Complete_0018:layer1";
-	rename -uid "20EAE4AE-4A8A-6004-563E-EDA0BB638B9A";
-	setAttr ".do" 1;
-createNode displayLayer -n "Coyote_Model1:lp_elephant_Complete_0018:layer2";
-	rename -uid "C0A6AB3A-4A93-D3B3-0CBC-879B3FA08FD0";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "E5646CCA-4B46-9271-CA21-8EB957D0631D";
 createNode shadingEngine -n "Coyote_Model1:lp_elephant_Complete_0018:elephant_BodySG";
@@ -3582,12 +3526,6 @@ createNode shadingEngine -n "Elephant_Model1:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model1:materialInfo2";
 	rename -uid "6397FFAA-4A8A-CDE8-82D5-988A7AE3A2E6";
-createNode displayLayer -n "Elephant_Model1:layer1";
-	rename -uid "24F5F9E9-4224-A316-7EC6-93B50A242819";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model1:layer2";
-	rename -uid "5A163E94-4736-1595-62E0-AE8811BDF8BF";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model1:Fixed_legs_0002:lambert3";
 	rename -uid "BE91BBC6-4522-725E-1F3A-58B030D265DC";
 createNode shadingEngine -n "Elephant_Model1:elephant_BodySG";
@@ -3628,9 +3566,6 @@ createNode materialInfo -n "Elephant_Model1:elephant1:materialInfo1";
 	rename -uid "3733CFB7-40F5-C64B-AE5F-65940E56C50D";
 createNode lambert -n "Elephant_Model1:elephant1:elephant_BodySG2";
 	rename -uid "8EF1ECFD-40D5-EBB6-DD19-A9B1B5652BAE";
-createNode displayLayer -n "Elephant_Model1:skeleton:layer1";
-	rename -uid "873059BE-455A-8954-3E9F-30A8D60CF297";
-	setAttr ".do" 1;
 createNode condition -n "Elephant_Model1:condition1";
 	rename -uid "99AFDB48-47B6-BF3A-5335-26BBCA1E6AD5";
 	setAttr ".op" 2;
@@ -3662,12 +3597,6 @@ createNode shadingEngine -n "Elephant_Model1:Eleplant_UV_Rigg_ready:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo2";
 	rename -uid "062BB27D-49FB-E0B1-A522-62A0263F3A1C";
-createNode displayLayer -n "Elephant_Model1:Eleplant_UV_Rigg_ready:layer1";
-	rename -uid "EEF1C536-48CA-EA24-09EF-918BC69CADBD";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model1:Eleplant_UV_Rigg_ready:layer2";
-	rename -uid "8A459692-4E8C-9F4C-730B-4C88C912A811";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3";
 	rename -uid "B9FC2E72-42D4-3E15-6A32-DC8F650F6471";
 createNode shadingEngine -n "Elephant_Model1:Eleplant_UV_Rigg_ready:elephant_BodySG";
@@ -3804,9 +3733,6 @@ createNode shadingEngine -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo15";
 	rename -uid "4FCD1A9E-4EF7-8DD1-F9BE-628C9BAEA6C1";
-createNode displayLayer -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Bottom";
-	rename -uid "37F79B85-4AF9-CA53-7075-F79B4F6B34CC";
-	setAttr ".do" 3;
 createNode lambert -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Tusk";
 	rename -uid "7CC5331E-42AB-F60F-4396-7684395B1EB5";
 	setAttr ".c" -type "float3" 1 1 1 ;
@@ -4197,12 +4123,6 @@ createNode shadingEngine -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2";
 	rename -uid "9ADA7B00-4130-35E3-2113-159069D19458";
-createNode displayLayer -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:layer1";
-	rename -uid "2EB596F1-4537-4A2F-9F19-3C815C08656F";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:layer2";
-	rename -uid "18C1FA6D-4335-8819-126D-1E855FE03976";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3";
 	rename -uid "A2207B95-41D9-8EDC-B2D2-219E5C10ABA1";
 createNode shadingEngine -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG";
@@ -4275,12 +4195,6 @@ createNode shadingEngine -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arm
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2";
 	rename -uid "894B0310-4972-7E43-81A1-8395E469A3FB";
-createNode displayLayer -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1";
-	rename -uid "9E32FC38-4C05-4E5E-D288-70A07564EAC5";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2";
-	rename -uid "C593573B-4A04-3B23-B1B5-1692F447A5B6";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3";
 	rename -uid "E68264B7-47EA-7792-782B-BDB61CBFAB01";
 createNode shadingEngine -n "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG";
@@ -4470,12 +4384,6 @@ createNode nodeGraphEditorInfo -n "Elephant_Model1:MayaNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[7].x" -480.95236206054687;
 	setAttr ".tgi[0].ni[7].y" 315.47616577148437;
 	setAttr ".tgi[0].ni[7].nvs" 18304;
-createNode displayLayer -n "Elephant_Model1:layer3";
-	rename -uid "7945C3D7-4970-507D-295B-7AA5B98CA8E1";
-	setAttr ".do" 4;
-createNode displayLayer -n "Elephant_Model1:layer4";
-	rename -uid "A890EFDF-4508-2B9F-3653-8494CE3E6A67";
-	setAttr ".do" 5;
 createNode renderLayerManager -n "Coyote_Model2:renderLayerManager";
 	rename -uid "EFD9A0FE-49B6-B3C9-6C76-E98E53B9AE5A";
 createNode renderLayer -n "Coyote_Model2:defaultRenderLayer";
@@ -4508,9 +4416,6 @@ createNode shadingEngine -n "Coyote_Model2:elepant_rig_0011:Fixed_legs_0002:male
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model2:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "E384ED57-4B50-B234-A157-5A803744EDB1";
-createNode displayLayer -n "Coyote_Model2:elepant_rig_0011:layer1";
-	rename -uid "3F03C073-45B1-0D30-44A0-47AA659DEC2F";
-	setAttr ".do" 1;
 createNode timeEditorTracks -n "Coyote_Model2:elepant_rig_0011:Composition1";
 	rename -uid "1D388CF0-47E9-65BF-879E-1CB4F6C35D48";
 createNode groupId -n "Coyote_Model2:groupId20";
@@ -4763,13 +4668,6 @@ createNode shadingEngine -n "Coyote_Model2:lp_elephant_Complete_0018:pSphere1SG"
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model2:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "4B253B55-41C6-7EBC-5CC9-0DA14E818DF8";
-createNode displayLayer -n "Coyote_Model2:lp_elephant_Complete_0018:layer1";
-	rename -uid "C5B89337-4998-322D-9649-F2A751E3FB8A";
-	setAttr ".do" 1;
-createNode displayLayer -n "Coyote_Model2:lp_elephant_Complete_0018:layer2";
-	rename -uid "9B4644B8-4573-9E10-2AAA-1D8B55725C4F";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Coyote_Model2:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "9D7CD315-48F8-3711-34BB-EF836EF04CEC";
 createNode shadingEngine -n "Coyote_Model2:lp_elephant_Complete_0018:elephant_BodySG";
@@ -4826,9 +4724,6 @@ createNode shadingEngine -n "Coyote_Model3:elepant_rig_0011:Fixed_legs_0002:male
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model3:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "31D07BF6-4859-7BAC-B502-728186437B91";
-createNode displayLayer -n "Coyote_Model3:elepant_rig_0011:layer1";
-	rename -uid "43A9B739-49CB-90F2-9A2A-3AB589704EC9";
-	setAttr ".do" 1;
 createNode timeEditorTracks -n "Coyote_Model3:elepant_rig_0011:Composition1";
 	rename -uid "A99BD1B1-4750-3607-0C11-7EA49610C87B";
 createNode groupId -n "Coyote_Model3:groupId20";
@@ -5081,13 +4976,6 @@ createNode shadingEngine -n "Coyote_Model3:lp_elephant_Complete_0018:pSphere1SG"
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model3:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "6BBC6C7F-40A8-99EA-9EF9-F59838129EE5";
-createNode displayLayer -n "Coyote_Model3:lp_elephant_Complete_0018:layer1";
-	rename -uid "31D51779-4B83-0665-E882-40A6833ED159";
-	setAttr ".do" 1;
-createNode displayLayer -n "Coyote_Model3:lp_elephant_Complete_0018:layer2";
-	rename -uid "84CB16A8-4736-6258-3BA4-81812056EA96";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Coyote_Model3:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "0D5117C0-40FD-562A-E349-F6AB49729A1F";
 createNode shadingEngine -n "Coyote_Model3:lp_elephant_Complete_0018:elephant_BodySG";
@@ -5149,9 +5037,6 @@ createNode shadingEngine -n "Van_Model:Coyote_Model:elepant_rig_0011:Fixed_legs_
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "0333A98D-4059-AC86-A7EB-6BB5A46ABC2C";
-createNode displayLayer -n "Van_Model:Coyote_Model:elepant_rig_0011:layer1";
-	rename -uid "639E6EC2-4287-8884-974E-E69DB64511CC";
-	setAttr ".do" 1;
 createNode timeEditorTracks -n "Van_Model:Coyote_Model:elepant_rig_0011:Composition1";
 	rename -uid "62AC13C2-406B-B2A8-782E-6ABA4C648AF5";
 createNode groupId -n "Van_Model:Coyote_Model:groupId20";
@@ -5404,13 +5289,6 @@ createNode shadingEngine -n "Van_Model:Coyote_Model:lp_elephant_Complete_0018:pS
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Coyote_Model:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "8F871E18-43A1-5CAA-DF22-D6A1A0578211";
-createNode displayLayer -n "Van_Model:Coyote_Model:lp_elephant_Complete_0018:layer1";
-	rename -uid "D9F001DA-4D39-AAFD-4D12-40BBC1CD8FA5";
-	setAttr ".do" 1;
-createNode displayLayer -n "Van_Model:Coyote_Model:lp_elephant_Complete_0018:layer2";
-	rename -uid "EBCA39EA-405D-0EBC-0805-608A5DF5B3F7";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Van_Model:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "BCCB2C73-4176-EBCD-1984-8195DF310360";
 createNode shadingEngine -n "Van_Model:Coyote_Model:lp_elephant_Complete_0018:elephant_BodySG";
@@ -5456,12 +5334,6 @@ createNode shadingEngine -n "Van_Model:Elephant_Model:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Elephant_Model:materialInfo2";
 	rename -uid "7FB92CCE-4746-04DB-422D-4788C478A67C";
-createNode displayLayer -n "Van_Model:Elephant_Model:layer1";
-	rename -uid "3E68B07C-448B-F34F-E750-EB831D56E5FF";
-	setAttr ".do" 1;
-createNode displayLayer -n "Van_Model:Elephant_Model:layer2";
-	rename -uid "B42D0F07-4726-8E03-3996-66B5FB4A2FCF";
-	setAttr ".do" 2;
 createNode lambert -n "Van_Model:Elephant_Model:Fixed_legs_0002:lambert3";
 	rename -uid "30050710-4BDD-0A63-FAA7-30842694F267";
 createNode shadingEngine -n "Van_Model:Elephant_Model:elephant_BodySG";
@@ -5502,9 +5374,6 @@ createNode materialInfo -n "Van_Model:Elephant_Model:elephant1:materialInfo1";
 	rename -uid "5A8B5DFD-4604-F915-4992-0BB87F6C6EE2";
 createNode lambert -n "Van_Model:Elephant_Model:elephant1:elephant_BodySG2";
 	rename -uid "3A594A41-455E-EC1E-C457-D495FE370440";
-createNode displayLayer -n "Van_Model:Elephant_Model:skeleton:layer1";
-	rename -uid "54A239E3-4B60-F7A9-6B5E-9BA65618F27B";
-	setAttr ".do" 1;
 createNode condition -n "Van_Model:Elephant_Model:condition1";
 	rename -uid "0851FB8A-4952-FC6C-C94D-969EB9915537";
 	setAttr ".op" 2;
@@ -5536,12 +5405,6 @@ createNode shadingEngine -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:pSp
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo2";
 	rename -uid "8A828A88-4765-6738-3F5E-7EB4400AC1E7";
-createNode displayLayer -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:layer1";
-	rename -uid "101D5ADB-4214-7F24-7B90-B99F6D1AF740";
-	setAttr ".do" 1;
-createNode displayLayer -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:layer2";
-	rename -uid "F2B79989-46A6-428C-F1CE-B5B9C88F5281";
-	setAttr ".do" 2;
 createNode lambert -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3";
 	rename -uid "9A2EDFD5-49EB-B63E-43A4-8F8EAF967025";
 createNode shadingEngine -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:elephant_BodySG";
@@ -5678,9 +5541,6 @@ createNode shadingEngine -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Rig
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo15";
 	rename -uid "F57914F1-4C88-E286-8ABF-09958B4F6C69";
-createNode displayLayer -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Bottom";
-	rename -uid "E56B39B1-4C25-9E4B-213A-5D90F9B27CBB";
-	setAttr ".do" 3;
 createNode lambert -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Tusk";
 	rename -uid "1040B941-44D1-1476-DBE2-AB9695A98510";
 	setAttr ".c" -type "float3" 1 1 1 ;
@@ -6071,12 +5931,6 @@ createNode shadingEngine -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Ele
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2";
 	rename -uid "D673F881-41CE-374A-F938-8CAD77FE0A60";
-createNode displayLayer -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:layer1";
-	rename -uid "B3626718-46EF-1541-F419-FF86594344E3";
-	setAttr ".do" 1;
-createNode displayLayer -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:layer2";
-	rename -uid "79CCEA0A-4D4D-7F4C-3AC2-729B2D712D25";
-	setAttr ".do" 2;
 createNode lambert -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3";
 	rename -uid "0367AA4D-410F-2B39-E204-0383E3089D13";
 createNode shadingEngine -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG";
@@ -6149,12 +6003,6 @@ createNode shadingEngine -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Ele
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2";
 	rename -uid "98E04567-41D1-3B4C-0FA6-06836820519B";
-createNode displayLayer -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1";
-	rename -uid "89ED3249-4720-5908-CB55-4A82AA55FEBB";
-	setAttr ".do" 1;
-createNode displayLayer -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2";
-	rename -uid "02DBD488-4C08-1C2F-6C04-839FE7BDC46E";
-	setAttr ".do" 2;
 createNode lambert -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3";
 	rename -uid "0A613665-48A6-CC72-A211-BCB5A877EE30";
 createNode shadingEngine -n "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG";
@@ -6344,12 +6192,6 @@ createNode nodeGraphEditorInfo -n "Van_Model:Elephant_Model:MayaNodeEditorSavedT
 	setAttr ".tgi[0].ni[7].x" -480.95236206054687;
 	setAttr ".tgi[0].ni[7].y" 315.47616577148437;
 	setAttr ".tgi[0].ni[7].nvs" 18304;
-createNode displayLayer -n "Van_Model:Elephant_Model:layer3";
-	rename -uid "4CA55A52-439A-20CA-887C-7E8F78025554";
-	setAttr ".do" 4;
-createNode displayLayer -n "Van_Model:Elephant_Model:layer4";
-	rename -uid "9BE3AB8D-496A-F29D-CEAD-65AF2EF25854";
-	setAttr ".do" 5;
 createNode renderLayerManager -n "Van_Model:Coyote_Model1:renderLayerManager";
 	rename -uid "FC62AAB0-40AF-CA3C-A768-28B19DA92BE3";
 createNode renderLayer -n "Van_Model:Coyote_Model1:defaultRenderLayer";
@@ -6382,9 +6224,6 @@ createNode shadingEngine -n "Van_Model:Coyote_Model1:elepant_rig_0011:Fixed_legs
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "16708494-4365-030D-B888-6492BAF17BD3";
-createNode displayLayer -n "Van_Model:Coyote_Model1:elepant_rig_0011:layer1";
-	rename -uid "3C1CE1FE-4965-FE87-D069-E9B3924A84AD";
-	setAttr ".do" 1;
 createNode timeEditorTracks -n "Van_Model:Coyote_Model1:elepant_rig_0011:Composition1";
 	rename -uid "7F6BC435-469F-FBE7-1EFB-17BA7F86DEA9";
 createNode groupId -n "Van_Model:Coyote_Model1:groupId20";
@@ -6637,13 +6476,6 @@ createNode shadingEngine -n "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:p
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "62D4C356-4365-F358-AC3E-E98E685D209B";
-createNode displayLayer -n "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:layer1";
-	rename -uid "E8E35BDC-4AE8-A7AF-146D-BAAFC59840E1";
-	setAttr ".do" 1;
-createNode displayLayer -n "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:layer2";
-	rename -uid "F5A52F55-47BB-9B81-04BC-2D943239FA61";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "10EB0906-4DE2-48F3-856C-4DB31BDB872F";
 createNode shadingEngine -n "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:elephant_BodySG";
@@ -6689,12 +6521,6 @@ createNode shadingEngine -n "Van_Model:Elephant_Model1:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Elephant_Model1:materialInfo2";
 	rename -uid "787EF2CE-40F0-3950-CAD5-7E9E1072D38D";
-createNode displayLayer -n "Van_Model:Elephant_Model1:layer1";
-	rename -uid "AAF9B719-411A-118F-F20E-7F846595EB73";
-	setAttr ".do" 1;
-createNode displayLayer -n "Van_Model:Elephant_Model1:layer2";
-	rename -uid "513D2AC8-4408-ED72-8CD5-08939E2B420E";
-	setAttr ".do" 2;
 createNode lambert -n "Van_Model:Elephant_Model1:Fixed_legs_0002:lambert3";
 	rename -uid "04C2114B-4DDE-2EE2-5D8C-579B5F79DEE8";
 createNode shadingEngine -n "Van_Model:Elephant_Model1:elephant_BodySG";
@@ -6735,9 +6561,6 @@ createNode materialInfo -n "Van_Model:Elephant_Model1:elephant1:materialInfo1";
 	rename -uid "A49F63A6-4799-0027-D35F-C0BF1CDA5A00";
 createNode lambert -n "Van_Model:Elephant_Model1:elephant1:elephant_BodySG2";
 	rename -uid "43035ACC-4141-3C6E-ED83-B8994E6DAF54";
-createNode displayLayer -n "Van_Model:Elephant_Model1:skeleton:layer1";
-	rename -uid "FBAE749C-40BD-13CD-A879-84A863212896";
-	setAttr ".do" 1;
 createNode condition -n "Van_Model:Elephant_Model1:condition1";
 	rename -uid "12E00991-4666-142D-AD0D-E89B4B87AFE0";
 	setAttr ".op" 2;
@@ -6769,12 +6592,6 @@ createNode shadingEngine -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:pS
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo2";
 	rename -uid "0DBF3094-4446-FBF8-4419-098D54250AF1";
-createNode displayLayer -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:layer1";
-	rename -uid "22E2725A-4203-584C-CC40-21979A802F2C";
-	setAttr ".do" 1;
-createNode displayLayer -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:layer2";
-	rename -uid "17889BC7-4FE6-387C-6D90-9CB30B671A61";
-	setAttr ".do" 2;
 createNode lambert -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3";
 	rename -uid "450A4746-4542-3E53-7DA6-538A07156504";
 createNode shadingEngine -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:elephant_BodySG";
@@ -6911,9 +6728,6 @@ createNode shadingEngine -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Ri
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo15";
 	rename -uid "E948462B-42EA-097D-8B27-0FA8E27CE57B";
-createNode displayLayer -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Bottom";
-	rename -uid "15BBB2C9-4580-7E61-43E0-DC9C4B3BEFF2";
-	setAttr ".do" 3;
 createNode lambert -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Tusk";
 	rename -uid "9DAC491C-4D54-F756-3BD7-F896CF178F40";
 	setAttr ".c" -type "float3" 1 1 1 ;
@@ -7304,12 +7118,6 @@ createNode shadingEngine -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:El
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2";
 	rename -uid "0F7E9C2D-4AD9-66B0-FCB9-9E82174F041B";
-createNode displayLayer -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:layer1";
-	rename -uid "DA00DACE-4781-2B10-4A07-6FBCDB1FFA23";
-	setAttr ".do" 1;
-createNode displayLayer -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:layer2";
-	rename -uid "FD6B4648-4EB0-E03C-54A8-908808F48238";
-	setAttr ".do" 2;
 createNode lambert -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3";
 	rename -uid "C6727133-485A-C6F8-830E-2189579D2978";
 createNode shadingEngine -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG";
@@ -7382,12 +7190,6 @@ createNode shadingEngine -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:El
 	setAttr ".ro" yes;
 createNode materialInfo -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2";
 	rename -uid "774CD35D-4D84-8021-FFC1-449D769E6240";
-createNode displayLayer -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1";
-	rename -uid "4DB9289D-4620-36DA-F76B-C2854015EA34";
-	setAttr ".do" 1;
-createNode displayLayer -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2";
-	rename -uid "EE991F41-4BD4-649C-247D-7B8B11D49762";
-	setAttr ".do" 2;
 createNode lambert -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3";
 	rename -uid "2A99E5A9-46E3-6B9F-6B9D-888DF2B34939";
 createNode shadingEngine -n "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG";
@@ -7577,12 +7379,6 @@ createNode nodeGraphEditorInfo -n "Van_Model:Elephant_Model1:MayaNodeEditorSaved
 	setAttr ".tgi[0].ni[7].x" -480.95236206054687;
 	setAttr ".tgi[0].ni[7].y" 315.47616577148437;
 	setAttr ".tgi[0].ni[7].nvs" 18304;
-createNode displayLayer -n "Van_Model:Elephant_Model1:layer3";
-	rename -uid "F42BA8FE-4DB3-B6B0-A02C-1BB1E899FA31";
-	setAttr ".do" 4;
-createNode displayLayer -n "Van_Model:Elephant_Model1:layer4";
-	rename -uid "EA6A7A02-41AC-D829-00DD-409EED903DE0";
-	setAttr ".do" 5;
 createNode renderLayerManager -n "Stage_Model:renderLayerManager";
 	rename -uid "C49CBC67-4A27-227D-5F08-9FBD478727C0";
 createNode renderLayer -n "Stage_Model:defaultRenderLayer";
@@ -7951,10 +7747,6 @@ createNode shadingEngine -n "Stage_Model:lambert5SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Stage_Model:materialInfo5";
 	rename -uid "2B9A2586-40D5-8EDD-52A8-6CA41A38379C";
-createNode displayLayer -n "Stage_Model:layer1";
-	rename -uid "FAF70E0B-4B36-31F3-9EEC-9DAEF2B38376";
-	setAttr ".dt" 2;
-	setAttr ".do" 1;
 createNode lambert -n "Stage_Model:arches1";
 	rename -uid "CC773E2F-48E9-A2D6-7858-A8B3BC876AFD";
 createNode shadingEngine -n "Stage_Model:lambert6SG";
@@ -8011,9 +7803,6 @@ createNode shadingEngine -n "Coyote_Model4:elepant_rig_0011:Fixed_legs_0002:male
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model4:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "DB963FEB-4966-CF63-978A-ABB65B20429A";
-createNode displayLayer -n "Coyote_Model4:elepant_rig_0011:layer1";
-	rename -uid "6003FE13-4889-E278-E203-EAADCD4331C1";
-	setAttr ".do" 1;
 createNode timeEditorTracks -n "Coyote_Model4:elepant_rig_0011:Composition1";
 	rename -uid "3B8A4065-4C7D-827D-458A-01BB07923093";
 createNode groupId -n "Coyote_Model4:groupId20";
@@ -8266,13 +8055,6 @@ createNode shadingEngine -n "Coyote_Model4:lp_elephant_Complete_0018:pSphere1SG"
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model4:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "2C40DF90-4E9E-1045-DACD-96A172866110";
-createNode displayLayer -n "Coyote_Model4:lp_elephant_Complete_0018:layer1";
-	rename -uid "935956DF-4E0A-50B8-72E9-5AA55EB72FF5";
-	setAttr ".do" 1;
-createNode displayLayer -n "Coyote_Model4:lp_elephant_Complete_0018:layer2";
-	rename -uid "9C0AA9F4-4263-0159-7C35-72B71CEA6976";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Coyote_Model4:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "DE9D53EA-4B2B-3B2F-4E57-C0A6682EA116";
 createNode shadingEngine -n "Coyote_Model4:lp_elephant_Complete_0018:elephant_BodySG";
@@ -8318,12 +8100,6 @@ createNode shadingEngine -n "Elephant_Model2:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model2:materialInfo2";
 	rename -uid "40257022-4D70-A4C6-3508-CBB08E309661";
-createNode displayLayer -n "Elephant_Model2:layer1";
-	rename -uid "C2532B6E-4BCA-C12F-3365-A9B5B7084F34";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model2:layer2";
-	rename -uid "673C2A0A-4F30-1CCF-47FB-CEA2B358338D";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model2:Fixed_legs_0002:lambert3";
 	rename -uid "692558DF-4243-C5A5-7384-9EB0793FEBBB";
 createNode shadingEngine -n "Elephant_Model2:elephant_BodySG";
@@ -8364,9 +8140,6 @@ createNode materialInfo -n "Elephant_Model2:elephant1:materialInfo1";
 	rename -uid "839E789A-4227-B7D0-A787-CDBD69AB3044";
 createNode lambert -n "Elephant_Model2:elephant1:elephant_BodySG2";
 	rename -uid "C3C0E1CC-4859-69C5-D1E3-9D903958E9B9";
-createNode displayLayer -n "Elephant_Model2:skeleton:layer1";
-	rename -uid "921B7048-4BF2-0EEA-C7A0-B2B641F50149";
-	setAttr ".do" 1;
 createNode condition -n "Elephant_Model2:condition1";
 	rename -uid "8222BB59-43F7-1859-2E1C-CAAFC4D79D56";
 	setAttr ".op" 2;
@@ -8398,12 +8171,6 @@ createNode shadingEngine -n "Elephant_Model2:Eleplant_UV_Rigg_ready:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model2:Eleplant_UV_Rigg_ready:materialInfo2";
 	rename -uid "F18A13BE-43A0-E496-224C-DEAFDE884365";
-createNode displayLayer -n "Elephant_Model2:Eleplant_UV_Rigg_ready:layer1";
-	rename -uid "57BAE632-4576-A04A-1EED-76BA6B905654";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model2:Eleplant_UV_Rigg_ready:layer2";
-	rename -uid "41ECF947-4941-695D-8432-5B894119C958";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3";
 	rename -uid "4B658515-41A4-8F34-6442-3FB6A922B368";
 createNode shadingEngine -n "Elephant_Model2:Eleplant_UV_Rigg_ready:elephant_BodySG";
@@ -8540,9 +8307,6 @@ createNode shadingEngine -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Right_Sleeve
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model2:Eleplant_UV_Rigg_ready:materialInfo15";
 	rename -uid "9B35DFD3-45FA-8B97-2F3B-2F95A6AA60A0";
-createNode displayLayer -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Bottom";
-	rename -uid "2B2D3096-4344-938F-68AA-BBA9E8EB2E55";
-	setAttr ".do" 3;
 createNode lambert -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Right_Tusk";
 	rename -uid "BD491ABF-49FF-86EB-28DD-209D7B8AE7CB";
 	setAttr ".c" -type "float3" 1 1 1 ;
@@ -8933,12 +8697,6 @@ createNode shadingEngine -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2";
 	rename -uid "70947237-4D86-C383-0DE2-19B7716CFD5F";
-createNode displayLayer -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:layer1";
-	rename -uid "948C7549-4A27-6256-661A-1593233CA585";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:layer2";
-	rename -uid "E9DDA701-42BB-0797-BF13-A4A88E958966";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3";
 	rename -uid "D0F72540-4037-3101-E76D-948511E0BEC3";
 createNode shadingEngine -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG";
@@ -9011,12 +8769,6 @@ createNode shadingEngine -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arm
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2";
 	rename -uid "5DA788CC-4485-B470-5AF8-AEB4003B116A";
-createNode displayLayer -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1";
-	rename -uid "BB5B31DC-44B9-899C-B518-EB855C512D46";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2";
-	rename -uid "25E2727A-4746-8C42-7585-B88D14881AE2";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3";
 	rename -uid "239E1F1B-4E2F-F5B5-75F7-FDB8E659A95F";
 createNode shadingEngine -n "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG";
@@ -9206,12 +8958,6 @@ createNode nodeGraphEditorInfo -n "Elephant_Model2:MayaNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[7].x" -480.95236206054687;
 	setAttr ".tgi[0].ni[7].y" 315.47616577148437;
 	setAttr ".tgi[0].ni[7].nvs" 18304;
-createNode displayLayer -n "Elephant_Model2:layer3";
-	rename -uid "1FBFBE37-4A0F-6507-A93C-F789EEB94178";
-	setAttr ".do" 4;
-createNode displayLayer -n "Elephant_Model2:layer4";
-	rename -uid "75EFA7A2-4503-66A6-5E18-0EB7BEE4A829";
-	setAttr ".do" 5;
 createNode lambert -n "Default_Material";
 	rename -uid "6B4D0DD4-44FC-DD61-9DBB-E1B217B6B9AA";
 	setAttr ".dc" 1;
@@ -9297,10 +9043,6 @@ createNode shadingEngine -n "BodySG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo9";
 	rename -uid "FBD118D2-45C3-D70E-9BF2-38A7BD47DCED";
-createNode displayLayer -n "Coyote";
-	rename -uid "6EF30F67-40B1-F423-9C80-BC9E19F3F3BC";
-	setAttr ".v" no;
-	setAttr ".do" 6;
 createNode renderLayerManager -n "Guitar_Model_01:renderLayerManager";
 	rename -uid "9A3D7CAD-4744-F202-CF71-38B500815715";
 createNode renderLayer -n "Guitar_Model_01:defaultRenderLayer";
@@ -9573,10 +9315,6 @@ createNode shadingEngine -n "Guitar_Model_01:lambert13SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Guitar_Model_01:materialInfo15";
 	rename -uid "DE9C2227-4193-317B-5C8D-6A8B07FC49C1";
-createNode displayLayer -n "Guitar_Model_01:Coyote";
-	rename -uid "D4AEEB8E-46B1-AD4A-9FB3-A5A32AB1A59B";
-	setAttr ".v" no;
-	setAttr ".do" 1;
 createNode nodeGraphEditorInfo -n "Guitar_Model_01:hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "E142B532-4383-D3FB-2F1B-FCB21FD7E00E";
 	setAttr ".def" no;
@@ -9931,10 +9669,6 @@ createNode shadingEngine -n "Guitar_Model_02:lambert13SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Guitar_Model_02:materialInfo15";
 	rename -uid "17FA9300-4A57-344C-9216-CA93104DAC72";
-createNode displayLayer -n "Guitar_Model_02:Coyote";
-	rename -uid "C9054E50-4BFF-B2B1-DC92-40904DD4E66B";
-	setAttr ".v" no;
-	setAttr ".do" 1;
 createNode nodeGraphEditorInfo -n "Guitar_Model_02:hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "F7367574-46F6-F592-E612-CBBCB6F46596";
 	setAttr ".def" no;
@@ -10049,9 +9783,6 @@ createNode shadingEngine -n "Coyote_Model5:elepant_rig_0011:Fixed_legs_0002:male
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model5:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "11F1A4DB-464C-0CA8-5196-64A205A71609";
-createNode displayLayer -n "Coyote_Model5:elepant_rig_0011:layer1";
-	rename -uid "593C12BD-420F-9847-7806-3380824BD36C";
-	setAttr ".do" 1;
 createNode timeEditor -s -n "timeEditor";
 	rename -uid "90BADA40-4924-630B-2556-1A9DD54B8FFA";
 	setAttr -s 6 ".cmp";
@@ -10308,13 +10039,6 @@ createNode shadingEngine -n "Coyote_Model5:lp_elephant_Complete_0018:pSphere1SG"
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model5:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "22BC5164-4AA6-5D33-2556-BCA1C313CAF0";
-createNode displayLayer -n "Coyote_Model5:lp_elephant_Complete_0018:layer1";
-	rename -uid "9085C0ED-4F49-3D41-34D0-05A45296A72B";
-	setAttr ".do" 1;
-createNode displayLayer -n "Coyote_Model5:lp_elephant_Complete_0018:layer2";
-	rename -uid "F292486F-4C3E-A69F-9460-FDAD1801ACDC";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Coyote_Model5:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "0D19BF3C-479C-5410-94F3-60B5796E2B0B";
 createNode shadingEngine -n "Coyote_Model5:lp_elephant_Complete_0018:elephant_BodySG";
@@ -10611,10 +10335,6 @@ createNode shadingEngine -n "Guitar_Model_03:lambert13SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Guitar_Model_03:materialInfo15";
 	rename -uid "2676B6D3-4FD7-29BC-7A41-B1BA1828B942";
-createNode displayLayer -n "Guitar_Model_03:Coyote";
-	rename -uid "254B3A46-454A-620E-08CB-448F0640FC01";
-	setAttr ".v" no;
-	setAttr ".do" 1;
 createNode nodeGraphEditorInfo -n "Guitar_Model_03:hyperShadePrimaryNodeEditorSavedTabsInfo";
 	rename -uid "0DD0068F-4F30-70C0-68C8-06901A418535";
 	setAttr ".def" no;
@@ -10729,9 +10449,6 @@ createNode shadingEngine -n "Coyote_Model6:elepant_rig_0011:Fixed_legs_0002:male
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model6:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "9F6C54B4-4022-E0D8-926E-EC8FF70A6F6C";
-createNode displayLayer -n "Coyote_Model6:elepant_rig_0011:layer1";
-	rename -uid "CDF8ACF2-4578-4B74-8449-058318A7CB6A";
-	setAttr ".do" 1;
 createNode timeEditorTracks -n "Coyote_Model6:elepant_rig_0011:Composition1";
 	rename -uid "79A56A5B-40A1-87DC-4CBA-98914FDED886";
 createNode groupId -n "Coyote_Model6:groupId20";
@@ -10984,13 +10701,6 @@ createNode shadingEngine -n "Coyote_Model6:lp_elephant_Complete_0018:pSphere1SG"
 	setAttr ".ro" yes;
 createNode materialInfo -n "Coyote_Model6:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "92527EC4-4172-78D3-6B7F-DB9925156FE0";
-createNode displayLayer -n "Coyote_Model6:lp_elephant_Complete_0018:layer1";
-	rename -uid "44E26D94-435F-880C-BCB8-34A0FD0C831D";
-	setAttr ".do" 1;
-createNode displayLayer -n "Coyote_Model6:lp_elephant_Complete_0018:layer2";
-	rename -uid "FA79F56A-4795-D1E1-1DA2-A182876CC84E";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Coyote_Model6:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "C0A849F1-4856-FF78-9380-EBB25B6715AD";
 createNode shadingEngine -n "Coyote_Model6:lp_elephant_Complete_0018:elephant_BodySG";
@@ -11046,13 +10756,6 @@ createNode shadingEngine -n "Piano_Model:lp_elephant_Complete_0018:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Piano_Model:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "233E21CE-4EE5-F2BB-A4B2-0F94BACBDF94";
-createNode displayLayer -n "Piano_Model:lp_elephant_Complete_0018:layer1";
-	rename -uid "32AED5DC-4E56-A104-E31B-709812015199";
-	setAttr ".do" 1;
-createNode displayLayer -n "Piano_Model:lp_elephant_Complete_0018:layer2";
-	rename -uid "9FD9B8CE-4D8A-C99E-3830-DAA1A4D709AC";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Piano_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "7A009246-4817-7594-2EFF-15BD32FE43A2";
 createNode shadingEngine -n "Piano_Model:lp_elephant_Complete_0018:elephant_BodySG";
@@ -11109,9 +10812,6 @@ createNode shadingEngine -n "Piano_Model:Female_Coyote_Final:elepant_rig_0011:Fi
 	setAttr ".ro" yes;
 createNode materialInfo -n "Piano_Model:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "BD027685-434A-129F-8FEE-88B268B29322";
-createNode displayLayer -n "Piano_Model:Female_Coyote_Final:elepant_rig_0011:layer1";
-	rename -uid "898D780B-48A0-075D-3996-0B91ACD28275";
-	setAttr ".do" 1;
 createNode timeEditorTracks -n "Piano_Model:Female_Coyote_Final:elepant_rig_0011:Composition1";
 	rename -uid "FB0EEA2D-40B2-7153-7C24-4EA9B1CADD7C";
 createNode groupId -n "Piano_Model:Female_Coyote_Final:groupId20";
@@ -11364,13 +11064,6 @@ createNode shadingEngine -n "Piano_Model:Female_Coyote_Final:lp_elephant_Complet
 	setAttr ".ro" yes;
 createNode materialInfo -n "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "41756084-47E6-0D7D-13E2-03B7FBA81D7A";
-createNode displayLayer -n "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:layer1";
-	rename -uid "032D62E8-47B4-F069-FD6E-52A68A5B8D50";
-	setAttr ".do" 1;
-createNode displayLayer -n "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:layer2";
-	rename -uid "58E33FC6-4DBF-D00C-3AB5-AB8FE0BF6A82";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "68D06FFE-4FC6-BA59-19C4-0694C1C39F34";
 createNode shadingEngine -n "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:elephant_BodySG";
@@ -11432,13 +11125,6 @@ createNode shadingEngine -n "Piano_Model:Piano_12:lp_elephant_Complete_0018:pSph
 	setAttr ".ro" yes;
 createNode materialInfo -n "Piano_Model:Piano_12:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "BD26DE60-40D6-771B-455E-BEA4B3FF6E1F";
-createNode displayLayer -n "Piano_Model:Piano_12:lp_elephant_Complete_0018:layer1";
-	rename -uid "4D755387-4BEE-6AD2-5AF4-84885EB9523F";
-	setAttr ".do" 1;
-createNode displayLayer -n "Piano_Model:Piano_12:lp_elephant_Complete_0018:layer2";
-	rename -uid "3C0E010E-4C51-D1C1-FA5C-C2A8EC45321B";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Piano_Model:Piano_12:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "95074470-4B23-64AC-34C3-11823C00A8F7";
 createNode shadingEngine -n "Piano_Model:Piano_12:lp_elephant_Complete_0018:elephant_BodySG";
@@ -11495,9 +11181,6 @@ createNode shadingEngine -n "Piano_Model:Piano_12:Female_Coyote_Final:elepant_ri
 	setAttr ".ro" yes;
 createNode materialInfo -n "Piano_Model:Piano_12:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:materialInfo1";
 	rename -uid "315E956D-4419-166D-F1C5-59B5B0CD8594";
-createNode displayLayer -n "Piano_Model:Piano_12:Female_Coyote_Final:elepant_rig_0011:layer1";
-	rename -uid "809E22C1-4553-4960-057B-D5907B1DCF24";
-	setAttr ".do" 1;
 createNode timeEditorTracks -n "Piano_Model:Piano_12:Female_Coyote_Final:elepant_rig_0011:Composition1";
 	rename -uid "22EB0516-4246-404B-F9AE-2FA2D1DE4B2A";
 createNode groupId -n "Piano_Model:Piano_12:Female_Coyote_Final:groupId20";
@@ -11750,13 +11433,6 @@ createNode shadingEngine -n "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephan
 	setAttr ".ro" yes;
 createNode materialInfo -n "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:materialInfo2";
 	rename -uid "E8B670AA-4760-789A-9F11-FDB604842874";
-createNode displayLayer -n "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:layer1";
-	rename -uid "2072041A-44A6-B9FF-772F-CC970A2638C2";
-	setAttr ".do" 1;
-createNode displayLayer -n "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:layer2";
-	rename -uid "2BBF5EF9-4599-9668-D716-E0BCB4C19500";
-	setAttr ".dt" 2;
-	setAttr ".do" 2;
 createNode lambert -n "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
 	rename -uid "15326E6F-4E35-8266-4CED-8FB0FCC2BB15";
 createNode shadingEngine -n "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:elephant_BodySG";
@@ -11818,12 +11494,6 @@ createNode shadingEngine -n "Elephant_Model3:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model3:materialInfo2";
 	rename -uid "2751733E-4F9A-F62A-60E1-9D975E8AAD3D";
-createNode displayLayer -n "Elephant_Model3:layer1";
-	rename -uid "33995C1D-433B-0C25-54C8-E88F75579D65";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model3:layer2";
-	rename -uid "F94F93CA-49BF-65DD-43E3-00AFB1398BCF";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model3:Fixed_legs_0002:lambert3";
 	rename -uid "33C4FFAB-408D-16F3-50BB-A58E4EDB272A";
 createNode shadingEngine -n "Elephant_Model3:elephant_BodySG";
@@ -11864,9 +11534,6 @@ createNode materialInfo -n "Elephant_Model3:elephant1:materialInfo1";
 	rename -uid "B01C66EB-4F1E-6181-A117-36866A34116F";
 createNode lambert -n "Elephant_Model3:elephant1:elephant_BodySG2";
 	rename -uid "3BCAB2C0-4271-DE94-9FCE-CABE936B89B2";
-createNode displayLayer -n "Elephant_Model3:skeleton:layer1";
-	rename -uid "1A8C931A-43EF-FB58-B68E-05A3DE41271A";
-	setAttr ".do" 1;
 createNode condition -n "Elephant_Model3:condition1";
 	rename -uid "417ECBB8-4D5A-71F8-A7ED-6189346B6374";
 	setAttr ".op" 2;
@@ -11898,12 +11565,6 @@ createNode shadingEngine -n "Elephant_Model3:Eleplant_UV_Rigg_ready:pSphere1SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model3:Eleplant_UV_Rigg_ready:materialInfo2";
 	rename -uid "26B1C81D-4C86-A5D2-647A-A8BD45A008A5";
-createNode displayLayer -n "Elephant_Model3:Eleplant_UV_Rigg_ready:layer1";
-	rename -uid "76E8D4F4-4561-53BA-7B53-FBBDE976F20D";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model3:Eleplant_UV_Rigg_ready:layer2";
-	rename -uid "00DE50E8-468A-4F0E-4279-E09C83B2316F";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3";
 	rename -uid "5D61FFBB-44A3-B491-1A9A-F9A36E027658";
 createNode shadingEngine -n "Elephant_Model3:Eleplant_UV_Rigg_ready:elephant_BodySG";
@@ -12040,9 +11701,6 @@ createNode shadingEngine -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Right_Sleeve
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model3:Eleplant_UV_Rigg_ready:materialInfo15";
 	rename -uid "9E1ABF8A-4270-26EF-5EAB-38AE68878D1A";
-createNode displayLayer -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Bottom";
-	rename -uid "8CB752C8-4BD6-7AF8-9297-56A86EE53110";
-	setAttr ".do" 3;
 createNode lambert -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Right_Tusk";
 	rename -uid "43EF9F96-4F08-8332-52E3-4C9967FCA687";
 	setAttr ".c" -type "float3" 1 1 1 ;
@@ -12433,12 +12091,6 @@ createNode shadingEngine -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2";
 	rename -uid "F748AC93-4C7A-6606-10EE-75B0AF1AA59F";
-createNode displayLayer -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:layer1";
-	rename -uid "2DF471F2-46AA-790C-D1E2-A68E6EE890A6";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:layer2";
-	rename -uid "058769D2-4349-D5B6-E3BA-C6BF8458D556";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3";
 	rename -uid "DB6A0A01-4951-9AF8-5ACB-DC94A85F25FE";
 createNode shadingEngine -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG";
@@ -12511,12 +12163,6 @@ createNode shadingEngine -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arm
 	setAttr ".ro" yes;
 createNode materialInfo -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2";
 	rename -uid "FADAC403-47A4-F876-CC7C-4A89B564731E";
-createNode displayLayer -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1";
-	rename -uid "4872E98A-4ABA-7A8D-9120-66A9A0BA322E";
-	setAttr ".do" 1;
-createNode displayLayer -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2";
-	rename -uid "7BA6E18F-4C1B-0BAA-7F58-B392E5C54756";
-	setAttr ".do" 2;
 createNode lambert -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3";
 	rename -uid "D10D37E2-4AC3-CE0F-B662-2BA9FEC01D83";
 createNode shadingEngine -n "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG";
@@ -12706,12 +12352,6 @@ createNode nodeGraphEditorInfo -n "Elephant_Model3:MayaNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[7].x" -480.95236206054687;
 	setAttr ".tgi[0].ni[7].y" 315.47616577148437;
 	setAttr ".tgi[0].ni[7].nvs" 18304;
-createNode displayLayer -n "Elephant_Model3:layer3";
-	rename -uid "D243E076-49D4-BA59-209F-8B91C841E262";
-	setAttr ".do" 4;
-createNode displayLayer -n "Elephant_Model3:layer4";
-	rename -uid "3289E06F-4C41-C110-9A30-848B34364C81";
-	setAttr ".do" 5;
 createNode renderLayerManager -n "Microphone1_Model:renderLayerManager";
 	rename -uid "07C9B90B-48CE-0306-9CE0-22ACDE1A76C8";
 createNode renderLayer -n "Microphone1_Model:defaultRenderLayer";
@@ -12756,8 +12396,6 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "Coyote_Model:polySurface2SG.message" ":defaultLightSet.message";
@@ -14127,7 +13765,6 @@ connectAttr "Coyote_Model:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_e
 		;
 connectAttr "Coyote_Model:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Coyote_Model:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[1]" "Coyote_Model:elepant_rig_0011:layer1.id";
 connectAttr "Coyote_Model:polyTweak40.out" "Coyote_Model:polyMirror3.ip";
 connectAttr "Coyote_Model:polyMergeVert22.out" "Coyote_Model:polyTweak40.ip";
 connectAttr "Coyote_Model:polyMergeVert21.out" "Coyote_Model:polyMergeVert22.ip"
@@ -14187,10 +13824,6 @@ connectAttr "Coyote_Model:lp_elephant_Complete_0018:pSphere1SG.msg" "Coyote_Mode
 		;
 connectAttr "Coyote_Model:lp_elephant_Complete_0018:lambert2.msg" "Coyote_Model:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[3]" "Coyote_Model:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[2]" "Coyote_Model:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Coyote_Model:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Coyote_Model:lp_elephant_Complete_0018:elephant_BodySG.msg" "Coyote_Model:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -14220,8 +13853,6 @@ connectAttr "Elephant_Model:Fixed_legs_0002:lambert2.msg" "Elephant_Model:materi
 connectAttr "Elephant_Model:lambert2.oc" "Elephant_Model:pSphere1SG.ss";
 connectAttr "Elephant_Model:pSphere1SG.msg" "Elephant_Model:materialInfo2.sg";
 connectAttr "Elephant_Model:lambert2.msg" "Elephant_Model:materialInfo2.m";
-connectAttr "layerManager.dli[5]" "Elephant_Model:layer1.id";
-connectAttr "layerManager.dli[4]" "Elephant_Model:layer2.id";
 connectAttr "Elephant_Model:Fixed_legs_0002:lambert3.oc" "Elephant_Model:elephant_BodySG.ss"
 		;
 connectAttr "Elephant_Model:elephant_BodySG.msg" "Elephant_Model:materialInfo3.sg"
@@ -14249,7 +13880,6 @@ connectAttr "Elephant_Model:elephant1:elephant_BodySG1.msg" "Elephant_Model:elep
 		;
 connectAttr "Elephant_Model:elephant1:elephant_BodySG2.msg" "Elephant_Model:elephant1:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[6]" "Elephant_Model:skeleton:layer1.id";
 connectAttr "Elephant_Model:multiplyDivide1.ox" "Elephant_Model:condition1.ctr";
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:renderLayerManager.rlmi[0]" "Elephant_Model:Eleplant_UV_Rigg_ready:defaultRenderLayer.rlid"
 		;
@@ -14264,10 +13894,6 @@ connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:lambert2.oc" "Elephant_Model:
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:pSphere1SG.msg" "Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo2.sg"
 		;
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:lambert2.msg" "Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[8]" "Elephant_Model:Eleplant_UV_Rigg_ready:layer1.id"
-		;
-connectAttr "layerManager.dli[7]" "Elephant_Model:Eleplant_UV_Rigg_ready:layer2.id"
 		;
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3.oc" "Elephant_Model:Eleplant_UV_Rigg_ready:elephant_BodySG.ss"
 		;
@@ -14358,8 +13984,6 @@ connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve.oc" "Elephant_Mo
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve1.msg" "Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo15.sg"
 		;
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve.msg" "Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo15.m"
-		;
-connectAttr "layerManager.dli[9]" "Elephant_Model:Eleplant_UV_Rigg_ready:Bottom.id"
 		;
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Right_Tusk.oc" "Elephant_Model:Eleplant_UV_Rigg_ready:lambert4SG.ss"
 		;
@@ -14735,10 +14359,6 @@ connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:pSphere1SG.msg" 
 		;
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2.msg" "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[11]" "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:layer1.id"
-		;
-connectAttr "layerManager.dli[10]" "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:layer2.id"
-		;
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3.oc" "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.ss"
 		;
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.msg" "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo3.sg"
@@ -14788,10 +14408,6 @@ connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.oc" "E
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:pSphere1SG.msg" "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.sg"
 		;
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.msg" "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[13]" "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1.id"
-		;
-connectAttr "layerManager.dli[12]" "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2.id"
 		;
 connectAttr "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3.oc" "Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG.ss"
 		;
@@ -14905,8 +14521,6 @@ connectAttr "Elephant_Model:multiplyDivide1.msg" "Elephant_Model:MayaNodeEditorS
 		;
 connectAttr "Elephant_Model:condition1.msg" "Elephant_Model:MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "layerManager.dli[14]" "Elephant_Model:layer3.id";
-connectAttr "layerManager.dli[15]" "Elephant_Model:layer4.id";
 connectAttr "Coyote_Model1:renderLayerManager.rlmi[0]" "Coyote_Model1:defaultRenderLayer.rlid"
 		;
 connectAttr "Coyote_Model1:lambert2.oc" "Coyote_Model1:polySurface2SG.ss";
@@ -14928,7 +14542,6 @@ connectAttr "Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_
 		;
 connectAttr "Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[16]" "Coyote_Model1:elepant_rig_0011:layer1.id";
 connectAttr "Coyote_Model1:polyTweak40.out" "Coyote_Model1:polyMirror3.ip";
 connectAttr "Coyote_Model1:polyMergeVert22.out" "Coyote_Model1:polyTweak40.ip";
 connectAttr "Coyote_Model1:polyMergeVert21.out" "Coyote_Model1:polyMergeVert22.ip"
@@ -14996,10 +14609,6 @@ connectAttr "Coyote_Model1:lp_elephant_Complete_0018:pSphere1SG.msg" "Coyote_Mod
 		;
 connectAttr "Coyote_Model1:lp_elephant_Complete_0018:lambert2.msg" "Coyote_Model1:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[18]" "Coyote_Model1:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[17]" "Coyote_Model1:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Coyote_Model1:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Coyote_Model1:lp_elephant_Complete_0018:elephant_BodySG.msg" "Coyote_Model1:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -15029,8 +14638,6 @@ connectAttr "Elephant_Model1:Fixed_legs_0002:lambert2.msg" "Elephant_Model1:mate
 connectAttr "Elephant_Model1:lambert2.oc" "Elephant_Model1:pSphere1SG.ss";
 connectAttr "Elephant_Model1:pSphere1SG.msg" "Elephant_Model1:materialInfo2.sg";
 connectAttr "Elephant_Model1:lambert2.msg" "Elephant_Model1:materialInfo2.m";
-connectAttr "layerManager.dli[20]" "Elephant_Model1:layer1.id";
-connectAttr "layerManager.dli[19]" "Elephant_Model1:layer2.id";
 connectAttr "Elephant_Model1:Fixed_legs_0002:lambert3.oc" "Elephant_Model1:elephant_BodySG.ss"
 		;
 connectAttr "Elephant_Model1:elephant_BodySG.msg" "Elephant_Model1:materialInfo3.sg"
@@ -15058,7 +14665,6 @@ connectAttr "Elephant_Model1:elephant1:elephant_BodySG1.msg" "Elephant_Model1:el
 		;
 connectAttr "Elephant_Model1:elephant1:elephant_BodySG2.msg" "Elephant_Model1:elephant1:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[21]" "Elephant_Model1:skeleton:layer1.id";
 connectAttr "Elephant_Model1:multiplyDivide1.ox" "Elephant_Model1:condition1.ctr"
 		;
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:renderLayerManager.rlmi[0]" "Elephant_Model1:Eleplant_UV_Rigg_ready:defaultRenderLayer.rlid"
@@ -15074,10 +14680,6 @@ connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:lambert2.oc" "Elephant_Model
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:pSphere1SG.msg" "Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo2.sg"
 		;
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:lambert2.msg" "Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[23]" "Elephant_Model1:Eleplant_UV_Rigg_ready:layer1.id"
-		;
-connectAttr "layerManager.dli[22]" "Elephant_Model1:Eleplant_UV_Rigg_ready:layer2.id"
 		;
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3.oc" "Elephant_Model1:Eleplant_UV_Rigg_ready:elephant_BodySG.ss"
 		;
@@ -15168,8 +14770,6 @@ connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve.oc" "Elephant_M
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve1.msg" "Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo15.sg"
 		;
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve.msg" "Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo15.m"
-		;
-connectAttr "layerManager.dli[24]" "Elephant_Model1:Eleplant_UV_Rigg_ready:Bottom.id"
 		;
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Tusk.oc" "Elephant_Model1:Eleplant_UV_Rigg_ready:lambert4SG.ss"
 		;
@@ -15545,10 +15145,6 @@ connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:pSphere1SG.msg"
 		;
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2.msg" "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[26]" "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:layer1.id"
-		;
-connectAttr "layerManager.dli[25]" "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:layer2.id"
-		;
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3.oc" "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.ss"
 		;
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.msg" "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo3.sg"
@@ -15598,10 +15194,6 @@ connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.oc" "
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:pSphere1SG.msg" "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.sg"
 		;
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.msg" "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[28]" "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1.id"
-		;
-connectAttr "layerManager.dli[27]" "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2.id"
 		;
 connectAttr "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3.oc" "Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG.ss"
 		;
@@ -15715,8 +15307,6 @@ connectAttr "Elephant_Model1:multiplyDivide1.msg" "Elephant_Model1:MayaNodeEdito
 		;
 connectAttr "Elephant_Model1:condition1.msg" "Elephant_Model1:MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "layerManager.dli[29]" "Elephant_Model1:layer3.id";
-connectAttr "layerManager.dli[30]" "Elephant_Model1:layer4.id";
 connectAttr "Coyote_Model2:renderLayerManager.rlmi[0]" "Coyote_Model2:defaultRenderLayer.rlid"
 		;
 connectAttr "Coyote_Model2:lambert2.oc" "Coyote_Model2:polySurface2SG.ss";
@@ -15738,7 +15328,6 @@ connectAttr "Coyote_Model2:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_
 		;
 connectAttr "Coyote_Model2:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Coyote_Model2:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[31]" "Coyote_Model2:elepant_rig_0011:layer1.id";
 connectAttr "Coyote_Model2:polyTweak40.out" "Coyote_Model2:polyMirror3.ip";
 connectAttr "Coyote_Model2:polyMergeVert22.out" "Coyote_Model2:polyTweak40.ip";
 connectAttr "Coyote_Model2:polyMergeVert21.out" "Coyote_Model2:polyMergeVert22.ip"
@@ -15806,10 +15395,6 @@ connectAttr "Coyote_Model2:lp_elephant_Complete_0018:pSphere1SG.msg" "Coyote_Mod
 		;
 connectAttr "Coyote_Model2:lp_elephant_Complete_0018:lambert2.msg" "Coyote_Model2:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[33]" "Coyote_Model2:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[32]" "Coyote_Model2:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Coyote_Model2:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Coyote_Model2:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Coyote_Model2:lp_elephant_Complete_0018:elephant_BodySG.msg" "Coyote_Model2:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -15849,7 +15434,6 @@ connectAttr "Coyote_Model3:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_
 		;
 connectAttr "Coyote_Model3:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Coyote_Model3:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[34]" "Coyote_Model3:elepant_rig_0011:layer1.id";
 connectAttr "Coyote_Model3:polyTweak40.out" "Coyote_Model3:polyMirror3.ip";
 connectAttr "Coyote_Model3:polyMergeVert22.out" "Coyote_Model3:polyTweak40.ip";
 connectAttr "Coyote_Model3:polyMergeVert21.out" "Coyote_Model3:polyMergeVert22.ip"
@@ -15917,10 +15501,6 @@ connectAttr "Coyote_Model3:lp_elephant_Complete_0018:pSphere1SG.msg" "Coyote_Mod
 		;
 connectAttr "Coyote_Model3:lp_elephant_Complete_0018:lambert2.msg" "Coyote_Model3:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[36]" "Coyote_Model3:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[35]" "Coyote_Model3:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Coyote_Model3:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Coyote_Model3:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Coyote_Model3:lp_elephant_Complete_0018:elephant_BodySG.msg" "Coyote_Model3:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -15970,8 +15550,6 @@ connectAttr "Van_Model:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:lambert2.oc
 connectAttr "Van_Model:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_elephant_0002:elephant_geometrySG.msg" "Van_Model:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:materialInfo1.sg"
 		;
 connectAttr "Van_Model:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Van_Model:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
-		;
-connectAttr "layerManager.dli[37]" "Van_Model:Coyote_Model:elepant_rig_0011:layer1.id"
 		;
 connectAttr "Van_Model:Coyote_Model:polyTweak40.out" "Van_Model:Coyote_Model:polyMirror3.ip"
 		;
@@ -16051,10 +15629,6 @@ connectAttr "Van_Model:Coyote_Model:lp_elephant_Complete_0018:pSphere1SG.msg" "V
 		;
 connectAttr "Van_Model:Coyote_Model:lp_elephant_Complete_0018:lambert2.msg" "Van_Model:Coyote_Model:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[39]" "Van_Model:Coyote_Model:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[38]" "Van_Model:Coyote_Model:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Van_Model:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Van_Model:Coyote_Model:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Van_Model:Coyote_Model:lp_elephant_Complete_0018:elephant_BodySG.msg" "Van_Model:Coyote_Model:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -16087,8 +15661,6 @@ connectAttr "Van_Model:Elephant_Model:pSphere1SG.msg" "Van_Model:Elephant_Model:
 		;
 connectAttr "Van_Model:Elephant_Model:lambert2.msg" "Van_Model:Elephant_Model:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[41]" "Van_Model:Elephant_Model:layer1.id";
-connectAttr "layerManager.dli[40]" "Van_Model:Elephant_Model:layer2.id";
 connectAttr "Van_Model:Elephant_Model:Fixed_legs_0002:lambert3.oc" "Van_Model:Elephant_Model:elephant_BodySG.ss"
 		;
 connectAttr "Van_Model:Elephant_Model:elephant_BodySG.msg" "Van_Model:Elephant_Model:materialInfo3.sg"
@@ -16119,8 +15691,6 @@ connectAttr "Van_Model:Elephant_Model:elephant1:elephant_BodySG1.msg" "Van_Model
 		;
 connectAttr "Van_Model:Elephant_Model:elephant1:elephant_BodySG2.msg" "Van_Model:Elephant_Model:elephant1:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[42]" "Van_Model:Elephant_Model:skeleton:layer1.id"
-		;
 connectAttr "Van_Model:Elephant_Model:multiplyDivide1.ox" "Van_Model:Elephant_Model:condition1.ctr"
 		;
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:renderLayerManager.rlmi[0]" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:defaultRenderLayer.rlid"
@@ -16136,10 +15706,6 @@ connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert2.oc" "Van_M
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:pSphere1SG.msg" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo2.sg"
 		;
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert2.msg" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[44]" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:layer1.id"
-		;
-connectAttr "layerManager.dli[43]" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:layer2.id"
 		;
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3.oc" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:elephant_BodySG.ss"
 		;
@@ -16230,8 +15796,6 @@ connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve.oc" "V
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve1.msg" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo15.sg"
 		;
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve.msg" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:materialInfo15.m"
-		;
-connectAttr "layerManager.dli[45]" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Bottom.id"
 		;
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Tusk.oc" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert4SG.ss"
 		;
@@ -16607,10 +16171,6 @@ connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:pSpher
 		;
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2.msg" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[47]" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:layer1.id"
-		;
-connectAttr "layerManager.dli[46]" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:layer2.id"
-		;
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3.oc" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.ss"
 		;
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.msg" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo3.sg"
@@ -16660,10 +16220,6 @@ connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambe
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:pSphere1SG.msg" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.sg"
 		;
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.msg" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[49]" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1.id"
-		;
-connectAttr "layerManager.dli[48]" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2.id"
 		;
 connectAttr "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3.oc" "Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG.ss"
 		;
@@ -16777,8 +16333,6 @@ connectAttr "Van_Model:Elephant_Model:multiplyDivide1.msg" "Van_Model:Elephant_M
 		;
 connectAttr "Van_Model:Elephant_Model:condition1.msg" "Van_Model:Elephant_Model:MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "layerManager.dli[50]" "Van_Model:Elephant_Model:layer3.id";
-connectAttr "layerManager.dli[51]" "Van_Model:Elephant_Model:layer4.id";
 connectAttr "Van_Model:Coyote_Model1:renderLayerManager.rlmi[0]" "Van_Model:Coyote_Model1:defaultRenderLayer.rlid"
 		;
 connectAttr "Van_Model:Coyote_Model1:lambert2.oc" "Van_Model:Coyote_Model1:polySurface2SG.ss"
@@ -16808,8 +16362,6 @@ connectAttr "Van_Model:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:lambert2.o
 connectAttr "Van_Model:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_elephant_0002:elephant_geometrySG.msg" "Van_Model:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:materialInfo1.sg"
 		;
 connectAttr "Van_Model:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Van_Model:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
-		;
-connectAttr "layerManager.dli[52]" "Van_Model:Coyote_Model1:elepant_rig_0011:layer1.id"
 		;
 connectAttr "Van_Model:Coyote_Model1:polyTweak40.out" "Van_Model:Coyote_Model1:polyMirror3.ip"
 		;
@@ -16889,10 +16441,6 @@ connectAttr "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:pSphere1SG.msg" "
 		;
 connectAttr "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:lambert2.msg" "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[54]" "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[53]" "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:elephant_BodySG.msg" "Van_Model:Coyote_Model1:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -16925,8 +16473,6 @@ connectAttr "Van_Model:Elephant_Model1:pSphere1SG.msg" "Van_Model:Elephant_Model
 		;
 connectAttr "Van_Model:Elephant_Model1:lambert2.msg" "Van_Model:Elephant_Model1:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[56]" "Van_Model:Elephant_Model1:layer1.id";
-connectAttr "layerManager.dli[55]" "Van_Model:Elephant_Model1:layer2.id";
 connectAttr "Van_Model:Elephant_Model1:Fixed_legs_0002:lambert3.oc" "Van_Model:Elephant_Model1:elephant_BodySG.ss"
 		;
 connectAttr "Van_Model:Elephant_Model1:elephant_BodySG.msg" "Van_Model:Elephant_Model1:materialInfo3.sg"
@@ -16957,8 +16503,6 @@ connectAttr "Van_Model:Elephant_Model1:elephant1:elephant_BodySG1.msg" "Van_Mode
 		;
 connectAttr "Van_Model:Elephant_Model1:elephant1:elephant_BodySG2.msg" "Van_Model:Elephant_Model1:elephant1:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[57]" "Van_Model:Elephant_Model1:skeleton:layer1.id"
-		;
 connectAttr "Van_Model:Elephant_Model1:multiplyDivide1.ox" "Van_Model:Elephant_Model1:condition1.ctr"
 		;
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:renderLayerManager.rlmi[0]" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:defaultRenderLayer.rlid"
@@ -16974,10 +16518,6 @@ connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert2.oc" "Van_
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:pSphere1SG.msg" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo2.sg"
 		;
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert2.msg" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[59]" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:layer1.id"
-		;
-connectAttr "layerManager.dli[58]" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:layer2.id"
 		;
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3.oc" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:elephant_BodySG.ss"
 		;
@@ -17068,8 +16608,6 @@ connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve.oc" "
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve1.msg" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo15.sg"
 		;
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve.msg" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:materialInfo15.m"
-		;
-connectAttr "layerManager.dli[60]" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Bottom.id"
 		;
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Tusk.oc" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert4SG.ss"
 		;
@@ -17445,10 +16983,6 @@ connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:pSphe
 		;
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2.msg" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[62]" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:layer1.id"
-		;
-connectAttr "layerManager.dli[61]" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:layer2.id"
-		;
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3.oc" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.ss"
 		;
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.msg" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo3.sg"
@@ -17498,10 +17032,6 @@ connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lamb
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:pSphere1SG.msg" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.sg"
 		;
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.msg" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[64]" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1.id"
-		;
-connectAttr "layerManager.dli[63]" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2.id"
 		;
 connectAttr "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3.oc" "Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG.ss"
 		;
@@ -17615,8 +17145,6 @@ connectAttr "Van_Model:Elephant_Model1:multiplyDivide1.msg" "Van_Model:Elephant_
 		;
 connectAttr "Van_Model:Elephant_Model1:condition1.msg" "Van_Model:Elephant_Model1:MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "layerManager.dli[65]" "Van_Model:Elephant_Model1:layer3.id";
-connectAttr "layerManager.dli[66]" "Van_Model:Elephant_Model1:layer4.id";
 connectAttr "Stage_Model:renderLayerManager.rlmi[0]" "Stage_Model:defaultRenderLayer.rlid"
 		;
 connectAttr "Stage_Model:speakers_uv_maya:renderLayerManager.rlmi[0]" "Stage_Model:speakers_uv_maya:defaultRenderLayer.rlid"
@@ -17741,7 +17269,6 @@ connectAttr "Stage_Model:front_arch_shader.msg" "Stage_Model:materialInfo4.m";
 connectAttr "Stage_Model:new_floor.oc" "Stage_Model:lambert5SG.ss";
 connectAttr "Stage_Model:lambert5SG.msg" "Stage_Model:materialInfo5.sg";
 connectAttr "Stage_Model:new_floor.msg" "Stage_Model:materialInfo5.m";
-connectAttr "layerManager.dli[67]" "Stage_Model:layer1.id";
 connectAttr "Stage_Model:arches1.oc" "Stage_Model:lambert6SG.ss";
 connectAttr "Stage_Model:lambert6SG.msg" "Stage_Model:materialInfo6.sg";
 connectAttr "Stage_Model:arches1.msg" "Stage_Model:materialInfo6.m";
@@ -17772,7 +17299,6 @@ connectAttr "Coyote_Model4:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_
 		;
 connectAttr "Coyote_Model4:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Coyote_Model4:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[68]" "Coyote_Model4:elepant_rig_0011:layer1.id";
 connectAttr "Coyote_Model4:polyTweak40.out" "Coyote_Model4:polyMirror3.ip";
 connectAttr "Coyote_Model4:polyMergeVert22.out" "Coyote_Model4:polyTweak40.ip";
 connectAttr "Coyote_Model4:polyMergeVert21.out" "Coyote_Model4:polyMergeVert22.ip"
@@ -17840,10 +17366,6 @@ connectAttr "Coyote_Model4:lp_elephant_Complete_0018:pSphere1SG.msg" "Coyote_Mod
 		;
 connectAttr "Coyote_Model4:lp_elephant_Complete_0018:lambert2.msg" "Coyote_Model4:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[70]" "Coyote_Model4:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[69]" "Coyote_Model4:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Coyote_Model4:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Coyote_Model4:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Coyote_Model4:lp_elephant_Complete_0018:elephant_BodySG.msg" "Coyote_Model4:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -17873,8 +17395,6 @@ connectAttr "Elephant_Model2:Fixed_legs_0002:lambert2.msg" "Elephant_Model2:mate
 connectAttr "Elephant_Model2:lambert2.oc" "Elephant_Model2:pSphere1SG.ss";
 connectAttr "Elephant_Model2:pSphere1SG.msg" "Elephant_Model2:materialInfo2.sg";
 connectAttr "Elephant_Model2:lambert2.msg" "Elephant_Model2:materialInfo2.m";
-connectAttr "layerManager.dli[72]" "Elephant_Model2:layer1.id";
-connectAttr "layerManager.dli[71]" "Elephant_Model2:layer2.id";
 connectAttr "Elephant_Model2:Fixed_legs_0002:lambert3.oc" "Elephant_Model2:elephant_BodySG.ss"
 		;
 connectAttr "Elephant_Model2:elephant_BodySG.msg" "Elephant_Model2:materialInfo3.sg"
@@ -17902,7 +17422,6 @@ connectAttr "Elephant_Model2:elephant1:elephant_BodySG1.msg" "Elephant_Model2:el
 		;
 connectAttr "Elephant_Model2:elephant1:elephant_BodySG2.msg" "Elephant_Model2:elephant1:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[73]" "Elephant_Model2:skeleton:layer1.id";
 connectAttr "Elephant_Model2:multiplyDivide1.ox" "Elephant_Model2:condition1.ctr"
 		;
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:renderLayerManager.rlmi[0]" "Elephant_Model2:Eleplant_UV_Rigg_ready:defaultRenderLayer.rlid"
@@ -17918,10 +17437,6 @@ connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:lambert2.oc" "Elephant_Model
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:pSphere1SG.msg" "Elephant_Model2:Eleplant_UV_Rigg_ready:materialInfo2.sg"
 		;
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:lambert2.msg" "Elephant_Model2:Eleplant_UV_Rigg_ready:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[75]" "Elephant_Model2:Eleplant_UV_Rigg_ready:layer1.id"
-		;
-connectAttr "layerManager.dli[74]" "Elephant_Model2:Eleplant_UV_Rigg_ready:layer2.id"
 		;
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3.oc" "Elephant_Model2:Eleplant_UV_Rigg_ready:elephant_BodySG.ss"
 		;
@@ -18012,8 +17527,6 @@ connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Right_Sleeve.oc" "Elephant_M
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Right_Sleeve1.msg" "Elephant_Model2:Eleplant_UV_Rigg_ready:materialInfo15.sg"
 		;
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Right_Sleeve.msg" "Elephant_Model2:Eleplant_UV_Rigg_ready:materialInfo15.m"
-		;
-connectAttr "layerManager.dli[76]" "Elephant_Model2:Eleplant_UV_Rigg_ready:Bottom.id"
 		;
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Right_Tusk.oc" "Elephant_Model2:Eleplant_UV_Rigg_ready:lambert4SG.ss"
 		;
@@ -18389,10 +17902,6 @@ connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:pSphere1SG.msg"
 		;
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2.msg" "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[78]" "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:layer1.id"
-		;
-connectAttr "layerManager.dli[77]" "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:layer2.id"
-		;
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3.oc" "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.ss"
 		;
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.msg" "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo3.sg"
@@ -18442,10 +17951,6 @@ connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.oc" "
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:pSphere1SG.msg" "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.sg"
 		;
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.msg" "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[80]" "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1.id"
-		;
-connectAttr "layerManager.dli[79]" "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2.id"
 		;
 connectAttr "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3.oc" "Elephant_Model2:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG.ss"
 		;
@@ -18559,8 +18064,6 @@ connectAttr "Elephant_Model2:multiplyDivide1.msg" "Elephant_Model2:MayaNodeEdito
 		;
 connectAttr "Elephant_Model2:condition1.msg" "Elephant_Model2:MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "layerManager.dli[81]" "Elephant_Model2:layer3.id";
-connectAttr "layerManager.dli[82]" "Elephant_Model2:layer4.id";
 connectAttr "Default_Material.oc" "polySurface77SG.ss";
 connectAttr "polySurface77SG.msg" "materialInfo1.sg";
 connectAttr "Default_Material.msg" "materialInfo1.m";
@@ -18588,7 +18091,6 @@ connectAttr "lambert20.msg" "materialInfo8.m";
 connectAttr "blinn4.oc" "BodySG.ss";
 connectAttr "BodySG.msg" "materialInfo9.sg";
 connectAttr "blinn4.msg" "materialInfo9.m";
-connectAttr "layerManager.dli[83]" "Coyote.id";
 connectAttr "Guitar_Model_01:renderLayerManager.rlmi[0]" "Guitar_Model_01:defaultRenderLayer.rlid"
 		;
 connectAttr "Guitar_Model_01:blinn1SG.msg" "Guitar_Model_01:materialInfo1.sg";
@@ -18635,7 +18137,6 @@ connectAttr "Guitar_Model_01:lambert12SG.msg" "Guitar_Model_01:materialInfo14.sg
 		;
 connectAttr "Guitar_Model_01:lambert13SG.msg" "Guitar_Model_01:materialInfo15.sg"
 		;
-connectAttr "layerManager.dli[84]" "Guitar_Model_01:Coyote.id";
 connectAttr "Guitar_Model_01:blinn4.oc" "Guitar_Model_01:blinn4SG.ss";
 connectAttr "Guitar_Model_01:blinn4SG.msg" "Guitar_Model_01:materialInfo16.sg";
 connectAttr "Guitar_Model_01:blinn4.msg" "Guitar_Model_01:materialInfo16.m";
@@ -18712,7 +18213,6 @@ connectAttr "Guitar_Model_02:lambert12SG.msg" "Guitar_Model_02:materialInfo14.sg
 		;
 connectAttr "Guitar_Model_02:lambert13SG.msg" "Guitar_Model_02:materialInfo15.sg"
 		;
-connectAttr "layerManager.dli[85]" "Guitar_Model_02:Coyote.id";
 connectAttr "Guitar_Model_02:blinn4.oc" "Guitar_Model_02:blinn4SG.ss";
 connectAttr "Guitar_Model_02:blinn4SG.msg" "Guitar_Model_02:materialInfo16.sg";
 connectAttr "Guitar_Model_02:blinn4.msg" "Guitar_Model_02:materialInfo16.m";
@@ -18764,7 +18264,6 @@ connectAttr "Coyote_Model5:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_
 		;
 connectAttr "Coyote_Model5:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Coyote_Model5:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[86]" "Coyote_Model5:elepant_rig_0011:layer1.id";
 connectAttr ":timeEditor.cmp[0]" "Coyote_Model5:elepant_rig_0011:Composition1.cmp"
 		;
 connectAttr "Coyote_Model5:polyTweak40.out" "Coyote_Model5:polyMirror3.ip";
@@ -18834,10 +18333,6 @@ connectAttr "Coyote_Model5:lp_elephant_Complete_0018:pSphere1SG.msg" "Coyote_Mod
 		;
 connectAttr "Coyote_Model5:lp_elephant_Complete_0018:lambert2.msg" "Coyote_Model5:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[88]" "Coyote_Model5:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[87]" "Coyote_Model5:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Coyote_Model5:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Coyote_Model5:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Coyote_Model5:lp_elephant_Complete_0018:elephant_BodySG.msg" "Coyote_Model5:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -18902,7 +18397,6 @@ connectAttr "Guitar_Model_03:lambert12SG.msg" "Guitar_Model_03:materialInfo14.sg
 		;
 connectAttr "Guitar_Model_03:lambert13SG.msg" "Guitar_Model_03:materialInfo15.sg"
 		;
-connectAttr "layerManager.dli[89]" "Guitar_Model_03:Coyote.id";
 connectAttr "Guitar_Model_03:blinn4.oc" "Guitar_Model_03:blinn4SG.ss";
 connectAttr "Guitar_Model_03:blinn4SG.msg" "Guitar_Model_03:materialInfo16.sg";
 connectAttr "Guitar_Model_03:blinn4.msg" "Guitar_Model_03:materialInfo16.m";
@@ -18954,7 +18448,6 @@ connectAttr "Coyote_Model6:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_
 		;
 connectAttr "Coyote_Model6:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Coyote_Model6:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[90]" "Coyote_Model6:elepant_rig_0011:layer1.id";
 connectAttr ":timeEditor.cmp[1]" "Coyote_Model6:elepant_rig_0011:Composition1.cmp"
 		;
 connectAttr "Coyote_Model6:polyTweak40.out" "Coyote_Model6:polyMirror3.ip";
@@ -19024,10 +18517,6 @@ connectAttr "Coyote_Model6:lp_elephant_Complete_0018:pSphere1SG.msg" "Coyote_Mod
 		;
 connectAttr "Coyote_Model6:lp_elephant_Complete_0018:lambert2.msg" "Coyote_Model6:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[92]" "Coyote_Model6:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[91]" "Coyote_Model6:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Coyote_Model6:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Coyote_Model6:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Coyote_Model6:lp_elephant_Complete_0018:elephant_BodySG.msg" "Coyote_Model6:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -19063,10 +18552,6 @@ connectAttr "Piano_Model:lp_elephant_Complete_0018:lambert2.oc" "Piano_Model:lp_
 connectAttr "Piano_Model:lp_elephant_Complete_0018:pSphere1SG.msg" "Piano_Model:lp_elephant_Complete_0018:materialInfo2.sg"
 		;
 connectAttr "Piano_Model:lp_elephant_Complete_0018:lambert2.msg" "Piano_Model:lp_elephant_Complete_0018:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[94]" "Piano_Model:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[93]" "Piano_Model:lp_elephant_Complete_0018:layer2.id"
 		;
 connectAttr "Piano_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Piano_Model:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
@@ -19115,8 +18600,6 @@ connectAttr "Piano_Model:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:la
 connectAttr "Piano_Model:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_elephant_0002:elephant_geometrySG.msg" "Piano_Model:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:materialInfo1.sg"
 		;
 connectAttr "Piano_Model:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Piano_Model:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
-		;
-connectAttr "layerManager.dli[95]" "Piano_Model:Female_Coyote_Final:elepant_rig_0011:layer1.id"
 		;
 connectAttr ":timeEditor.cmp[2]" "Piano_Model:Female_Coyote_Final:elepant_rig_0011:Composition1.cmp"
 		;
@@ -19198,10 +18681,6 @@ connectAttr "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:pSphere1S
 		;
 connectAttr "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:lambert2.msg" "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[97]" "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[96]" "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:elephant_BodySG.msg" "Piano_Model:Female_Coyote_Final:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -19238,10 +18717,6 @@ connectAttr "Piano_Model:Piano_12:lp_elephant_Complete_0018:lambert2.oc" "Piano_
 connectAttr "Piano_Model:Piano_12:lp_elephant_Complete_0018:pSphere1SG.msg" "Piano_Model:Piano_12:lp_elephant_Complete_0018:materialInfo2.sg"
 		;
 connectAttr "Piano_Model:Piano_12:lp_elephant_Complete_0018:lambert2.msg" "Piano_Model:Piano_12:lp_elephant_Complete_0018:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[99]" "Piano_Model:Piano_12:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[98]" "Piano_Model:Piano_12:lp_elephant_Complete_0018:layer2.id"
 		;
 connectAttr "Piano_Model:Piano_12:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Piano_Model:Piano_12:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
@@ -19290,8 +18765,6 @@ connectAttr "Piano_Model:Piano_12:Female_Coyote_Final:elepant_rig_0011:Fixed_leg
 connectAttr "Piano_Model:Piano_12:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:maleElephant:female_elephant_0002:elephant_geometrySG.msg" "Piano_Model:Piano_12:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:materialInfo1.sg"
 		;
 connectAttr "Piano_Model:Piano_12:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" "Piano_Model:Piano_12:Female_Coyote_Final:elepant_rig_0011:Fixed_legs_0002:materialInfo1.m"
-		;
-connectAttr "layerManager.dli[100]" "Piano_Model:Piano_12:Female_Coyote_Final:elepant_rig_0011:layer1.id"
 		;
 connectAttr ":timeEditor.cmp[3]" "Piano_Model:Piano_12:Female_Coyote_Final:elepant_rig_0011:Composition1.cmp"
 		;
@@ -19373,10 +18846,6 @@ connectAttr "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:
 		;
 connectAttr "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:lambert2.msg" "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[102]" "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:layer1.id"
-		;
-connectAttr "layerManager.dli[101]" "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:layer2.id"
-		;
 connectAttr "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.oc" "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:elephant_BodySG.ss"
 		;
 connectAttr "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:elephant_BodySG.msg" "Piano_Model:Piano_12:Female_Coyote_Final:lp_elephant_Complete_0018:materialInfo3.sg"
@@ -19414,8 +18883,6 @@ connectAttr "Elephant_Model3:Fixed_legs_0002:lambert2.msg" "Elephant_Model3:mate
 connectAttr "Elephant_Model3:lambert2.oc" "Elephant_Model3:pSphere1SG.ss";
 connectAttr "Elephant_Model3:pSphere1SG.msg" "Elephant_Model3:materialInfo2.sg";
 connectAttr "Elephant_Model3:lambert2.msg" "Elephant_Model3:materialInfo2.m";
-connectAttr "layerManager.dli[104]" "Elephant_Model3:layer1.id";
-connectAttr "layerManager.dli[103]" "Elephant_Model3:layer2.id";
 connectAttr "Elephant_Model3:Fixed_legs_0002:lambert3.oc" "Elephant_Model3:elephant_BodySG.ss"
 		;
 connectAttr "Elephant_Model3:elephant_BodySG.msg" "Elephant_Model3:materialInfo3.sg"
@@ -19443,7 +18910,6 @@ connectAttr "Elephant_Model3:elephant1:elephant_BodySG1.msg" "Elephant_Model3:el
 		;
 connectAttr "Elephant_Model3:elephant1:elephant_BodySG2.msg" "Elephant_Model3:elephant1:materialInfo1.m"
 		;
-connectAttr "layerManager.dli[105]" "Elephant_Model3:skeleton:layer1.id";
 connectAttr "Elephant_Model3:multiplyDivide1.ox" "Elephant_Model3:condition1.ctr"
 		;
 connectAttr ":timeEditor.cmp[4]" "Elephant_Model3:Composition1.cmp";
@@ -19460,10 +18926,6 @@ connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:lambert2.oc" "Elephant_Model
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:pSphere1SG.msg" "Elephant_Model3:Eleplant_UV_Rigg_ready:materialInfo2.sg"
 		;
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:lambert2.msg" "Elephant_Model3:Eleplant_UV_Rigg_ready:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[107]" "Elephant_Model3:Eleplant_UV_Rigg_ready:layer1.id"
-		;
-connectAttr "layerManager.dli[106]" "Elephant_Model3:Eleplant_UV_Rigg_ready:layer2.id"
 		;
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3.oc" "Elephant_Model3:Eleplant_UV_Rigg_ready:elephant_BodySG.ss"
 		;
@@ -19554,8 +19016,6 @@ connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Right_Sleeve.oc" "Elephant_M
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Right_Sleeve1.msg" "Elephant_Model3:Eleplant_UV_Rigg_ready:materialInfo15.sg"
 		;
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Right_Sleeve.msg" "Elephant_Model3:Eleplant_UV_Rigg_ready:materialInfo15.m"
-		;
-connectAttr "layerManager.dli[108]" "Elephant_Model3:Eleplant_UV_Rigg_ready:Bottom.id"
 		;
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Right_Tusk.oc" "Elephant_Model3:Eleplant_UV_Rigg_ready:lambert4SG.ss"
 		;
@@ -19931,10 +19391,6 @@ connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:pSphere1SG.msg"
 		;
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2.msg" "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo2.m"
 		;
-connectAttr "layerManager.dli[110]" "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:layer1.id"
-		;
-connectAttr "layerManager.dli[109]" "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:layer2.id"
-		;
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3.oc" "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.ss"
 		;
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:elephant_BodySG.msg" "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_bow:materialInfo3.sg"
@@ -19984,10 +19440,6 @@ connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.oc" "
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:pSphere1SG.msg" "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.sg"
 		;
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.msg" "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:materialInfo2.m"
-		;
-connectAttr "layerManager.dli[112]" "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:layer1.id"
-		;
-connectAttr "layerManager.dli[111]" "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:layer2.id"
 		;
 connectAttr "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3.oc" "Elephant_Model3:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant_BodySG.ss"
 		;
@@ -20103,8 +19555,6 @@ connectAttr "Elephant_Model3:multiplyDivide1.msg" "Elephant_Model3:MayaNodeEdito
 		;
 connectAttr "Elephant_Model3:condition1.msg" "Elephant_Model3:MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
-connectAttr "layerManager.dli[113]" "Elephant_Model3:layer3.id";
-connectAttr "layerManager.dli[114]" "Elephant_Model3:layer4.id";
 connectAttr "Microphone1_Model:renderLayerManager.rlmi[0]" "Microphone1_Model:defaultRenderLayer.rlid"
 		;
 connectAttr "FloorMonitor_Model:renderLayerManager.rlmi[0]" "FloorMonitor_Model:defaultRenderLayer.rlid"
