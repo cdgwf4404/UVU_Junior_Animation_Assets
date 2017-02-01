@@ -1,10 +1,6 @@
 //Maya ASCII 2017 scene
-//Name: Piano_Rig_07.ma
-<<<<<<< HEAD
-//Last modified: Wed, Feb 01, 2017 12:50:43 PM
-=======
-//Last modified: Wed, Feb 01, 2017 12:28:39 PM
->>>>>>> KeytarUVAndPianoRig_AW
+//Name: Piano_Rig_05.ma
+//Last modified: Tue, Jan 31, 2017 10:36:13 PM
 //Codeset: 1252
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -18,13 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "460FEA4B-426F-84C2-8D4E-1F863D3CDA89";
 	setAttr ".v" no;
-<<<<<<< HEAD
-	setAttr ".t" -type "double3" 2.2478908357821612 1.2823754995792345 3.0017267981084275 ;
-	setAttr ".r" -type "double3" 5027.0616499446578 -30543.799999965253 1.4293455654348845e-015 ;
-=======
-	setAttr ".t" -type "double3" -0.091819952024231391 1.4630390557295465 6.5423773065021944 ;
-	setAttr ".r" -type "double3" 5025.2616499460028 -30600.599999967792 4.9698891919352202e-017 ;
->>>>>>> KeytarUVAndPianoRig_AW
+	setAttr ".t" -type "double3" 1.0687170633830467 2.8013155619463435 3.5187033919473101 ;
+	setAttr ".r" -type "double3" 5007.8616499463787 -30590.999999971358 -8.0505017397463535e-016 ;
 	setAttr ".rp" -type "double3" 4.263256414560601e-015 1.1368683772161603e-015 0 ;
 	setAttr ".rpt" -type "double3" -1.7791136619241236e-015 -8.5687404782866841e-017 
 		-2.9886812693771131e-015 ;
@@ -35,11 +26,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-<<<<<<< HEAD
-	setAttr ".coi" 2.3329361200669472;
-=======
-	setAttr ".coi" 5.3832840799631985;
->>>>>>> KeytarUVAndPianoRig_AW
+	setAttr ".coi" 3.6998802956915404;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -24837,7 +24824,6 @@ createNode parentConstraint -n "Piano_White_Keys_01_parentConstraint2" -p "Piano
 	setAttr ".tg[0].tot" -type "double3" 0.0022545333442768366 -0.00025512106875694938 
 		0.027487013713034116 ;
 	setAttr ".tg[0].tor" -type "double3" 0.53170667502109914 0 0 ;
-	setAttr ".lr" -type "double3" -0.06829332497890081 0 0 ;
 	setAttr ".rst" -type "double3" 4.263256414560601e-016 -4.263256414560601e-016 0 ;
 	setAttr -k on ".w0";
 createNode scaleConstraint -n "Piano_White_Keys_01_scaleConstraint1" -p "Piano_White_Keys_01";
@@ -54614,14 +54600,10 @@ createNode transform -n "Piano_White__Keys_Clusters_01_Joint_Ctrl" -p "Piano_Whi
 	rename -uid "6BCD0384-48A6-2C05-00EA-A58D9281D673";
 	addAttr -ci true -sn "FollowRotate" -ln "FollowRotate" -dv 1 -min 0 -max 1 -at "double";
 	setAttr -l on -k off ".v";
-	setAttr ".r" -type "double3" -0.6 0 0 ;
+	setAttr ".r" -type "double3" -0.53170667502109914 0 0 ;
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" -0.6 -45 -45 ;
-	setAttr ".mxrl" -type "double3" 2.63 45 45 ;
-	setAttr ".mrxe" yes;
-	setAttr ".xrxe" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_01_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_01_Joint_Ctrl";
 	rename -uid "9C957170-4314-3C2A-F350-18A550BFBBB6";
@@ -54648,14 +54630,6 @@ createNode transform -n "Piano_White__Keys_Clusters_02_Joint_Ctrl" -p "Piano_Whi
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_02_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_02_Joint_Ctrl";
 	rename -uid "484F7AD2-49AD-090E-53D5-F0AAAE72C750";
@@ -54682,14 +54656,6 @@ createNode transform -n "Piano_White__Keys_Clusters_03_Joint_Ctrl" -p "Piano_Whi
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_03_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_03_Joint_Ctrl";
 	rename -uid "46A0BBB0-4644-44CA-88A6-3F85F744256B";
@@ -54717,14 +54683,6 @@ createNode transform -n "Piano_White__Keys_Clusters_04_Joint_Ctrl" -p "Piano_Whi
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_04_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_04_Joint_Ctrl";
 	rename -uid "0FB8756A-436F-3C9F-CCEE-B09227B86A3F";
@@ -54751,14 +54709,6 @@ createNode transform -n "Piano_White__Keys_Clusters_05_Joint_Ctrl" -p "Piano_Whi
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_05_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_05_Joint_Ctrl";
 	rename -uid "00EB050A-45BA-36BE-77A5-04B923454BEC";
@@ -54785,14 +54735,6 @@ createNode transform -n "Piano_White__Keys_Clusters_06_Joint_Ctrl" -p "Piano_Whi
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_06_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_06_Joint_Ctrl";
 	rename -uid "466267C5-4FCC-09FF-BBA5-3496B729E9DC";
@@ -54819,14 +54761,6 @@ createNode transform -n "Piano_White__Keys_Clusters_07_Joint_Ctrl" -p "Piano_Whi
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_07_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_07_Joint_Ctrl";
 	rename -uid "8249D914-4BC1-5BC5-6754-BE9787841294";
@@ -54853,14 +54787,6 @@ createNode transform -n "Piano_White__Keys_Clusters_08_Joint_Ctrl" -p "Piano_Whi
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_08_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_08_Joint_Ctrl";
 	rename -uid "76E32B1E-4A39-A0D9-1AF3-8F8240741C32";
@@ -54887,14 +54813,6 @@ createNode transform -n "Piano_White__Keys_Clusters_09_Joint_Ctrl" -p "Piano_Whi
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_09_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_09_Joint_Ctrl";
 	rename -uid "1EA86427-4233-D3EE-F5AE-FDA7E896EFDA";
@@ -54921,14 +54839,6 @@ createNode transform -n "Piano_White__Keys_Clusters_010_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_010_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_010_Joint_Ctrl";
 	rename -uid "FB62C35E-4A6D-4C9D-8495-FB9548A7BDBE";
@@ -54955,14 +54865,6 @@ createNode transform -n "Piano_White__Keys_Clusters_011_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_011_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_011_Joint_Ctrl";
 	rename -uid "9A52CA88-4E4B-8E99-0240-54932A8F655E";
@@ -54989,14 +54891,6 @@ createNode transform -n "Piano_White__Keys_Clusters_012_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_012_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_012_Joint_Ctrl";
 	rename -uid "A1F2DB99-4935-7A6B-EE96-FD99CF555CC2";
@@ -55023,14 +54917,6 @@ createNode transform -n "Piano_White__Keys_Clusters_013_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_013_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_013_Joint_Ctrl";
 	rename -uid "D2D6179C-4007-6B72-371F-C1AA2294E1BB";
@@ -55057,14 +54943,6 @@ createNode transform -n "Piano_White__Keys_Clusters_014_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_014_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_014_Joint_Ctrl";
 	rename -uid "9E98AE79-4D9A-9FC6-EBE4-239BFF1FA45D";
@@ -55091,14 +54969,6 @@ createNode transform -n "Piano_White__Keys_Clusters_015_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_015_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_015_Joint_Ctrl";
 	rename -uid "02A61808-4E71-6238-2F44-80977D390050";
@@ -55125,14 +54995,6 @@ createNode transform -n "Piano_White__Keys_Clusters_016_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_016_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_016_Joint_Ctrl";
 	rename -uid "0D407FAC-4021-D451-316F-1498A2050721";
@@ -55159,14 +55021,6 @@ createNode transform -n "Piano_White__Keys_Clusters_017_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_017_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_017_Joint_Ctrl";
 	rename -uid "8EAADA62-4370-C0F1-EA53-2296E1D72E8B";
@@ -55193,14 +55047,6 @@ createNode transform -n "Piano_White__Keys_Clusters_018_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_018_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_018_Joint_Ctrl";
 	rename -uid "9B329A6D-44C3-2A10-01BA-8F8C46F78036";
@@ -55227,14 +55073,6 @@ createNode transform -n "Piano_White__Keys_Clusters_019_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_019_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_019_Joint_Ctrl";
 	rename -uid "C57F9B41-4A8F-C4DB-1B54-D78CF5B5BFDF";
@@ -55261,14 +55099,6 @@ createNode transform -n "Piano_White__Keys_Clusters_020_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_020_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_020_Joint_Ctrl";
 	rename -uid "D5CF4A0B-43A6-7243-67AE-DD830ECC95BB";
@@ -55296,14 +55126,6 @@ createNode transform -n "Piano_White__Keys_Clusters_021_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_021_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_021_Joint_Ctrl";
 	rename -uid "07B30E92-492F-7259-F776-01B4C07BB54A";
@@ -55331,14 +55153,6 @@ createNode transform -n "Piano_White__Keys_Clusters_022_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_022_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_022_Joint_Ctrl";
 	rename -uid "025DD708-4476-3EFD-C984-EC81DBA8EE5D";
@@ -55366,14 +55180,6 @@ createNode transform -n "Piano_White__Keys_Clusters_023_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_023_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_023_Joint_Ctrl";
 	rename -uid "FB549D7E-434C-FA22-3C54-B996FE52C04F";
@@ -55401,14 +55207,6 @@ createNode transform -n "Piano_White__Keys_Clusters_024_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_024_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_024_Joint_Ctrl";
 	rename -uid "3DADD60A-44A7-8A09-E6B4-808DDE43E80D";
@@ -55436,14 +55234,6 @@ createNode transform -n "Piano_White__Keys_Clusters_025_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_025_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_025_Joint_Ctrl";
 	rename -uid "18678A78-447D-1DD4-7AEB-8D93590C94A6";
@@ -55471,14 +55261,6 @@ createNode transform -n "Piano_White__Keys_Clusters_026_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_026_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_026_Joint_Ctrl";
 	rename -uid "80A3DD49-4FD0-CD66-5DC5-078456CA6317";
@@ -55506,14 +55288,6 @@ createNode transform -n "Piano_White__Keys_Clusters_027_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_027_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_027_Joint_Ctrl";
 	rename -uid "FE20ED67-4E17-A741-E6D6-B9B1D3EF3ABF";
@@ -55541,14 +55315,6 @@ createNode transform -n "Piano_White__Keys_Clusters_028_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_028_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_028_Joint_Ctrl";
 	rename -uid "96EC3A43-479E-C142-24D1-0E9D76CBE731";
@@ -55576,14 +55342,6 @@ createNode transform -n "Piano_White__Keys_Clusters_029_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_029_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_029_Joint_Ctrl";
 	rename -uid "982FC2D3-4D99-A0F0-CCDF-98AEB309EAAF";
@@ -55611,14 +55369,6 @@ createNode transform -n "Piano_White__Keys_Clusters_030_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_030_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_030_Joint_Ctrl";
 	rename -uid "EEBA2ACF-4F10-EA00-6C9A-0792238320F0";
@@ -55646,14 +55396,6 @@ createNode transform -n "Piano_White__Keys_Clusters_031_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_031_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_031_Joint_Ctrl";
 	rename -uid "2888F08C-4D04-D6A3-010C-EDBA0678CD04";
@@ -55681,14 +55423,6 @@ createNode transform -n "Piano_White__Keys_Clusters_032_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_032_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_032_Joint_Ctrl";
 	rename -uid "D9BB1FEF-4706-680D-12DA-26BBE0E09803";
@@ -55716,14 +55450,6 @@ createNode transform -n "Piano_White__Keys_Clusters_033_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_033_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_033_Joint_Ctrl";
 	rename -uid "41A5A774-4BE3-479C-421B-FFB840E297C4";
@@ -55751,14 +55477,6 @@ createNode transform -n "Piano_White__Keys_Clusters_034_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_034_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_034_Joint_Ctrl";
 	rename -uid "ACF3A8CC-4FC5-10BE-C1D9-CEAD90BB69B0";
@@ -55786,14 +55504,6 @@ createNode transform -n "Piano_White__Keys_Clusters_035_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_035_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_035_Joint_Ctrl";
 	rename -uid "701BA49A-4294-E61B-99F5-E3852E7F1C9D";
@@ -55821,14 +55531,6 @@ createNode transform -n "Piano_White__Keys_Clusters_036_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_036_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_036_Joint_Ctrl";
 	rename -uid "CF87A8CD-4578-F26F-B7CA-87A384B023E9";
@@ -55856,14 +55558,6 @@ createNode transform -n "Piano_White__Keys_Clusters_037_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_037_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_037_Joint_Ctrl";
 	rename -uid "6AE09A09-456A-EB26-6BB7-18846D364780";
@@ -55891,14 +55585,6 @@ createNode transform -n "Piano_White__Keys_Clusters_038_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_038_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_038_Joint_Ctrl";
 	rename -uid "39F0D231-47DB-1120-F554-ABA8BA833CA6";
@@ -55926,14 +55612,6 @@ createNode transform -n "Piano_White__Keys_Clusters_039_Joint_Ctrl" -p "Piano_Wh
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 3.27 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_White__Keys_Clusters_039_Joint_CtrlShape" -p "Piano_White__Keys_Clusters_039_Joint_Ctrl";
 	rename -uid "F839CE10-4AFE-22EC-FC54-95A586DE9991";
@@ -55962,14 +55640,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_01_Joint_Ctrl" -p "Piano_Blac
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_01_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_01_Joint_Ctrl";
 	rename -uid "E9C725E6-48DD-873A-A731-0D9319CAE066";
@@ -55996,14 +55666,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_02_Joint_Ctrl" -p "Piano_Blac
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_02_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_02_Joint_Ctrl";
 	rename -uid "2CC2C4D7-489E-4B7C-1F13-638C92734CD4";
@@ -56030,14 +55692,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_03_Joint_Ctrl" -p "Piano_Blac
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_03_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_03_Joint_Ctrl";
 	rename -uid "DD382947-43DF-A7AF-FAC2-409E949B57E8";
@@ -56064,14 +55718,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_04_Joint_Ctrl" -p "Piano_Blac
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_04_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_04_Joint_Ctrl";
 	rename -uid "45CABE44-4512-1DCB-468C-00BF008381C2";
@@ -56098,14 +55744,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_05_Joint_Ctrl" -p "Piano_Blac
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_05_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_05_Joint_Ctrl";
 	rename -uid "C36F708A-4A90-F309-9282-74A9564A7B57";
@@ -56132,14 +55770,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_06_Joint_Ctrl" -p "Piano_Blac
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_06_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_06_Joint_Ctrl";
 	rename -uid "CAE4E4C7-437C-A733-D70E-D0A10543E288";
@@ -56166,14 +55796,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_07_Joint_Ctrl" -p "Piano_Blac
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_07_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_07_Joint_Ctrl";
 	rename -uid "C20FB9FB-4B0B-4702-8D7D-508D11C6905A";
@@ -56200,14 +55822,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_08_Joint_Ctrl" -p "Piano_Blac
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_08_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_08_Joint_Ctrl";
 	rename -uid "3DDECD07-4F51-DB5F-FB90-8C9202A9F63E";
@@ -56234,14 +55848,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_09_Joint_Ctrl" -p "Piano_Blac
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_09_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_09_Joint_Ctrl";
 	rename -uid "043DF8CD-495B-C344-FF6D-7FA758183768";
@@ -56268,14 +55874,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_010_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_010_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_010_Joint_Ctrl";
 	rename -uid "49CE4895-4379-9BB1-1AFB-1883E6DE62BB";
@@ -56302,14 +55900,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_011_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_011_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_011_Joint_Ctrl";
 	rename -uid "3B35D1D6-4C38-C8AC-FC1C-1DA42866D84C";
@@ -56336,14 +55926,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_012_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_012_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_012_Joint_Ctrl";
 	rename -uid "98E3669F-4308-A7D7-0165-FC9FA76B3FF0";
@@ -56370,14 +55952,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_013_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_013_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_013_Joint_Ctrl";
 	rename -uid "74DDB7E7-48C9-2AD1-B6FF-DFAD86A49968";
@@ -56404,14 +55978,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_014_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_014_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_014_Joint_Ctrl";
 	rename -uid "7B933136-46BF-ECC0-6EF6-519EE917BFCB";
@@ -56438,14 +56004,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_015_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_015_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_015_Joint_Ctrl";
 	rename -uid "8D79E0B8-466D-BFEC-35D9-E5B8A7452363";
@@ -56472,14 +56030,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_016_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_016_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_016_Joint_Ctrl";
 	rename -uid "73A28FD6-42F6-BB83-F7E1-B5B685AE5F81";
@@ -56506,14 +56056,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_017_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_017_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_017_Joint_Ctrl";
 	rename -uid "283A6F86-4525-F44D-608C-3EB512C65218";
@@ -56540,14 +56082,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_018_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_018_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_018_Joint_Ctrl";
 	rename -uid "9E4E0D89-400B-EF9A-1155-958A1F86AD59";
@@ -56574,14 +56108,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_019_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_019_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_019_Joint_Ctrl";
 	rename -uid "13B564C6-4ABE-9E85-E251-9AAE58FF7925";
@@ -56608,14 +56134,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_020_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_020_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_020_Joint_Ctrl";
 	rename -uid "0C731D6C-43F7-CC01-BA28-DDAEEDFC23B3";
@@ -56642,14 +56160,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_021_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_021_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_021_Joint_Ctrl";
 	rename -uid "10D30F01-4F7D-5C98-196F-C1B285E78D44";
@@ -56676,14 +56186,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_022_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_022_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_022_Joint_Ctrl";
 	rename -uid "809916C4-4C4A-FA45-37A8-04A7689DCCD9";
@@ -56710,14 +56212,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_023_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_023_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_023_Joint_Ctrl";
 	rename -uid "4808E461-40D8-152C-F3AE-2BBC17859885";
@@ -56744,14 +56238,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_024_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_024_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_024_Joint_Ctrl";
 	rename -uid "86FE111B-4DF5-DFFD-8892-3A932AD6A4C7";
@@ -56778,14 +56264,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_025_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_025_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_025_Joint_Ctrl";
 	rename -uid "3E1BA562-4CB1-481A-710E-438E419BD699";
@@ -56812,14 +56290,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_026_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_026_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_026_Joint_Ctrl";
 	rename -uid "5C0D079F-4E36-884C-9507-319BB462899B";
@@ -56846,14 +56316,6 @@ createNode transform -n "Piano_Black_Keys_Clusters_027_Joint_Ctrl" -p "Piano_Bla
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Black_Keys_Clusters_027_Joint_CtrlShape" -p "Piano_Black_Keys_Clusters_027_Joint_Ctrl";
 	rename -uid "E00260F9-4227-4A36-5C21-3B850E6FA4DA";
@@ -56880,14 +56342,6 @@ createNode transform -n "Piano_Lid_Ctrl" -p "Piano_Lid_Ctrl_Group";
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 -23.621 ;
-	setAttr ".mxrl" -type "double3" 0 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Lid_CtrlShape" -p "Piano_Lid_Ctrl";
 	rename -uid "9521C2D3-4A85-A7C6-D499-DCA9D3C7685D";
@@ -56942,14 +56396,6 @@ createNode transform -n "Piano_Pedal_01_Joint_Ctrl" -p "Piano_Pedal_01_Joint_Ctr
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 4.69 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Pedal_01_Joint_CtrlShape" -p "Piano_Pedal_01_Joint_Ctrl";
 	rename -uid "6E9B31EC-4360-8F22-ACF4-C99B703A52A5";
@@ -56974,14 +56420,6 @@ createNode transform -n "Piano_Pedal_02_Joint_Ctrl" -p "Piano_Pedal_02_Joint_Ctr
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 4.69 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Pedal_02_Joint_CtrlShape" -p "Piano_Pedal_02_Joint_Ctrl";
 	rename -uid "35D9AA47-4776-4695-BC07-A8ACF2A0F4B3";
@@ -57006,14 +56444,6 @@ createNode transform -n "Piano_Pedal_03_Joint_Ctrl" -p "Piano_Pedal_03_Joint_Ctr
 	setAttr -l on -k off ".sx";
 	setAttr -l on -k off ".sy";
 	setAttr -l on -k off ".sz";
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 4.69 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
 	setAttr -k on ".FollowRotate";
 createNode nurbsCurve -n "Piano_Pedal_03_Joint_CtrlShape" -p "Piano_Pedal_03_Joint_Ctrl";
 	rename -uid "105BCC14-4852-43AF-69BB-91AC0A5624CE";
@@ -57064,13 +56494,9 @@ createNode nurbsCurve -n "Piano_Bench_Transform_CTRLShape" -p "Piano_Bench_Trans
 	rename -uid "F5EABDF9-4B61-6D2E-F6BE-2F8F2F76BCE9";
 	setAttr -k off ".v";
 	setAttr ".tw" yes;
-createNode transform -n "Piano_Chair_Joint_Ctrl_Group" -p "Piano_Bench_Transform_CTRL";
+createNode transform -n "Piano_Chair_Joint_Ctrl_Group" -p "Piano_Ctrl_Groups";
 	rename -uid "38DF8E48-4E4A-5C8C-7AFD-7683B8F0B05C";
-<<<<<<< HEAD
-	setAttr ".t" -type "double3" 0 0.22561546325683593 2.2160859680175782 ;
-=======
 	setAttr ".t" -type "double3" 0.10625961303710937 0.22561546325683593 2.2160859680175782 ;
->>>>>>> KeytarUVAndPianoRig_AW
 createNode transform -n "Piano_Chair_Joint_Ctrl" -p "Piano_Chair_Joint_Ctrl_Group";
 	rename -uid "8ED4AFAF-46AC-F1D9-0E52-C58E25BCAA3F";
 	addAttr -ci true -sn "FollowRotate" -ln "FollowRotate" -dv 1 -min 0 -max 1 -at "double";
@@ -57117,7 +56543,7 @@ createNode parentConstraint -n "Piano_White__Keys_Clusters_01_Joint_parentConstr
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -0.60000000000000009 0 0 ;
+	setAttr ".lr" -type "double3" -0.53170667502109914 0 0 ;
 	setAttr ".rst" -type "double3" -0.74212432861328126 0.7071572113037109 1.1637386481608138 ;
 	setAttr -k on ".w0";
 createNode scaleConstraint -n "Piano_White__Keys_Clusters_01_Joint_scaleConstraint1" 
@@ -57386,19 +56812,8 @@ createNode scaleConstraint -n "Piano_White__Keys_Clusters_07_Joint_scaleConstrai
 	setAttr -k on ".w0";
 createNode joint -n "Piano_White__Keys_Clusters_08_Joint" -p "Piano_White_Keys_Joints";
 	rename -uid "3B442163-4094-74B5-CB58-B0B1B647702F";
-<<<<<<< HEAD
-=======
-	setAttr ".r" -type "double3" 0 0 0 ;
-	setAttr -av ".rx";
->>>>>>> KeytarUVAndPianoRig_AW
-	setAttr ".mnrl" -type "double3" 0 0 0 ;
-	setAttr ".mxrl" -type "double3" 2.389 0 0 ;
-	setAttr ".mrxe" yes;
-	setAttr ".mrye" yes;
-	setAttr ".mrze" yes;
-	setAttr ".xrxe" yes;
-	setAttr ".xrye" yes;
-	setAttr ".xrze" yes;
+	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
+	setAttr ".mxrl" -type "double3" 360 360 360 ;
 createNode parentConstraint -n "Piano_White__Keys_Clusters_08_Joint_parentConstraint1" 
 		-p "Piano_White__Keys_Clusters_08_Joint";
 	rename -uid "1F703850-45D9-7F69-A45B-CD93F4DBA49E";
@@ -60165,17 +59580,10 @@ createNode script -n "lp_elephant_Complete_0018:uiConfigurationScriptNode";
 		+ "            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 1\n                -headsUpDisplay 1\n"
 		+ "                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n"
 		+ "                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n"
-<<<<<<< HEAD
-		+ "                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 849\n                -height 726\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n"
+		+ "                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 901\n                -height 736\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n"
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n"
 		+ "            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n"
-		+ "            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 849\n            -height 726\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
-=======
-		+ "                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1126\n                -height 726\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n"
-		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n"
-		+ "            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n"
-		+ "            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1126\n            -height 726\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
->>>>>>> KeytarUVAndPianoRig_AW
+		+ "            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 901\n            -height 736\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
 		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n"
 		+ "                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n"
 		+ "                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -renderFilterIndex 0\n                -selectionOrder \"chronological\" \n                -expandAttribute 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n"
@@ -60221,13 +59629,8 @@ createNode script -n "lp_elephant_Complete_0018:uiConfigurationScriptNode";
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n"
 		+ "                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n"
 		+ "                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -activeTab -1\n                -editorMode \"default\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-<<<<<<< HEAD
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 849\\n    -height 726\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 849\\n    -height 726\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-=======
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1126\\n    -height 726\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1126\\n    -height 726\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
->>>>>>> KeytarUVAndPianoRig_AW
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 901\\n    -height 736\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 901\\n    -height 736\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12.000000000000002 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "lp_elephant_Complete_0018:sceneConfigurationScriptNode";
@@ -70482,4 +69885,4 @@ connectAttr "Piano_12:Female_Coyote_Final:groupId77.msg" ":initialShadingGroup.g
 		 -na;
 connectAttr "Piano_12:Female_Coyote_Final:groupId79.msg" ":initialShadingGroup.gn"
 		 -na;
-// End of Piano_Rig_07.ma
+// End of Piano_Rig_05.ma
