@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
-//Name: Keytar.ma
-//Last modified: Fri, Feb 03, 2017 03:22:34 PM
+//Name: Keytar_Rig_15.ma
+//Last modified: Fri, Feb 03, 2017 03:21:18 PM
 //Codeset: 1252
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -15,13 +15,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "DE402FAE-468B-769C-79F9-21A813BEC30B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -21.350596156568592 30.332625665860117 122.18344686993049 ;
+	setAttr ".t" -type "double3" -26.221727133342647 37.225729553497899 170.13883781391726 ;
 	setAttr ".r" -type "double3" 6111.8616478784752 -18005.80000000025 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "25769101-4E8A-FB8C-8F40-78AB94B9BBE4";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 153.68531588096207;
+	setAttr ".coi" 202.37784424814865;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -43730,4 +43730,4 @@ connectAttr "Keytar_Model_013:Piano_17:Piano_12:Female_Coyote_Final:groupId77.ms
 		 -na;
 connectAttr "Keytar_Model_013:Piano_17:Piano_12:Female_Coyote_Final:groupId79.msg" ":initialShadingGroup.gn"
 		 -na;
-// End of Keytar.ma
+// End of Keytar_Rig_15.ma

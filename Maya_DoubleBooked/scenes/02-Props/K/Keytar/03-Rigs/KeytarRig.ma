@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
-//Name: Keytar.ma
-//Last modified: Fri, Feb 03, 2017 03:22:34 PM
+//Name: KeytarRig.ma
+//Last modified: Fri, Feb 03, 2017 03:22:13 PM
 //Codeset: 1252
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -43730,4 +43730,4 @@ connectAttr "Keytar_Model_013:Piano_17:Piano_12:Female_Coyote_Final:groupId77.ms
 		 -na;
 connectAttr "Keytar_Model_013:Piano_17:Piano_12:Female_Coyote_Final:groupId79.msg" ":initialShadingGroup.gn"
 		 -na;
-// End of Keytar.ma
+// End of KeytarRig.ma
