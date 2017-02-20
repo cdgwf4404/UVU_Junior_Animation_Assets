@@ -1,0 +1,7 @@
+newmtl Scaffolding_Light:lambert1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd 73f7a1c1e0d4a871fb2f4e7f5b839a76.png
+Ni 1.00
