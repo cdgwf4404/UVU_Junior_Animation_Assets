@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
-//Name: Woozie_02.ma
-//Last modified: Tue, Feb 21, 2017 05:42:23 PM
+//Name: Woozie_03.ma
+//Last modified: Tue, Feb 21, 2017 06:05:31 PM
 //Codeset: 1252
 file -rdi 1 -ns "CoyoteGame" -rfn "CoyoteGameRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/10588285/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/01-Characters/C/Coyote/CoyoteGame.ma";
@@ -18,15 +18,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "04066176-465F-CD6F-82CB-338DC411863B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -60.67261791247401 25.666828240647732 56.947512234017879 ;
-	setAttr ".r" -type "double3" -8.6712206339380415 312.59999999999479 -5.8735921053508631e-016 ;
+	setAttr ".t" -type "double3" -107.05303301028088 45.488668825997749 154.99702921487901 ;
+	setAttr ".r" -type "double3" -0.87122063348040524 324.19999999995116 0 ;
 	setAttr ".rp" -type "double3" -2.8421709430404007e-014 3.3861802251067274e-015 0 ;
 	setAttr ".rpt" -type "double3" 2.0085508981269331e-014 -2.026307507092086e-017 -2.7174218429867704e-014 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "841633E5-4181-B488-DDA1-DD8F663571DD";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 87.19468017367312;
+	setAttr ".coi" 190.87210659470855;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -207,11 +207,11 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "A2F760EA-438A-11C0-31DA-D3A5D8ED18CF";
-	setAttr ".b" -type "string" "playbackOptions -min 1 -max 61 -ast 1 -aet 61 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 60 -ast 1 -aet 60 ";
 	setAttr ".st" 6;
 createNode reference -n "CoyoteGameRN";
 	rename -uid "259F57C5-4594-E809-89C4-749BFA2FE185";
-	setAttr -s 114 ".phl";
+	setAttr -s 143 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -326,27 +326,56 @@ createNode reference -n "CoyoteGameRN";
 	setAttr ".phl[112]" 0;
 	setAttr ".phl[113]" 0;
 	setAttr ".phl[114]" 0;
+	setAttr ".phl[115]" 0;
+	setAttr ".phl[116]" 0;
+	setAttr ".phl[117]" 0;
+	setAttr ".phl[118]" 0;
+	setAttr ".phl[119]" 0;
+	setAttr ".phl[120]" 0;
+	setAttr ".phl[121]" 0;
+	setAttr ".phl[122]" 0;
+	setAttr ".phl[123]" 0;
+	setAttr ".phl[124]" 0;
+	setAttr ".phl[125]" 0;
+	setAttr ".phl[126]" 0;
+	setAttr ".phl[127]" 0;
+	setAttr ".phl[128]" 0;
+	setAttr ".phl[129]" 0;
+	setAttr ".phl[130]" 0;
+	setAttr ".phl[131]" 0;
+	setAttr ".phl[132]" 0;
+	setAttr ".phl[133]" 0;
+	setAttr ".phl[134]" 0;
+	setAttr ".phl[135]" 0;
+	setAttr ".phl[136]" 0;
+	setAttr ".phl[137]" 0;
+	setAttr ".phl[138]" 0;
+	setAttr ".phl[139]" 0;
+	setAttr ".phl[140]" 0;
+	setAttr ".phl[141]" 0;
+	setAttr ".phl[142]" 0;
+	setAttr ".phl[143]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"CoyoteGameRN"
 		"CoyoteGameRN" 0
-		"CoyoteGameRN" 246
+		"CoyoteGameRN" 289
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Tail_Curves|CoyoteGame:ikHandle_Tail" 
-		"translate" " -type \"double3\" -1.7046591397009889 17.340717116481116 -31.943662786110309"
+		"translate" " -type \"double3\" -4.352714638638874 3.5999379150418083 -24.471949787214037"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Tail_Curves|CoyoteGame:ikHandle_Tail" 
-		"rotate" " -type \"double3\" -92.676882205590729 62.986122652914972 -91.086445961162667"
+		"rotate" " -type \"double3\" -99.699585489555247 22.489271976283977 -113.12974000984744"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Spine_Deformers|CoyoteGame:ikHandle_Spine" 
-		"translate" " -type \"double3\" -4.1419156661299033 50.104819229046626 16.299924982654812"
+		"translate" " -type \"double3\" 0.26325952126486579 55.7582931159343 -8.4331664655690108"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Spine_Deformers|CoyoteGame:ikHandle_Spine" 
-		"rotate" " -type \"double3\" -7.0760077056593333 -46.862083057185636 107.48660957131671"
+		"rotate" " -type \"double3\" -0.31480381576747057 19.112327262326527 89.150682402973075"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Hair_Rig|CoyoteGame:ikHandle_Hair" 
-		"translate" " -type \"double3\" -0.27037190606685879 51.784784390143919 36.351277320560996"
+		"translate" " -type \"double3\" 5.2700128555728494 75.488245667258624 -4.8882566854561071"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Hair_Rig|CoyoteGame:ikHandle_Hair" 
-		"rotate" " -type \"double3\" 71.272378693340841 23.365589370728966 -79.290360120569588"
+		"rotate" " -type \"double3\" 95.923867780197554 -42.602007845550403 -88.016425591862102"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl" "Left_Arm_Switch" 
 		" -k 1 1"
@@ -357,7 +386,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl" "Right_Leg_Switch" 
 		" -k 1 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl" 
-		"translate" " -type \"double3\" -1.1607769134733048 -6.2503671641826681 4.9844509849725345"
+		"translate" " -type \"double3\" 0.039577481754788202 -3.2278299112810593 -1.1686055784568707"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl" 
 		"translateX" " -av"
@@ -366,7 +395,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl" 
 		"translateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl" 
-		"rotate" " -type \"double3\" 19.571040366644613 1.2155056363830408 1.2987370485533243"
+		"rotate" " -type \"double3\" -10.245957308599818 -0.1500591326846287 -0.15118378323828971"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl" 
 		"rotateX" " -av"
@@ -383,7 +412,8 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
 		"translateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
-		"rotate" " -type \"double3\" 3.1653126603978969 0 0"
+		"rotate" " -type \"double3\" -3.1382666549163614 0.0035405004620514486 1.9999966903363877"
+		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
@@ -393,9 +423,8 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
 		"Follow_Rotate" " -av -k 1 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" -3.1382666549163614 0.0035405004620514486 1.9999966903363877"
+		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
@@ -403,11 +432,10 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
-		"Follow_Rotate" " -k 1 1"
+		"Follow_Rotate" " -k 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" -3.1382130419242475 -0.0038795018033386851 2.0007019053933219"
+		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
@@ -415,13 +443,13 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
-		"Follow_Rotate" " -k 1 1"
+		"Follow_Rotate" " -k 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
-		"View_Hair_Controls" " -k 1 1"
+		"View_Hair_Controls" " -k 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
-		"View_Hair_Mesh" " -k 1 1"
+		"View_Hair_Mesh" " -k 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
-		"View_All_Secondary_Controls" " -k 1 1"
+		"View_All_Secondary_Controls" " -k 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
@@ -431,7 +459,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
 		"translateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
-		"rotate" " -type \"double3\" 4.7560658587774185 0 3.2348706183515747"
+		"rotate" " -type \"double3\" -2.297227729507838 0 -0.15767929871825734"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
@@ -439,7 +467,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl" 
-		"rotate" " -type \"double3\" 4.7560658587774185 0 3.2348706183515747"
+		"rotate" " -type \"double3\" -2.297227729507838 0 -0.15767929871825734"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl" 
@@ -449,7 +477,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl" 
 		"Follow_Rotate" " -av -k 1 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl" 
-		"rotate" " -type \"double3\" 4.7560658587774185 0 3.2348706183515747"
+		"rotate" " -type \"double3\" -2.297227729507838 0 -0.15767929871825734"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl" 
@@ -459,15 +487,50 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl" 
 		"Follow_Rotate" " -av -k 1 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl" 
-		"rotate" " -type \"double3\" 15.345227752798122 0 3.2318335657870656"
+		"rotate" " -type \"double3\" -2.2477669920081547 0 -0.15782972360643197"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl" 
 		"rotateY" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl" 
 		"rotateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Hips_Ctrl_Grp|CoyoteGame:Hips_ctrl" 
+		"rotate" " -type \"double3\" 9.8164029869973461 0 0"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl" 
+		"rotate" " -type \"double3\" -5.474060765782248 12.09914403983012 5.053902730128657"
+		
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl" 
+		"rotateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl" 
+		"rotateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl" 
+		"rotateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl" 
+		"Follow_Rotate" " -av -k 1 1"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl" 
+		"rotate" " -type \"double3\" -5.4878769775097513 12.099144039830147 -8.8507952740780578"
+		
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl" 
+		"rotateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl" 
+		"rotateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl" 
+		"rotateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl" 
+		"Follow_Rotate" " -av -k 1 1"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl" 
+		"rotate" " -type \"double3\" 0.0014888422523935297 0.24153270202840571 -13.085998328733121"
+		
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl" 
+		"rotateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl" 
+		"rotateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl" 
+		"rotateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl" 
+		"Follow_Rotate" " -av -k 1 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl" 
-		"rotate" " -type \"double3\" 1.8531813965873039 13.44679255206996 -0.76916833208912261"
+		"rotate" " -type \"double3\" 14.591411657950056 0.065855627382172099 -0.0037669996674731571"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl" 
 		"rotateX" " -av"
@@ -476,7 +539,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl" 
-		"rotate" " -type \"double3\" 1.8531813965873039 13.44679255206996 -0.76916833208912261"
+		"rotate" " -type \"double3\" 14.591411657950056 0.065855627382172099 -0.0037669996674731571"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl" 
 		"rotateX" " -av"
@@ -485,7 +548,8 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl" 
-		"rotate" " -type \"double3\" 0 25.19400786929857 0"
+		"rotate" " -type \"double3\" -0.032199779635798127 7.7441102790749605 -0.45110288312323849"
+		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl" 
@@ -493,7 +557,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl" 
-		"rotate" " -type \"double3\" 7.1091765695313569 33.297317696883795 5.4524095904240806"
+		"rotate" " -type \"double3\" 0.030981211009927675 -6.0439137248687311 3.8766155750837012"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl" 
 		"rotateX" " -av"
@@ -510,8 +574,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl" 
 		"translateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl" 
-		"rotate" " -type \"double3\" -3.4599620600066396 -27.151049379243023 11.639329808704174"
-		
+		"rotate" " -type \"double3\" 0 -8.8427561470091476 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl" 
@@ -521,8 +584,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl" 
 		"Follow_Rotate" " -av -k 1 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl" 
-		"rotate" " -type \"double3\" 7.0676658626279592 -25.638995823459741 -17.262631053138161"
-		
+		"rotate" " -type \"double3\" 0 8.05735158256077 -2.9874607433345384"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl" 
@@ -548,7 +610,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Middle_Proximal_ctrl_Grp|CoyoteGame:Right_Middle_Proximal_ctrl" 
 		"rotate" " -type \"double3\" 0 0 -25.0321766453729"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl" 
-		"rotate" " -type \"double3\" 35.900142508665027 33.271413486263242 -2.6658378647536627"
+		"rotate" " -type \"double3\" 30.608081992686113 33.257702234758739 -16.543431070867793"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl" 
 		"rotateX" " -av"
@@ -575,7 +637,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Middle_Proximal_ctrl_Grp|CoyoteGame:Left_Middle_Proximal_ctrl" 
 		"rotate" " -type \"double3\" 0 0 -41.557175816664667"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl" 
-		"rotate" " -type \"double3\" 29.102088994167154 14.983272566811619 -2.7156772358079726"
+		"rotate" " -type \"double3\" 16.07265821595136 31.18831967789917 -39.982067055270861"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl" 
 		"rotateX" " -av"
@@ -584,7 +646,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl" 
-		"translate" " -type \"double3\" 0 0 4.4872477361692686"
+		"translate" " -type \"double3\" -1 0 -4"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl" 
 		"translateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl" 
@@ -594,9 +656,10 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl" 
 		"Follow_Parent" " -k 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl" 
-		"Roll" " -av -k 1 0"
+		"Roll" " -av -k 1 12.499999161809669"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
-		"translate" " -type \"double3\" 0.5 0 -1.5"
+		"translate" " -type \"double3\" 0.42603775285009143 0.72749444013089626 -2.3651584816956817"
+		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
 		"translateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
@@ -606,7 +669,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
 		"Follow_Parent" " -k 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
-		"Roll" " -av -k 1 0"
+		"Roll" " -av -k 1 -15.670475006103516"
 		2 "CoyoteGame:Ctrl_Layer" "visibility" " 1"
 		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl.translateX" 
 		"CoyoteGameRN.placeHolderList[1]" ""
@@ -634,208 +697,266 @@ createNode reference -n "CoyoteGameRN";
 		"CoyoteGameRN.placeHolderList[12]" ""
 		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[13]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.translateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[14]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.translateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl.translateX" 
 		"CoyoteGameRN.placeHolderList[15]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.translateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl.translateY" 
 		"CoyoteGameRN.placeHolderList[16]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl.translateZ" 
 		"CoyoteGameRN.placeHolderList[17]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[18]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[19]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[20]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[21]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl.View_Hair_Controls" 
 		"CoyoteGameRN.placeHolderList[22]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl.View_Hair_Mesh" 
 		"CoyoteGameRN.placeHolderList[23]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl.View_All_Secondary_Controls" 
 		"CoyoteGameRN.placeHolderList[24]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl.translateX" 
 		"CoyoteGameRN.placeHolderList[25]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl.translateY" 
 		"CoyoteGameRN.placeHolderList[26]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl.translateZ" 
 		"CoyoteGameRN.placeHolderList[27]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[28]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.translateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[29]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.translateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[30]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.translateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.translateX" 
 		"CoyoteGameRN.placeHolderList[31]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.translateY" 
 		"CoyoteGameRN.placeHolderList[32]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.translateZ" 
 		"CoyoteGameRN.placeHolderList[33]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[34]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[35]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[36]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[37]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[38]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[39]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[40]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[41]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[42]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[43]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.translateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[44]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.translateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[45]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.translateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.translateX" 
 		"CoyoteGameRN.placeHolderList[46]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.translateY" 
 		"CoyoteGameRN.placeHolderList[47]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.translateZ" 
 		"CoyoteGameRN.placeHolderList[48]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[49]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[50]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.translateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[51]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.translateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[52]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.translateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[53]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[54]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[55]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[56]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[57]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.translateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[58]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.translateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[59]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.translateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[60]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[61]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[62]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[63]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[64]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.translateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[65]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.translateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[66]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.translateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[67]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[68]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[69]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[70]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[71]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Clench" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[72]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Index_Curl" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.translateX" 
 		"CoyoteGameRN.placeHolderList[73]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Middle_Curl" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.translateY" 
 		"CoyoteGameRN.placeHolderList[74]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Pinky_Curl" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.translateZ" 
 		"CoyoteGameRN.placeHolderList[75]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Thumb_Curl" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[76]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.translateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[77]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.translateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[78]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.translateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[79]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.translateX" 
 		"CoyoteGameRN.placeHolderList[80]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.translateY" 
 		"CoyoteGameRN.placeHolderList[81]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.translateZ" 
 		"CoyoteGameRN.placeHolderList[82]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.visibility" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[83]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Follow_Rotate" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[84]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Clench" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[85]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Index_Curl" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[86]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Middle_Curl" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.translateX" 
 		"CoyoteGameRN.placeHolderList[87]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Pinky_Curl" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.translateY" 
 		"CoyoteGameRN.placeHolderList[88]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Thumb_Curl" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.translateZ" 
 		"CoyoteGameRN.placeHolderList[89]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.translateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[90]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.translateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[91]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.translateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Elbow_ctrl_Grp|CoyoteGame:FK_Left_Elbow_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[92]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[93]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.translateX" 
 		"CoyoteGameRN.placeHolderList[94]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.translateY" 
 		"CoyoteGameRN.placeHolderList[95]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.visibility" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.translateZ" 
 		"CoyoteGameRN.placeHolderList[96]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.Follow_Parent" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[97]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.Roll" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[98]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.Twist" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[99]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.translateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[100]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.translateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Clench" 
 		"CoyoteGameRN.placeHolderList[101]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.translateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Index_Curl" 
 		"CoyoteGameRN.placeHolderList[102]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Middle_Curl" 
 		"CoyoteGameRN.placeHolderList[103]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Pinky_Curl" 
 		"CoyoteGameRN.placeHolderList[104]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.rotateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.Thumb_Curl" 
 		"CoyoteGameRN.placeHolderList[105]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.Follow_Parent" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.translateX" 
 		"CoyoteGameRN.placeHolderList[106]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.Roll" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.translateY" 
 		"CoyoteGameRN.placeHolderList[107]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.Twist" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.translateZ" 
 		"CoyoteGameRN.placeHolderList[108]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.translateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.rotateX" 
 		"CoyoteGameRN.placeHolderList[109]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.translateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.rotateY" 
 		"CoyoteGameRN.placeHolderList[110]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.translateZ" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.rotateZ" 
 		"CoyoteGameRN.placeHolderList[111]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.rotateX" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl.visibility" 
 		"CoyoteGameRN.placeHolderList[112]" ""
-		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.rotateY" 
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Follow_Rotate" 
 		"CoyoteGameRN.placeHolderList[113]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Clench" 
+		"CoyoteGameRN.placeHolderList[114]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Index_Curl" 
+		"CoyoteGameRN.placeHolderList[115]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Middle_Curl" 
+		"CoyoteGameRN.placeHolderList[116]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Pinky_Curl" 
+		"CoyoteGameRN.placeHolderList[117]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.Thumb_Curl" 
+		"CoyoteGameRN.placeHolderList[118]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.translateX" 
+		"CoyoteGameRN.placeHolderList[119]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.translateY" 
+		"CoyoteGameRN.placeHolderList[120]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.translateZ" 
+		"CoyoteGameRN.placeHolderList[121]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.rotateX" 
+		"CoyoteGameRN.placeHolderList[122]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.rotateY" 
+		"CoyoteGameRN.placeHolderList[123]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.rotateZ" 
+		"CoyoteGameRN.placeHolderList[124]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl.visibility" 
+		"CoyoteGameRN.placeHolderList[125]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.Follow_Parent" 
+		"CoyoteGameRN.placeHolderList[126]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.Roll" 
+		"CoyoteGameRN.placeHolderList[127]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.Twist" 
+		"CoyoteGameRN.placeHolderList[128]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.translateX" 
+		"CoyoteGameRN.placeHolderList[129]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.translateY" 
+		"CoyoteGameRN.placeHolderList[130]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.translateZ" 
+		"CoyoteGameRN.placeHolderList[131]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.rotateX" 
+		"CoyoteGameRN.placeHolderList[132]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.rotateY" 
+		"CoyoteGameRN.placeHolderList[133]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl.rotateZ" 
+		"CoyoteGameRN.placeHolderList[134]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.Follow_Parent" 
+		"CoyoteGameRN.placeHolderList[135]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.Roll" 
+		"CoyoteGameRN.placeHolderList[136]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.Twist" 
+		"CoyoteGameRN.placeHolderList[137]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.translateX" 
+		"CoyoteGameRN.placeHolderList[138]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.translateY" 
+		"CoyoteGameRN.placeHolderList[139]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.translateZ" 
+		"CoyoteGameRN.placeHolderList[140]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.rotateX" 
+		"CoyoteGameRN.placeHolderList[141]" ""
+		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.rotateY" 
+		"CoyoteGameRN.placeHolderList[142]" ""
 		5 4 "CoyoteGameRN" "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl.rotateZ" 
-		"CoyoteGameRN.placeHolderList[114]" "";
+		"CoyoteGameRN.placeHolderList[143]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode timeEditor -s -n "timeEditor";
@@ -1176,39 +1297,45 @@ createNode animCurveTU -n "Right_Hand_ctrl_Thumb_Curl";
 createNode animCurveTL -n "COG_ctrl_translateZ";
 	rename -uid "0F35C631-444A-7D45-D446-FE90A5589D75";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 -1 8 -0.98377226245062255 18 -0.76756019451541646
-		 26 2.5054646882550928 31 6.1040492306566962 34 6.1308936810163353 36 5.9554801747501509
-		 40 5.4348111901158269 48 1.5279438943647741 52 1.8357526263718289 61 -1;
+	setAttr -s 13 ".ktv[0:12]"  1 -1 5 -2.079075571880185 8 -1.3469774814911102
+		 18 -0.76756019451541646 26 2.6259025566846228 31 6.1040492306566962 34 6.7153577022026347
+		 36 6.777770977524475 40 5.4348111901158269 48 1.5279438943647741 52 1.8357526263718289
+		 56 0.17726532770036083 61 -1;
 createNode animCurveTA -n "COG_ctrl_rotateX";
 	rename -uid "EA94CA4E-4622-08A7-EDBC-4EB42E5ECE8C";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 -10 8 -13.618803350643198 18 -4.9608804310996133
-		 26 13.910255709346268 31 19.798391198059612 34 19.847892762242765 36 19.860244034519688
-		 40 19.868735527465546 48 9.1756293468472609 52 2.119674585930992 61 -10;
+	setAttr -s 13 ".ktv[0:12]"  1 -10 5 -12.194492790226823 8 -13.618803350643198
+		 18 -4.9608804310996133 26 13.910255709346268 31 19.798391198059612 34 19.847892762242765
+		 36 19.860244034519688 40 19.868735527465546 48 9.1756293468472609 52 2.119674585930992
+		 56 -4.7553867116089581 61 -10;
 createNode animCurveTL -n "COG_ctrl_translateY";
 	rename -uid "7AE7AFA6-4BC1-3630-48A4-289913055F81";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 -3 8 -3.0180091297759719 18 -3.2579558436261991
-		 26 -4.1298988764859743 31 -5.7781767693304467 34 -6.361955389228708 36 -6.4719932416723802
-		 40 -6.3696253899697153 48 -4.9621750072523954 52 -5.746469237230464 61 -3;
+	setAttr -s 13 ".ktv[0:12]"  1 -3 5 -4.4581112562056076 8 -3.5062925006088395
+		 18 -3.2579558436261991 26 -3.1546363117076766 31 -5.7781767693304467 34 -7.3163845993447083
+		 36 -7.0672102534822239 40 -6.3696253899697153 48 -4.9621750072523954 52 -5.746469237230464
+		 56 -4.0021996390318328 61 -3;
 createNode animCurveTL -n "COG_ctrl_translateX";
 	rename -uid "B81E4BCF-4203-6053-6552-D7AA0D49C5A0";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 0 8 1.3809471124612178 18 3.7421912941798725
-		 26 1.6573157627538677 31 0.058352456129284754 34 -0.42214924531844988 36 -0.67520853466396036
-		 40 -1.0903194075215845 48 -1.5021587920610959 52 -1.060685695235061 61 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 5 0.48198537216447224 8 1.3340223600408228
+		 18 3.7421912941798725 26 1.6767549717287267 31 0.058352456129284754 34 -0.28605616668998723
+		 36 -0.52762543123324124 40 -1.0903194075215845 48 -1.5021587920610959 52 -1.060685695235061
+		 56 -0.53129805870296465 61 0;
 createNode animCurveTA -n "COG_ctrl_rotateY";
 	rename -uid "9AB54D5D-4AD9-4F4D-9515-D19C74583964";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 0 8 -3.1480154209186666 18 -7.0972011724001103
-		 26 -2.6627441277570982 31 0 34 0.7400395449398518 36 1.0394626261078022 40 1.3722099893440785
-		 48 -2.2747152299756697 52 -1.7611697575739045 61 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 5 -1.5000380207533257 8 -3.1480154209186666
+		 18 -7.0972011724001103 26 -2.6627441277570982 31 0 34 0.7400395449398518 36 1.0394626261078022
+		 40 1.3722099893440785 48 -2.2747152299756697 52 -1.7611697575739045 56 -0.81072372535940151
+		 61 0;
 createNode animCurveTA -n "COG_ctrl_rotateZ";
 	rename -uid "29A26162-4963-4B05-D827-359D2D8BEC86";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 0 8 -2.875461065849779 18 -4.9148292973613401
-		 26 -2.5551697069562711 31 0 34 0.35149866465565144 36 0.44951332773601205 40 0.81760739494869972
-		 48 7.0957019734948084 52 5.4937583218318675 61 0;
+	setAttr -s 13 ".ktv[0:12]"  1 0 5 -1.4605121992974786 8 -2.875461065849779
+		 18 -4.9148292973613401 26 -2.5551697069562711 31 0 34 0.35149866465565144 36 0.44951332773601205
+		 40 0.81760739494869972 48 7.0957019734948084 52 5.4937583218318675 56 2.5289556896220668
+		 61 0;
 createNode animCurveTA -n "Lower_Mid_Torso_ctrl_rotateX";
 	rename -uid "C4758D0E-472F-33E9-4EA5-EE8C6022FAFA";
 	setAttr ".tan" 18;
@@ -1299,126 +1426,321 @@ createNode animCurveTU -n "Upper_Torso_ctrl_Follow_Rotate";
 	rename -uid "C97FCFAB-4675-8677-E35A-D489D53DBC7A";
 	setAttr ".tan" 18;
 	setAttr -s 9 ".ktv[0:8]"  1 1 8 1 18 1 24 1 31 1 38 1 48 1 54 1 61 1;
-createNode animCurveTA -n "Lower_Neck_ctrl_rotateX";
-	rename -uid "1389502D-4C62-42B4-E030-70BA26844389";
-	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  54 3.1653126603978969;
-createNode animCurveTA -n "Lower_Neck_ctrl_rotateY";
-	rename -uid "F6CB7E2C-4644-5DAF-0736-40A989183014";
-	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  54 0;
-createNode animCurveTA -n "Lower_Neck_ctrl_rotateZ";
-	rename -uid "3F1ECE45-4614-0AE5-44B0-23876CABE95B";
-	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  54 0;
-createNode animCurveTL -n "Lower_Neck_ctrl_translateX";
-	rename -uid "72A1BAC7-41A8-97C0-08F4-4BA6D81A3328";
-	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  54 0;
-createNode animCurveTL -n "Lower_Neck_ctrl_translateY";
-	rename -uid "342D508F-4DA1-73DE-4A13-4CBC4CD713AF";
-	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  54 0;
-createNode animCurveTL -n "Lower_Neck_ctrl_translateZ";
-	rename -uid "6828B431-4C6E-5705-82DF-1BBFE590633A";
-	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  54 0;
-createNode animCurveTU -n "Lower_Neck_ctrl_Follow_Rotate";
-	rename -uid "16330356-4671-1F3C-988A-63B7F0D6CA5B";
-	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  54 1;
 createNode animCurveTL -n "IK_Right_Upper_Leg_ctrl_translateX";
 	rename -uid "8A9D6079-40EC-B628-3D9F-80A301153E4E";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 -1 3 -1 18 -1 22 -1 25 -0.086162399768997047
-		 28 0 32 0 50 0 54 0 57 -0.39358583424107724 61 -1;
+	setAttr -s 12 ".ktv[0:11]"  1 -1 3 -1 18 -1 22 -1 25 -0.086162399768997047
+		 28 0 32 0 35 0 50 0 54 0 57 -0.39358583424107724 61 -1;
 createNode animCurveTL -n "IK_Right_Upper_Leg_ctrl_translateY";
 	rename -uid "DC552E25-41F3-15C2-0B59-23B9674319D1";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 7.1054273576010003e-015 3 6.8335323220632846e-015
-		 18 0 22 0 25 2.6374043626847357 28 0 32 0 50 0 54 0 57 3.897012141750837 61 0;
+	setAttr -s 12 ".ktv[0:11]"  1 7.1054273576010003e-015 3 6.8335323220632846e-015
+		 18 0 22 0 25 2.6374043626847357 28 0 32 0 35 0 50 0 54 0 57 3.897012141750837 61 0;
 createNode animCurveTL -n "IK_Right_Upper_Leg_ctrl_translateZ";
 	rename -uid "6E2DCD09-449D-2187-3905-F5936D72B005";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 -4 3 -4 18 -4 22 -4 25 0.46588500639792646
-		 28 4.3826456945846495 32 4.4504911781949872 50 4.5 54 4.5 57 1.1545204089508605 61 -4;
+	setAttr -s 12 ".ktv[0:11]"  1 -4 3 -4 18 -4 22 -4 25 0.46588500639792646
+		 28 4.3826456945846495 32 4.4504911781949872 35 4.4652715959236442 50 4.5 54 4.5 57 1.1545204089508605
+		 61 -4;
 createNode animCurveTA -n "IK_Right_Upper_Leg_ctrl_rotateX";
 	rename -uid "F39AD462-4256-82C4-D9DA-3FAFCEB4DA18";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 0 3 0 18 0 22 0 25 0 28 0 32 0 50 0 54 0
-		 57 0 61 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 3 0 18 0 22 0 25 0 28 0 32 0 35 0 50 0
+		 54 0 57 0 61 0;
 createNode animCurveTA -n "IK_Right_Upper_Leg_ctrl_rotateY";
 	rename -uid "55C36A25-4C04-A072-486E-C39315BE220D";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 -17.385595220414746 3 -17.385595220414746
+	setAttr -s 12 ".ktv[0:11]"  1 -17.385595220414746 3 -17.385595220414746
 		 18 -17.385595220414746 22 -17.385595220414746 25 -17.385595220414746 28 -17.385595220414746
-		 32 -17.385595220414746 50 -17.385595220414746 54 -17.385595220414746 57 -17.385595220414746
-		 61 -17.385595220414746;
+		 32 -17.385595220414746 35 -17.385595220414746 50 -17.385595220414746 54 -17.385595220414746
+		 57 -17.385595220414746 61 -17.385595220414746;
 createNode animCurveTA -n "IK_Right_Upper_Leg_ctrl_rotateZ";
 	rename -uid "E8AA25BB-4362-EB57-93A7-4B9371332D91";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 0 3 0 18 0 22 0 25 0 28 0 32 0 50 0 54 0
-		 57 0 61 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 3 0 18 0 22 0 25 0 28 0 32 0 35 0 50 0
+		 54 0 57 0 61 0;
 createNode animCurveTU -n "IK_Right_Upper_Leg_ctrl_Follow_Parent";
 	rename -uid "C4028336-47DF-29F3-AD32-B9880DAB447E";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 0 3 0 18 0 22 0 25 0 28 0 32 0 50 0 54 0
-		 57 0 61 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 3 0 18 0 22 0 25 0 28 0 32 0 35 0 50 0
+		 54 0 57 0 61 0;
 createNode animCurveTU -n "IK_Right_Upper_Leg_ctrl_Roll";
 	rename -uid "550DB4F1-486E-49A9-8395-E2815C09C8D3";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 25 3 0 18 0 22 31.723033099510289 25 -20.000000000000007
-		 28 -13.9 32 0 50 0 54 -14 57 -8.4897983206249457 61 25;
+	setAttr -s 12 ".ktv[0:11]"  1 25 3 0 18 0 22 31.723033099510289 25 -20.000000000000007
+		 28 -18.9 32 -12.000000000000002 35 0 50 0 54 -14 57 -8.4897983206249457 61 25;
 createNode animCurveTU -n "IK_Right_Upper_Leg_ctrl_Twist";
 	rename -uid "84339D3A-4C9A-F518-4E4C-B982CF01011A";
 	setAttr ".tan" 18;
-	setAttr -s 11 ".ktv[0:10]"  1 0 3 0 18 0 22 0 25 0 28 0 32 0 50 0 54 0
-		 57 0 61 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 3 0 18 0 22 0 25 0 28 0 32 0 35 0 50 0
+		 54 0 57 0 61 0;
 createNode animCurveTL -n "IK_Left_Upper_Leg_ctrl_translateX";
 	rename -uid "14DEFC9D-4771-6EEA-44BC-0298353C2E9F";
 	setAttr ".tan" 18;
-	setAttr -s 8 ".ktv[0:7]"  1 0 18 0 28 0.5 50 0.5 52 0.5 56 0.29149551286942954
-		 59 0.075939884022363263 61 0;
+	setAttr -s 11 ".ktv[0:10]"  9 0 26 0 30 0 33 0.24999991059301152 36 0.5
+		 39 0.5 59 0.5 61 0.5 65 0.29149551286942954 68 0.075939884022363263 70 0;
+	setAttr ".pre" 3;
+	setAttr ".pst" 3;
 createNode animCurveTL -n "IK_Left_Upper_Leg_ctrl_translateY";
 	rename -uid "275D80E2-49F1-132C-80F4-1D8B894C1423";
 	setAttr ".tan" 18;
-	setAttr -s 8 ".ktv[0:7]"  1 0 18 0 28 0 50 0 52 0 56 1.4549888802617925
-		 59 0 61 0;
+	setAttr -s 11 ".ktv[0:10]"  9 0 26 0 30 0 33 0.95345218839027623 36 0
+		 39 0 59 0 61 0 65 1.4549888802617925 68 0 70 0;
+	setAttr ".pre" 3;
+	setAttr ".pst" 3;
 createNode animCurveTL -n "IK_Left_Upper_Leg_ctrl_translateZ";
 	rename -uid "2781C63C-4003-0F00-A93E-148C2BB8C37A";
 	setAttr ".tan" 18;
-	setAttr -s 8 ".ktv[0:7]"  1 -7.3486491445202944 18 -7.3486491445202944
-		 28 -1.5 50 -1.5 52 -1.5 56 -3.9389391805697076 59 -6.460357665331653 61 -7.3486491445202944;
+	setAttr -s 11 ".ktv[0:10]"  9 -7.3486491445202944 26 -7.3486491445202944
+		 30 -7.349 33 -4.4245010458829519 36 -1.5 39 -1.5 59 -1.5 61 -1.5 65 -3.9389391805697076
+		 68 -6.460357665331653 70 -7.3486491445202944;
+	setAttr ".pre" 3;
+	setAttr ".pst" 3;
 createNode animCurveTA -n "IK_Left_Upper_Leg_ctrl_rotateX";
 	rename -uid "273972FF-413C-CAF2-E45B-5EABF374527A";
 	setAttr ".tan" 18;
-	setAttr -s 8 ".ktv[0:7]"  1 0 18 0 28 0 50 0 52 0 56 0 59 0 61 0;
+	setAttr -s 11 ".ktv[0:10]"  9 0 26 0 30 0 33 0 36 0 39 0 59 0 61 0 65 0
+		 68 0 70 0;
+	setAttr ".pre" 3;
+	setAttr ".pst" 3;
 createNode animCurveTA -n "IK_Left_Upper_Leg_ctrl_rotateY";
 	rename -uid "577E9093-47E0-6B69-E15F-00955230D516";
 	setAttr ".tan" 18;
-	setAttr -s 8 ".ktv[0:7]"  1 16.40387275243987 18 16.40387275243987
-		 28 16.40387275243987 50 16.40387275243987 52 16.40387275243987 56 16.40387275243987
-		 59 16.40387275243987 61 16.40387275243987;
+	setAttr -s 11 ".ktv[0:10]"  9 16.40387275243987 26 16.40387275243987
+		 30 16.40387275243987 33 16.40387275243987 36 16.40387275243987 39 16.40387275243987
+		 59 16.40387275243987 61 16.40387275243987 65 16.40387275243987 68 16.40387275243987
+		 70 16.40387275243987;
+	setAttr ".pre" 3;
+	setAttr ".pst" 3;
 createNode animCurveTA -n "IK_Left_Upper_Leg_ctrl_rotateZ";
 	rename -uid "3C187AFC-45D8-9364-C058-3E9E59CE1093";
 	setAttr ".tan" 18;
-	setAttr -s 8 ".ktv[0:7]"  1 0 18 0 28 0 50 0 52 0 56 0 59 0 61 0;
+	setAttr -s 11 ".ktv[0:10]"  9 0 26 0 30 0 33 0 36 0 39 0 59 0 61 0 65 0
+		 68 0 70 0;
+	setAttr ".pre" 3;
+	setAttr ".pst" 3;
 createNode animCurveTU -n "IK_Left_Upper_Leg_ctrl_Follow_Parent";
 	rename -uid "F484ED97-4FF3-06C4-647C-A4B832A76DAF";
 	setAttr ".tan" 18;
-	setAttr -s 8 ".ktv[0:7]"  1 0 18 0 28 0 50 0 52 0 56 0 59 0 61 0;
+	setAttr -s 11 ".ktv[0:10]"  9 0 26 0 30 0 33 0 36 0 39 0 59 0 61 0 65 0
+		 68 0 70 0;
+	setAttr ".pre" 3;
+	setAttr ".pst" 3;
 createNode animCurveTU -n "IK_Left_Upper_Leg_ctrl_Roll";
 	rename -uid "8FA08655-4184-A9E0-0BF1-2BBFBCB38438";
 	setAttr ".tan" 18;
-	setAttr -s 8 ".ktv[0:7]"  1 0 18 0 28 0 50 0 52 -17 56 -10 59 24.386662119550856
-		 61 0;
+	setAttr -s 11 ".ktv[0:10]"  9 0 26 0 30 20 33 10.000003576279539 36 -14
+		 39 0 59 0 61 -17 65 -10 68 13.386662119550856 70 0;
+	setAttr ".pre" 3;
+	setAttr ".pst" 3;
 createNode animCurveTU -n "IK_Left_Upper_Leg_ctrl_Twist";
 	rename -uid "DD471506-4D4C-9475-B831-2CBD5044F1D8";
 	setAttr ".tan" 18;
-	setAttr -s 8 ".ktv[0:7]"  1 0 18 0 28 0 50 0 52 0 56 0 59 0 61 0;
+	setAttr -s 11 ".ktv[0:10]"  9 0 26 0 30 0 33 0 36 0 39 0 59 0 61 0 65 0
+		 68 0 70 0;
+	setAttr ".pre" 3;
+	setAttr ".pst" 3;
+createNode animCurveTA -n "Upper_Tail_ctrl_rotateX";
+	rename -uid "049038C8-443B-158E-A86E-2AA44DD4BD0C";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 0 8 0.057696772833406691 17 0.22307266121599156
+		 22 0.11754876962118804 30 0.069654946000954357 42 0.0081212570714141157 52 -0.0094556705340966656
+		 56 -0.0095372026752757761 61 0;
+createNode animCurveTA -n "Upper_Tail_ctrl_rotateY";
+	rename -uid "8BA2AADB-4B72-C331-B37E-E98D0AEA2A7F";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 0 8 4.3688456138802518 17 4.3804420315950594
+		 22 0.28683343678270623 30 0.28538317251402678 42 -7.4029896713597454 52 0.058089565108344329
+		 56 0.042539650899729026 61 0;
+createNode animCurveTA -n "Upper_Tail_ctrl_rotateZ";
+	rename -uid "664CF13C-4CCD-B7BA-B6BC-4582BAA00F35";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 -12.563675095352293 8 -24.788529642922892
+		 17 -32.798098323368606 22 -24.568221516201941 30 -47.410675887575927 42 -47.13599422460117
+		 52 -37.494674216731589 56 -31.996090320413828 61 -12.563675095352293;
+createNode animCurveTU -n "Upper_Tail_ctrl_Follow_Rotate";
+	rename -uid "DC191A18-43F0-9312-05E3-B88B39D18F41";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 1 8 1 17 1 22 1 30 1 42 1 52 1 56 1 61 1;
+createNode animCurveTA -n "Lower_Tail_ctrl_rotateX";
+	rename -uid "4F32423C-412B-DB91-1033-C2A01548F96A";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 -5.7280912764986107 10 1.6794375682660758
+		 23 0.87108061525281 30 -1.521974027091114 38 -3.2793153988893557 43 -5.485513210436455
+		 50 -7.3081770601833247 55 -8.8000931652769054 61 -5.7280912764986107;
+createNode animCurveTA -n "Lower_Tail_ctrl_rotateY";
+	rename -uid "B6E10892-4781-2DCD-9E60-84B91B4C8A01";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 12.853796906649022 10 -9.1518781714403552
+		 23 -5.7880741883345515 30 -7.7333678646249773 38 1.4395478573503233 43 4.0780502989097132
+		 50 9.0471534011080799 55 9.1875389360788517 61 12.853796906649022;
+createNode animCurveTA -n "Lower_Tail_ctrl_rotateZ";
+	rename -uid "0888E3CC-49B1-5DC0-D784-D3B191778023";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 4.0030064090725235 10 34.647139624126439
+		 23 11.909635932128563 30 30.641146480514745 38 9.8573339239223561 43 -5.4348411799542991
+		 50 -8.1516603456968451 55 -15.987433973907967 61 4.0030064090725235;
+createNode animCurveTA -n "Mid_Tail_ctrl_rotateX";
+	rename -uid "5FC95856-40FE-F807-A450-8BA5900DC4D7";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 -5.7280912764986294 10 1.6794375682660947
+		 23 2.285623766551943 30 -1.521974027091098 38 -3.2793153988893673 43 -5.4855132104364719
+		 50 -7.3081770601833229 55 -8.800093165276909 61 -5.7280912764986294;
+createNode animCurveTA -n "Mid_Tail_ctrl_rotateY";
+	rename -uid "C9FD56D8-474D-95F0-70A2-72B8F7225B2F";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 12.853796906649047 10 -9.1518781714402646
+		 23 -5.1769788487316175 30 -7.7333678646248991 38 1.4395478573503975 43 4.0780502989097585
+		 50 9.047153401108071 55 9.1875389360788358 61 12.853796906649047;
+createNode animCurveTA -n "Mid_Tail_ctrl_rotateZ";
+	rename -uid "DC54F38D-41CC-3D3B-F003-0883900A379E";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 -9.9016915951341939 10 20.742441619919838
+		 23 -1.9614534599552695 30 16.736448476308073 38 -4.0473640802843223 43 -19.339539184160994
+		 50 -22.056358349903594 55 -29.892131978114673 61 -9.9016915951341939;
+createNode animCurveTU -n "Mid_Tail_ctrl_Follow_Rotate";
+	rename -uid "8B12FD5E-41FC-FF4F-09FA-8192BDD4C526";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 1 10 1 23 1 30 1 38 1 43 1 50 1 55 1 61 1;
+createNode animCurveTU -n "Lower_Tail_ctrl_Follow_Rotate";
+	rename -uid "9EFE1DF6-452C-AD52-EDAF-929E10D740C9";
+	setAttr ".tan" 18;
+	setAttr -s 9 ".ktv[0:8]"  1 1 10 1 23 1 30 1 38 1 43 1 50 1 55 1 61 1;
+createNode animCurveTA -n "Head_ctrl_rotateX";
+	rename -uid "8DB84679-4B98-0490-5C09-2FAB8D8660C6";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 -3.0000000000000004 11 -9.6020396580554479
+		 17 -11.292278397060544 24 -12.194831027750725 28 -11.942214317511718 32 4.5277821921991901
+		 40 3.5062903674717054 48 4.5805074793985154 55 4.0771537122515902 58 2.2450299772651885
+		 61 -3.0000000000000004;
+createNode animCurveTA -n "Head_ctrl_rotateY";
+	rename -uid "7D3024D2-4A99-2E1D-C56D-168196C5D5A7";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 -0.21140268639667062 17 -0.36262636419039196
+		 24 -0.3393036384200846 28 -0.31291328740444857 32 -0.72707989934143091 40 -0.69084779392984397
+		 48 -0.64694277703659109 55 -0.034699092845657281 58 0.1133734857265597 61 0;
+createNode animCurveTA -n "Head_ctrl_rotateZ";
+	rename -uid "C182B299-4078-8109-C318-31B4F058BBE2";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 2 11 2.025068049329259 17 -0.30401301779204792
+		 24 -2.2549722616344208 28 -2.1147894532012357 32 -3.4110985632726991 40 -3.8377474865899468
+		 48 2.6648004095673032 55 2.3124154117769322 58 2.1325417289954474 61 2;
+createNode animCurveTA -n "Lower_Neck_ctrl_rotateX";
+	rename -uid "0C812027-4229-32C4-E5EA-198198CC8FB9";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 -3.0000000000000004 11 -9.6035201266282186
+		 17 -11.290116772636443 24 -12.171118747793527 28 -11.919106363118663 32 4.5733377423817476
+		 40 3.552535377526485 48 4.6030617365532294 55 4.0939234418441464 58 2.2559314653722033
+		 61 -3.0000000000000004;
+createNode animCurveTA -n "Lower_Neck_ctrl_rotateY";
+	rename -uid "0A9326F1-42D6-5D8B-26E0-19A8587B6722";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0.12644644289297882 17 -0.41878642189308868
+		 24 -0.82052509393964412 28 -0.78672857019884235 32 -0.52319491822305186 40 -0.2011634228243748
+		 48 -0.35675452223408638 55 -0.036146015826968275 58 0.12422360466413436 61 0;
+createNode animCurveTA -n "Lower_Neck_ctrl_rotateZ";
+	rename -uid "DCF8738F-443E-8CD1-1130-37BF5B0EF82B";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 2 11 1.996690339939849 17 -0.29873220689798829
+		 24 -2.2034110530700604 28 -2.0664425815217142 32 -3.3944751120229726 40 -3.8224086190715689
+		 48 2.6595607090869828 55 2.2954058410570419 58 2.1132541614777702 61 2;
+createNode animCurveTA -n "Neck_ctrl_rotateX";
+	rename -uid "B118E18A-4461-C744-A0CC-38BDC502B16C";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 -3.0000000000000004 11 -9.6035201266282186
+		 17 -11.290116772636443 24 -12.171118747793527 28 -11.919106363118663 32 4.5733377423817476
+		 40 3.552535377526485 48 4.6030617365532294 55 4.0939234418441464 58 2.2559314653722033
+		 61 -3.0000000000000004;
+createNode animCurveTA -n "Neck_ctrl_rotateY";
+	rename -uid "90C677EF-4545-50F5-6025-86A9F974B2E9";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0.12644644289297882 17 -0.41878642189308868
+		 24 -0.82052509393964412 28 -0.78672857019884235 32 -0.52319491822305186 40 -0.2011634228243748
+		 48 -0.35675452223408638 55 -0.036146015826968275 58 0.12422360466413436 61 0;
+createNode animCurveTA -n "Neck_ctrl_rotateZ";
+	rename -uid "0254ECCA-4F54-B739-095C-ABA62AC184C0";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 2 11 1.996690339939849 17 -0.29873220689798829
+		 24 -2.2034110530700604 28 -2.0664425815217142 32 -3.3944751120229726 40 -3.8224086190715689
+		 48 2.6595607090869828 55 2.2954058410570419 58 2.1132541614777702 61 2;
+createNode animCurveTL -n "Lower_Neck_ctrl_translateX";
+	rename -uid "8FC2EAF3-495D-9451-4D21-17B924512F6F";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0 17 0 24 0 28 0 32 0 40 0 48 0 55 0
+		 58 0 61 0;
+createNode animCurveTL -n "Lower_Neck_ctrl_translateY";
+	rename -uid "6728C3CA-4ECE-E54C-0617-DEBA44CDBAD8";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0 17 0 24 0 28 0 32 0 40 0 48 0 55 0
+		 58 0 61 0;
+createNode animCurveTL -n "Lower_Neck_ctrl_translateZ";
+	rename -uid "08964590-4788-1E5C-7EE7-4CAE62B11F2C";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0 17 0 24 0 28 0 32 0 40 0 48 0 55 0
+		 58 0 61 0;
+createNode animCurveTU -n "Lower_Neck_ctrl_Follow_Rotate";
+	rename -uid "B1C1BBB7-4648-F4B4-B571-4794A1C54ABC";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 1 11 1 17 1 24 1 28 1 32 1 40 1 48 1 55 1
+		 58 1 61 1;
+createNode animCurveTL -n "Neck_ctrl_translateX";
+	rename -uid "B30D38F4-4E4F-DB34-7A4B-A9A429714FBB";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0 17 0 24 0 28 0 32 0 40 0 48 0 55 0
+		 58 0 61 0;
+createNode animCurveTL -n "Neck_ctrl_translateY";
+	rename -uid "7FAB5525-4654-5481-F7B8-3A84B932E432";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0 17 0 24 0 28 0 32 0 40 0 48 0 55 0
+		 58 0 61 0;
+createNode animCurveTL -n "Neck_ctrl_translateZ";
+	rename -uid "658DDEBF-4AB4-800A-1BAE-03A5FE92C444";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0 17 0 24 0 28 0 32 0 40 0 48 0 55 0
+		 58 0 61 0;
+createNode animCurveTU -n "Neck_ctrl_Follow_Rotate";
+	rename -uid "0188D09B-4ACF-E11E-16C3-60951C0FF606";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 1 11 1 17 1 24 1 28 1 32 1 40 1 48 1 55 1
+		 58 1 61 1;
+createNode animCurveTL -n "Head_ctrl_translateX";
+	rename -uid "04643ABE-40DE-CF5C-C6BD-D5AA1BFE5241";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0 17 0 24 0 28 0 32 0 40 0 48 0 55 0
+		 58 0 61 0;
+createNode animCurveTL -n "Head_ctrl_translateY";
+	rename -uid "020D316C-4BF9-55D0-8845-25A93E242372";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0 17 0 24 0 28 0 32 0 40 0 48 0 55 0
+		 58 0 61 0;
+createNode animCurveTL -n "Head_ctrl_translateZ";
+	rename -uid "A1057222-4C84-8227-33F7-E4B1B0F4695D";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 0 11 0 17 0 24 0 28 0 32 0 40 0 48 0 55 0
+		 58 0 61 0;
+createNode animCurveTU -n "Head_ctrl_Follow_Rotate";
+	rename -uid "AD3AFB37-4C24-72DF-86C0-AF8C2E413477";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 1 11 1 17 1 24 1 28 1 32 1 40 1 48 1 55 1
+		 58 1 61 1;
+createNode animCurveTU -n "Head_ctrl_View_Hair_Controls";
+	rename -uid "1A67973C-4C50-29C2-1C63-ED89839AA768";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 1 11 1 17 1 24 1 28 1 32 1 40 1 48 1 55 1
+		 58 1 61 1;
+createNode animCurveTU -n "Head_ctrl_View_Hair_Mesh";
+	rename -uid "14E2632C-4080-F1B4-02BA-12951D562EB4";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 1 11 1 17 1 24 1 28 1 32 1 40 1 48 1 55 1
+		 58 1 61 1;
+createNode animCurveTU -n "Head_ctrl_View_All_Secondary_Controls";
+	rename -uid "F2EF6B6D-4D18-B1FA-3884-AC9E6B59437C";
+	setAttr ".tan" 18;
+	setAttr -s 11 ".ktv[0:10]"  1 1 11 1 17 1 24 1 28 1 32 1 40 1 48 1 55 1
+		 58 1 61 1;
 select -ne :time1;
-	setAttr ".o" 41;
-	setAttr ".unw" 41;
+	setAttr ".o" 2;
+	setAttr ".unw" 2;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -1442,14 +1764,11 @@ select -ne :initialShadingGroup;
 	setAttr -s 8 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
-select -ne :defaultRenderGlobals;
-	setAttr ".mcfr" 30;
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-	setAttr ".hwfr" 30;
 select -ne :ikSystem;
 	setAttr -s 3 ".sol";
 connectAttr "COG_ctrl_translateX.o" "CoyoteGameRN.phl[1]";
@@ -1465,107 +1784,136 @@ connectAttr "Lower_Neck_ctrl_translateZ.o" "CoyoteGameRN.phl[10]";
 connectAttr "Lower_Neck_ctrl_rotateX.o" "CoyoteGameRN.phl[11]";
 connectAttr "Lower_Neck_ctrl_rotateY.o" "CoyoteGameRN.phl[12]";
 connectAttr "Lower_Neck_ctrl_rotateZ.o" "CoyoteGameRN.phl[13]";
-connectAttr "Lower_Torso_Ctrl_translateX.o" "CoyoteGameRN.phl[14]";
-connectAttr "Lower_Torso_Ctrl_translateY.o" "CoyoteGameRN.phl[15]";
-connectAttr "Lower_Torso_Ctrl_translateZ.o" "CoyoteGameRN.phl[16]";
-connectAttr "Lower_Torso_Ctrl_rotateX.o" "CoyoteGameRN.phl[17]";
-connectAttr "Lower_Torso_Ctrl_rotateY.o" "CoyoteGameRN.phl[18]";
-connectAttr "Lower_Torso_Ctrl_rotateZ.o" "CoyoteGameRN.phl[19]";
-connectAttr "Lower_Mid_Torso_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[20]";
-connectAttr "Lower_Mid_Torso_ctrl_rotateX.o" "CoyoteGameRN.phl[21]";
-connectAttr "Lower_Mid_Torso_ctrl_rotateY.o" "CoyoteGameRN.phl[22]";
-connectAttr "Lower_Mid_Torso_ctrl_rotateZ.o" "CoyoteGameRN.phl[23]";
-connectAttr "Upper_Mid_Torso_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[24]";
-connectAttr "Upper_Mid_Torso_ctrl_rotateX.o" "CoyoteGameRN.phl[25]";
-connectAttr "Upper_Mid_Torso_ctrl_rotateY.o" "CoyoteGameRN.phl[26]";
-connectAttr "Upper_Mid_Torso_ctrl_rotateZ.o" "CoyoteGameRN.phl[27]";
-connectAttr "Upper_Torso_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[28]";
-connectAttr "Upper_Torso_ctrl_translateX.o" "CoyoteGameRN.phl[29]";
-connectAttr "Upper_Torso_ctrl_translateY.o" "CoyoteGameRN.phl[30]";
-connectAttr "Upper_Torso_ctrl_translateZ.o" "CoyoteGameRN.phl[31]";
-connectAttr "Upper_Torso_ctrl_rotateX.o" "CoyoteGameRN.phl[32]";
-connectAttr "Upper_Torso_ctrl_rotateY.o" "CoyoteGameRN.phl[33]";
-connectAttr "Upper_Torso_ctrl_rotateZ.o" "CoyoteGameRN.phl[34]";
-connectAttr "Left_Clavical_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[35]";
-connectAttr "Left_Clavical_ctrl_rotateX.o" "CoyoteGameRN.phl[36]";
-connectAttr "Left_Clavical_ctrl_rotateY.o" "CoyoteGameRN.phl[37]";
-connectAttr "Left_Clavical_ctrl_rotateZ.o" "CoyoteGameRN.phl[38]";
-connectAttr "Right_Clavical_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[39]";
-connectAttr "Right_Clavical_ctrl_rotateX.o" "CoyoteGameRN.phl[40]";
-connectAttr "Right_Clavical_ctrl_rotateY.o" "CoyoteGameRN.phl[41]";
-connectAttr "Right_Clavical_ctrl_rotateZ.o" "CoyoteGameRN.phl[42]";
-connectAttr "FK_Right_Elbow_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[43]";
-connectAttr "FK_Right_Elbow_ctrl_translateX.o" "CoyoteGameRN.phl[44]";
-connectAttr "FK_Right_Elbow_ctrl_translateY.o" "CoyoteGameRN.phl[45]";
-connectAttr "FK_Right_Elbow_ctrl_translateZ.o" "CoyoteGameRN.phl[46]";
-connectAttr "FK_Right_Elbow_ctrl_rotateX.o" "CoyoteGameRN.phl[47]";
-connectAttr "FK_Right_Elbow_ctrl_rotateY.o" "CoyoteGameRN.phl[48]";
-connectAttr "FK_Right_Elbow_ctrl_rotateZ.o" "CoyoteGameRN.phl[49]";
-connectAttr "FK_Right_Sholder_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[50]";
-connectAttr "FK_Right_Sholder_ctrl_translateX.o" "CoyoteGameRN.phl[51]";
-connectAttr "FK_Right_Sholder_ctrl_translateY.o" "CoyoteGameRN.phl[52]";
-connectAttr "FK_Right_Sholder_ctrl_translateZ.o" "CoyoteGameRN.phl[53]";
-connectAttr "FK_Right_Sholder_ctrl_rotateX.o" "CoyoteGameRN.phl[54]";
-connectAttr "FK_Right_Sholder_ctrl_rotateY.o" "CoyoteGameRN.phl[55]";
-connectAttr "FK_Right_Sholder_ctrl_rotateZ.o" "CoyoteGameRN.phl[56]";
-connectAttr "FK_Left_Elbow_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[57]";
-connectAttr "FK_Left_Elbow_ctrl_translateX.o" "CoyoteGameRN.phl[58]";
-connectAttr "FK_Left_Elbow_ctrl_translateY.o" "CoyoteGameRN.phl[59]";
-connectAttr "FK_Left_Elbow_ctrl_translateZ.o" "CoyoteGameRN.phl[60]";
-connectAttr "FK_Left_Elbow_ctrl_rotateX.o" "CoyoteGameRN.phl[61]";
-connectAttr "FK_Left_Elbow_ctrl_rotateY.o" "CoyoteGameRN.phl[62]";
-connectAttr "FK_Left_Elbow_ctrl_rotateZ.o" "CoyoteGameRN.phl[63]";
-connectAttr "FK_Left_Sholder_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[64]";
-connectAttr "FK_Left_Sholder_ctrl_translateX.o" "CoyoteGameRN.phl[65]";
-connectAttr "FK_Left_Sholder_ctrl_translateY.o" "CoyoteGameRN.phl[66]";
-connectAttr "FK_Left_Sholder_ctrl_translateZ.o" "CoyoteGameRN.phl[67]";
-connectAttr "FK_Left_Sholder_ctrl_rotateX.o" "CoyoteGameRN.phl[68]";
-connectAttr "FK_Left_Sholder_ctrl_rotateY.o" "CoyoteGameRN.phl[69]";
-connectAttr "FK_Left_Sholder_ctrl_rotateZ.o" "CoyoteGameRN.phl[70]";
-connectAttr "Right_Hand_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[71]";
-connectAttr "Right_Hand_ctrl_Clench.o" "CoyoteGameRN.phl[72]";
-connectAttr "Right_Hand_ctrl_Index_Curl.o" "CoyoteGameRN.phl[73]";
-connectAttr "Right_Hand_ctrl_Middle_Curl.o" "CoyoteGameRN.phl[74]";
-connectAttr "Right_Hand_ctrl_Pinky_Curl.o" "CoyoteGameRN.phl[75]";
-connectAttr "Right_Hand_ctrl_Thumb_Curl.o" "CoyoteGameRN.phl[76]";
-connectAttr "Right_Hand_ctrl_translateX.o" "CoyoteGameRN.phl[77]";
-connectAttr "Right_Hand_ctrl_translateY.o" "CoyoteGameRN.phl[78]";
-connectAttr "Right_Hand_ctrl_translateZ.o" "CoyoteGameRN.phl[79]";
-connectAttr "Right_Hand_ctrl_rotateX.o" "CoyoteGameRN.phl[80]";
-connectAttr "Right_Hand_ctrl_rotateY.o" "CoyoteGameRN.phl[81]";
-connectAttr "Right_Hand_ctrl_rotateZ.o" "CoyoteGameRN.phl[82]";
-connectAttr "Right_Hand_ctrl_visibility.o" "CoyoteGameRN.phl[83]";
-connectAttr "Left_Hand_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[84]";
-connectAttr "Left_Hand_ctrl_Clench.o" "CoyoteGameRN.phl[85]";
-connectAttr "Left_Hand_ctrl_Index_Curl.o" "CoyoteGameRN.phl[86]";
-connectAttr "Left_Hand_ctrl_Middle_Curl.o" "CoyoteGameRN.phl[87]";
-connectAttr "Left_Hand_ctrl_Pinky_Curl.o" "CoyoteGameRN.phl[88]";
-connectAttr "Left_Hand_ctrl_Thumb_Curl.o" "CoyoteGameRN.phl[89]";
-connectAttr "Left_Hand_ctrl_translateX.o" "CoyoteGameRN.phl[90]";
-connectAttr "Left_Hand_ctrl_translateY.o" "CoyoteGameRN.phl[91]";
-connectAttr "Left_Hand_ctrl_translateZ.o" "CoyoteGameRN.phl[92]";
-connectAttr "Left_Hand_ctrl_rotateX.o" "CoyoteGameRN.phl[93]";
-connectAttr "Left_Hand_ctrl_rotateY.o" "CoyoteGameRN.phl[94]";
-connectAttr "Left_Hand_ctrl_rotateZ.o" "CoyoteGameRN.phl[95]";
-connectAttr "Left_Hand_ctrl_visibility.o" "CoyoteGameRN.phl[96]";
-connectAttr "IK_Right_Upper_Leg_ctrl_Follow_Parent.o" "CoyoteGameRN.phl[97]";
-connectAttr "IK_Right_Upper_Leg_ctrl_Roll.o" "CoyoteGameRN.phl[98]";
-connectAttr "IK_Right_Upper_Leg_ctrl_Twist.o" "CoyoteGameRN.phl[99]";
-connectAttr "IK_Right_Upper_Leg_ctrl_translateX.o" "CoyoteGameRN.phl[100]";
-connectAttr "IK_Right_Upper_Leg_ctrl_translateY.o" "CoyoteGameRN.phl[101]";
-connectAttr "IK_Right_Upper_Leg_ctrl_translateZ.o" "CoyoteGameRN.phl[102]";
-connectAttr "IK_Right_Upper_Leg_ctrl_rotateX.o" "CoyoteGameRN.phl[103]";
-connectAttr "IK_Right_Upper_Leg_ctrl_rotateY.o" "CoyoteGameRN.phl[104]";
-connectAttr "IK_Right_Upper_Leg_ctrl_rotateZ.o" "CoyoteGameRN.phl[105]";
-connectAttr "IK_Left_Upper_Leg_ctrl_Follow_Parent.o" "CoyoteGameRN.phl[106]";
-connectAttr "IK_Left_Upper_Leg_ctrl_Roll.o" "CoyoteGameRN.phl[107]";
-connectAttr "IK_Left_Upper_Leg_ctrl_Twist.o" "CoyoteGameRN.phl[108]";
-connectAttr "IK_Left_Upper_Leg_ctrl_translateX.o" "CoyoteGameRN.phl[109]";
-connectAttr "IK_Left_Upper_Leg_ctrl_translateY.o" "CoyoteGameRN.phl[110]";
-connectAttr "IK_Left_Upper_Leg_ctrl_translateZ.o" "CoyoteGameRN.phl[111]";
-connectAttr "IK_Left_Upper_Leg_ctrl_rotateX.o" "CoyoteGameRN.phl[112]";
-connectAttr "IK_Left_Upper_Leg_ctrl_rotateY.o" "CoyoteGameRN.phl[113]";
-connectAttr "IK_Left_Upper_Leg_ctrl_rotateZ.o" "CoyoteGameRN.phl[114]";
+connectAttr "Neck_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[14]";
+connectAttr "Neck_ctrl_translateX.o" "CoyoteGameRN.phl[15]";
+connectAttr "Neck_ctrl_translateY.o" "CoyoteGameRN.phl[16]";
+connectAttr "Neck_ctrl_translateZ.o" "CoyoteGameRN.phl[17]";
+connectAttr "Neck_ctrl_rotateX.o" "CoyoteGameRN.phl[18]";
+connectAttr "Neck_ctrl_rotateY.o" "CoyoteGameRN.phl[19]";
+connectAttr "Neck_ctrl_rotateZ.o" "CoyoteGameRN.phl[20]";
+connectAttr "Head_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[21]";
+connectAttr "Head_ctrl_View_Hair_Controls.o" "CoyoteGameRN.phl[22]";
+connectAttr "Head_ctrl_View_Hair_Mesh.o" "CoyoteGameRN.phl[23]";
+connectAttr "Head_ctrl_View_All_Secondary_Controls.o" "CoyoteGameRN.phl[24]";
+connectAttr "Head_ctrl_translateX.o" "CoyoteGameRN.phl[25]";
+connectAttr "Head_ctrl_translateY.o" "CoyoteGameRN.phl[26]";
+connectAttr "Head_ctrl_translateZ.o" "CoyoteGameRN.phl[27]";
+connectAttr "Head_ctrl_rotateX.o" "CoyoteGameRN.phl[28]";
+connectAttr "Head_ctrl_rotateY.o" "CoyoteGameRN.phl[29]";
+connectAttr "Head_ctrl_rotateZ.o" "CoyoteGameRN.phl[30]";
+connectAttr "Lower_Torso_Ctrl_translateX.o" "CoyoteGameRN.phl[31]";
+connectAttr "Lower_Torso_Ctrl_translateY.o" "CoyoteGameRN.phl[32]";
+connectAttr "Lower_Torso_Ctrl_translateZ.o" "CoyoteGameRN.phl[33]";
+connectAttr "Lower_Torso_Ctrl_rotateX.o" "CoyoteGameRN.phl[34]";
+connectAttr "Lower_Torso_Ctrl_rotateY.o" "CoyoteGameRN.phl[35]";
+connectAttr "Lower_Torso_Ctrl_rotateZ.o" "CoyoteGameRN.phl[36]";
+connectAttr "Lower_Mid_Torso_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[37]";
+connectAttr "Lower_Mid_Torso_ctrl_rotateX.o" "CoyoteGameRN.phl[38]";
+connectAttr "Lower_Mid_Torso_ctrl_rotateY.o" "CoyoteGameRN.phl[39]";
+connectAttr "Lower_Mid_Torso_ctrl_rotateZ.o" "CoyoteGameRN.phl[40]";
+connectAttr "Upper_Mid_Torso_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[41]";
+connectAttr "Upper_Mid_Torso_ctrl_rotateX.o" "CoyoteGameRN.phl[42]";
+connectAttr "Upper_Mid_Torso_ctrl_rotateY.o" "CoyoteGameRN.phl[43]";
+connectAttr "Upper_Mid_Torso_ctrl_rotateZ.o" "CoyoteGameRN.phl[44]";
+connectAttr "Upper_Torso_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[45]";
+connectAttr "Upper_Torso_ctrl_translateX.o" "CoyoteGameRN.phl[46]";
+connectAttr "Upper_Torso_ctrl_translateY.o" "CoyoteGameRN.phl[47]";
+connectAttr "Upper_Torso_ctrl_translateZ.o" "CoyoteGameRN.phl[48]";
+connectAttr "Upper_Torso_ctrl_rotateX.o" "CoyoteGameRN.phl[49]";
+connectAttr "Upper_Torso_ctrl_rotateY.o" "CoyoteGameRN.phl[50]";
+connectAttr "Upper_Torso_ctrl_rotateZ.o" "CoyoteGameRN.phl[51]";
+connectAttr "Lower_Tail_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[52]";
+connectAttr "Lower_Tail_ctrl_rotateZ.o" "CoyoteGameRN.phl[53]";
+connectAttr "Lower_Tail_ctrl_rotateX.o" "CoyoteGameRN.phl[54]";
+connectAttr "Lower_Tail_ctrl_rotateY.o" "CoyoteGameRN.phl[55]";
+connectAttr "Mid_Tail_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[56]";
+connectAttr "Mid_Tail_ctrl_rotateZ.o" "CoyoteGameRN.phl[57]";
+connectAttr "Mid_Tail_ctrl_rotateX.o" "CoyoteGameRN.phl[58]";
+connectAttr "Mid_Tail_ctrl_rotateY.o" "CoyoteGameRN.phl[59]";
+connectAttr "Upper_Tail_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[60]";
+connectAttr "Upper_Tail_ctrl_rotateZ.o" "CoyoteGameRN.phl[61]";
+connectAttr "Upper_Tail_ctrl_rotateX.o" "CoyoteGameRN.phl[62]";
+connectAttr "Upper_Tail_ctrl_rotateY.o" "CoyoteGameRN.phl[63]";
+connectAttr "Left_Clavical_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[64]";
+connectAttr "Left_Clavical_ctrl_rotateX.o" "CoyoteGameRN.phl[65]";
+connectAttr "Left_Clavical_ctrl_rotateY.o" "CoyoteGameRN.phl[66]";
+connectAttr "Left_Clavical_ctrl_rotateZ.o" "CoyoteGameRN.phl[67]";
+connectAttr "Right_Clavical_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[68]";
+connectAttr "Right_Clavical_ctrl_rotateX.o" "CoyoteGameRN.phl[69]";
+connectAttr "Right_Clavical_ctrl_rotateY.o" "CoyoteGameRN.phl[70]";
+connectAttr "Right_Clavical_ctrl_rotateZ.o" "CoyoteGameRN.phl[71]";
+connectAttr "FK_Right_Elbow_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[72]";
+connectAttr "FK_Right_Elbow_ctrl_translateX.o" "CoyoteGameRN.phl[73]";
+connectAttr "FK_Right_Elbow_ctrl_translateY.o" "CoyoteGameRN.phl[74]";
+connectAttr "FK_Right_Elbow_ctrl_translateZ.o" "CoyoteGameRN.phl[75]";
+connectAttr "FK_Right_Elbow_ctrl_rotateX.o" "CoyoteGameRN.phl[76]";
+connectAttr "FK_Right_Elbow_ctrl_rotateY.o" "CoyoteGameRN.phl[77]";
+connectAttr "FK_Right_Elbow_ctrl_rotateZ.o" "CoyoteGameRN.phl[78]";
+connectAttr "FK_Right_Sholder_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[79]";
+connectAttr "FK_Right_Sholder_ctrl_translateX.o" "CoyoteGameRN.phl[80]";
+connectAttr "FK_Right_Sholder_ctrl_translateY.o" "CoyoteGameRN.phl[81]";
+connectAttr "FK_Right_Sholder_ctrl_translateZ.o" "CoyoteGameRN.phl[82]";
+connectAttr "FK_Right_Sholder_ctrl_rotateX.o" "CoyoteGameRN.phl[83]";
+connectAttr "FK_Right_Sholder_ctrl_rotateY.o" "CoyoteGameRN.phl[84]";
+connectAttr "FK_Right_Sholder_ctrl_rotateZ.o" "CoyoteGameRN.phl[85]";
+connectAttr "FK_Left_Elbow_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[86]";
+connectAttr "FK_Left_Elbow_ctrl_translateX.o" "CoyoteGameRN.phl[87]";
+connectAttr "FK_Left_Elbow_ctrl_translateY.o" "CoyoteGameRN.phl[88]";
+connectAttr "FK_Left_Elbow_ctrl_translateZ.o" "CoyoteGameRN.phl[89]";
+connectAttr "FK_Left_Elbow_ctrl_rotateX.o" "CoyoteGameRN.phl[90]";
+connectAttr "FK_Left_Elbow_ctrl_rotateY.o" "CoyoteGameRN.phl[91]";
+connectAttr "FK_Left_Elbow_ctrl_rotateZ.o" "CoyoteGameRN.phl[92]";
+connectAttr "FK_Left_Sholder_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[93]";
+connectAttr "FK_Left_Sholder_ctrl_translateX.o" "CoyoteGameRN.phl[94]";
+connectAttr "FK_Left_Sholder_ctrl_translateY.o" "CoyoteGameRN.phl[95]";
+connectAttr "FK_Left_Sholder_ctrl_translateZ.o" "CoyoteGameRN.phl[96]";
+connectAttr "FK_Left_Sholder_ctrl_rotateX.o" "CoyoteGameRN.phl[97]";
+connectAttr "FK_Left_Sholder_ctrl_rotateY.o" "CoyoteGameRN.phl[98]";
+connectAttr "FK_Left_Sholder_ctrl_rotateZ.o" "CoyoteGameRN.phl[99]";
+connectAttr "Right_Hand_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[100]";
+connectAttr "Right_Hand_ctrl_Clench.o" "CoyoteGameRN.phl[101]";
+connectAttr "Right_Hand_ctrl_Index_Curl.o" "CoyoteGameRN.phl[102]";
+connectAttr "Right_Hand_ctrl_Middle_Curl.o" "CoyoteGameRN.phl[103]";
+connectAttr "Right_Hand_ctrl_Pinky_Curl.o" "CoyoteGameRN.phl[104]";
+connectAttr "Right_Hand_ctrl_Thumb_Curl.o" "CoyoteGameRN.phl[105]";
+connectAttr "Right_Hand_ctrl_translateX.o" "CoyoteGameRN.phl[106]";
+connectAttr "Right_Hand_ctrl_translateY.o" "CoyoteGameRN.phl[107]";
+connectAttr "Right_Hand_ctrl_translateZ.o" "CoyoteGameRN.phl[108]";
+connectAttr "Right_Hand_ctrl_rotateX.o" "CoyoteGameRN.phl[109]";
+connectAttr "Right_Hand_ctrl_rotateY.o" "CoyoteGameRN.phl[110]";
+connectAttr "Right_Hand_ctrl_rotateZ.o" "CoyoteGameRN.phl[111]";
+connectAttr "Right_Hand_ctrl_visibility.o" "CoyoteGameRN.phl[112]";
+connectAttr "Left_Hand_ctrl_Follow_Rotate.o" "CoyoteGameRN.phl[113]";
+connectAttr "Left_Hand_ctrl_Clench.o" "CoyoteGameRN.phl[114]";
+connectAttr "Left_Hand_ctrl_Index_Curl.o" "CoyoteGameRN.phl[115]";
+connectAttr "Left_Hand_ctrl_Middle_Curl.o" "CoyoteGameRN.phl[116]";
+connectAttr "Left_Hand_ctrl_Pinky_Curl.o" "CoyoteGameRN.phl[117]";
+connectAttr "Left_Hand_ctrl_Thumb_Curl.o" "CoyoteGameRN.phl[118]";
+connectAttr "Left_Hand_ctrl_translateX.o" "CoyoteGameRN.phl[119]";
+connectAttr "Left_Hand_ctrl_translateY.o" "CoyoteGameRN.phl[120]";
+connectAttr "Left_Hand_ctrl_translateZ.o" "CoyoteGameRN.phl[121]";
+connectAttr "Left_Hand_ctrl_rotateX.o" "CoyoteGameRN.phl[122]";
+connectAttr "Left_Hand_ctrl_rotateY.o" "CoyoteGameRN.phl[123]";
+connectAttr "Left_Hand_ctrl_rotateZ.o" "CoyoteGameRN.phl[124]";
+connectAttr "Left_Hand_ctrl_visibility.o" "CoyoteGameRN.phl[125]";
+connectAttr "IK_Right_Upper_Leg_ctrl_Follow_Parent.o" "CoyoteGameRN.phl[126]";
+connectAttr "IK_Right_Upper_Leg_ctrl_Roll.o" "CoyoteGameRN.phl[127]";
+connectAttr "IK_Right_Upper_Leg_ctrl_Twist.o" "CoyoteGameRN.phl[128]";
+connectAttr "IK_Right_Upper_Leg_ctrl_translateX.o" "CoyoteGameRN.phl[129]";
+connectAttr "IK_Right_Upper_Leg_ctrl_translateY.o" "CoyoteGameRN.phl[130]";
+connectAttr "IK_Right_Upper_Leg_ctrl_translateZ.o" "CoyoteGameRN.phl[131]";
+connectAttr "IK_Right_Upper_Leg_ctrl_rotateX.o" "CoyoteGameRN.phl[132]";
+connectAttr "IK_Right_Upper_Leg_ctrl_rotateY.o" "CoyoteGameRN.phl[133]";
+connectAttr "IK_Right_Upper_Leg_ctrl_rotateZ.o" "CoyoteGameRN.phl[134]";
+connectAttr "IK_Left_Upper_Leg_ctrl_Follow_Parent.o" "CoyoteGameRN.phl[135]";
+connectAttr "IK_Left_Upper_Leg_ctrl_Roll.o" "CoyoteGameRN.phl[136]";
+connectAttr "IK_Left_Upper_Leg_ctrl_Twist.o" "CoyoteGameRN.phl[137]";
+connectAttr "IK_Left_Upper_Leg_ctrl_translateX.o" "CoyoteGameRN.phl[138]";
+connectAttr "IK_Left_Upper_Leg_ctrl_translateY.o" "CoyoteGameRN.phl[139]";
+connectAttr "IK_Left_Upper_Leg_ctrl_translateZ.o" "CoyoteGameRN.phl[140]";
+connectAttr "IK_Left_Upper_Leg_ctrl_rotateX.o" "CoyoteGameRN.phl[141]";
+connectAttr "IK_Left_Upper_Leg_ctrl_rotateY.o" "CoyoteGameRN.phl[142]";
+connectAttr "IK_Left_Upper_Leg_ctrl_rotateZ.o" "CoyoteGameRN.phl[143]";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
@@ -1573,4 +1921,4 @@ relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":default
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of Woozie_02.ma
+// End of Woozie_03.ma
