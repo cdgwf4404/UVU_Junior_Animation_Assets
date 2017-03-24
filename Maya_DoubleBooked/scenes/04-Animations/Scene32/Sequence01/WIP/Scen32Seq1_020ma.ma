@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
-//Name: Scen32Seq1.ma
-//Last modified: Thu, Mar 23, 2017 01:38:04 PM
+//Name: Scen32Seq1_020ma.ma
+//Last modified: Thu, Mar 23, 2017 12:58:56 PM
 //Codeset: 1252
 file -rdi 1 -ns "StageLayout_02" -rfn "StageLayout_02RN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/singi/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/03-Sets/S/Stage/StageLayout_02.ma";
@@ -12056,4 +12056,4 @@ connectAttr "pairBlend10_inRotateX1.o" "pairBlend10.irx1";
 connectAttr "pairBlend10_inRotateY1.o" "pairBlend10.iry1";
 connectAttr "pairBlend10_inRotateZ1.o" "pairBlend10.irz1";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of Scen32Seq1.ma
+// End of Scen32Seq1_020ma.ma
