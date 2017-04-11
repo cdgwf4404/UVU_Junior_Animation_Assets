@@ -1,8 +1,10 @@
 //Maya ASCII 2017 scene
 //Name: PostersBoardWithPostersOn.ma
-//Last modified: Sat, Feb 11, 2017 12:56:46 PM
+//Last modified: Tue, Apr 11, 2017 12:55:53 PM
 //Codeset: 1252
 requires maya "2017";
+requires -nodeType "RedshiftOptions" -nodeType "RedshiftBumpMap" -nodeType "RedshiftMaterial"
+		 "redshift4maya" "2.0.89";
 requires "stereoCamera" "10.0";
 requires "stereoCamera" "10.0";
 currentUnit -l meter -a degree -t film;
@@ -16,7 +18,7 @@ createNode transform -s -n "persp";
 	rename -uid "B6B8FB83-A14D-E5C3-639B-549568B5E7E8";
 	setAttr ".v" no;
 	setAttr ".t" -type "double3" 0.20107603180245984 1.4561375943221264 2.6866705356574103 ;
-	setAttr ".r" -type "double3" -3.3383527297201505 363.39999999917814 0 ;
+	setAttr ".r" -type "double3" -3.338352729720151 363.39999999917814 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "DE24E3DF-6D42-1B06-2C17-EAB05EFA03CB";
 	setAttr -k off ".v" no;
@@ -11551,23 +11553,23 @@ createNode mesh -n "BasePostersShape" -p "BasePosters";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "212C82E0-4A2D-9E82-7AD9-7C9C72D0A8AF";
-	setAttr -s 3 ".lnk";
-	setAttr -s 3 ".slnk";
+	rename -uid "CF6134AE-4ED2-C3AE-FD75-3A8E6FBACA54";
+	setAttr -s 4 ".lnk";
+	setAttr -s 4 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "CCD8FCC2-4D96-4946-008F-04BE6CCFADB0";
+	rename -uid "DDDE4080-442F-50FA-4578-3C8747B43836";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "B252D4E0-924F-4F32-13D4-F5B2D11D73AF";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A8F30B24-4E1E-BC7E-29DB-72AB4BA12013";
+	rename -uid "568334BA-4B09-10AD-EE1E-A0BD23EA8A2E";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "87444DB2-2644-3B99-65B7-BCA92164FA6C";
 	setAttr ".g" yes;
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "928AF20D-422C-D308-7B78-C5A6C0BA7EFC";
+	rename -uid "ADD632B9-44D5-339E-E94B-4CAE91ADD83F";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "55D27779-4BBC-7AD9-8776-DD961F07F082";
+	rename -uid "A1BDA1F5-495E-63AE-C629-FE833BD9DBB1";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "45075CCE-3943-3486-A6B4-648FB12C0880";
 	setAttr ".b" -type "string" (
@@ -11599,33 +11601,33 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"front\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 1\n"
 		+ "                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n"
 		+ "                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n"
-		+ "                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 924\n                -height 715\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
+		+ "                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 818\n                -height 715\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
 		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n"
-		+ "            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 924\n            -height 715\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n"
-		+ "            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n"
-		+ "                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n"
-		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n"
-		+ "            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"graphEditor\" -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n"
-		+ "                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n"
-		+ "                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n"
-		+ "                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n"
-		+ "                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n"
-		+ "                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n"
-		+ "                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dopeSheetPanel\" -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n"
-		+ "                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n"
-		+ "                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n"
-		+ "                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n"
-		+ "                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n"
-		+ "                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n"
-		+ "                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"timeEditorPanel\" -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"clipEditorPanel\" -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels `;\n"
-		+ "\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n"
-		+ "                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"sequenceEditorPanel\" -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"hyperGraphPanel\" -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n"
-		+ "            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n"
-		+ "                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n"
-		+ "                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"visorPanel\" -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
+		+ "            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 818\n            -height 715\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n"
+		+ "            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n"
+		+ "                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n"
+		+ "                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n"
+		+ "            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n"
+		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"graphEditor\" -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n"
+		+ "                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n"
+		+ "                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n"
+		+ "                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n"
+		+ "                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n"
+		+ "                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n"
+		+ "                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dopeSheetPanel\" -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n"
+		+ "                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n"
+		+ "                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n"
+		+ "                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n"
+		+ "                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n"
+		+ "                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n"
+		+ "                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"timeEditorPanel\" -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n"
+		+ "\t\t\t$panelName = `scriptedPanel -unParent  -type \"clipEditorPanel\" -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n"
+		+ "                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"sequenceEditorPanel\" -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n"
+		+ "                -manageSequencer 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"hyperGraphPanel\" -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels `;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n"
+		+ "                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n"
+		+ "                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"visorPanel\" -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"createNodePanel\" -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n"
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"renderWindowPanel\" -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tshapePanel -unParent -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tposePanel -unParent -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels ;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n"
@@ -11677,13 +11679,17 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
 		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n"
 		+ "            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n"
-		+ "                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n"
-		+ "                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -renderFilterIndex 0\n                -selectionOrder \"chronological\" \n                -expandAttribute 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n"
-		+ "            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"0\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n"
-		+ "            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n"
-		+ "\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"front\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 924\\n    -height 715\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"front\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 924\\n    -height 715\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n"
+		+ "                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n"
+		+ "            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n"
+		+ "            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n"
+		+ "                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 1\n"
+		+ "                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -renderFilterIndex 0\n                -selectionOrder \"chronological\" \n                -expandAttribute 0\n"
+		+ "                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n"
+		+ "            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"0\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n"
+		+ "            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"front\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 818\\n    -height 715\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"front\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 818\\n    -height 715\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -11700,8 +11706,6 @@ createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model:renderLayerManag
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model:defaultRenderLayer";
 	rename -uid "02BC19E4-6F43-4BD4-EDED-74A399AD5B8E";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model:lambert2";
-	rename -uid "66031D60-9845-B493-6621-2CBE0A7C2094";
 createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model:elepant_rig_0011:renderLayerManager";
 	rename -uid "0F1D76DC-0A47-B5A0-325D-A68E656D3DB0";
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model:elepant_rig_0011:defaultRenderLayer";
@@ -11712,8 +11716,6 @@ createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model:elepant_rig_0011
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:defaultRenderLayer";
 	rename -uid "23EABC69-2145-4B00-3589-2080236038EA";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:lambert2";
-	rename -uid "583B8E6D-6F44-5057-1AFB-3DB934C60311";
 createNode timeEditorTracks -n "Poster_Board_UVs:Coyote_Model:elepant_rig_0011:Composition1";
 	rename -uid "9F452EC7-CF43-D184-7F67-C09E47190018";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model:groupId25";
@@ -11916,8 +11918,6 @@ createNode groupParts -n "Poster_Board_UVs:Coyote_Model:groupParts5";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model:groupId42";
 	rename -uid "3DD60E19-174D-EDC6-54EE-1B9778DB4B25";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model:lambert3";
-	rename -uid "6D005237-A24A-4324-47AD-B5A8578F2930";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model:groupId79";
 	rename -uid "15DB0E98-7B42-7A84-F48E-D18775503B6A";
 	setAttr ".ihi" 0;
@@ -11926,43 +11926,11 @@ createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model:lp_elephant_Comp
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:defaultRenderLayer";
 	rename -uid "CBBDF0EC-544B-637E-822F-C88072BF4A70";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2";
-	rename -uid "FEC733A3-F54F-B2AD-4D54-2C88928FCDA4";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:lambert2";
-	rename -uid "5BA3049F-1440-2D48-8764-58A3A63BCA76";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
-	rename -uid "CB3E959C-7949-DEDD-5E8D-F38182E10B26";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:lambert3";
-	rename -uid "7B147755-1642-EDF4-FEC1-5896FCA722C9";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4";
-	rename -uid "54DF50C6-3D47-4E9B-A8A2-9B94F8C0FDE9";
 createNode renderLayerManager -n "Poster_Board_UVs:Elephant_Model:renderLayerManager";
 	rename -uid "D9B57D20-DF41-ACAF-C4BB-CA9F47388C2D";
 createNode renderLayer -n "Poster_Board_UVs:Elephant_Model:defaultRenderLayer";
 	rename -uid "4B63A5F8-7A46-048B-208B-BE87F5897066";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Fixed_legs_0002:lambert2";
-	rename -uid "A87D3C33-934F-5784-F782-4DAC701E388B";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:lambert2";
-	rename -uid "0929F915-2F4C-1D54-B1C5-A0864107F408";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Fixed_legs_0002:lambert3";
-	rename -uid "4B55AF86-EB47-FE6F-2B58-6E898BEA89DD";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:lambert3";
-	rename -uid "B1A76B9F-4F4C-A4A7-13C3-D28833119E4A";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Fixed_legs_0002:lambert4";
-	rename -uid "FF309731-194B-AC49-6ECF-9E8F896F9D48";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:elephant:elephant_BodySG2";
-	rename -uid "F457CBC6-184A-131E-ED26-D38A642780AE";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:elephant1:elephant_BodySG2";
-	rename -uid "C8121DDE-4C45-DD85-6683-A89487D9A001";
-createNode condition -n "Poster_Board_UVs:Elephant_Model:condition1";
-	rename -uid "E1AE3CEC-434A-8AB4-CE1E-1E9B4EAAD4F3";
-	setAttr ".op" 2;
-	setAttr ".st" 73.596000671386719;
-createNode multiplyDivide -n "Poster_Board_UVs:Elephant_Model:multiplyDivide1";
-	rename -uid "65240FBF-8546-4751-D252-C29E4F52EDD5";
-	setAttr ".op" 2;
-	setAttr ".i2" -type "float3" 73.596001 1 1 ;
 createNode timeEditorTracks -n "Poster_Board_UVs:Elephant_Model:Composition1";
 	rename -uid "648B67C7-8247-F161-7AF0-B2ADE08B432C";
 createNode renderLayerManager -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:renderLayerManager";
@@ -11970,278 +11938,26 @@ createNode renderLayerManager -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Ri
 createNode renderLayer -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:defaultRenderLayer";
 	rename -uid "E1DA976F-9B47-E575-3EB9-638F68355612";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert2";
-	rename -uid "6A5D2D77-EB40-EEC2-FB69-8D8EC1D66C66";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert2";
-	rename -uid "FA01CB10-414B-167E-65D0-54AEE8B55752";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3";
-	rename -uid "9BCB1FC0-7841-A765-FE45-6E8D37B77D65";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert3";
-	rename -uid "1AF5401F-2D4A-38E9-B12A-B8BB0C4B8E34";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert4";
-	rename -uid "35A351C4-AA4C-B0DE-B619-94A5A85C3F34";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:elephant:elephant_BodySG2";
-	rename -uid "479CD8AA-1F4D-B6EB-33CF-C7BB2F83CAA4";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:elephant1:elephant_BodySG2";
-	rename -uid "6D295176-7C49-4C5F-F3AF-C7A3FDE6B167";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye";
-	rename -uid "43D9B1F4-3546-F701-9797-528FD236A3BC";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye3";
-	rename -uid "3A37CF34-304F-22EE-6E0F-AF8BBD2B1580";
-	setAttr ".c" -type "float3" 1 1 1 ;
 createNode groupId -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:groupId35";
 	rename -uid "5A2610A1-B645-FAB4-8B71-9D813753E6C2";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Eye";
-	rename -uid "3BC1A234-3B4C-060B-3C30-3CA47F0C368E";
-	setAttr ".c" -type "float3" 1 1 1 ;
 createNode groupId -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:groupId37";
 	rename -uid "C142A6B6-DE4F-6945-084B-D79201342F8F";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Leg1";
-	rename -uid "E6728F62-424B-0E4C-7968-CEB8D7A94991";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_leg";
-	rename -uid "96B7F109-3941-8AA7-F318-F48361C89501";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Foot";
-	rename -uid "DF195FA7-F849-1899-4896-66AB72048F9A";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Foot";
-	rename -uid "4C84BFA6-4845-7831-D7AC-C08A1B4622E2";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Hand1";
-	rename -uid "1E632B10-2840-D08E-3C9A-99BB89FD671B";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Hand";
-	rename -uid "9FA6EF3D-944A-F7A7-3749-1C9B942904F2";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve";
-	rename -uid "771EBCD3-5C44-E8CE-3A36-01B426B8D8DB";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Tusk";
-	rename -uid "D57F6C4D-EC45-6403-AA18-39A187AA5498";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert5";
-	rename -uid "40BF35F2-ED4A-4CCB-DAED-9A8450D7DE00";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker1";
-	rename -uid "34C98596-E049-3E0B-D310-54979B22C74D";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture1";
-	rename -uid "6A6E8756-1942-A2AB-FF27-BF8D578949C5";
-	setAttr ".re" -type "float2" 8 8 ;
-createNode nodeGraphEditorInfo -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "4213C345-6C4C-4563-7A84-81AE679E27D3";
-	setAttr ".def" no;
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -756.35695187706074 -580.73625013194282 ;
-	setAttr ".tgi[0].vh" -type "double2" 100.86411376008934 504.65456310548376 ;
-	setAttr -s 4 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" -560;
-	setAttr ".tgi[0].ni[0].y" 218.57142639160156;
-	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" -251.66667175292969;
-	setAttr ".tgi[0].ni[1].y" 241.19047546386719;
-	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" 361.42855834960937;
-	setAttr ".tgi[0].ni[2].y" 218.57142639160156;
-	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" 54.285713195800781;
-	setAttr ".tgi[0].ni[3].y" 240;
-	setAttr ".tgi[0].ni[3].nvs" 1923;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Belly";
-	rename -uid "987818D2-574B-29F4-BE6B-BB89F3144612";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker2";
-	rename -uid "58278026-2A41-0826-6C95-3997FE9FA1E4";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture2";
-	rename -uid "28804EA3-8C44-95AF-4B7A-BC96092466B7";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Leg1";
-	rename -uid "44BB225C-1742-AA9F-B5AA-D7A7089729A2";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker3";
-	rename -uid "568E46BB-3046-76E2-8280-BEAFE923DD7F";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture3";
-	rename -uid "B4411E9F-B245-A326-E420-1F9D1E04966F";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Leg2";
-	rename -uid "6BB0973D-7F49-7CCC-254B-15BB3AE8C3D0";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker4";
-	rename -uid "9E6E246D-8446-498D-DB45-279B5C03AB5A";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture4";
-	rename -uid "146AD38A-D844-8474-344C-6F8B7DA39AFC";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Foot1";
-	rename -uid "0BAF0D07-B641-F85A-9B1D-87BA5E7B4C3E";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker5";
-	rename -uid "C9356BA5-3E4E-CBB9-5A22-D1BF509DDEE2";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture5";
-	rename -uid "C087CBA6-A349-D849-92C9-FD9A025B3E2F";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Foot2";
-	rename -uid "A2739277-A64C-1E93-1216-1CAFBE3A9460";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker6";
-	rename -uid "8683B25F-2F43-B1D4-8CC0-3E85AD331D8D";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture6";
-	rename -uid "1DD3AA7A-BC42-897D-F64E-FABFEFED1586";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Hand2";
-	rename -uid "E538CAF9-9D4A-59E9-8F0C-9286FA74983A";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker7";
-	rename -uid "EAEEFE61-CE44-9C15-A0D7-6B8FBB8DE251";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture7";
-	rename -uid "460D1B8F-E543-28B4-DD81-47AE32BC0A24";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Hand2";
-	rename -uid "BFEAA37E-5A49-5B4B-6780-1A855ACB5767";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker8";
-	rename -uid "C4320B95-A143-4276-BAE9-D8A5FD1B2D30";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture8";
-	rename -uid "FFF1CF16-C74D-793E-C284-2780B82ACFD2";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Sleeve";
-	rename -uid "21D5CB0B-044C-A635-F056-E2B2D6905CCC";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker9";
-	rename -uid "B4858593-5949-D8DE-532F-FBBD64A90FF3";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture9";
-	rename -uid "492B695C-7048-6D32-BE1F-079CAD1B305A";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve2";
-	rename -uid "29B3983B-FE4A-C383-39AC-7DAB53D17A2A";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker10";
-	rename -uid "2ADD592B-1D4A-0F16-A1FE-CF83141165DD";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture10";
-	rename -uid "0A415BF4-AA44-C3A8-0A59-218F4BCADF49";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:RIght_Tusk";
-	rename -uid "2568DE9E-3E42-6DE6-8ABB-3F9655BEB9AF";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker11";
-	rename -uid "6850F2E6-DE4D-AA08-1BB8-25A507D1D5A0";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture11";
-	rename -uid "40FB32B7-124B-E713-F239-DCB93C385F6F";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Cuff";
-	rename -uid "4D4B6596-2648-9B3F-81FC-2592540F3087";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker12";
-	rename -uid "6773A0B9-6948-DB7C-96C1-AD896DAE61A6";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture12";
-	rename -uid "0E59BE67-A342-8483-3164-50A8EAB6B75E";
-	setAttr ".re" -type "float2" 4 4 ;
 createNode groupId -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:groupId61";
 	rename -uid "AAC89410-0543-CF05-F014-D5BD5307DC65";
 	setAttr ".ihi" 0;
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker13";
-	rename -uid "8A51F559-664B-07AA-2431-7DA7D73F878F";
-	setAttr ".c1" -type "float3" 0 0 0 ;
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture13";
-	rename -uid "81DF384B-1249-0BC9-CB68-D289E8B9192B";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye4";
-	rename -uid "CB1AA952-C64D-73BD-6E50-B291A64A16D7";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker14";
-	rename -uid "63B81866-B249-0352-44EE-D7A7EB56DB7D";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture14";
-	rename -uid "A90EF3AF-6540-750B-1C43-1A9EFB8CB6D1";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Eye2";
-	rename -uid "1FD0DF1C-2B4E-C84C-BEE3-FA8F068E8CB7";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker15";
-	rename -uid "9D68C805-584F-D93B-38AB-5A9E562CBD4F";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture15";
-	rename -uid "34587B68-784E-B422-A8AE-4E97133C9CEA";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Ear";
-	rename -uid "D9AA8748-3747-3EE4-2154-519CD1B1FE77";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker16";
-	rename -uid "7E559FE4-7C48-5B89-F570-CFA92407BAD9";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture16";
-	rename -uid "8DADC2C7-FF42-94D4-B67B-06BCDC87E66D";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert11";
-	rename -uid "555A5855-AF4B-F52C-7EB8-B39AED0CCE09";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Ear";
-	rename -uid "4653FD96-2047-98A4-4109-848460A88908";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker17";
-	rename -uid "4239EDD3-9E46-93EF-8BB4-2E89E66ABB4E";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture17";
-	rename -uid "C16EE3A0-C04B-9F8F-B9D2-2A982A5AC7FC";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Trunk";
-	rename -uid "2DC413AF-B841-8BB5-AC8B-4F80928C239A";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker18";
-	rename -uid "F99689E4-E04D-C190-E012-06BFDA6DACC0";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture18";
-	rename -uid "1D56FAB3-9740-2276-B24C-5DB9474627FE";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Suit_Coat_Back";
-	rename -uid "16BACD9B-A94E-20FF-0D74-098306854609";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker19";
-	rename -uid "A822102E-9B4A-9C5F-798C-FF89B26399CD";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture19";
-	rename -uid "42586013-C64D-3200-9FFE-A6AACDAE80FF";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert14";
-	rename -uid "87A04F53-974C-F1E3-CBAB-92B4A1646D7E";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Tail";
-	rename -uid "151A942B-6B48-F75E-F41A-3F8FCA6341B4";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker20";
-	rename -uid "25425D01-B045-9CB1-4D5E-0EA87B3BA711";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture20";
-	rename -uid "7B0ED199-1A42-9489-EA85-7188121A5B5F";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Shirt";
-	rename -uid "8A28E83C-BE4B-4ED9-CF3E-3F9D81318D27";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker21";
-	rename -uid "6BA836FB-194B-A6CB-C9FF-86B54D2F86C7";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture21";
-	rename -uid "3064B522-094B-DF16-E5FC-5B9603C91B61";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Face";
-	rename -uid "36BC5E2A-364B-D74F-EED7-CEBF271B7E03";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker22";
-	rename -uid "8C5BA7E4-1143-3900-21BF-47BB8963A040";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture22";
-	rename -uid "8B204C62-8F4D-DE5A-FB76-E6AF66999677";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:tongue1";
-	rename -uid "6E674923-E940-6498-9B67-84A1E7A6B4AD";
 createNode groupId -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:groupId118";
 	rename -uid "70456703-574E-7E2B-1AEA-B1BD01E24952";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:teeth1";
-	rename -uid "CEC0D6C4-C34E-E92D-EE1B-8CB312AA8623";
-createNode checker -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker23";
-	rename -uid "65C653A0-B348-6526-6494-B6A6205D1191";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture23";
-	rename -uid "E190371A-5649-8382-E959-A3819D7429D3";
-	setAttr ".re" -type "float2" 4 4 ;
 createNode groupId -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:groupId120";
 	rename -uid "A962FBCB-9D48-9496-48E8-0CA6E7698083";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert15";
-	rename -uid "565C07A2-CC47-80A5-C738-7F90FC76E958";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:collar";
-	rename -uid "07226D2F-1A44-6D98-0639-51953ABD0326";
 createNode renderLayerManager -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:renderLayerManager";
 	rename -uid "49D8ECFC-9F4F-D465-F7EF-DDB014002C85";
 createNode renderLayer -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:defaultRenderLayer";
 	rename -uid "38420228-5A4A-9998-8405-309C549DC49B";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert2";
-	rename -uid "B0E1E56A-4147-D95B-AD2B-35A99E8D54D6";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2";
-	rename -uid "06C875EE-7E4A-1876-1753-CEAD814250CE";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3";
-	rename -uid "AD5B6C7F-EA41-36EA-8439-B1B3545DF21E";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:lambert3";
-	rename -uid "747D9C42-8C43-9E2C-2CF8-ACAB947631C9";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert4";
-	rename -uid "D1699DE9-A041-6954-E1B8-9786F7A3E9CA";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant:elephant_BodySG2";
-	rename -uid "07E65B14-BA4F-EF19-DFF9-EC86123A4083";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant1:elephant_BodySG2";
-	rename -uid "C337736C-3441-BC03-164A-BC976AC4F7B7";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:bowTie";
-	rename -uid "25AC4248-3545-B0FF-E57B-E0826E0073A7";
 createNode groupId -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:groupId2";
 	rename -uid "EC1838B1-7948-CA90-9FCC-D9BBC0740832";
 	setAttr ".ihi" 0;
@@ -12250,98 +11966,16 @@ createNode renderLayerManager -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Ri
 createNode renderLayer -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:defaultRenderLayer";
 	rename -uid "4DC4F5D6-4A4C-6B55-D6EF-6C85D02DE063";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert2";
-	rename -uid "440FF367-E942-CE70-860A-1C8AB0AB40EB";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2";
-	rename -uid "156D2E65-6D4F-D2C1-E3F0-4283014BC002";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3";
-	rename -uid "DCA1D640-8E40-24CC-4EDF-FD913A4BEB7D";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert3";
-	rename -uid "B5D2BDC9-0141-C689-B93D-3AA6BEF3A59A";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert4";
-	rename -uid "05800630-444F-9A55-A2BE-22A3C579AE37";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant:elephant_BodySG2";
-	rename -uid "F7C77320-6643-1578-DF33-519506312735";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant1:elephant_BodySG2";
-	rename -uid "CC40F02E-8048-C107-ACC1-AC92E2F57868";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye";
-	rename -uid "B95F6BF8-754C-4FBB-1315-9886105B3AAC";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye3";
-	rename -uid "58CD3A8D-8340-9961-EF30-7AB8729CADCD";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Eye";
-	rename -uid "1C8F5902-0B42-5F64-C5E6-62AF105FFE58";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Leg1";
-	rename -uid "2A0BD76A-4A45-0AA9-F734-9D9A5576D3CC";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_leg";
-	rename -uid "7D3308F9-8447-6C4B-DBCB-66AD727ED76F";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Foot";
-	rename -uid "D1777B0F-E742-E8B4-7A70-E5ADEC79A2CA";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Foot";
-	rename -uid "1864FF2A-1340-B721-5A23-9AAFFE627DAE";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Hand1";
-	rename -uid "A1D4D03B-A540-2158-4BD2-58B179217A29";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Hand";
-	rename -uid "C6E88DE6-E848-EDAC-12E6-61949AC1D4C1";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Under_Belly";
-	rename -uid "AFD2B398-1047-A1A4-B96D-EFACEAC01A66";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Hands";
-	rename -uid "4DECEC00-AF42-76A8-C0E2-44A870BD33F6";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Head1";
-	rename -uid "F49058B8-FB40-2E5B-66C4-4288A003E94C";
 createNode groupId -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:groupId65";
 	rename -uid "AADD66D0-804A-FDF5-05C5-DBAD97173C3F";
 	setAttr ".ihi" 0;
 createNode timeEditorTracks -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Composition1";
 	rename -uid "58FF66F3-7F49-7E9B-5336-73AC2F3052DB";
-createNode blinn -n "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:blinn1";
-	rename -uid "BB576713-3945-1EEF-A207-F0A3548A8E5C";
-createNode nodeGraphEditorInfo -n "Poster_Board_UVs:Elephant_Model:MayaNodeEditorSavedTabsInfo";
-	rename -uid "C99E2500-ED44-C29B-6C04-8C8BF4A5D601";
-	setAttr ".def" no;
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -588.09521472643394 -295.23808350638785 ;
-	setAttr ".tgi[0].vh" -type "double2" 630.95235588058699 315.4761779402935 ;
-	setAttr -s 8 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 81.428573608398438;
-	setAttr ".tgi[0].ni[0].y" 172.85714721679687;
-	setAttr ".tgi[0].ni[0].nvs" 18306;
-	setAttr ".tgi[0].ni[1].x" 44.047618865966797;
-	setAttr ".tgi[0].ni[1].y" -92.857139587402344;
-	setAttr ".tgi[0].ni[1].nvs" 18304;
-	setAttr ".tgi[0].ni[2].x" 358.57144165039062;
-	setAttr ".tgi[0].ni[2].y" 42.857143402099609;
-	setAttr ".tgi[0].ni[2].nvs" 18304;
-	setAttr ".tgi[0].ni[3].x" -225.71427917480469;
-	setAttr ".tgi[0].ni[3].y" 172.85714721679687;
-	setAttr ".tgi[0].ni[3].nvs" 18304;
-	setAttr ".tgi[0].ni[4].x" -495.95236206054687;
-	setAttr ".tgi[0].ni[4].y" 255.71427917480469;
-	setAttr ".tgi[0].ni[4].nvs" 18304;
-	setAttr ".tgi[0].ni[5].x" -252.38093566894531;
-	setAttr ".tgi[0].ni[5].y" -78.571426391601562;
-	setAttr ".tgi[0].ni[5].nvs" 18304;
-	setAttr ".tgi[0].ni[6].x" 81.428573608398438;
-	setAttr ".tgi[0].ni[6].y" 42.857143402099609;
-	setAttr ".tgi[0].ni[6].nvs" 18304;
-	setAttr ".tgi[0].ni[7].x" -480.95236206054687;
-	setAttr ".tgi[0].ni[7].y" 315.47616577148437;
-	setAttr ".tgi[0].ni[7].nvs" 18304;
 createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model1:renderLayerManager";
 	rename -uid "8FFBCBEC-DA45-0BE0-6273-53BC0B3D0771";
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model1:defaultRenderLayer";
 	rename -uid "86CEFAF9-6E4B-AC79-A349-DB8CE49C4DFC";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model1:lambert2";
-	rename -uid "9A9ABF07-FF4D-1F57-5F46-C9A88FA9B1C6";
 createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model1:elepant_rig_0011:renderLayerManager";
 	rename -uid "25B87C94-D442-4F23-57E6-D9B352E12D7D";
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model1:elepant_rig_0011:defaultRenderLayer";
@@ -12352,8 +11986,6 @@ createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model1:elepant_rig_001
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:defaultRenderLayer";
 	rename -uid "42B0F9E4-7040-398B-05DD-06B9F07E5FD0";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:lambert2";
-	rename -uid "E4ACFAC5-7348-ECD7-AFB6-F89424AEA7D6";
 createNode timeEditorTracks -n "Poster_Board_UVs:Coyote_Model1:elepant_rig_0011:Composition1";
 	rename -uid "218AA0E1-C34C-7B58-5E95-5A8C27114DB2";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model1:groupId25";
@@ -12556,8 +12188,6 @@ createNode groupParts -n "Poster_Board_UVs:Coyote_Model1:groupParts5";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model1:groupId42";
 	rename -uid "3EC6736E-A641-DCA6-D6F0-15BF7AD1C4F7";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model1:lambert3";
-	rename -uid "D1D1AAE4-3244-5BBA-9959-A689B6B81C01";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model1:groupId79";
 	rename -uid "4C6DC3CB-1243-E082-5CB4-0F91C3D2FAA1";
 	setAttr ".ihi" 0;
@@ -12566,43 +12196,11 @@ createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model1:lp_elephant_Com
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:defaultRenderLayer";
 	rename -uid "2CC1A346-E04F-6689-10A5-7F874A59B503";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2";
-	rename -uid "9F9AF0D8-5F40-553D-EC3B-BA99F0A9E770";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:lambert2";
-	rename -uid "79C1AFF4-9A43-A3B6-0DF3-C2901AF1051F";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
-	rename -uid "D6D1008E-8841-8514-92C9-58B7B05DEE77";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:lambert3";
-	rename -uid "DE9D7BEF-3F46-8BB8-F8A6-5384AF30156C";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4";
-	rename -uid "C017E413-8547-B8A1-91D2-A68FD2242683";
 createNode renderLayerManager -n "Poster_Board_UVs:Elephant_Model1:renderLayerManager";
 	rename -uid "BAD6D0C4-854B-43AA-CCA0-6EA67B10AD8A";
 createNode renderLayer -n "Poster_Board_UVs:Elephant_Model1:defaultRenderLayer";
 	rename -uid "3D627C2A-E84D-C8E4-98A0-BBA447342C4E";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Fixed_legs_0002:lambert2";
-	rename -uid "578BAEFB-E045-B9D8-0ECE-A299235BF4AB";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:lambert2";
-	rename -uid "73B49B33-2948-DAC3-5BD8-168AE9377892";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Fixed_legs_0002:lambert3";
-	rename -uid "BE79B3AA-084A-D5C1-1FBD-288ADA568606";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:lambert3";
-	rename -uid "6AA61493-F343-A6AA-8205-9EAE38B52E49";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Fixed_legs_0002:lambert4";
-	rename -uid "490BAD33-AA42-2AF2-3E9A-DCAAD6EB1992";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:elephant:elephant_BodySG2";
-	rename -uid "E386E153-AB46-D733-004E-6AA6D425415B";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:elephant1:elephant_BodySG2";
-	rename -uid "A6FBC8C2-F24F-5553-0D2C-EB996EE1326C";
-createNode condition -n "Poster_Board_UVs:Elephant_Model1:condition1";
-	rename -uid "D551427A-954F-E865-80BC-A6B16B2CADF1";
-	setAttr ".op" 2;
-	setAttr ".st" 73.596000671386719;
-createNode multiplyDivide -n "Poster_Board_UVs:Elephant_Model1:multiplyDivide1";
-	rename -uid "BBF8D397-FF45-3071-6F47-7EBF945E865B";
-	setAttr ".op" 2;
-	setAttr ".i2" -type "float3" 73.596001 1 1 ;
 createNode timeEditorTracks -n "Poster_Board_UVs:Elephant_Model1:Composition1";
 	rename -uid "A3BB951F-B641-47F3-1257-4C9413F2D9A4";
 createNode renderLayerManager -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:renderLayerManager";
@@ -12610,278 +12208,26 @@ createNode renderLayerManager -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_R
 createNode renderLayer -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:defaultRenderLayer";
 	rename -uid "8D5090D8-824F-6DD6-5711-DE9D26C506A9";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert2";
-	rename -uid "E9FEA9C3-6F42-98D3-AF41-63807D33D5FF";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert2";
-	rename -uid "293324AF-3F47-934C-E99B-6296D1200BED";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3";
-	rename -uid "B3B1EC1E-D04A-0BC6-7FBD-3D894D344198";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert3";
-	rename -uid "E625FD2E-BF4B-2509-F7DC-F6BAC75C9492";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert4";
-	rename -uid "0CEA69A9-DD42-B9D2-23BD-DDB116BFFC0E";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:elephant:elephant_BodySG2";
-	rename -uid "50A11174-6342-6B6C-D205-1D9FDD4934F5";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:elephant1:elephant_BodySG2";
-	rename -uid "C5A44EE1-B94A-9392-DA5A-D49C8EE85AEC";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye";
-	rename -uid "38BD46AF-F643-A8FD-D3D9-D78BD8BE2193";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye3";
-	rename -uid "CB7EC8D4-A641-3BD5-45F2-DF93FC499282";
-	setAttr ".c" -type "float3" 1 1 1 ;
 createNode groupId -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:groupId35";
 	rename -uid "ECCCB750-D643-A0AC-B88E-D0B189EB2E2B";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Eye";
-	rename -uid "8A74105F-F64A-580E-5D08-E3AE61646F88";
-	setAttr ".c" -type "float3" 1 1 1 ;
 createNode groupId -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:groupId37";
 	rename -uid "FF3A1077-5943-29B8-F1F7-2B996402062E";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Leg1";
-	rename -uid "2777A86D-7046-3A9D-C17C-4799ACE80B27";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_leg";
-	rename -uid "26CF9B06-C54A-D6DD-38F4-A6ABB975E595";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Foot";
-	rename -uid "27C1FC90-FD49-1EAE-E9CB-9EA32A91046B";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Foot";
-	rename -uid "807FDE8B-F845-A089-8E34-0DA323E73FCD";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Hand1";
-	rename -uid "6364E9E8-0847-8527-164D-D4B8D2E29891";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Hand";
-	rename -uid "23B0A1E2-494D-E06E-3DF2-B7BE34954FE1";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve";
-	rename -uid "925A7577-8140-E284-70E1-7C8D54389540";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Tusk";
-	rename -uid "48E5937A-F54C-F055-D507-2C82361D7133";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert5";
-	rename -uid "DA28EFBF-E344-0CF7-12F1-5BB67722E61C";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1";
-	rename -uid "63A38785-744E-CA8B-4313-7E90D70D9EF1";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture1";
-	rename -uid "39D24F5D-2E49-8505-9ECB-52892C9047AF";
-	setAttr ".re" -type "float2" 8 8 ;
-createNode nodeGraphEditorInfo -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "6F7D5120-BD40-1B31-E489-64A28E9BA799";
-	setAttr ".def" no;
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -756.35695187706074 -580.73625013194282 ;
-	setAttr ".tgi[0].vh" -type "double2" 100.86411376008934 504.65456310548376 ;
-	setAttr -s 4 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" -560;
-	setAttr ".tgi[0].ni[0].y" 218.57142639160156;
-	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" -251.66667175292969;
-	setAttr ".tgi[0].ni[1].y" 241.19047546386719;
-	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" 361.42855834960937;
-	setAttr ".tgi[0].ni[2].y" 218.57142639160156;
-	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" 54.285713195800781;
-	setAttr ".tgi[0].ni[3].y" 240;
-	setAttr ".tgi[0].ni[3].nvs" 1923;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Belly";
-	rename -uid "0A071545-884B-6B0C-0D84-E98180509419";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker2";
-	rename -uid "5F03DA88-414F-6092-EE07-B0826E135799";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture2";
-	rename -uid "E9EFE4C3-7140-1BEC-D93C-0CB789F87F36";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Leg1";
-	rename -uid "4F4CECBF-1F4C-4688-A395-2FB68B9A7619";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker3";
-	rename -uid "0A0B9CB2-0F4A-2098-8839-068BD946CB8D";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture3";
-	rename -uid "91496F8F-0B42-57EB-8BF8-2BBD8086C52B";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Leg2";
-	rename -uid "CCE3CA93-6E44-6D40-75B8-55934062A0F0";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker4";
-	rename -uid "BA1A67C5-634A-6D76-5551-F28EB7842490";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture4";
-	rename -uid "229782C3-2348-7BBE-B102-1BA9D9B1A150";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Foot1";
-	rename -uid "AF9A7438-584B-4B25-7590-B1BC83ACDCF7";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker5";
-	rename -uid "9E8DFCBB-2D44-5996-5646-3685C524295C";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture5";
-	rename -uid "A0786F11-DC4C-386F-7447-18A96722C6DC";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Foot2";
-	rename -uid "73760B2D-FD41-A247-9AD5-E1A2B7D2550D";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker6";
-	rename -uid "7340C14E-EA48-128F-5F10-D0A548323EDA";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture6";
-	rename -uid "34068998-F640-7BC5-057E-C68ED711DDB3";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Hand2";
-	rename -uid "2C858414-6C4F-41F2-FCE3-239EDBAAF661";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker7";
-	rename -uid "81095CF1-1640-A4CF-76EB-7D85A7B9670D";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture7";
-	rename -uid "B7C9E20C-2E45-BD0F-575F-F8AAEBA12FE4";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Hand2";
-	rename -uid "6F979C31-D241-D7EA-FACB-7C9C24940D3C";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker8";
-	rename -uid "2EEE389D-9946-2D8C-86C4-7B979CE10B6E";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture8";
-	rename -uid "8B6232B6-484E-089E-C958-46A18C5886AD";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Sleeve";
-	rename -uid "9323F10C-6947-E72F-252E-EC99FDBE2188";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker9";
-	rename -uid "BF1ADA8A-E445-A68A-06CC-3292CE81C39C";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture9";
-	rename -uid "62B06D05-7A49-F396-EC06-56AD4A95FC27";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve2";
-	rename -uid "534CE561-9441-572C-9F77-7D8F7EF1B08F";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker10";
-	rename -uid "D2C39717-8D41-6BC8-798F-169B845EEF3F";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture10";
-	rename -uid "E72E586D-D347-4950-CBD4-4AACA4E9D565";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:RIght_Tusk";
-	rename -uid "D3B7D0A7-104E-9CB5-F52D-29A736EAA612";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker11";
-	rename -uid "8C08701C-B745-7E9B-E66A-21BC4B5ADC7B";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture11";
-	rename -uid "0046A3BC-DD49-DF15-F20D-6A8702F4C1A1";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Cuff";
-	rename -uid "DB4D8D22-7E4D-5813-FD2D-B7BCB1435846";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker12";
-	rename -uid "40D66ECC-4B4E-1E82-6F7D-148F12722054";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture12";
-	rename -uid "12012B31-4F40-FD36-109A-FFBE39F10C42";
-	setAttr ".re" -type "float2" 4 4 ;
 createNode groupId -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:groupId61";
 	rename -uid "6577A1EF-8F4C-4F0F-E7DC-9C87722B8F54";
 	setAttr ".ihi" 0;
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker13";
-	rename -uid "1E0025D0-AE4D-B51E-D786-018F197DFC14";
-	setAttr ".c1" -type "float3" 0 0 0 ;
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture13";
-	rename -uid "C9174EEA-A345-7C2C-6D6A-E09B3D9472CD";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye4";
-	rename -uid "7992F46D-6341-137C-C131-9EB43D042547";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker14";
-	rename -uid "E26D03F8-B041-CF68-CBED-6FB661121DC5";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture14";
-	rename -uid "5C54C016-484B-F23E-4559-CC9A3F38FA5D";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Eye2";
-	rename -uid "B4DF2748-814F-43DC-B79B-5FB0834606DF";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker15";
-	rename -uid "BC13216E-2D46-DC3A-D253-08B45B1BFD0C";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture15";
-	rename -uid "82949AB2-F94D-EB85-5E64-939827B57CC4";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Ear";
-	rename -uid "4171D501-5C49-8AE1-B955-388AC3904BCA";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker16";
-	rename -uid "B3F4B4B6-7D4F-80BB-5236-86BCC475C671";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture16";
-	rename -uid "1E2A7E96-714E-9761-7D41-0D851922689B";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert11";
-	rename -uid "208DD7A5-4946-50FE-A347-BF89D58DBA6E";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Ear";
-	rename -uid "3AC149B6-604D-80F2-08E9-FFBF0D1B9E2C";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker17";
-	rename -uid "F6F3DF26-3445-139F-BB73-C5824CCA1F0C";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture17";
-	rename -uid "45CCE46C-A544-C71A-EE66-13A89135144A";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Trunk";
-	rename -uid "3B247FA0-794C-EF3F-B209-9DBEE0CFC56D";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker18";
-	rename -uid "3BE2497E-5047-895E-7FB9-7DB274D87351";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture18";
-	rename -uid "D78C2EF6-C94B-97CD-2CA1-EA8B8AA833D3";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Suit_Coat_Back";
-	rename -uid "2FE9242B-FC46-9BD6-E99A-B4948EE08B13";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker19";
-	rename -uid "2590CDB3-3B45-7D6D-DCC8-F6BB0E5CD248";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture19";
-	rename -uid "E30DE58D-4647-B131-EEC2-2389277071B4";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert14";
-	rename -uid "604F78F9-4A48-C705-7B27-E28B348F8417";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Tail";
-	rename -uid "43B2224D-974B-C700-42A5-EFAB72F8E29E";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker20";
-	rename -uid "AE99B0FE-4A46-4D1C-1B56-84AFAD224AEA";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture20";
-	rename -uid "AD464DD4-BA46-C90F-01CF-A89F27FFE617";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Shirt";
-	rename -uid "BCDFC8AE-B640-07E6-78AE-3881BC296638";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker21";
-	rename -uid "B26E368B-124A-6707-44C3-7693F47C5C84";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture21";
-	rename -uid "278247D7-F746-8742-5018-229051779301";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Face";
-	rename -uid "34DD7E7F-A44A-F42F-6FCF-938DEE699634";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker22";
-	rename -uid "9E9AE772-CD43-2082-388A-0290A78F5485";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture22";
-	rename -uid "236281A0-AD48-923B-33A5-D1BC7BFB3CCC";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:tongue1";
-	rename -uid "7FB63FB3-0B47-3EB5-79E0-25B1F0DC6980";
 createNode groupId -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:groupId118";
 	rename -uid "C5A60963-6648-252B-A8DA-598BE3E833D5";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:teeth1";
-	rename -uid "117B6F75-5940-6001-3B85-BF84DAD6184C";
-createNode checker -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker23";
-	rename -uid "3186040F-BC46-E9B4-E3BE-7694B53C32E9";
-createNode place2dTexture -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture23";
-	rename -uid "7405DB7E-BF4B-08F8-EC8D-8086BD3D0552";
-	setAttr ".re" -type "float2" 4 4 ;
 createNode groupId -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:groupId120";
 	rename -uid "F64E4F76-0143-CB24-E036-7C8D51A0065E";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert15";
-	rename -uid "50C7059B-3C40-94E3-304E-0788C93E956D";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:collar";
-	rename -uid "D9C69AF8-6845-0A67-3B33-46AD67811800";
 createNode renderLayerManager -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:renderLayerManager";
 	rename -uid "318DED60-7348-0FE2-8EA8-B0A0C7EAC2CA";
 createNode renderLayer -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:defaultRenderLayer";
 	rename -uid "512F71AA-DD4D-FFC7-DCE3-18AEC04AF0FE";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert2";
-	rename -uid "D929362C-D342-3B76-3A21-0CBD8775C2AA";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2";
-	rename -uid "AE572F78-CE4B-AEE0-3314-838154CBAF27";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3";
-	rename -uid "1AD7C150-694B-C0CA-8190-9AB8D4755354";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:lambert3";
-	rename -uid "756172FB-5744-46F2-4679-8B854743D364";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert4";
-	rename -uid "E2C7307C-914B-76A2-43F7-4AB53CBCE378";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant:elephant_BodySG2";
-	rename -uid "639637DA-7049-673B-DB09-9FA55A1BFFAC";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant1:elephant_BodySG2";
-	rename -uid "D5871165-E341-F074-6E6C-C5B47B09CBA6";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:bowTie";
-	rename -uid "F14D5E8C-7647-4E03-ED6A-BF8018CB70A1";
 createNode groupId -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:groupId2";
 	rename -uid "E332F28C-4E49-610E-557B-EA9312E75DDC";
 	setAttr ".ihi" 0;
@@ -12890,98 +12236,16 @@ createNode renderLayerManager -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_R
 createNode renderLayer -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:defaultRenderLayer";
 	rename -uid "1E87E598-EC4A-5AFC-F3F4-8080B5DEA6AD";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert2";
-	rename -uid "BA572A89-724B-7F3A-339C-BFA1D9F8CB16";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2";
-	rename -uid "632D90F2-7848-E082-E6D4-0F8F02E24330";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3";
-	rename -uid "152DD0B8-094B-7ECF-7ABC-FC9C2F78187D";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert3";
-	rename -uid "308318DE-CE42-44B2-7603-CE8012B4B9C1";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert4";
-	rename -uid "AEE16799-F74D-9035-07CB-5AA3E67361A5";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant:elephant_BodySG2";
-	rename -uid "8146CBF3-4649-1055-CBE4-E885833F9D2B";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant1:elephant_BodySG2";
-	rename -uid "A3A3A9B0-074E-B691-46D9-3694C38A72C5";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye";
-	rename -uid "9F24909B-E144-7D9A-9680-C3876E5AE865";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye3";
-	rename -uid "26DD0355-974D-9484-6AD0-B899D44BC1B4";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Eye";
-	rename -uid "5B5C84DB-F544-F24F-E446-BC9E02385FC0";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Leg1";
-	rename -uid "C5D1B8EB-F74D-20A3-8C11-648599C0CB9B";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_leg";
-	rename -uid "533E09E4-A145-7757-D383-2EA721909C3D";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Foot";
-	rename -uid "FC73CDFD-1F4B-8B9A-923F-959AE0F9F23C";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Foot";
-	rename -uid "576367C0-744F-7131-045B-28B6DD8BCA1D";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Hand1";
-	rename -uid "586CE6C9-C740-0BF0-7342-CD870408013F";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Hand";
-	rename -uid "353C1E99-DA41-8C1A-3733-90A712C92DF6";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Under_Belly";
-	rename -uid "E487C093-7644-369A-4B81-D89D5A25558A";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Hands";
-	rename -uid "A810ACCD-FF4A-8D50-4922-9FBCDCECF9D9";
-createNode lambert -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Head1";
-	rename -uid "F5DE048C-624B-325C-D6F4-5CB7DC6C9DFC";
 createNode groupId -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:groupId65";
 	rename -uid "1F695DF7-A741-D252-061C-9DB628103043";
 	setAttr ".ihi" 0;
 createNode timeEditorTracks -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Composition1";
 	rename -uid "7CDB87A4-0944-F49D-20F5-A5ACCD179BD6";
-createNode blinn -n "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:blinn1";
-	rename -uid "E5C75926-B74F-4367-03C6-09980DADAAEB";
-createNode nodeGraphEditorInfo -n "Poster_Board_UVs:Elephant_Model1:MayaNodeEditorSavedTabsInfo";
-	rename -uid "908DB7C4-B84F-5EFD-B89F-4786D4376EBF";
-	setAttr ".def" no;
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -588.09521472643394 -295.23808350638785 ;
-	setAttr ".tgi[0].vh" -type "double2" 630.95235588058699 315.4761779402935 ;
-	setAttr -s 8 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 81.428573608398438;
-	setAttr ".tgi[0].ni[0].y" 172.85714721679687;
-	setAttr ".tgi[0].ni[0].nvs" 18306;
-	setAttr ".tgi[0].ni[1].x" 44.047618865966797;
-	setAttr ".tgi[0].ni[1].y" -92.857139587402344;
-	setAttr ".tgi[0].ni[1].nvs" 18304;
-	setAttr ".tgi[0].ni[2].x" 358.57144165039062;
-	setAttr ".tgi[0].ni[2].y" 42.857143402099609;
-	setAttr ".tgi[0].ni[2].nvs" 18304;
-	setAttr ".tgi[0].ni[3].x" -225.71427917480469;
-	setAttr ".tgi[0].ni[3].y" 172.85714721679687;
-	setAttr ".tgi[0].ni[3].nvs" 18304;
-	setAttr ".tgi[0].ni[4].x" -495.95236206054687;
-	setAttr ".tgi[0].ni[4].y" 255.71427917480469;
-	setAttr ".tgi[0].ni[4].nvs" 18304;
-	setAttr ".tgi[0].ni[5].x" -252.38093566894531;
-	setAttr ".tgi[0].ni[5].y" -78.571426391601562;
-	setAttr ".tgi[0].ni[5].nvs" 18304;
-	setAttr ".tgi[0].ni[6].x" 81.428573608398438;
-	setAttr ".tgi[0].ni[6].y" 42.857143402099609;
-	setAttr ".tgi[0].ni[6].nvs" 18304;
-	setAttr ".tgi[0].ni[7].x" -480.95236206054687;
-	setAttr ".tgi[0].ni[7].y" 315.47616577148437;
-	setAttr ".tgi[0].ni[7].nvs" 18304;
 createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model2:renderLayerManager";
 	rename -uid "25B3D09E-5848-525C-CCD6-FDB2B016FC0E";
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model2:defaultRenderLayer";
 	rename -uid "F6226984-104C-EF60-1181-B1BC9072FBC6";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model2:lambert2";
-	rename -uid "59990DAA-2D47-A78F-BA0E-E9B38AFEE92E";
 createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model2:elepant_rig_0011:renderLayerManager";
 	rename -uid "7DB7F36F-D142-F323-6047-EB9A9FDD4972";
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model2:elepant_rig_0011:defaultRenderLayer";
@@ -12992,8 +12256,6 @@ createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model2:elepant_rig_001
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model2:elepant_rig_0011:Fixed_legs_0002:defaultRenderLayer";
 	rename -uid "059A1DBA-0249-6805-8620-18B16D027A65";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model2:elepant_rig_0011:Fixed_legs_0002:lambert2";
-	rename -uid "77AE24C0-9B40-4ED8-AE85-FD9DB513BB0C";
 createNode timeEditorTracks -n "Poster_Board_UVs:Coyote_Model2:elepant_rig_0011:Composition1";
 	rename -uid "84DAF439-474D-AF28-7FB8-D5AB2CDFBE91";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model2:groupId25";
@@ -13196,8 +12458,6 @@ createNode groupParts -n "Poster_Board_UVs:Coyote_Model2:groupParts5";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model2:groupId42";
 	rename -uid "BF2C3674-1C43-DE73-25D4-26BB29DEBB15";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model2:lambert3";
-	rename -uid "5DC2B621-5C48-D48B-D3F7-5BA46E3E695D";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model2:groupId79";
 	rename -uid "6F035B5A-5C4B-A257-C3E9-ACA488E9ECF8";
 	setAttr ".ihi" 0;
@@ -13206,23 +12466,11 @@ createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model2:lp_elephant_Com
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:defaultRenderLayer";
 	rename -uid "B4BF0721-1E46-53AD-4895-18AA09FC5F6B";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2";
-	rename -uid "AAA20F6D-B54D-953E-AE3A-4D8F89580842";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:lambert2";
-	rename -uid "4707F194-DE40-1827-DCBA-93A530CA208F";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
-	rename -uid "A2065D12-9443-8ADB-42BB-73A7E5B9EE6C";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:lambert3";
-	rename -uid "EF77781B-E245-A369-5826-C4B10F1587C0";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4";
-	rename -uid "2760A428-5643-14B5-03B1-22BB83CDDC80";
 createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model3:renderLayerManager";
 	rename -uid "300D1215-2A4C-357A-B81F-2981977A481D";
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model3:defaultRenderLayer";
 	rename -uid "DFBC8CE5-E242-AA7B-706B-8899B8B197FD";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model3:lambert2";
-	rename -uid "A16D929E-3E49-450A-AFD0-1D8B390423E3";
 createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model3:elepant_rig_0011:renderLayerManager";
 	rename -uid "4219C54B-2F4A-BF68-FB6B-FCADB146A4E3";
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model3:elepant_rig_0011:defaultRenderLayer";
@@ -13233,8 +12481,6 @@ createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model3:elepant_rig_001
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model3:elepant_rig_0011:Fixed_legs_0002:defaultRenderLayer";
 	rename -uid "376B7E73-FD40-89C2-5C3F-B6A8C628296F";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model3:elepant_rig_0011:Fixed_legs_0002:lambert2";
-	rename -uid "FFE11E25-B74F-890A-FD8E-9CACE2BC47B7";
 createNode timeEditorTracks -n "Poster_Board_UVs:Coyote_Model3:elepant_rig_0011:Composition1";
 	rename -uid "BDF150B5-664C-8EDB-7038-6CA53142D6E2";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model3:groupId25";
@@ -13437,8 +12683,6 @@ createNode groupParts -n "Poster_Board_UVs:Coyote_Model3:groupParts5";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model3:groupId42";
 	rename -uid "5C23C799-2542-FB37-1BA6-11A73BB997AC";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model3:lambert3";
-	rename -uid "2B2E6B71-8B49-9B0E-D676-1391143383CC";
 createNode groupId -n "Poster_Board_UVs:Coyote_Model3:groupId79";
 	rename -uid "8880138F-6548-3770-5366-B3B17FC19C47";
 	setAttr ".ihi" 0;
@@ -13447,16 +12691,6 @@ createNode renderLayerManager -n "Poster_Board_UVs:Coyote_Model3:lp_elephant_Com
 createNode renderLayer -n "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:defaultRenderLayer";
 	rename -uid "455A7D2D-7546-EA58-B685-EBAA7B956E9E";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2";
-	rename -uid "8A98675F-7C4D-DE50-1B16-A897A0C2AF8E";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:lambert2";
-	rename -uid "FCE00821-CB4F-2634-472E-E89BACC6844D";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
-	rename -uid "B39A77B4-8045-8764-97FB-0587AA900BDE";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:lambert3";
-	rename -uid "5E0D4E8A-CF43-1962-7A54-EEB72F59CCCA";
-createNode lambert -n "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4";
-	rename -uid "ADA8E937-7648-BE6C-3EEE-149590871767";
 createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:renderLayerManager";
 	rename -uid "CFBBD21C-5B46-849B-8C01-9AA86E800D5A";
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:defaultRenderLayer";
@@ -13467,8 +12701,6 @@ createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Coyote_Model:render
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Coyote_Model:defaultRenderLayer";
 	rename -uid "AA9AAD17-0942-42D3-82ED-F6A7C21FD079";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model:lambert2";
-	rename -uid "13766C52-A641-4D09-3518-1E89AB656839";
 createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Coyote_Model:elepant_rig_0011:renderLayerManager";
 	rename -uid "3F3D8A32-204E-B698-8F27-A6BA8601B4F8";
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Coyote_Model:elepant_rig_0011:defaultRenderLayer";
@@ -13479,8 +12711,6 @@ createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Coyote_Model:elepan
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:defaultRenderLayer";
 	rename -uid "BAA84294-A340-E860-B807-CDA451777738";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:lambert2";
-	rename -uid "6BE9FFD8-7440-D406-66EF-2B983D895E07";
 createNode timeEditorTracks -n "Poster_Board_UVs:Van_Model:Coyote_Model:elepant_rig_0011:Composition1";
 	rename -uid "4D087D60-DE42-9FEC-EB94-75BFCF48CBCC";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Coyote_Model:groupId25";
@@ -13683,8 +12913,6 @@ createNode groupParts -n "Poster_Board_UVs:Van_Model:Coyote_Model:groupParts5";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Coyote_Model:groupId42";
 	rename -uid "B7598C64-F44C-F64D-54D7-DDB19B679D05";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model:lambert3";
-	rename -uid "BEEB8AEB-5146-2AE8-70D3-16AED9C28FFC";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Coyote_Model:groupId79";
 	rename -uid "8B8DF711-F24B-6F38-0021-6BBC0C184967";
 	setAttr ".ihi" 0;
@@ -13693,43 +12921,11 @@ createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Coyote_Model:lp_ele
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:defaultRenderLayer";
 	rename -uid "10416828-2146-5A55-260E-51B6F9715AF3";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2";
-	rename -uid "9BD78CC0-A74F-726C-95E5-8AA5BDDDF93E";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:lambert2";
-	rename -uid "ED07300F-DC4C-2C15-4707-90A8626EDC51";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
-	rename -uid "E93B9F4D-394D-1008-24EC-C6A828B5891C";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:lambert3";
-	rename -uid "04CD4F29-4E43-9076-91A3-8AAAB54F6B5F";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4";
-	rename -uid "00DBF1FD-C04C-B951-73CA-13923ED8EDAF";
 createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Elephant_Model:renderLayerManager";
 	rename -uid "474CF897-2944-FC3C-27F7-87AA47A624C2";
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Elephant_Model:defaultRenderLayer";
 	rename -uid "E81B39C6-9E45-466E-E4EF-F9A4D7C082C1";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Fixed_legs_0002:lambert2";
-	rename -uid "312ECD42-D94C-2F67-AB87-0AACC995C856";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:lambert2";
-	rename -uid "1144C642-B240-70CC-BE77-3EB3FD6C0F72";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Fixed_legs_0002:lambert3";
-	rename -uid "1BEDFB0B-3749-B3E8-3F9C-EE8737463253";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:lambert3";
-	rename -uid "87E41AC5-AD47-DA41-F6F3-81AF0F5D67EC";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Fixed_legs_0002:lambert4";
-	rename -uid "61FF2FB0-8F44-2672-40B6-D6B06502D690";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:elephant:elephant_BodySG2";
-	rename -uid "20BCB6A4-8E41-CCFB-CC5C-ECB8B396A276";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:elephant1:elephant_BodySG2";
-	rename -uid "B6868B4E-9843-45E4-9927-96A61473B10F";
-createNode condition -n "Poster_Board_UVs:Van_Model:Elephant_Model:condition1";
-	rename -uid "29F68138-3444-18B1-161E-E4BA656B346B";
-	setAttr ".op" 2;
-	setAttr ".st" 73.596000671386719;
-createNode multiplyDivide -n "Poster_Board_UVs:Van_Model:Elephant_Model:multiplyDivide1";
-	rename -uid "F7F3607B-A34E-2321-A57F-F5AEDB420A5A";
-	setAttr ".op" 2;
-	setAttr ".i2" -type "float3" 73.596001 1 1 ;
 createNode timeEditorTracks -n "Poster_Board_UVs:Van_Model:Elephant_Model:Composition1";
 	rename -uid "8ED52EFE-234F-D7B8-C969-648563757B8F";
 createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:renderLayerManager";
@@ -13737,278 +12933,26 @@ createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Elephant_Model:Elep
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:defaultRenderLayer";
 	rename -uid "00E2DB0F-214F-90A8-E4C9-F3AC220A1697";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert2";
-	rename -uid "7B1E2767-FB41-6233-CD7F-87AC1B73742E";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert2";
-	rename -uid "F884A329-0B4A-00E6-0D2D-ADAB0E4239EC";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3";
-	rename -uid "44794289-4D4C-AAA6-C6F9-18B2FB963AA3";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert3";
-	rename -uid "0C6B4B56-134D-5F91-BDD0-0AA08E20D224";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert4";
-	rename -uid "63865542-E944-DA70-F33D-FE9C8535AFB1";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:elephant:elephant_BodySG2";
-	rename -uid "3BCE171C-B747-5114-E303-CB823C00EB96";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:elephant1:elephant_BodySG2";
-	rename -uid "E3E00EE8-BB48-96C3-B289-5C963111ED25";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye";
-	rename -uid "7077BC2C-3147-8C2A-DC7E-5EAF891978A1";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye3";
-	rename -uid "623923A9-3A4B-D3A7-A9D1-D28EA65F5849";
-	setAttr ".c" -type "float3" 1 1 1 ;
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:groupId35";
 	rename -uid "A61C1EC6-E449-64EA-7240-77877CF03EE7";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Eye";
-	rename -uid "8EC21FAB-134B-A5C9-D3BF-7C94B4CBC00B";
-	setAttr ".c" -type "float3" 1 1 1 ;
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:groupId37";
 	rename -uid "A693B0E7-0240-0D5A-0CB2-CA9DA48C8030";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Leg1";
-	rename -uid "2218069D-AC49-1530-3B8B-F9B986151DE3";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_leg";
-	rename -uid "F727AE68-C048-7B48-F85D-C4BF0D3D4D51";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Foot";
-	rename -uid "63BE8D9E-B843-5B0D-B9CE-E881D3C8272F";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Foot";
-	rename -uid "F34F96F5-494F-57E6-6C3C-1197056EA6F2";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Hand1";
-	rename -uid "2821C28F-2C44-F8A2-AA98-7C933F530D30";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Hand";
-	rename -uid "DA7CF834-E74B-85CD-77E5-61B37999F284";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve";
-	rename -uid "644B398B-B140-5016-D2DF-53BDB62F1823";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Tusk";
-	rename -uid "3CB82BA6-2B4C-5076-5FFF-64B5B9C6EB01";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert5";
-	rename -uid "6926BD17-5942-DE92-6E66-B493006A4417";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker1";
-	rename -uid "1493C2F6-464C-51A7-D883-25A03FAAF686";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture1";
-	rename -uid "00F13960-1143-3EAA-FF40-6B85954CB956";
-	setAttr ".re" -type "float2" 8 8 ;
-createNode nodeGraphEditorInfo -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "A831F520-264E-3C1D-08E0-F6BEBAA3C2E3";
-	setAttr ".def" no;
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -756.35695187706074 -580.73625013194282 ;
-	setAttr ".tgi[0].vh" -type "double2" 100.86411376008934 504.65456310548376 ;
-	setAttr -s 4 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" -560;
-	setAttr ".tgi[0].ni[0].y" 218.57142639160156;
-	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" -251.66667175292969;
-	setAttr ".tgi[0].ni[1].y" 241.19047546386719;
-	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" 361.42855834960937;
-	setAttr ".tgi[0].ni[2].y" 218.57142639160156;
-	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" 54.285713195800781;
-	setAttr ".tgi[0].ni[3].y" 240;
-	setAttr ".tgi[0].ni[3].nvs" 1923;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Belly";
-	rename -uid "107FAA64-CB40-0962-686A-AC9998942783";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker2";
-	rename -uid "285EAD75-6F45-A100-91B8-88984423912A";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture2";
-	rename -uid "46A18CD2-C34A-C12E-6E14-29A0C4E2A96E";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Leg1";
-	rename -uid "0DB8F99E-3E4F-129C-BC2D-E7AEC19BFCB4";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker3";
-	rename -uid "B2629F8B-A447-1AE0-BC0C-CBA520F83EA5";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture3";
-	rename -uid "3479CDCC-F14E-AAE7-DA43-D988BBDAC84A";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Leg2";
-	rename -uid "DF0E5B20-E544-FEC8-C909-3688D0784134";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker4";
-	rename -uid "F9887DDA-CB4B-37EF-51D7-B5A65156B2F8";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture4";
-	rename -uid "BEF24E50-5247-434F-2F83-D1B5F2244087";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Foot1";
-	rename -uid "72795188-1C4E-FC9B-FA59-1A945448086F";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker5";
-	rename -uid "07EB9419-4744-0ED6-0ED3-A99F4ACFDCB3";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture5";
-	rename -uid "B0CB5C76-E448-8B83-93EF-B5B5434DABEF";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Foot2";
-	rename -uid "ECF2F9EE-7948-E2E9-6AF7-77AF6B995507";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker6";
-	rename -uid "F1555FF0-BA4F-63EE-D398-22989A0C2BDF";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture6";
-	rename -uid "DA521654-FF4B-7C45-5304-E4B6D2B7D49D";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Hand2";
-	rename -uid "3497F7C9-314D-5E91-6FEA-F7B9B59D26B5";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker7";
-	rename -uid "E698FF28-EC48-D852-C480-32945F15B88C";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture7";
-	rename -uid "C6BD15A6-DB46-E039-F758-1A9716E849A0";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Hand2";
-	rename -uid "69D1A10D-F840-4DF4-5A50-868E5ACA683A";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker8";
-	rename -uid "A55A9047-B849-D27B-9A65-A99057E1608F";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture8";
-	rename -uid "A5BC3561-D84F-8F05-DE81-7FAC844FD867";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Sleeve";
-	rename -uid "C2103F57-9547-63E5-599E-449FB5E0BE7E";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker9";
-	rename -uid "B611B244-5747-008D-B9D4-39BF6BA9042E";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture9";
-	rename -uid "8E88A42C-4040-E7EE-36B0-DF8FE2455948";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve2";
-	rename -uid "AF476856-604F-F1A2-4528-A9AEC7E7C0AE";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker10";
-	rename -uid "828AB2D9-9447-C0F9-076B-7194DC7B110A";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture10";
-	rename -uid "13B431CA-674F-ED32-BD58-73876D8543A8";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:RIght_Tusk";
-	rename -uid "32067860-EA4D-4B87-5E70-AE9C58147625";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker11";
-	rename -uid "496FEA4E-524E-B958-B148-B694F11338F9";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture11";
-	rename -uid "233D1AC9-8944-EECA-9A0C-06B94AD98EC8";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Cuff";
-	rename -uid "746D3D42-FC40-A645-B106-6BB3A242AC0B";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker12";
-	rename -uid "563253D6-E248-99E4-7E0F-1A86B90B3ABF";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture12";
-	rename -uid "4CA6F09D-9B40-7757-DF82-1F90137A1F9A";
-	setAttr ".re" -type "float2" 4 4 ;
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:groupId61";
 	rename -uid "75409314-5B4D-0947-EDF0-80837D660ED9";
 	setAttr ".ihi" 0;
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker13";
-	rename -uid "4AFB5D5B-F741-AFA9-1244-2E86433AFA2F";
-	setAttr ".c1" -type "float3" 0 0 0 ;
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture13";
-	rename -uid "C50396EE-4947-F28F-391E-7F94CCBD25C9";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye4";
-	rename -uid "E3169ED9-AC41-BB5F-F75D-2A9E9D11FAA1";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker14";
-	rename -uid "01CEAFF8-0140-2D95-098F-218421C13D2D";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture14";
-	rename -uid "D5E5E2FA-164B-5530-5848-CBA027283ECC";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Eye2";
-	rename -uid "8DDD8D8F-224D-0D9F-CAF0-8282EE1E1237";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker15";
-	rename -uid "2B36B88E-1A41-4F04-FE61-2F8CA0AF40FE";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture15";
-	rename -uid "DDAC2712-A64F-4505-3778-0EAE4A11FC2D";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Ear";
-	rename -uid "E9A49B3F-D143-E5F5-29D4-40A98E975343";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker16";
-	rename -uid "C81C3CF4-F148-A64B-446B-00990185BD64";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture16";
-	rename -uid "C59068BD-EE46-8519-4F16-1EA4949DC8DD";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert11";
-	rename -uid "D2894D71-8949-DC4A-8A54-D387A935A962";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Ear";
-	rename -uid "9CA460B9-D94E-02F8-4A87-CF9C8F63C4E4";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker17";
-	rename -uid "3233C5E9-E240-031A-4D08-E7937DF34F95";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture17";
-	rename -uid "FC0028E8-5643-8A53-799E-3096566B3F42";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Trunk";
-	rename -uid "D1833D02-1449-CB74-CABB-8D8742554F70";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker18";
-	rename -uid "9C128944-6541-7AA2-7187-03B008B3FC55";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture18";
-	rename -uid "2B39D2E3-AB41-E6E1-7C87-A7871F0A51B4";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Suit_Coat_Back";
-	rename -uid "4C1CC8EF-484D-D8DC-0789-1DB55857DAB8";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker19";
-	rename -uid "912CFE7A-7044-8DE7-4378-888AF7AC1E2C";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture19";
-	rename -uid "6732CAC0-D341-1EA9-F837-F7B86CC6BAF3";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert14";
-	rename -uid "AD751EDA-9346-C060-1786-63B0A7F238F9";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Tail";
-	rename -uid "28882833-7646-3B68-E2DE-9B842BE44295";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker20";
-	rename -uid "30FE62C0-6D4A-9DD0-889E-F6AA2EAECFE3";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture20";
-	rename -uid "04DF1CAE-2745-7ADE-8B04-9DB8531AEE1F";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Shirt";
-	rename -uid "55DDE160-FD43-4A52-E858-27AAAA13D0BC";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker21";
-	rename -uid "A9629246-784D-86EB-321D-5DBFFC616087";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture21";
-	rename -uid "317DC1CF-0A43-FBF0-F4A8-86AD40E651EF";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Face";
-	rename -uid "DC52F4B0-0544-D8DD-F2B0-3591A8523811";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker22";
-	rename -uid "0232B7DF-4D49-A078-CA39-ED85636EEF0B";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture22";
-	rename -uid "16D88885-F841-6708-46C9-A488A4341233";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:tongue1";
-	rename -uid "8EED9CBB-6D47-08E8-57D4-17AE55950953";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:groupId118";
 	rename -uid "8248C30E-A44F-CA7F-678F-9A8EC7C735B2";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:teeth1";
-	rename -uid "BDC77921-684D-28D0-AF3C-21807F6078CC";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker23";
-	rename -uid "E14FDA52-5A4C-649A-741D-1496D4A8C2FE";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture23";
-	rename -uid "2BF7B627-7649-581F-3DD7-13B35632E88C";
-	setAttr ".re" -type "float2" 4 4 ;
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:groupId120";
 	rename -uid "D7025911-6A41-662E-A0B1-DEA51F9084B1";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert15";
-	rename -uid "4AF10336-A64B-F4B0-D316-4B97D3DA2214";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:collar";
-	rename -uid "6494DA38-8D47-D178-8884-49865CE0E14E";
 createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:renderLayerManager";
 	rename -uid "EFFBD4E2-684B-BC57-B7D4-0183B1D09FA5";
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:defaultRenderLayer";
 	rename -uid "50A68039-F74A-11F0-AD0B-6A88BBA0E4F7";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert2";
-	rename -uid "7DFCB804-9B45-1B31-6304-9ABB935427AA";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2";
-	rename -uid "140D0C28-6347-75C3-D140-CAA76F56B121";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3";
-	rename -uid "F45BD7DA-464F-AFCB-21E5-DFBD0065AE70";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:lambert3";
-	rename -uid "A7A084DB-F748-D796-F73C-E4AE48FEE086";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert4";
-	rename -uid "B3B4B292-3148-139A-CD2A-4A930931ADB7";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant:elephant_BodySG2";
-	rename -uid "09B4C6F7-474E-2FB4-FDD8-519ECD9BFC91";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant1:elephant_BodySG2";
-	rename -uid "A7EDBBD8-6B4E-D15A-8AA8-D589B5280768";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:bowTie";
-	rename -uid "8FA9904D-FD49-8B93-6B22-6CA777C4E33F";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:groupId2";
 	rename -uid "9F257640-1A48-336F-13CB-328193A9BD8D";
 	setAttr ".ihi" 0;
@@ -14017,98 +12961,16 @@ createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Elephant_Model:Elep
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:defaultRenderLayer";
 	rename -uid "A5D9E26F-AD42-9CBA-8E69-4EBB2F5D086F";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert2";
-	rename -uid "E93BE8A0-A741-C421-6905-ED97D71A08A8";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2";
-	rename -uid "A75559D6-9645-584A-F02A-D1B4513523E1";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3";
-	rename -uid "09C19799-1247-3B5D-B3DA-0594135823B8";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert3";
-	rename -uid "48587D27-3040-C9BF-336F-0689159B4583";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert4";
-	rename -uid "D22A45E2-D048-0867-A23C-3092F3DDB5A0";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant:elephant_BodySG2";
-	rename -uid "E4BE4B3C-6647-76D0-509E-FBAFD2C1FC68";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant1:elephant_BodySG2";
-	rename -uid "415FDDE6-9342-CC31-E426-E0BE85248E07";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye";
-	rename -uid "08FC87F9-3742-802D-5707-CC9563B61499";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye3";
-	rename -uid "74298D5E-EA40-0E8F-718E-CA874F3F9986";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Eye";
-	rename -uid "54A6DDCB-9243-A6D8-2084-CC873A9108CF";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Leg1";
-	rename -uid "50B318BE-A14F-0DF3-2C69-5984667A97C5";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_leg";
-	rename -uid "CA706C6D-4042-1105-EBB2-65B1DF04F4E0";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Foot";
-	rename -uid "F69F111D-B64A-7B53-CE19-D1ADDAA5DCDD";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Foot";
-	rename -uid "064F4FEE-0F48-4662-3132-08A8E660C658";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Hand1";
-	rename -uid "93829624-8542-2E40-3238-39921A56A571";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Hand";
-	rename -uid "C97A3AC7-5C4C-8F1C-F6B2-3DAF9CE94C4E";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Under_Belly";
-	rename -uid "C43D26DD-7A48-A320-E838-469E1B488FAC";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Hands";
-	rename -uid "3F87DBEB-A545-4A5A-AB04-B0B0C633790E";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Head1";
-	rename -uid "1FEF74EF-8F44-4ABE-2459-B7A6C3CEB30F";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:groupId65";
 	rename -uid "2DC76707-E846-783E-8AB9-2993679DC745";
 	setAttr ".ihi" 0;
 createNode timeEditorTracks -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Composition1";
 	rename -uid "9D890338-F64F-B13E-73AB-18AAC1BBC7EF";
-createNode blinn -n "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:blinn1";
-	rename -uid "ED7FB5D3-E34E-DC69-CF5E-8984B3AE5D45";
-createNode nodeGraphEditorInfo -n "Poster_Board_UVs:Van_Model:Elephant_Model:MayaNodeEditorSavedTabsInfo";
-	rename -uid "C8E11EBA-7541-8DFD-7AFA-CFA83769C003";
-	setAttr ".def" no;
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -588.09521472643394 -295.23808350638785 ;
-	setAttr ".tgi[0].vh" -type "double2" 630.95235588058699 315.4761779402935 ;
-	setAttr -s 8 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 81.428573608398438;
-	setAttr ".tgi[0].ni[0].y" 172.85714721679687;
-	setAttr ".tgi[0].ni[0].nvs" 18306;
-	setAttr ".tgi[0].ni[1].x" 44.047618865966797;
-	setAttr ".tgi[0].ni[1].y" -92.857139587402344;
-	setAttr ".tgi[0].ni[1].nvs" 18304;
-	setAttr ".tgi[0].ni[2].x" 358.57144165039062;
-	setAttr ".tgi[0].ni[2].y" 42.857143402099609;
-	setAttr ".tgi[0].ni[2].nvs" 18304;
-	setAttr ".tgi[0].ni[3].x" -225.71427917480469;
-	setAttr ".tgi[0].ni[3].y" 172.85714721679687;
-	setAttr ".tgi[0].ni[3].nvs" 18304;
-	setAttr ".tgi[0].ni[4].x" -495.95236206054687;
-	setAttr ".tgi[0].ni[4].y" 255.71427917480469;
-	setAttr ".tgi[0].ni[4].nvs" 18304;
-	setAttr ".tgi[0].ni[5].x" -252.38093566894531;
-	setAttr ".tgi[0].ni[5].y" -78.571426391601562;
-	setAttr ".tgi[0].ni[5].nvs" 18304;
-	setAttr ".tgi[0].ni[6].x" 81.428573608398438;
-	setAttr ".tgi[0].ni[6].y" 42.857143402099609;
-	setAttr ".tgi[0].ni[6].nvs" 18304;
-	setAttr ".tgi[0].ni[7].x" -480.95236206054687;
-	setAttr ".tgi[0].ni[7].y" 315.47616577148437;
-	setAttr ".tgi[0].ni[7].nvs" 18304;
 createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Coyote_Model1:renderLayerManager";
 	rename -uid "18CA098F-054B-14B8-5B27-978C89C9C73D";
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Coyote_Model1:defaultRenderLayer";
 	rename -uid "EDEEF4DC-0A41-1C64-EA5A-77BAE5852181";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model1:lambert2";
-	rename -uid "9E71B257-CA44-6AAF-C5AF-EA9C607B3CEC";
 createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Coyote_Model1:elepant_rig_0011:renderLayerManager";
 	rename -uid "0553687F-7549-537A-B1D8-93B10CEF4738";
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Coyote_Model1:elepant_rig_0011:defaultRenderLayer";
@@ -14119,8 +12981,6 @@ createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Coyote_Model1:elepa
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:defaultRenderLayer";
 	rename -uid "18682AD0-4940-D052-55C2-CDB0122C5724";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:lambert2";
-	rename -uid "66EB0E61-B14E-71D6-2D2E-079AFB8E4472";
 createNode timeEditorTracks -n "Poster_Board_UVs:Van_Model:Coyote_Model1:elepant_rig_0011:Composition1";
 	rename -uid "F46F810B-964F-B9C8-B2B8-3E8565003A19";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Coyote_Model1:groupId25";
@@ -14323,8 +13183,6 @@ createNode groupParts -n "Poster_Board_UVs:Van_Model:Coyote_Model1:groupParts5";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Coyote_Model1:groupId42";
 	rename -uid "636D29F3-054D-3965-092D-2D976F3C74E9";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model1:lambert3";
-	rename -uid "83191B7B-814E-FAF0-5E75-C1B750FB5291";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Coyote_Model1:groupId79";
 	rename -uid "B3B28D20-4048-5A85-1EA7-2B9CD9F2F5BE";
 	setAttr ".ihi" 0;
@@ -14333,43 +13191,11 @@ createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_el
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:defaultRenderLayer";
 	rename -uid "0BC621C6-D149-9358-FA28-FEB51AD0D1DC";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2";
-	rename -uid "8129F5DD-554B-F5BA-F08F-0CA7696512C6";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:lambert2";
-	rename -uid "CD120307-B74E-295F-67C3-2DA142A1257D";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3";
-	rename -uid "5FFFB631-7E49-4222-373D-6ABB752DAC99";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:lambert3";
-	rename -uid "1CA76E77-9E45-CEFC-A967-F099B6F74111";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4";
-	rename -uid "9327137B-2045-618C-6666-B5818437A7D5";
 createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Elephant_Model1:renderLayerManager";
 	rename -uid "B270ADE0-EA4B-A8D3-5376-8995B8BFF7CC";
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Elephant_Model1:defaultRenderLayer";
 	rename -uid "88CC3FDF-9C45-FA2F-E8F1-E7B59820C595";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Fixed_legs_0002:lambert2";
-	rename -uid "394393C0-DF49-89CF-E0F1-68B4F7DBE564";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:lambert2";
-	rename -uid "4FC793A3-8640-589C-1E4F-D4BBB7A1804D";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Fixed_legs_0002:lambert3";
-	rename -uid "639F3221-4747-D892-9C19-0CA57313C20E";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:lambert3";
-	rename -uid "61A6878C-394B-1F9A-973A-E0848E92C56F";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Fixed_legs_0002:lambert4";
-	rename -uid "4D59CB76-2343-2703-7059-2DA80C655174";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:elephant:elephant_BodySG2";
-	rename -uid "DC224437-1C48-53B3-4FCB-EFBAC4C03FB3";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:elephant1:elephant_BodySG2";
-	rename -uid "85AE5DE9-DD45-5395-3ED4-8D8B41843FB1";
-createNode condition -n "Poster_Board_UVs:Van_Model:Elephant_Model1:condition1";
-	rename -uid "BBFB7A8E-F940-AF49-EB85-2BB94B23B84E";
-	setAttr ".op" 2;
-	setAttr ".st" 73.596000671386719;
-createNode multiplyDivide -n "Poster_Board_UVs:Van_Model:Elephant_Model1:multiplyDivide1";
-	rename -uid "C64B81D8-CA4A-36CF-600E-68BB78F9CBD8";
-	setAttr ".op" 2;
-	setAttr ".i2" -type "float3" 73.596001 1 1 ;
 createNode timeEditorTracks -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Composition1";
 	rename -uid "9973E403-AA49-2C00-1296-40A3ECCA97FA";
 createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:renderLayerManager";
@@ -14377,278 +13203,26 @@ createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Ele
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:defaultRenderLayer";
 	rename -uid "3CDDF85D-6C48-4619-7ED8-A2B1C7001625";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert2";
-	rename -uid "E34541C4-8C4C-0882-B6D5-27B1D12E1873";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert2";
-	rename -uid "6289B8DB-F143-736A-DA9D-99A77432408B";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3";
-	rename -uid "80EB60BB-A44E-AD8D-99F2-C1B99C997EF4";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert3";
-	rename -uid "49DAD751-EA49-2EC6-9E15-F2A5541EEDAE";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert4";
-	rename -uid "A0B3DB83-484F-D8D9-E10A-22BBC0A6C852";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:elephant:elephant_BodySG2";
-	rename -uid "BDD5C04A-4547-5CA0-B45C-27BC6FE18841";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:elephant1:elephant_BodySG2";
-	rename -uid "27DC4445-AD45-68FE-B895-3183FFBF9FCF";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye";
-	rename -uid "CFA2C260-CA43-14FF-5A91-3A8B11EF0C8F";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye3";
-	rename -uid "AD8BE9BC-F542-E724-122D-A8952135E804";
-	setAttr ".c" -type "float3" 1 1 1 ;
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:groupId35";
 	rename -uid "BA5CD904-5141-0639-887E-BEA8BCE719B3";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Eye";
-	rename -uid "FE332EA6-4645-7965-32EE-E1A11017E5C4";
-	setAttr ".c" -type "float3" 1 1 1 ;
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:groupId37";
 	rename -uid "A014DA04-9A42-3AC1-02EA-D280C952E442";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Leg1";
-	rename -uid "76EF4DD2-3B4B-49D1-D267-22B21FE0E722";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_leg";
-	rename -uid "79AE76F5-224D-6441-D1F8-22859D0EB192";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Foot";
-	rename -uid "F75B0448-C849-8E99-CFE8-A9BE066027E0";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Foot";
-	rename -uid "35CF1597-7148-9FFE-8B3B-40821DB3D2D4";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Hand1";
-	rename -uid "0547C599-C54C-A29C-E126-3191AE0436BF";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Hand";
-	rename -uid "BB41914E-954F-18F0-F797-74BBEDBB61E7";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve";
-	rename -uid "A31B24B2-274C-1B03-AA5B-BD9C9D4DF87B";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Tusk";
-	rename -uid "F33DF012-654F-2FBC-DB5F-FBBBB07E63C7";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert5";
-	rename -uid "5190AA41-3944-79CC-53BA-558C530DA2C6";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1";
-	rename -uid "A6336085-4244-76F8-87BF-DD8107BD3528";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture1";
-	rename -uid "DDC4CE48-FF49-BAEE-CA80-4C9D13066A80";
-	setAttr ".re" -type "float2" 8 8 ;
-createNode nodeGraphEditorInfo -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "980CDE2D-8246-C441-47B2-07901BF07640";
-	setAttr ".def" no;
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -756.35695187706074 -580.73625013194282 ;
-	setAttr ".tgi[0].vh" -type "double2" 100.86411376008934 504.65456310548376 ;
-	setAttr -s 4 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" -560;
-	setAttr ".tgi[0].ni[0].y" 218.57142639160156;
-	setAttr ".tgi[0].ni[0].nvs" 1923;
-	setAttr ".tgi[0].ni[1].x" -251.66667175292969;
-	setAttr ".tgi[0].ni[1].y" 241.19047546386719;
-	setAttr ".tgi[0].ni[1].nvs" 1923;
-	setAttr ".tgi[0].ni[2].x" 361.42855834960937;
-	setAttr ".tgi[0].ni[2].y" 218.57142639160156;
-	setAttr ".tgi[0].ni[2].nvs" 1923;
-	setAttr ".tgi[0].ni[3].x" 54.285713195800781;
-	setAttr ".tgi[0].ni[3].y" 240;
-	setAttr ".tgi[0].ni[3].nvs" 1923;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Belly";
-	rename -uid "BFF8ACF0-C24A-8697-649E-AB846BD83CD6";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker2";
-	rename -uid "71203716-BF44-7EAE-CC18-1D867B202F71";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture2";
-	rename -uid "BE3D8E44-A444-D7EE-7CEE-FDB9526220D5";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Leg1";
-	rename -uid "FF9A426D-0D47-6CEA-0194-7C988BB7E5F4";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker3";
-	rename -uid "8AB68F86-E948-ED0C-5664-949C813433BE";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture3";
-	rename -uid "8281757D-3549-00B9-9FAE-D7A12C6A5A1A";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Leg2";
-	rename -uid "FD96C1E7-F64D-D8FA-8603-5D8AB6A08150";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker4";
-	rename -uid "558743C3-4F41-5E65-BDDF-F8B6AD66F570";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture4";
-	rename -uid "01B044BF-3943-A73F-5AF3-2DB2D7CCF829";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Foot1";
-	rename -uid "5E764D51-A547-5774-53A9-A9920CA97A0B";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker5";
-	rename -uid "4B532F45-F443-1644-D7B4-7995A6D64FBF";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture5";
-	rename -uid "F058264F-6E45-431F-7BDA-E2B08543D142";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Foot2";
-	rename -uid "223E646D-DD4B-E77D-89F0-769A6DAF42D2";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker6";
-	rename -uid "D5F364A9-0348-B337-8E7B-42AACC170257";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture6";
-	rename -uid "3A35093C-C84B-7D4F-0AE2-BD982856E987";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Hand2";
-	rename -uid "5F99FD71-C74F-4482-AEEB-BC950B73657B";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker7";
-	rename -uid "B30318CB-1A4B-BB01-9308-F59C24992636";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture7";
-	rename -uid "6A91C900-B147-2D86-49DE-D6BFA45D2A7A";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Hand2";
-	rename -uid "1947DD9D-7845-BB6D-3ED6-5AB4C6E9B822";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker8";
-	rename -uid "57ACA0DF-8145-96D7-4BF3-738292B5563C";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture8";
-	rename -uid "DD0E149F-2C4F-9B20-E9A8-CBBC18BB2112";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Sleeve";
-	rename -uid "A81EC571-8E46-FE89-E42A-3C8C7BBDFACA";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker9";
-	rename -uid "7F4024CD-1A47-F6E4-0138-94B2CB0D41D5";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture9";
-	rename -uid "32004172-404C-7493-BC6D-9EB05F8EAADA";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve2";
-	rename -uid "9182C4D8-1F4B-D99C-BD55-5894190320F3";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker10";
-	rename -uid "7CEFD112-9245-E5F5-B841-A3A270634D18";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture10";
-	rename -uid "7C1EB595-D045-62B2-DD62-DC9856D6EE83";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:RIght_Tusk";
-	rename -uid "5016D6BC-1940-F4EB-A436-0AB1C67D3CBB";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker11";
-	rename -uid "F98B2440-8A4E-95CE-9CC7-B29531136102";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture11";
-	rename -uid "7602E2D5-9945-CB56-FF7A-1AA7ABC36D98";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Cuff";
-	rename -uid "10BD1F58-6E49-4B4A-EC46-9E9BE45F7274";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker12";
-	rename -uid "6ED19F18-7243-11CE-DAD6-00AD560736E4";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture12";
-	rename -uid "CBAFB23C-5445-79F0-2666-18B0C564C91D";
-	setAttr ".re" -type "float2" 4 4 ;
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:groupId61";
 	rename -uid "09F47F0D-F04A-E568-C2F3-769212598D2B";
 	setAttr ".ihi" 0;
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker13";
-	rename -uid "643E811E-0944-EB0A-FB12-0EB5C071E6F5";
-	setAttr ".c1" -type "float3" 0 0 0 ;
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture13";
-	rename -uid "CE4CD9FA-D94A-94E9-34BD-A1A39AAC99FD";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye4";
-	rename -uid "76C6C441-2043-E996-7FC4-0A9A3112A7B6";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker14";
-	rename -uid "9EA04248-0740-9897-A474-D48AE6A1DBA3";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture14";
-	rename -uid "03490115-CF4B-D2D1-37FC-8AB548D06806";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Eye2";
-	rename -uid "F09BBAFE-7F46-81E4-8353-64987E020B0E";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker15";
-	rename -uid "94232FE9-A940-CF58-E033-8C917C818D44";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture15";
-	rename -uid "70C59CC4-1148-12CE-F24E-D7A1F3CB40F6";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Ear";
-	rename -uid "79338B49-B74B-A88F-E303-85A257207592";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker16";
-	rename -uid "D6BFB63F-A346-1638-0A8F-2AA82FF3A754";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture16";
-	rename -uid "28878AE1-5B47-C659-236B-A5A4C9446DB3";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert11";
-	rename -uid "D0369201-1A4F-57BF-2A0B-E9B429CCC30F";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Ear";
-	rename -uid "886DD879-7C43-8B40-4353-8E9EC6997F12";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker17";
-	rename -uid "5DD36192-B44E-4D91-97A9-B2BB712E0B6E";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture17";
-	rename -uid "5043E467-1349-5DAD-E3D6-47875774F99F";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Trunk";
-	rename -uid "70F37066-7243-B2D1-820D-50BDEEE52FC2";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker18";
-	rename -uid "484600F8-9544-6447-48F9-8C8E6D004CAE";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture18";
-	rename -uid "D409C11A-4F4C-B80B-6F9E-08B5ABEDA40E";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Suit_Coat_Back";
-	rename -uid "01665D0F-6A4E-64C7-9C00-BCBEA39A7647";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker19";
-	rename -uid "E53EFFF4-E548-B5AA-622E-A78278DF74FF";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture19";
-	rename -uid "DFB4210B-F947-A618-0F02-28B981D29866";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert14";
-	rename -uid "B4F216EF-E340-21DE-AFD3-F1AD0444716F";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Tail";
-	rename -uid "1BED4224-464D-3A70-5EB0-57B5283F8BCF";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker20";
-	rename -uid "C76E4E33-5D49-FD3B-6AB8-D2A87BCE3227";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture20";
-	rename -uid "709F2854-AB4A-E720-9499-CF96D050A404";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Shirt";
-	rename -uid "04B24FBC-DA42-1E33-F561-68BE9A580CD7";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker21";
-	rename -uid "CFC940AE-3D4A-071D-273F-7AB624BBB0FD";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture21";
-	rename -uid "4A7CD18F-DA42-1E97-1274-7F814BD61B46";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Face";
-	rename -uid "EEE34CD6-9042-5DAF-2E2F-9695496AE92F";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker22";
-	rename -uid "9E290C49-FE4F-FE68-C605-EEB0F49F7E73";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture22";
-	rename -uid "A1EDE220-DD48-2747-642D-B1B4E8924F0D";
-	setAttr ".re" -type "float2" 4 4 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:tongue1";
-	rename -uid "BA62F01B-A443-E7F7-1C85-339D09269B6E";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:groupId118";
 	rename -uid "23EF6814-EE46-7B8C-E15A-298FA5240175";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:teeth1";
-	rename -uid "B3DE01DC-2E48-223F-039D-17A193A54119";
-createNode checker -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker23";
-	rename -uid "EE84EF88-B849-F4D7-1038-C5B17AD963B2";
-createNode place2dTexture -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture23";
-	rename -uid "BF6C98F7-1A4F-F8D7-7AF1-B8A151005C58";
-	setAttr ".re" -type "float2" 4 4 ;
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:groupId120";
 	rename -uid "8ACC856A-6641-5000-38B7-9A856AC0567D";
 	setAttr ".ihi" 0;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert15";
-	rename -uid "8D597A66-BB41-EC0C-862F-7DAEB3CD3359";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:collar";
-	rename -uid "824D896B-AD40-33E2-8542-F58E36889ED2";
 createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:renderLayerManager";
 	rename -uid "617E0D30-E14A-E342-3DD9-9CBC72338F29";
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:defaultRenderLayer";
 	rename -uid "FA15FBBD-8249-6AA6-E662-358C6ECBC572";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert2";
-	rename -uid "E50B95D8-A449-252D-FDE0-35BEA8E665D5";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2";
-	rename -uid "5873C785-1648-C39B-59F0-B782CA41441B";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3";
-	rename -uid "ABFAD78F-9341-D458-694F-DF8834344CA5";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:lambert3";
-	rename -uid "8A79A056-C748-C3B7-0C2D-069744A616B5";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert4";
-	rename -uid "5CE42EAE-004B-BC4A-FC47-AABFF8162B9C";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant:elephant_BodySG2";
-	rename -uid "A95EF1C3-2942-AAB0-83E1-9A885D1CBBDC";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant1:elephant_BodySG2";
-	rename -uid "00400418-534C-E7EC-F808-DCAE1616CC22";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:bowTie";
-	rename -uid "BE6D4F5C-8B47-8AD6-4186-5D90387D3922";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:groupId2";
 	rename -uid "CA518EC2-EB4D-527F-841F-C0872076B08B";
 	setAttr ".ihi" 0;
@@ -14657,91 +13231,11 @@ createNode renderLayerManager -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Ele
 createNode renderLayer -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:defaultRenderLayer";
 	rename -uid "ED831A9B-2C4D-CB7E-DD50-73B42D9299F9";
 	setAttr ".g" yes;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert2";
-	rename -uid "75A7D52C-0D47-421D-2607-C5A7D7B19FCF";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2";
-	rename -uid "3271408E-DA44-549A-A7DE-6C9CD9519E6D";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3";
-	rename -uid "569A462B-F54E-3215-36FD-7683093E6C52";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert3";
-	rename -uid "C6A8A31C-CD47-232B-A065-76A570091FDA";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert4";
-	rename -uid "18477363-0447-0801-FFC7-1A8A2146361E";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant:elephant_BodySG2";
-	rename -uid "D9503689-BA48-0B4A-776E-498F657F52C1";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant1:elephant_BodySG2";
-	rename -uid "73139D0D-E046-9814-97EE-F89D477C5EFE";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye";
-	rename -uid "9903BC1F-2F40-42F6-416C-B2A1E734841C";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye3";
-	rename -uid "1F9A47AD-2A4B-AFE9-29D7-F09B7772F7B0";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Eye";
-	rename -uid "41D2BBB4-CC41-088B-2F0E-438A6542F1C5";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Leg1";
-	rename -uid "115978F6-6246-4D43-2DBA-138E9EED84C7";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_leg";
-	rename -uid "01ED32AF-D84F-5D03-D1D1-BCA77FAF8DBD";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Foot";
-	rename -uid "5EACB638-BC4C-1C83-6D72-1CBBA11CC0C8";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Foot";
-	rename -uid "696AD3EB-DD4E-E265-70E6-CFAA147CA75B";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Hand1";
-	rename -uid "DFE65508-0A4C-5B25-B53E-4085E77D985F";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Hand";
-	rename -uid "DE77C41C-DA44-9299-34FB-94979E03092B";
-	setAttr ".c" -type "float3" 1 1 1 ;
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Under_Belly";
-	rename -uid "B4B1E57E-CE4B-4E84-76A7-9B885C312F29";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Hands";
-	rename -uid "74F2DEB4-F14E-98B1-CDFC-8FA4AE22E9B4";
-createNode lambert -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Head1";
-	rename -uid "8C6FBC29-CA4A-31C4-EE2B-68B7921AAE6F";
 createNode groupId -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:groupId65";
 	rename -uid "611F03AB-D344-E6E3-37D6-8A83A130D61B";
 	setAttr ".ihi" 0;
 createNode timeEditorTracks -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Composition1";
 	rename -uid "E6D9FFF2-214E-FA46-4070-97A305F603B5";
-createNode blinn -n "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:blinn1";
-	rename -uid "3DB40EE8-C04A-A9FC-2324-FB8FA11B88C4";
-createNode nodeGraphEditorInfo -n "Poster_Board_UVs:Van_Model:Elephant_Model1:MayaNodeEditorSavedTabsInfo";
-	rename -uid "C96C9325-234E-D8F5-34A4-A7A2E67DFFF3";
-	setAttr ".def" no;
-	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
-	setAttr ".tgi[0].vl" -type "double2" -588.09521472643394 -295.23808350638785 ;
-	setAttr ".tgi[0].vh" -type "double2" 630.95235588058699 315.4761779402935 ;
-	setAttr -s 8 ".tgi[0].ni";
-	setAttr ".tgi[0].ni[0].x" 81.428573608398438;
-	setAttr ".tgi[0].ni[0].y" 172.85714721679687;
-	setAttr ".tgi[0].ni[0].nvs" 18306;
-	setAttr ".tgi[0].ni[1].x" 44.047618865966797;
-	setAttr ".tgi[0].ni[1].y" -92.857139587402344;
-	setAttr ".tgi[0].ni[1].nvs" 18304;
-	setAttr ".tgi[0].ni[2].x" 358.57144165039062;
-	setAttr ".tgi[0].ni[2].y" 42.857143402099609;
-	setAttr ".tgi[0].ni[2].nvs" 18304;
-	setAttr ".tgi[0].ni[3].x" -225.71427917480469;
-	setAttr ".tgi[0].ni[3].y" 172.85714721679687;
-	setAttr ".tgi[0].ni[3].nvs" 18304;
-	setAttr ".tgi[0].ni[4].x" -495.95236206054687;
-	setAttr ".tgi[0].ni[4].y" 255.71427917480469;
-	setAttr ".tgi[0].ni[4].nvs" 18304;
-	setAttr ".tgi[0].ni[5].x" -252.38093566894531;
-	setAttr ".tgi[0].ni[5].y" -78.571426391601562;
-	setAttr ".tgi[0].ni[5].nvs" 18304;
-	setAttr ".tgi[0].ni[6].x" 81.428573608398438;
-	setAttr ".tgi[0].ni[6].y" 42.857143402099609;
-	setAttr ".tgi[0].ni[6].nvs" 18304;
-	setAttr ".tgi[0].ni[7].x" -480.95236206054687;
-	setAttr ".tgi[0].ni[7].y" 315.47616577148437;
-	setAttr ".tgi[0].ni[7].nvs" 18304;
 createNode groupId -n "groupId154";
 	rename -uid "B6DE395D-419D-F057-85B8-539163860808";
 	setAttr ".ihi" 0;
@@ -14762,6 +13256,55 @@ createNode file -n "file1";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture1";
 	rename -uid "8553A7DE-467A-C1A1-760E-EAA254957640";
+createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
+	rename -uid "7C63C0CB-4837-655E-137C-CFA7C10ECB20";
+	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
+	setAttr ".tgi[0].vl" -type "double2" -477.5851868263432 -889.52497670913942 ;
+	setAttr ".tgi[0].vh" -type "double2" 810.51000008459062 424.76068535155463 ;
+createNode RedshiftMaterial -n "rsPosterBoard";
+	rename -uid "EF70C0E9-4D39-4285-0BCA-C68C951083B3";
+	setAttr ".v" 1;
+	setAttr ".refl_brdf" 1;
+	setAttr ".refl_fresnel_mode" 2;
+createNode shadingEngine -n "rsMaterial1SG";
+	rename -uid "2FF371EF-4BB7-CD00-2B3E-00966A2D5230";
+	setAttr ".ihi" 0;
+	setAttr ".ro" yes;
+createNode materialInfo -n "materialInfo2";
+	rename -uid "EF95D1EE-4C9A-3EA6-D37A-37B291BD8FF0";
+	setAttr -s 4 ".t";
+createNode RedshiftOptions -s -n "redshiftOptions";
+	rename -uid "211A3A41-41C4-C008-7D15-8981D7E304DB";
+createNode file -n "file2";
+	rename -uid "2EBFB141-461C-7F9B-377E-AC946AB86876";
+	setAttr ".ftn" -type "string" "C:/Users/10628452/UVU_Junior_Animation_Assets/Maya_DoubleBooked/sourceimages/RedShift_Textures/PosterBoard_Textures/PosterBoardPosters_lambert2SG_DiffuseColor.png";
+	setAttr ".ft" 0;
+	setAttr ".cs" -type "string" "sRGB";
+createNode place2dTexture -n "place2dTexture2";
+	rename -uid "26C8D051-47BE-667D-F77F-C195134CB96C";
+createNode file -n "file3";
+	rename -uid "2A186A1C-4374-2053-3B33-649120109718";
+	setAttr ".ftn" -type "string" "C:/Users/10628452/UVU_Junior_Animation_Assets/Maya_DoubleBooked/sourceimages/RedShift_Textures/PosterBoard_Textures/PosterBoardPosters_lambert2SG_Roughness.png";
+	setAttr ".ft" 0;
+	setAttr ".cs" -type "string" "Raw";
+createNode place2dTexture -n "place2dTexture3";
+	rename -uid "3FBE5105-4BCD-38C0-D724-0CAF330B2720";
+createNode file -n "file4";
+	rename -uid "4681FA28-4DFC-2D54-072D-EF8FC2B8D09C";
+	setAttr ".ftn" -type "string" "C:/Users/10628452/UVU_Junior_Animation_Assets/Maya_DoubleBooked/sourceimages/RedShift_Textures/PosterBoard_Textures/PosterBoardPosters_lambert2SG_Metallic.png";
+	setAttr ".ft" 0;
+	setAttr ".cs" -type "string" "Raw";
+createNode place2dTexture -n "place2dTexture4";
+	rename -uid "B5DB2633-4237-E021-A75E-48BBA32316CE";
+createNode file -n "file5";
+	rename -uid "BE5E89DE-4525-1819-F73D-8ABD686761E5";
+	setAttr ".ftn" -type "string" "C:/Users/10628452/UVU_Junior_Animation_Assets/Maya_DoubleBooked/sourceimages/RedShift_Textures/PosterBoard_Textures/PosterBoardPosters_lambert2SG_Normal.png";
+	setAttr ".ft" 0;
+	setAttr ".cs" -type "string" "Raw";
+createNode place2dTexture -n "place2dTexture5";
+	rename -uid "890D7844-492A-89D5-A9AA-E2A60E44634C";
+createNode RedshiftBumpMap -n "rsBumpMap1";
+	rename -uid "9C3A6B4F-4E89-D712-A731-68860CDFE5D9";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -14772,18 +13315,18 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 3 ".st";
+	setAttr -s 4 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 373 ".s";
+	setAttr -s 6 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 101 ".u";
+	setAttr -s 6 ".u";
 select -ne :defaultRenderingList1;
 	setAttr -s 43 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 93 ".tx";
+	setAttr -s 5 ".tx";
 select -ne :lambert1;
 select -ne :initialShadingGroup;
 	setAttr -s 2 ".dsm";
@@ -14806,9 +13349,11 @@ connectAttr ":initialShadingGroup.mwc" "BasePostersShape.iog.og[0].gco";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "rsMaterial1SG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "rsMaterial1SG.message" ":defaultLightSet.message";
 connectAttr "layerManager.dli[0]" "defaultLayer.id";
 connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
 connectAttr "Poster_Board_UVs:renderLayerManager.rlmi[0]" "Poster_Board_UVs:defaultRenderLayer.rlid"
@@ -14881,161 +13426,11 @@ connectAttr "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:renderLayer
 		;
 connectAttr "Poster_Board_UVs:Elephant_Model:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Elephant_Model:defaultRenderLayer.rlid"
 		;
-connectAttr "Poster_Board_UVs:Elephant_Model:multiplyDivide1.ox" "Poster_Board_UVs:Elephant_Model:condition1.ctr"
-		;
 connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:defaultRenderLayer.rlid"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker1.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert5.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture1.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker1.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture1.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker1.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture1.msg" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker1.msg" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert5.msg" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker2.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Belly.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture2.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker2.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture2.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker2.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker3.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Leg1.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture3.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker3.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture3.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker3.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker4.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Leg2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture4.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker4.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture4.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker4.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker5.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Foot1.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture5.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker5.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture5.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker5.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker6.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Foot2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture6.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker6.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture6.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker6.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker7.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Hand2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture7.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker7.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture7.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker7.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker8.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Hand2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture8.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker8.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture8.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker8.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker9.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Sleeve.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture9.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker9.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture9.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker9.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker10.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture10.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker10.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture10.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker10.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker11.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:RIght_Tusk.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture11.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker11.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture11.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker11.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker12.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Cuff.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture12.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker12.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture12.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker12.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture13.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker13.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture13.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker13.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker14.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye4.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture14.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker14.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture14.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker14.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker15.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Eye2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture15.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker15.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture15.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker15.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker16.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Ear.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture16.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker16.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture16.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker16.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker17.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Ear.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture17.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker17.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture17.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker17.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker18.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Trunk.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture18.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker18.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture18.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker18.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker19.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Suit_Coat_Back.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture19.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker19.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture19.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker19.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker20.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Tail.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture20.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker20.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture20.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker20.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker21.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Shirt.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture21.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker21.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture21.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker21.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker22.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Face.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture22.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker22.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture22.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker22.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker23.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:teeth1.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture23.o" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker23.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture23.ofs" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker23.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker13.oc" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert15.c"
 		;
 connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:defaultRenderLayer.rlid"
 		;
 connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:defaultRenderLayer.rlid"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:multiplyDivide1.msg" "Poster_Board_UVs:Elephant_Model:MayaNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model:condition1.msg" "Poster_Board_UVs:Elephant_Model:MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
 connectAttr "Poster_Board_UVs:Coyote_Model1:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Coyote_Model1:defaultRenderLayer.rlid"
 		;
@@ -15105,161 +13500,11 @@ connectAttr "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:renderLaye
 		;
 connectAttr "Poster_Board_UVs:Elephant_Model1:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Elephant_Model1:defaultRenderLayer.rlid"
 		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:multiplyDivide1.ox" "Poster_Board_UVs:Elephant_Model1:condition1.ctr"
-		;
 connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:defaultRenderLayer.rlid"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert5.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture1.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture1.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture1.msg" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1.msg" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert5.msg" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker2.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Belly.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture2.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker2.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture2.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker2.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker3.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Leg1.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture3.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker3.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture3.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker3.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker4.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Leg2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture4.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker4.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture4.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker4.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker5.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Foot1.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture5.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker5.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture5.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker5.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker6.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Foot2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture6.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker6.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture6.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker6.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker7.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Hand2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture7.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker7.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture7.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker7.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker8.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Hand2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture8.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker8.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture8.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker8.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker9.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Sleeve.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture9.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker9.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture9.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker9.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker10.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture10.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker10.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture10.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker10.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker11.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:RIght_Tusk.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture11.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker11.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture11.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker11.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker12.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Cuff.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture12.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker12.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture12.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker12.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture13.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker13.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture13.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker13.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker14.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye4.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture14.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker14.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture14.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker14.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker15.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Eye2.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture15.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker15.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture15.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker15.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker16.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Ear.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture16.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker16.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture16.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker16.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker17.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Ear.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture17.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker17.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture17.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker17.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker18.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Trunk.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture18.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker18.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture18.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker18.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker19.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Suit_Coat_Back.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture19.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker19.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture19.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker19.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker20.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Tail.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture20.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker20.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture20.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker20.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker21.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Shirt.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture21.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker21.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture21.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker21.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker22.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Face.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture22.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker22.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture22.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker22.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker23.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:teeth1.c"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture23.o" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker23.uv"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture23.ofs" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker23.fs"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker13.oc" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert15.c"
 		;
 connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:defaultRenderLayer.rlid"
 		;
 connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:defaultRenderLayer.rlid"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:multiplyDivide1.msg" "Poster_Board_UVs:Elephant_Model1:MayaNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "Poster_Board_UVs:Elephant_Model1:condition1.msg" "Poster_Board_UVs:Elephant_Model1:MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
 connectAttr "Poster_Board_UVs:Coyote_Model2:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Coyote_Model2:defaultRenderLayer.rlid"
 		;
@@ -15463,161 +13708,11 @@ connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:r
 		;
 connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Van_Model:Elephant_Model:defaultRenderLayer.rlid"
 		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:multiplyDivide1.ox" "Poster_Board_UVs:Van_Model:Elephant_Model:condition1.ctr"
-		;
 connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:defaultRenderLayer.rlid"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker1.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert5.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture1.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker1.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture1.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker1.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture1.msg" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker1.msg" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert5.msg" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker2.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Belly.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture2.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker2.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture2.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker2.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker3.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Leg1.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture3.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker3.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture3.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker3.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker4.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Leg2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture4.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker4.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture4.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker4.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker5.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Foot1.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture5.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker5.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture5.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker5.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker6.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Foot2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture6.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker6.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture6.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker6.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker7.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Hand2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture7.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker7.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture7.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker7.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker8.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Hand2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture8.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker8.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture8.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker8.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker9.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Sleeve.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture9.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker9.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture9.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker9.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker10.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture10.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker10.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture10.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker10.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker11.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:RIght_Tusk.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture11.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker11.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture11.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker11.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker12.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Cuff.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture12.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker12.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture12.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker12.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture13.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker13.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture13.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker13.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker14.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye4.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture14.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker14.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture14.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker14.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker15.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Eye2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture15.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker15.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture15.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker15.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker16.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Ear.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture16.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker16.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture16.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker16.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker17.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Ear.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture17.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker17.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture17.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker17.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker18.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Trunk.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture18.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker18.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture18.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker18.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker19.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Suit_Coat_Back.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture19.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker19.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture19.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker19.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker20.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Tail.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture20.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker20.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture20.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker20.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker21.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Shirt.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture21.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker21.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture21.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker21.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker22.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Face.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture22.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker22.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture22.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker22.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker23.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:teeth1.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture23.o" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker23.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture23.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker23.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker13.oc" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert15.c"
 		;
 connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:defaultRenderLayer.rlid"
 		;
 connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:defaultRenderLayer.rlid"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:multiplyDivide1.msg" "Poster_Board_UVs:Van_Model:Elephant_Model:MayaNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:condition1.msg" "Poster_Board_UVs:Van_Model:Elephant_Model:MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
 		;
 connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model1:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Van_Model:Coyote_Model1:defaultRenderLayer.rlid"
 		;
@@ -15687,164 +13782,13 @@ connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:
 		;
 connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Van_Model:Elephant_Model1:defaultRenderLayer.rlid"
 		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:multiplyDivide1.ox" "Poster_Board_UVs:Van_Model:Elephant_Model1:condition1.ctr"
-		;
 connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:defaultRenderLayer.rlid"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert5.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture1.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture1.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture1.msg" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[0].dn"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1.msg" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert5.msg" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[3].dn"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker2.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Belly.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture2.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker2.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture2.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker2.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker3.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Leg1.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture3.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker3.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture3.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker3.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker4.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Leg2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture4.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker4.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture4.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker4.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker5.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Foot1.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture5.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker5.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture5.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker5.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker6.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Foot2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture6.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker6.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture6.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker6.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker7.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Hand2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture7.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker7.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture7.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker7.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker8.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Hand2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture8.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker8.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture8.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker8.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker9.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Sleeve.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture9.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker9.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture9.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker9.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker10.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture10.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker10.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture10.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker10.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker11.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:RIght_Tusk.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture11.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker11.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture11.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker11.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker12.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Cuff.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture12.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker12.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture12.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker12.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture13.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker13.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture13.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker13.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker14.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye4.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture14.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker14.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture14.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker14.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker15.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Eye2.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture15.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker15.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture15.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker15.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker16.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Ear.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture16.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker16.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture16.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker16.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker17.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Ear.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture17.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker17.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture17.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker17.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker18.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Trunk.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture18.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker18.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture18.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker18.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker19.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Suit_Coat_Back.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture19.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker19.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture19.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker19.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker20.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Tail.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture20.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker20.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture20.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker20.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker21.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Shirt.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture21.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker21.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture21.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker21.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker22.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Face.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture22.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker22.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture22.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker22.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker23.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:teeth1.c"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture23.o" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker23.uv"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture23.ofs" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker23.fs"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker13.oc" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert15.c"
 		;
 connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:defaultRenderLayer.rlid"
 		;
 connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:renderLayerManager.rlmi[0]" "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:defaultRenderLayer.rlid"
 		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:multiplyDivide1.msg" "Poster_Board_UVs:Van_Model:Elephant_Model1:MayaNodeEditorSavedTabsInfo.tgi[0].ni[1].dn"
-		;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:condition1.msg" "Poster_Board_UVs:Van_Model:Elephant_Model1:MayaNodeEditorSavedTabsInfo.tgi[0].ni[5].dn"
-		;
 connectAttr "Board1.oc" "lambert2SG.ss";
-connectAttr "BoardShape.iog" "lambert2SG.dsm" -na;
 connectAttr "lambert2SG.msg" "materialInfo1.sg";
 connectAttr "Board1.msg" "materialInfo1.m";
 connectAttr ":defaultColorMgtGlobals.cme" "file1.cme";
@@ -15869,945 +13813,114 @@ connectAttr "place2dTexture1.vt3" "file1.vt3";
 connectAttr "place2dTexture1.vc1" "file1.vc1";
 connectAttr "place2dTexture1.o" "file1.uv";
 connectAttr "place2dTexture1.ofs" "file1.fs";
+connectAttr "file2.oc" "rsPosterBoard.diffuse_color";
+connectAttr "file3.oa" "rsPosterBoard.refl_roughness";
+connectAttr "file4.oa" "rsPosterBoard.refl_metalness";
+connectAttr "rsBumpMap1.oc" "rsPosterBoard.bump_input";
+connectAttr "rsPosterBoard.oc" "rsMaterial1SG.ss";
+connectAttr "BoardShape.iog" "rsMaterial1SG.dsm" -na;
+connectAttr "rsMaterial1SG.msg" "materialInfo2.sg";
+connectAttr "rsPosterBoard.msg" "materialInfo2.m";
+connectAttr "file2.msg" "materialInfo2.t" -na;
+connectAttr ":defaultColorMgtGlobals.cme" "file2.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file2.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file2.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file2.ws";
+connectAttr "place2dTexture2.c" "file2.c";
+connectAttr "place2dTexture2.tf" "file2.tf";
+connectAttr "place2dTexture2.rf" "file2.rf";
+connectAttr "place2dTexture2.mu" "file2.mu";
+connectAttr "place2dTexture2.mv" "file2.mv";
+connectAttr "place2dTexture2.s" "file2.s";
+connectAttr "place2dTexture2.wu" "file2.wu";
+connectAttr "place2dTexture2.wv" "file2.wv";
+connectAttr "place2dTexture2.re" "file2.re";
+connectAttr "place2dTexture2.of" "file2.of";
+connectAttr "place2dTexture2.r" "file2.ro";
+connectAttr "place2dTexture2.n" "file2.n";
+connectAttr "place2dTexture2.vt1" "file2.vt1";
+connectAttr "place2dTexture2.vt2" "file2.vt2";
+connectAttr "place2dTexture2.vt3" "file2.vt3";
+connectAttr "place2dTexture2.vc1" "file2.vc1";
+connectAttr "place2dTexture2.o" "file2.uv";
+connectAttr "place2dTexture2.ofs" "file2.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "file3.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file3.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file3.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file3.ws";
+connectAttr "place2dTexture3.c" "file3.c";
+connectAttr "place2dTexture3.tf" "file3.tf";
+connectAttr "place2dTexture3.rf" "file3.rf";
+connectAttr "place2dTexture3.mu" "file3.mu";
+connectAttr "place2dTexture3.mv" "file3.mv";
+connectAttr "place2dTexture3.s" "file3.s";
+connectAttr "place2dTexture3.wu" "file3.wu";
+connectAttr "place2dTexture3.wv" "file3.wv";
+connectAttr "place2dTexture3.re" "file3.re";
+connectAttr "place2dTexture3.of" "file3.of";
+connectAttr "place2dTexture3.r" "file3.ro";
+connectAttr "place2dTexture3.n" "file3.n";
+connectAttr "place2dTexture3.vt1" "file3.vt1";
+connectAttr "place2dTexture3.vt2" "file3.vt2";
+connectAttr "place2dTexture3.vt3" "file3.vt3";
+connectAttr "place2dTexture3.vc1" "file3.vc1";
+connectAttr "place2dTexture3.o" "file3.uv";
+connectAttr "place2dTexture3.ofs" "file3.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "file4.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file4.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file4.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file4.ws";
+connectAttr "place2dTexture4.c" "file4.c";
+connectAttr "place2dTexture4.tf" "file4.tf";
+connectAttr "place2dTexture4.rf" "file4.rf";
+connectAttr "place2dTexture4.mu" "file4.mu";
+connectAttr "place2dTexture4.mv" "file4.mv";
+connectAttr "place2dTexture4.s" "file4.s";
+connectAttr "place2dTexture4.wu" "file4.wu";
+connectAttr "place2dTexture4.wv" "file4.wv";
+connectAttr "place2dTexture4.re" "file4.re";
+connectAttr "place2dTexture4.of" "file4.of";
+connectAttr "place2dTexture4.r" "file4.ro";
+connectAttr "place2dTexture4.n" "file4.n";
+connectAttr "place2dTexture4.vt1" "file4.vt1";
+connectAttr "place2dTexture4.vt2" "file4.vt2";
+connectAttr "place2dTexture4.vt3" "file4.vt3";
+connectAttr "place2dTexture4.vc1" "file4.vc1";
+connectAttr "place2dTexture4.o" "file4.uv";
+connectAttr "place2dTexture4.ofs" "file4.fs";
+connectAttr ":defaultColorMgtGlobals.cme" "file5.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "file5.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "file5.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "file5.ws";
+connectAttr "place2dTexture5.c" "file5.c";
+connectAttr "place2dTexture5.tf" "file5.tf";
+connectAttr "place2dTexture5.rf" "file5.rf";
+connectAttr "place2dTexture5.mu" "file5.mu";
+connectAttr "place2dTexture5.mv" "file5.mv";
+connectAttr "place2dTexture5.s" "file5.s";
+connectAttr "place2dTexture5.wu" "file5.wu";
+connectAttr "place2dTexture5.wv" "file5.wv";
+connectAttr "place2dTexture5.re" "file5.re";
+connectAttr "place2dTexture5.of" "file5.of";
+connectAttr "place2dTexture5.r" "file5.ro";
+connectAttr "place2dTexture5.n" "file5.n";
+connectAttr "place2dTexture5.vt1" "file5.vt1";
+connectAttr "place2dTexture5.vt2" "file5.vt2";
+connectAttr "place2dTexture5.vt3" "file5.vt3";
+connectAttr "place2dTexture5.vc1" "file5.vc1";
+connectAttr "place2dTexture5.o" "file5.uv";
+connectAttr "place2dTexture5.ofs" "file5.fs";
+connectAttr "file5.oc" "rsBumpMap1.input";
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
-connectAttr "Poster_Board_UVs:Coyote_Model:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_leg.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Hand1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Hand.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Tusk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert5.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Belly.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Leg2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Foot1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Foot2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Hand2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Hand2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Sleeve.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:RIght_Tusk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Cuff.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert15.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Eye2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Ear.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert11.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Ear.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Trunk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Suit_Coat_Back.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:lambert14.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Tail.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Shirt.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Face.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:tongue1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:teeth1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:collar.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:bowTie.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_leg.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Hand1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Hand.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Under_Belly.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Hands.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Head1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:blinn1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model1:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model1:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_leg.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Hand1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Hand.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Tusk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert5.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Belly.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Leg2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Foot1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Foot2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Hand2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Hand2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Sleeve.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:RIght_Tusk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Cuff.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert15.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Eye2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Ear.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert11.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Ear.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Trunk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Suit_Coat_Back.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert14.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Tail.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Shirt.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Face.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:tongue1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:teeth1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:collar.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:bowTie.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_leg.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Hand1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Hand.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Under_Belly.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Hands.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Head1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:blinn1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model2:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model2:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model2:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model2:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model3:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model3:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model3:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Coyote_Model3:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_leg.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Hand1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Hand.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Tusk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert5.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Belly.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Leg2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Foot1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Foot2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Hand2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Hand2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Sleeve.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Sleeve2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:RIght_Tusk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Cuff.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert15.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Eye4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Eye2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Left_Ear.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert11.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Right_Ear.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Trunk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Suit_Coat_Back.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:lambert14.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Tail.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Shirt.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Face.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:tongue1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:teeth1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:collar.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_bow:bowTie.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_leg.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Hand1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Hand.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Under_Belly.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Hands.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Head1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:blinn1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model1:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model1:elepant_rig_0011:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model1:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Coyote_Model1:lp_elephant_Complete_0018:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_leg.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Hand1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Hand.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Tusk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert5.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Belly.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Leg2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Foot1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Foot2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Hand2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Hand2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Sleeve.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Sleeve2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:RIght_Tusk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Cuff.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert15.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Eye4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Eye2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Left_Ear.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert11.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Right_Ear.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Trunk.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Suit_Coat_Back.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:lambert14.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Tail.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Shirt.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Face.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:tongue1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:teeth1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:collar.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_bow:bowTie.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:lambert3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Fixed_legs_0002:lambert4.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:elephant1:elephant_BodySG2.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Eye3.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Eye.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Leg1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_leg.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Foot.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Right_Hand1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Left_Hand.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Under_Belly.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Hands.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:Elephant_Arms:Head1.msg" ":defaultShaderList1.s"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:blinn1.msg" ":defaultShaderList1.s"
-		 -na;
+connectAttr "rsMaterial1SG.pa" ":renderPartition.st" -na;
 connectAttr "Board1.msg" ":defaultShaderList1.s" -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:condition1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:multiplyDivide1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture2.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture3.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture4.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture5.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture6.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture7.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture8.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture9.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture10.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture11.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture12.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture13.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture14.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture15.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture16.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture17.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture18.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture19.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture20.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture21.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture22.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture23.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:condition1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:multiplyDivide1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture2.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture3.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture4.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture5.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture6.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture7.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture8.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture9.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture10.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture11.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture12.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture13.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture14.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture15.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture16.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture17.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture18.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture19.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture20.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture21.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture22.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture23.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:condition1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:multiplyDivide1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture2.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture3.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture4.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture5.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture6.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture7.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture8.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture9.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture10.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture11.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture12.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture13.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture14.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture15.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture16.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture17.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture18.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture19.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture20.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture21.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture22.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:place2dTexture23.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:condition1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:multiplyDivide1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture1.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture2.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture3.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture4.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture5.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture6.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture7.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture8.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture9.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture10.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture11.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture12.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture13.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture14.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture15.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture16.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture17.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture18.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture19.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture20.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture21.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture22.msg" ":defaultRenderUtilityList1.u"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:place2dTexture23.msg" ":defaultRenderUtilityList1.u"
-		 -na;
+connectAttr "rsPosterBoard.msg" ":defaultShaderList1.s" -na;
 connectAttr "place2dTexture1.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture3.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture4.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "place2dTexture5.msg" ":defaultRenderUtilityList1.u" -na;
+connectAttr "rsBumpMap1.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "Poster_Board_UVs:defaultRenderLayer.msg" ":defaultRenderingList1.r"
 		 -na;
@@ -16893,191 +14006,11 @@ connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:E
 		 -na;
 connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:Elephant_Arms:defaultRenderLayer.msg" ":defaultRenderingList1.r"
 		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker1.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker2.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker3.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker4.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker5.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker6.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker7.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker8.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker9.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker10.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker11.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker12.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker13.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker14.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker15.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker16.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker17.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker18.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker19.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker20.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker21.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker22.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model:Eleplant_UV_Rigg_ready:checker23.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker2.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker3.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker4.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker5.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker6.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker7.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker8.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker9.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker10.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker11.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker12.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker13.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker14.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker15.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker16.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker17.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker18.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker19.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker20.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker21.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker22.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Elephant_Model1:Eleplant_UV_Rigg_ready:checker23.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker1.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker2.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker3.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker4.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker5.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker6.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker7.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker8.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker9.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker10.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker11.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker12.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker13.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker14.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker15.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker16.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker17.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker18.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker19.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker20.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker21.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker22.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model:Eleplant_UV_Rigg_ready:checker23.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker1.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker2.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker3.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker4.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker5.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker6.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker7.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker8.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker9.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker10.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker11.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker12.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker13.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker14.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker15.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker16.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker17.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker18.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker19.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker20.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker21.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker22.msg" ":defaultTextureList1.tx"
-		 -na;
-connectAttr "Poster_Board_UVs:Van_Model:Elephant_Model1:Eleplant_UV_Rigg_ready:checker23.msg" ":defaultTextureList1.tx"
-		 -na;
 connectAttr "file1.msg" ":defaultTextureList1.tx" -na;
+connectAttr "file2.msg" ":defaultTextureList1.tx" -na;
+connectAttr "file3.msg" ":defaultTextureList1.tx" -na;
+connectAttr "file4.msg" ":defaultTextureList1.tx" -na;
+connectAttr "file5.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file1.oc" ":lambert1.c";
 connectAttr "file1.ot" ":lambert1.it";
 connectAttr "BasePostersShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
