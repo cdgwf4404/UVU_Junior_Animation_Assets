@@ -1,12 +1,12 @@
 //Maya ASCII 2017 scene
-//Name: CoyoteIdle05.ma
-//Last modified: Sat, Apr 22, 2017 11:49:42 PM
+//Name: CoyoteIdle05.0011.ma
+//Last modified: Sat, Apr 22, 2017 11:49:33 PM
 //Codeset: 1252
 file -rdi 1 -ns "CoyoteGame" -rfn "CoyoteGameRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/10525113/Downloads/CoyoteGame.ma";
+		 "C:/Users/10525113/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/01-Characters/C/Coyote/CoyoteGame.ma";
 file -rdi 1 -ns "GuitarGame" -dr 1 -rfn "GuitarGameRN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/MylesM/Documents/GitHub/2-1-17/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/02-Props/G/Guitar/GuitarGame.ma";
-file -r -ns "CoyoteGame" -dr 1 -rfn "CoyoteGameRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10525113/Downloads/CoyoteGame.ma";
+file -r -ns "CoyoteGame" -dr 1 -rfn "CoyoteGameRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10525113/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/01-Characters/C/Coyote/CoyoteGame.ma";
 file -r -ns "GuitarGame" -dr 1 -rfn "GuitarGameRN" -op "v=0;" -typ "mayaAscii" "C:/Users/MylesM/Documents/GitHub/2-1-17/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/02-Props/G/Guitar/GuitarGame.ma";
 requires maya "2017";
 requires "stereoCamera" "10.0";
@@ -21,16 +21,14 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "EF137614-4B5E-BD2B-627B-08A21000E958";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -185.41834537723901 22.857351475836651 211.2182692369957 ;
-	setAttr ".r" -type "double3" 1.4616472703217078 -45.799999999934698 4.3896201129927997e-013 ;
-	setAttr ".rp" -type "double3" 0 -7.1054273576010019e-015 -2.8421709430404007e-014 ;
-	setAttr ".rpt" -type "double3" 5.8732926457557532e-015 -6.1832974169742843e-015 
-		2.9816840325518822e-015 ;
+	setAttr ".t" -type "double3" -24.887419886708074 60.352749889769392 114.14734123448099 ;
+	setAttr ".r" -type "double3" -9.9383527298145804 -10.600000000001026 4.0447150011129636e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "CEEA0372-4E02-255D-779D-ED8243BE15C7";
 	setAttr -k off ".v" no;
+	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 279.21292012348329;
+	setAttr ".coi" 114.06595843261761;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -118,32 +116,34 @@ createNode parentConstraint -n "guitar_ctrl_grp_parentConstraint1" -p "GuitarGam
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -2.5009005239505129 -7.2730761072301604 14.714544364489054 ;
 	setAttr ".tg[0].tor" -type "double3" 141.12092453097634 -61.933159553351189 42.855420961782528 ;
-	setAttr ".lr" -type "double3" 2.2263882770244621e-014 -9.5416640443905503e-015 3.1805546814635152e-015 ;
+	setAttr ".lr" -type "double3" 2.2504006393415974e-014 -16.314000000000014 -2.2504006393415974e-014 ;
 	setAttr ".rst" -type "double3" 29.424646377563473 57.739257812499993 -0.91285705566406161 ;
 	setAttr ".rsrr" -type "double3" 2.2263882770244621e-014 -9.5416640443905503e-015 
 		3.1805546814635152e-015 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "7AE69207-435F-03DE-7700-D5B7E6B2515C";
+	rename -uid "C3432A94-4B53-3950-B497-D7BE17953542";
 	setAttr -s 35 ".lnk";
 	setAttr -s 35 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "478E65C8-4601-1C6C-D014-A2B9FFB441BF";
+	rename -uid "03BEE0BB-42A8-0FFD-78DD-EAA617C44C1F";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "98C6B205-41D4-61A0-6B1A-EC9BF900E69E";
+	rename -uid "000C2CE9-48DA-0117-AF67-E68EF57476E4";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "749876FB-4F2E-610B-4475-48BCF0E66414";
+	rename -uid "C17743D5-4D1E-CC51-6C80-0F9C2DAA785B";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "C785E7F6-475B-DB26-4305-70BC7B99F861";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "147EB8EC-450F-93DE-9CC6-40A9BC1AFEFE";
+	rename -uid "58258EDA-4F98-B18F-BBC7-F798C3BDC9F3";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4A5B5B5E-4F9F-1AFD-B594-27AD1E501AD6";
 	setAttr ".g" yes;
 createNode reference -n "CoyoteGameRN";
 	rename -uid "F595DB55-4923-17C4-AE54-73B7B9FA0B65";
-	setAttr ".fn[0]" -type "string" "C:/Users/Scudlette/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/01-Characters/C/Coyote/CoyoteGame.ma";
+	setAttr -s 2 ".fn";
+	setAttr ".fn[0]" -type "string" "C:/Users/10525113/Downloads/CoyoteGame.ma";
+	setAttr ".fn[1]" -type "string" "C:/Users/Scudlette/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/01-Characters/C/Coyote/CoyoteGame.ma";
 	setAttr -s 700 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
@@ -857,7 +857,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover|CoyoteGame:COG_Ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Thumb_Metacarpal_ctrl_Grp|CoyoteGame:Left_MetaCarpal_Fix|CoyoteGame:Left_Thumb_Metacarpal_ctrl_Fix" 
 		"rotate" " -type \"double3\" 15.523578784839124 -17.198583159717263 -0.87429044048696936"
 		
-		"CoyoteGameRN" 1184
+		"CoyoteGameRN" 1227
 		1 |CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Face_ctrls|CoyoteGame:Lip_Ctrl_Grp|CoyoteGame:Bottom_Lip|CoyoteGame:Bottom_Lip_Right_Middle|CoyoteGame:Bottom_Lip_Right_Middle_ctrl 
 		"blendBottomLipRightMiddleCtrlparent1" "blendBottomLipRightMiddleCtrlparent1" " -ci 1 -k 1 -dv 1 -smn 0 -smx 1 -at \"double\""
 		
@@ -1473,13 +1473,12 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Tail_Curves|CoyoteGame:FK_Tail_Influence_Joints|CoyoteGame:Upper_Tail" 
 		"segmentScaleCompensate" " 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Tail_Curves|CoyoteGame:ikHandle_Tail" 
-		"translate" " -type \"double3\" 0.50785689193654726 6.934760337799899 -31.263634132451497"
+		"translate" " -type \"double3\" -2.5586717314317839 2.8436825808215489 -31.263634132451497"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Tail_Curves|CoyoteGame:ikHandle_Tail" 
 		"rotate" " -type \"double3\" -90.000000000000028 43.44038721180771 -90"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Spine_Deformers|CoyoteGame:ikHandle_Spine" 
-		"translate" " -type \"double3\" 0.50785689193652439 55.091077756978358 -0.7089661955833465"
-		
+		"translate" " -type \"double3\" -2.5586717314318088 51 -0.7089661955833465"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Spine_Deformers|CoyoteGame:ikHandle_Spine" 
 		"rotate" " -type \"double3\" 0 0 89.999999999999915"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Lip_Rig|CoyoteGame:Lip_Driver_Joints|CoyoteGame:Lip_Driver_Jnt_01" 
@@ -1563,10 +1562,10 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Hair_Rig|CoyoteGame:Hair_Driver_Joints|CoyoteGame:Hair_Driver_Jnt_00" 
 		"segmentScaleCompensate" " 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Hair_Rig|CoyoteGame:ikHandle_Hair" 
-		"translate" " -type \"double3\" 6.6909225879299816 70.401653402228405 10.798235137791547"
+		"translate" " -type \"double3\" -1.432828719203171 61.333558359960833 15.171023432844608"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Deformers|CoyoteGame:Hair_Rig|CoyoteGame:ikHandle_Hair" 
-		"rotate" " -type \"double3\" 91.509426897480253 -15.570050106161498 -93.160213429625912"
+		"rotate" " -type \"double3\" 102.33624331703695 4.7236448833447788 -94.480546602842665"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl" "Left_Arm_Switch" 
 		" -av -k 1 1"
@@ -1577,7 +1576,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl" "Right_Leg_Switch" 
 		" -av -k 1 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl" 
-		"translate" " -type \"double3\" 0.50785689193654304 -4.9089222430216424 0"
+		"translate" " -type \"double3\" -2.5586717314317924 -9 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl" 
 		"translateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl" 
@@ -1591,13 +1590,15 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
 		"translateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 7.612 -1.349 -0.11799999999999998"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
 		"rotateY" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
 		"rotateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Lower_Neck_ctrl_Grp|CoyoteGame:Lower_Neck_ctrl" 
+		"Follow_Rotate" " -av -k 1 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
@@ -1607,13 +1608,15 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
 		"translateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 7.612 -1.349 -0.11799999999999998"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
 		"rotateY" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
 		"rotateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Neck_ctrl_Grp|CoyoteGame:Neck_ctrl" 
+		"Follow_Rotate" " -av -k 1 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
@@ -1623,31 +1626,61 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
 		"translateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 7.612 -1.349 -0.11799999999999998"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
 		"rotateY" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
 		"rotateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
+		"Follow_Rotate" " -av -k 1 1"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
+		"View_Hair_Controls" " -av -k 1 1"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
+		"View_Hair_Mesh" " -av -k 1 1"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
+		"ViewCheek_Control" " -av -k 1 1"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Head_ctrl_Grp|CoyoteGame:Head_ctrl" 
+		"View_All_Secondary_Controls" " -av -k 1 1"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Jaw_ctrl_Grp|CoyoteGame:Jaw_ctrl" 
 		"rotateX" " -av 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Ear_Controls|CoyoteGame:Right_Ear_ctrl_Grp|CoyoteGame:Right_Ear_ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Neck_Head_Ctrls|CoyoteGame:Ear_Controls|CoyoteGame:Right_Ear_ctrl_Grp|CoyoteGame:Right_Ear_ctrl" 
 		"rotateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
+		"translateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
+		"translateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
+		"translateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
+		"rotate" " -type \"double3\" 0 -5.438 0"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
+		"rotateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
+		"rotateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl" 
+		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Torso_Ctrl_Grp|CoyoteGame:Lower_Torso_Ctrl|CoyoteGame:Lower_Torso" 
 		"segmentScaleCompensate" " 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 -5.438 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl" 
 		"rotateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl" 
+		"rotateY" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Lower_Mid_Torso_Ctrl_Grp|CoyoteGame:Lower_Mid_Torso_ctrl|CoyoteGame:Lower_Mid_Torso" 
 		"segmentScaleCompensate" " 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 -5.438 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl" 
 		"rotateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl" 
+		"rotateY" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Mid_Torso_Ctrl_Grp|CoyoteGame:Upper_Mid_Torso_ctrl|CoyoteGame:Upper_Mid_Torso" 
 		"segmentScaleCompensate" " 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl" 
@@ -1656,8 +1689,28 @@ createNode reference -n "CoyoteGameRN";
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Torso_Controls|CoyoteGame:Upper_Torso_Ctrl_Grp|CoyoteGame:Upper_Torso_ctrl|CoyoteGame:Upper_Torso" 
 		"segmentScaleCompensate" " 0"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl" 
+		"rotateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl" 
+		"rotateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Lower_Tail_ctrl_Grp|CoyoteGame:Lower_Tail_ctrl" 
+		"rotateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl" 
+		"rotateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl" 
+		"rotateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Mid_Tail_ctrl_Grp|CoyoteGame:Mid_Tail_ctrl" 
+		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl" 
+		"rotateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl" 
+		"rotateY" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Tail_Ctrls_Grp|CoyoteGame:Upper_Tail_ctrl_Grp|CoyoteGame:Upper_Tail_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Face_ctrls|CoyoteGame:Lip_Ctrl_Grp|CoyoteGame:Bottom_Lip|CoyoteGame:Bottom_Lip_Right_Middle|CoyoteGame:Bottom_Lip_Right_Middle_ctrl" 
@@ -1685,8 +1738,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Clavical_ctrl_Grp|CoyoteGame:Left_Clavical_ctrl" 
 		"rotateY" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl" 
-		"rotate" " -type \"double3\" -56.43575729906005 16.370345102792918 10.592192135924195"
-		
+		"rotate" " -type \"double3\" 0 22.522842567328837 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Clavical_ctrl_Grp|CoyoteGame:Right_Clavical_ctrl" 
@@ -1702,7 +1754,8 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Hip_Clavical_Ctrls|CoyoteGame:Left_Hip_Clavical_ctrl_Grp|CoyoteGame:Left_Hip_Clavical_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl" 
-		"rotate" " -type \"double3\" 0 42.078663205800829 0"
+		"rotate" " -type \"double3\" -30.603126859209588 74.230237983034812 -30.775649157677172"
+		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl" 
@@ -1710,7 +1763,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Elbow_ctrl_Grp|CoyoteGame:FK_Right_Elbow_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl" 
-		"rotate" " -type \"double3\" -58.953632642567712 -18.74081208566205 0.29379609582033073"
+		"rotate" " -type \"double3\" -1.7186810341906524 6.0760686588132575 23.193921439341164"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Right_Arm_FK_Ctrl|CoyoteGame:FK_Right_Sholder_ctrl_Grp|CoyoteGame:FK_Right_Sholder_ctrl" 
 		"rotateX" " -av"
@@ -1731,8 +1784,33 @@ createNode reference -n "CoyoteGameRN";
 		"rotateY" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:FK_Ctrls|CoyoteGame:Left_Arm_Fk_Ctrl|CoyoteGame:FK_Left_Sholder_ctrl_Grp|CoyoteGame:FK_Left_Sholder_ctrl" 
 		"rotateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Distal_ctrl_Grp|CoyoteGame:Right_Thumb_Distal_ctrl" 
+		"translate" " -type \"double3\" 0.34055701474972488 -0.48025522845572732 0.83150471303355844"
+		
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Distal_ctrl_Grp|CoyoteGame:Right_Thumb_Distal_ctrl" 
+		"translateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Distal_ctrl_Grp|CoyoteGame:Right_Thumb_Distal_ctrl" 
+		"translateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Distal_ctrl_Grp|CoyoteGame:Right_Thumb_Distal_ctrl" 
+		"translateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Distal_ctrl_Grp|CoyoteGame:Right_Thumb_Distal_ctrl" 
+		"rotate" " -type \"double3\" 0 21.069709874881269 0"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Distal_ctrl_Grp|CoyoteGame:Right_Thumb_Distal_ctrl" 
+		"rotateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Distal_ctrl_Grp|CoyoteGame:Right_Thumb_Distal_ctrl" 
+		"rotateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Distal_ctrl_Grp|CoyoteGame:Right_Thumb_Distal_ctrl" 
+		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Proximal_ctrl_Grp|CoyoteGame:Right_Thumb_Fix|CoyoteGame:Right_Thumb_Proximal_ctrl" 
-		"rotate" " -type \"double3\" 0 0 37.807488561126362"
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Proximal_ctrl_Grp|CoyoteGame:Right_Thumb_Fix|CoyoteGame:Right_Thumb_Proximal_ctrl" 
+		"translateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Proximal_ctrl_Grp|CoyoteGame:Right_Thumb_Fix|CoyoteGame:Right_Thumb_Proximal_ctrl" 
+		"translateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Proximal_ctrl_Grp|CoyoteGame:Right_Thumb_Fix|CoyoteGame:Right_Thumb_Proximal_ctrl" 
+		"translateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Proximal_ctrl_Grp|CoyoteGame:Right_Thumb_Fix|CoyoteGame:Right_Thumb_Proximal_ctrl" 
+		"rotate" " -type \"double3\" 0 35.084149982118063 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Proximal_ctrl_Grp|CoyoteGame:Right_Thumb_Fix|CoyoteGame:Right_Thumb_Proximal_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Proximal_ctrl_Grp|CoyoteGame:Right_Thumb_Fix|CoyoteGame:Right_Thumb_Proximal_ctrl" 
@@ -1740,7 +1818,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Thumb_Proximal_ctrl_Grp|CoyoteGame:Right_Thumb_Fix|CoyoteGame:Right_Thumb_Proximal_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl" 
-		"rotate" " -type \"double3\" -20.612108068655669 -58.906584058124295 -36.380956222748424"
+		"rotate" " -type \"double3\" -11.394490284675443 1.5864323373873583 -54.315994893122117"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Right_Hand_Controls|CoyoteGame:Right_Hand_ctrl_Grp|CoyoteGame:Right_Hand_ctrl" 
 		"rotateX" " -av"
@@ -1765,6 +1843,15 @@ createNode reference -n "CoyoteGameRN";
 		"rotateY" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:COG_ctrl|CoyoteGame:Limb_Ctrls|CoyoteGame:Left_Hand_Controls|CoyoteGame:Left_Hand_ctrl_Grp|CoyoteGame:Left_Hand_ctrl" 
 		"rotateZ" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_poleVector_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_poleVector_ctrl" 
+		"translate" " -type \"double3\" -7.5127700231901322e-008 10.906612718513058 -2.6909534130153561e-007"
+		
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_poleVector_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_poleVector_ctrl" 
+		"translateX" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_poleVector_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_poleVector_ctrl" 
+		"translateY" " -av"
+		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_poleVector_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_poleVector_ctrl" 
+		"translateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl" 
 		"translate" " -type \"double3\" -5.416968458101131 0.072135972446590646 -4.1673365469635968"
 		
@@ -1781,7 +1868,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Right_Leg_Ctrls|CoyoteGame:IK_Right_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Right_Upper_Leg_ctrl" 
 		"Follow_Parent" " -av -k 1 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_poleVector_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_poleVector_ctrl" 
-		"translate" " -type \"double3\" 4.9236798324423235e-008 -7.1479216364387641 1.7635832825339681e-007"
+		"translate" " -type \"double3\" 1.1179089968734516e-007 -16.22917320091895 4.0041710725236174e-007"
 		
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_poleVector_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_poleVector_ctrl" 
 		"translateX" " -av"
@@ -1794,8 +1881,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_poleVector_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_poleVector_ctrl" 
 		"rotateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
-		"translate" " -type \"double3\" 5.4899419680157422 0.25599767195858725 -2.4477321235416625"
-		
+		"translate" " -type \"double3\" 5.417 -0.072 -4.167"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
 		"translateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
@@ -1803,7 +1889,7 @@ createNode reference -n "CoyoteGameRN";
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
 		"translateZ" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 21.595 0"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
 		"rotateX" " -av"
 		2 "|CoyoteGame:Coyote|CoyoteGame:Ctrl_Grp|CoyoteGame:Master_Mover_ctrl|CoyoteGame:IK_Ctrls|CoyoteGame:IK_Left_Leg_Ctrls|CoyoteGame:IK_Left_Upper_Leg_ctrl_Grp|CoyoteGame:IK_Left_Upper_Leg_ctrl" 
@@ -3372,23 +3458,23 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"graphEditor\" -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n"
 		+ "                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n"
 		+ "                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n"
-		+ "                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n"
-		+ "                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n"
-		+ "                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n"
-		+ "                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dopeSheetPanel\" -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n"
-		+ "                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n"
-		+ "                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n"
-		+ "                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n"
-		+ "                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n"
-		+ "                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n"
-		+ "                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"timeEditorPanel\" -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"clipEditorPanel\" -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels `;\n"
-		+ "\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n"
-		+ "                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"sequenceEditorPanel\" -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"hyperGraphPanel\" -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n"
-		+ "            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n"
-		+ "                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n"
-		+ "                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"visorPanel\" -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
-		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"createNodePanel\" -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n"
+		+ "                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n"
+		+ "                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n"
+		+ "                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n"
+		+ "                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dopeSheetPanel\" -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels `;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n"
+		+ "                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n"
+		+ "                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n"
+		+ "                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n"
+		+ "                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"timeEditorPanel\" -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n"
+		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"clipEditorPanel\" -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n"
+		+ "                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"sequenceEditorPanel\" -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n"
+		+ "                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"hyperGraphPanel\" -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels `;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n"
+		+ "                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n"
+		+ "                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"visorPanel\" -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n"
+		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"createNodePanel\" -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n"
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"renderWindowPanel\" -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tshapePanel -unParent -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tposePanel -unParent -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels ;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n"
@@ -3430,10 +3516,15 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n"
 		+ "            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n"
 		+ "\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n"
-		+ "                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n"
-		+ "                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -renderFilterIndex 0\n                -selectionOrder \"chronological\" \n                -expandAttribute 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
-		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"0\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n"
-		+ "            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n"
+		+ "                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n"
+		+ "            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n"
+		+ "            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n"
+		+ "                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n"
+		+ "                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -renderFilterIndex 0\n                -selectionOrder \"chronological\" \n                -expandAttribute 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n"
+		+ "            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"0\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n"
+		+ "            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n"
+		+ "\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
 		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 442\\n    -height 827\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 442\\n    -height 827\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12.000000000000002 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
@@ -3745,45 +3836,63 @@ createNode animCurveTL -n "FK_Left_Wrist_ctrl_translateZ";
 createNode animCurveTL -n "FK_Right_Elbow_ctrl_translateX";
 	rename -uid "90753C23-4A9E-4A65-E876-0CB33E50F0A1";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTL -n "FK_Right_Elbow_ctrl_translateY";
 	rename -uid "AB190A53-4BB9-BE49-2FF9-FD85CF0CD3FF";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTL -n "FK_Right_Elbow_ctrl_translateZ";
 	rename -uid "50F0D56F-43C5-7920-F11A-F4B70F4D7A53";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTL -n "FK_Right_Sholder_ctrl_translateX";
 	rename -uid "D22B11B3-46D8-C7FA-F3CF-10ADBA9A804B";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
-	setAttr -s 2 ".kit[1]"  1;
-	setAttr -s 2 ".kot[1]"  1;
-	setAttr -s 2 ".kix[1]"  0.95833331346511841;
-	setAttr -s 2 ".kiy[1]"  0;
-	setAttr -s 2 ".kox[1]"  0.95833331346511841;
-	setAttr -s 2 ".koy[1]"  0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTL -n "FK_Right_Sholder_ctrl_translateY";
 	rename -uid "45C007DF-4E0F-06BF-AA99-50A9E6653AAA";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
-	setAttr -s 2 ".kit[1]"  1;
-	setAttr -s 2 ".kot[1]"  1;
-	setAttr -s 2 ".kix[1]"  0.95833331346511841;
-	setAttr -s 2 ".kiy[1]"  0;
-	setAttr -s 2 ".kox[1]"  0.95833331346511841;
-	setAttr -s 2 ".koy[1]"  0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTL -n "FK_Right_Sholder_ctrl_translateZ";
 	rename -uid "7767C7F7-4AED-5780-935C-26A4C348F01A";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
-	setAttr -s 2 ".kit[1]"  1;
-	setAttr -s 2 ".kot[1]"  1;
-	setAttr -s 2 ".kix[1]"  0.95833331346511841;
-	setAttr -s 2 ".kiy[1]"  0;
-	setAttr -s 2 ".kox[1]"  0.95833331346511841;
-	setAttr -s 2 ".koy[1]"  0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTL -n "FK_Right_Wrist_ctrl_translateX";
 	rename -uid "33EB2A0E-4B8C-172E-6E8B-27A3A4F7CC3B";
 	setAttr ".tan" 18;
@@ -3919,45 +4028,39 @@ createNode animCurveTL -n "Left_Thumb_Proximal_ctrl_translateZ";
 createNode animCurveTL -n "Right_Hand_ctrl_translateX";
 	rename -uid "08B83570-494E-CEAB-FD5A-06A29D94F1FE";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 0 2 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "Right_Hand_ctrl_translateY";
 	rename -uid "7F4BFE28-47AD-204A-2A1C-B78658C844A7";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 0 2 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "Right_Hand_ctrl_translateZ";
 	rename -uid "B09221F6-4CD6-D86E-FB50-118F30729540";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 0 2 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "Right_Index_Distal_ctrl_translateX";
 	rename -uid "B659A48A-4954-EE7F-CA53-7EBF6EDAA5E4";
 	setAttr ".tan" 18;
@@ -4033,15 +4136,18 @@ createNode animCurveTL -n "Right_Pinky_Proximal_ctrl_translateZ";
 createNode animCurveTL -n "Right_Thumb_Distal_ctrl_translateX";
 	rename -uid "58FD6402-4D89-4D98-3915-54885BE22824";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0.34055701474972488 6 -0.4087594662777938
+		 24 0;
 createNode animCurveTL -n "Right_Thumb_Distal_ctrl_translateY";
 	rename -uid "895125A8-425A-4966-4380-C7BDF116B20A";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 -0.48025522845572732 6 0.20779700592828421
+		 24 0;
 createNode animCurveTL -n "Right_Thumb_Distal_ctrl_translateZ";
 	rename -uid "059C5067-4E20-942C-9297-96A2273B2792";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0.83150471303355844 6 0.64184837617794588
+		 24 0;
 createNode animCurveTL -n "Right_Thumb_Metacarpal_ctrl_translateX";
 	rename -uid "BA8CFD0C-4BFA-DD97-FCAB-7C818A8AA201";
 	setAttr ".tan" 18;
@@ -4056,39 +4162,16 @@ createNode animCurveTL -n "Right_Thumb_Metacarpal_ctrl_translateZ";
 	setAttr -s 2 ".ktv[0:1]"  1 -8.8817841970012523e-016 24 -8.8817841970012523e-016;
 createNode animCurveTL -n "Right_Thumb_Proximal_ctrl_translateX";
 	rename -uid "22A1C582-4BE9-8AAA-895C-E4BB5AA613E9";
-	setAttr ".tan" 1;
-	setAttr -s 5 ".ktv[0:4]"  1 -3.5527136788005009e-015 6 -3.5527136788005009e-015
-		 12 -3.5527136788005009e-015 18 -3.5527136788005009e-015 24 -3.5527136788005009e-015;
-	setAttr -s 5 ".kit[2:4]"  18 1 1;
-	setAttr -s 5 ".kot[2:4]"  18 1 1;
-	setAttr -s 5 ".kix[0:4]"  0.4583333432674408 0.4583333432674408 0.25 
-		0.4583333432674408 0.25;
-	setAttr -s 5 ".kiy[0:4]"  0 0 0 0 0;
-	setAttr -s 5 ".kox[0:4]"  0.5 0.5 0.25 0.5 0.25;
-	setAttr -s 5 ".koy[0:4]"  0 0 0 0 0;
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTL -n "Right_Thumb_Proximal_ctrl_translateY";
 	rename -uid "3C05B98C-4FB0-C0BB-CF46-76862ACDD768";
-	setAttr ".tan" 1;
-	setAttr -s 5 ".ktv[0:4]"  1 7.1054273576010019e-015 6 7.1054273576010019e-015
-		 12 7.1054273576010019e-015 18 7.1054273576010019e-015 24 7.1054273576010019e-015;
-	setAttr -s 5 ".kit[2:4]"  18 1 1;
-	setAttr -s 5 ".kot[2:4]"  18 1 1;
-	setAttr -s 5 ".kix[0:4]"  0.4583333432674408 0.4583333432674408 0.25 
-		0.4583333432674408 0.25;
-	setAttr -s 5 ".kiy[0:4]"  0 0 0 0 0;
-	setAttr -s 5 ".kox[0:4]"  0.5 0.5 0.25 0.5 0.25;
-	setAttr -s 5 ".koy[0:4]"  0 0 0 0 0;
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTL -n "Right_Thumb_Proximal_ctrl_translateZ";
 	rename -uid "E58941CB-49C2-8FB2-2BE6-7098364CD2C6";
-	setAttr ".tan" 1;
-	setAttr -s 5 ".ktv[0:4]"  1 0 6 0 12 0 18 0 24 0;
-	setAttr -s 5 ".kit[2:4]"  18 1 1;
-	setAttr -s 5 ".kot[2:4]"  18 1 1;
-	setAttr -s 5 ".kix[0:4]"  0.4583333432674408 0.4583333432674408 0.25 
-		0.4583333432674408 0.25;
-	setAttr -s 5 ".kiy[0:4]"  0 0 0 0 0;
-	setAttr -s 5 ".kox[0:4]"  0.5 0.5 0.25 0.5 0.25;
-	setAttr -s 5 ".koy[0:4]"  0 0 0 0 0;
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTL -n "Left_Ear_Tip_ctrl_translateX";
 	rename -uid "E791A767-4956-FA48-C11B-429C87C260EC";
 	setAttr ".tan" 18;
@@ -4140,63 +4223,156 @@ createNode animCurveTL -n "Right_Ear_ctrl_translateZ";
 createNode animCurveTL -n "Head_ctrl_translateX";
 	rename -uid "D40A4219-4881-6BF5-1F3E-00AD25981DC2";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 10 0 15 0 19 0 24 0;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTL -n "Head_ctrl_translateY";
 	rename -uid "BE218965-4675-2FD8-75CB-44BD1DD9BF46";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 10 0 15 0 19 0 24 0;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTL -n "Head_ctrl_translateZ";
 	rename -uid "29A35D73-403F-CCC9-484F-FE84DA7650DB";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 10 0 15 0 19 0 24 0;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTL -n "Lower_Neck_ctrl_translateX";
 	rename -uid "0A550A12-40CA-21B7-C8B7-60944F2094A7";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 10 0 15 0 19 0 24 0;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTL -n "Lower_Neck_ctrl_translateY";
 	rename -uid "67DFE0FD-488E-8045-D57C-A7AC1919D5B0";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 10 0 15 0 19 0 24 0;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTL -n "Lower_Neck_ctrl_translateZ";
 	rename -uid "7FB40D6B-4E8E-AF96-07A3-6D8ED8E092A0";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 10 0 15 0 19 0 24 0;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTL -n "Neck_ctrl_translateX";
 	rename -uid "A2A482E5-4519-57FC-045D-C6A55B7254F7";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 10 0 15 0 19 0 24 0;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTL -n "Neck_ctrl_translateY";
 	rename -uid "C5A71C33-481D-03CC-0D8A-F0A04C098B1A";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 10 0 15 0 19 0 24 0;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTL -n "Neck_ctrl_translateZ";
 	rename -uid "2DED454A-4A6A-C201-3B2D-3E96EA215268";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 5 0 10 0 15 0 19 0 24 0;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTL -n "IK_Left_Upper_Leg_ctrl_translateX";
 	rename -uid "567E1C44-4C72-9EC2-06D7-ACAC48DDADB1";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 5.4899419680157422 24 5.4899419680157422;
+	setAttr -s 2 ".ktv[0:1]"  1 5.417 24 5.417;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  0.95833331346511841;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  0.95833331346511841;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTL -n "IK_Left_Upper_Leg_ctrl_translateY";
 	rename -uid "04ECABE2-44A0-8B46-B77E-2ABF9202A1AF";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0.25599767195858725 24 0.25599767195858725;
+	setAttr -s 2 ".ktv[0:1]"  1 -0.072 24 -0.072;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  0.95833331346511841;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  0.95833331346511841;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTL -n "IK_Left_Upper_Leg_ctrl_translateZ";
 	rename -uid "B0D79C88-4096-C4C3-257D-83BEDD5AC2AB";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 -2.4477321235416625 24 -2.4477321235416625;
+	setAttr -s 2 ".ktv[0:1]"  1 -4.167 24 -4.167;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  0.95833331346511841;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  0.95833331346511841;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTL -n "IK_Left_Upper_Leg_poleVector_ctrl_translateX";
 	rename -uid "5DC86F16-479A-76AE-F4FC-D093625847AB";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 4.9236798324423235e-008 24 4.9236798324423235e-008;
+	setAttr -s 3 ".ktv[0:2]"  1 1.1179089968734516e-007 12 9.9754539241047608e-008
+		 24 1.1536774806312026e-007;
 createNode animCurveTL -n "IK_Left_Upper_Leg_poleVector_ctrl_translateY";
 	rename -uid "FF5550F1-4CA9-3F1F-F41F-D1A40E2194E3";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 -7.1479216364387641 24 -7.1479216364387641;
+	setAttr -s 3 ".ktv[0:2]"  1 -16.22917320091895 12 -14.48180270284433
+		 24 -16.748439964106939;
 createNode animCurveTL -n "IK_Left_Upper_Leg_poleVector_ctrl_translateZ";
 	rename -uid "A3C19A59-44A3-5FF7-9EFB-2AAFB3C9F181";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1.7635832825339681e-007 24 1.7635832825339681e-007;
+	setAttr -s 3 ".ktv[0:2]"  1 4.0041710725236174e-007 12 3.5730479041407842e-007
+		 24 4.1322881058881e-007;
 createNode animCurveTL -n "IK_Right_Upper_Leg_ctrl_translateX";
 	rename -uid "CB4E1913-4AA2-D7EE-CC1C-B1998FF5EBD2";
 	setAttr ".tan" 18;
@@ -4212,15 +4388,17 @@ createNode animCurveTL -n "IK_Right_Upper_Leg_ctrl_translateZ";
 createNode animCurveTL -n "IK_Right_Upper_Leg_poleVector_ctrl_translateX";
 	rename -uid "6832B190-4616-015B-43F4-DBA89DF88607";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 -7.5127700231901322e-008 24 -7.5127700231901322e-008;
+	setAttr -s 3 ".ktv[0:2]"  1 -7.5127700231901322e-008 12 -7.5127700231901322e-008
+		 24 -7.5127700231901322e-008;
 createNode animCurveTL -n "IK_Right_Upper_Leg_poleVector_ctrl_translateY";
 	rename -uid "13BB833E-441E-976C-B170-1B8B07E929D7";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 10.906612718513058 24 10.906612718513058;
+	setAttr -s 3 ".ktv[0:2]"  1 10.906612718513058 12 14.482 24 10.906612718513058;
 createNode animCurveTL -n "IK_Right_Upper_Leg_poleVector_ctrl_translateZ";
 	rename -uid "A1E436A1-49F9-3864-0267-29A0B974E84D";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 -2.6909534130153561e-007 24 -2.6909534130153561e-007;
+	setAttr -s 3 ".ktv[0:2]"  1 -2.6909534130153561e-007 12 -2.6909534130153561e-007
+		 24 -2.6909534130153561e-007;
 createNode animCurveTL -n "IK_Left_Sholder_ctrl_translateX";
 	rename -uid "7E33800E-4E7F-305A-BAC7-428A4E9711CF";
 	setAttr ".tan" 18;
@@ -4445,19 +4623,46 @@ createNode animCurveTU -n "FK_Right_Ball_ctrl_Follow_Rotate";
 createNode animCurveTA -n "FK_Right_Elbow_ctrl_rotateX";
 	rename -uid "44C69FEE-49CD-3E22-995E-B8A22CB6F149";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 -30.603126859209588 12 -45.135815103656078
+		 24 -30.603126859209588;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "FK_Right_Elbow_ctrl_rotateY";
 	rename -uid "7AAB4FF0-42F2-CCC6-4450-41BA2A8E9970";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 42.078663205800829 24 42.078663205800829;
+	setAttr -s 3 ".ktv[0:2]"  1 74.230237983034812 12 13.194994467990748
+		 24 74.230237983034812;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "FK_Right_Elbow_ctrl_rotateZ";
 	rename -uid "F9C4AF00-4BFF-ED9A-A931-4798439E753D";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 -30.775649157677172 12 -48.515624908301149
+		 24 -30.775649157677172;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTU -n "FK_Right_Elbow_ctrl_Follow_Rotate";
 	rename -uid "BA24878B-405C-2A32-F549-D3BF2C176566";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 3 ".ktv[0:2]"  1 1 12 1 24 1;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "FK_Right_Foot_ctrl_rotateX";
 	rename -uid "69F94D80-40EA-A266-4171-F2AD04EAB808";
 	setAttr ".tan" 18;
@@ -4493,43 +4698,43 @@ createNode animCurveTU -n "FK_Right_Lower_Leg_ctrl_Follow_Rotate";
 createNode animCurveTA -n "FK_Right_Sholder_ctrl_rotateX";
 	rename -uid "50B0BA56-4BB9-1D98-9110-19BEDC099775";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 -58.953632642567712 24 -58.953632642567712;
-	setAttr -s 2 ".kit[1]"  1;
-	setAttr -s 2 ".kot[1]"  1;
-	setAttr -s 2 ".kix[1]"  0.95833331346511841;
-	setAttr -s 2 ".kiy[1]"  0;
-	setAttr -s 2 ".kox[1]"  0.95833331346511841;
-	setAttr -s 2 ".koy[1]"  0;
+	setAttr -s 3 ".ktv[0:2]"  1 -1.7186810341906524 12 0 24 -1.7186810341906524;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "FK_Right_Sholder_ctrl_rotateY";
 	rename -uid "BD83E3F3-402A-A5E2-8C9C-7E87DDCE0932";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 -18.74081208566205 24 -18.74081208566205;
-	setAttr -s 2 ".kit[1]"  1;
-	setAttr -s 2 ".kot[1]"  1;
-	setAttr -s 2 ".kix[1]"  0.95833331346511841;
-	setAttr -s 2 ".kiy[1]"  0;
-	setAttr -s 2 ".kox[1]"  0.95833331346511841;
-	setAttr -s 2 ".koy[1]"  0;
+	setAttr -s 3 ".ktv[0:2]"  1 6.0760686588132575 12 0 24 6.0760686588132575;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "FK_Right_Sholder_ctrl_rotateZ";
 	rename -uid "663B283C-40A3-A655-8EF1-358153DCECBB";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0.29379609582033073 24 0.29379609582033073;
-	setAttr -s 2 ".kit[1]"  1;
-	setAttr -s 2 ".kot[1]"  1;
-	setAttr -s 2 ".kix[1]"  0.95833331346511841;
-	setAttr -s 2 ".kiy[1]"  0;
-	setAttr -s 2 ".kox[1]"  0.95833331346511841;
-	setAttr -s 2 ".koy[1]"  0;
+	setAttr -s 3 ".ktv[0:2]"  1 23.193921439341164 12 0 24 23.193921439341164;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTU -n "FK_Right_Sholder_ctrl_Follow_Rotate";
 	rename -uid "75BB4C52-4A14-FC11-9C29-8CBD24DD9971";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
-	setAttr -s 2 ".kit[1]"  1;
-	setAttr -s 2 ".kot[1]"  1;
-	setAttr -s 2 ".kix[1]"  0.95833331346511841;
-	setAttr -s 2 ".kiy[1]"  0;
-	setAttr -s 2 ".kox[1]"  0.95833331346511841;
-	setAttr -s 2 ".koy[1]"  0;
+	setAttr -s 3 ".ktv[0:2]"  1 1 12 1 24 1;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "FK_Right_Upper_Leg_ctrl_rotateX";
 	rename -uid "3DF1F8C2-42A7-13CF-EBE6-A69BB2371F41";
 	setAttr ".tan" 18;
@@ -4714,31 +4919,92 @@ createNode animCurveTU -n "Hair_Driver_Jnt_03_ctrl_Follow_Rotate";
 createNode animCurveTA -n "Head_ctrl_rotateX";
 	rename -uid "40492710-4981-5EA5-3BC0-24A2AD3ED6E3";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 7.612 5 6.4897999517906557 10 0.24384704677078786
+		 15 7.611903679670549 19 0.5938642038515215 24 8.8630047437477764;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 -0.057154897600412369 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 -0.071443624794483185 0 0 0 0;
 createNode animCurveTA -n "Head_ctrl_rotateY";
 	rename -uid "0CC799A8-42A2-74DF-EE09-C9A66D4FB31E";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 -1.349 5 -2.5524514413516299 10 -3.1467047152076324
+		 15 1.3488870374350603 19 0.63884910528322081 24 -2.2195542058819511;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 -0.013944828882813454 0 0 -0.027680469676852226 
+		0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 -0.01743103563785553 0 0 -0.034600578248500824 
+		0;
 createNode animCurveTA -n "Head_ctrl_rotateZ";
 	rename -uid "5175FB6D-4A13-C3C7-3CDB-609FF0DFD924";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 -0.11799999999999998 5 0.82974155804375715
+		 10 0.15368064399184972 15 0.11806578163911345 19 0.21713792538086121 24 -0.095715923729004102;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 -0.0018647897522896528 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 -0.0018647898687049747 0 0 0;
 createNode animCurveTU -n "Head_ctrl_Follow_Rotate";
 	rename -uid "949135FE-4910-CA5D-A627-2A9854A74C83";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 5 1 10 1 15 1 19 1 24 1;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTU -n "Head_ctrl_View_Hair_Controls";
 	rename -uid "20729CFC-40BD-2366-38D7-D18DB1C6CF8A";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 5 1 10 1 15 1 19 1 24 1;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTU -n "Head_ctrl_View_Hair_Mesh";
 	rename -uid "F2A9FCC9-4E92-4186-548D-91A9F9A4E88A";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 5 1 10 1 15 1 19 1 24 1;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTU -n "Head_ctrl_View_All_Secondary_Controls";
 	rename -uid "27A3195B-4C8C-ABFA-6E39-FA945C747C25";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 5 1 10 1 15 1 19 1 24 1;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTA -n "IK_Left_Sholder_ctrl_rotateX";
 	rename -uid "ABCE4B92-404F-B1FA-A708-E781338CAB29";
 	setAttr ".tan" 18;
@@ -4788,38 +5054,74 @@ createNode animCurveTA -n "IK_Left_Upper_Leg_ctrl_rotateX";
 	rename -uid "16D244E5-4060-5000-D26F-FBA87E425C28";
 	setAttr ".tan" 18;
 	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  0.95833331346511841;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  0.95833331346511841;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTA -n "IK_Left_Upper_Leg_ctrl_rotateY";
 	rename -uid "D3E46423-44F1-B23A-0D70-E393BD609057";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 2 ".ktv[0:1]"  1 21.595 24 21.595;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  0.95833331346511841;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  0.95833331346511841;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTA -n "IK_Left_Upper_Leg_ctrl_rotateZ";
 	rename -uid "3CECB50F-4097-00C4-63B6-798ACC33DC31";
 	setAttr ".tan" 18;
 	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  0.95833331346511841;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  0.95833331346511841;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTU -n "IK_Left_Upper_Leg_ctrl_Follow_Parent";
 	rename -uid "D350132A-4EA5-673D-333C-F5BB2531CFE6";
 	setAttr ".tan" 18;
 	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  0.95833331346511841;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  0.95833331346511841;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTU -n "IK_Left_Upper_Leg_ctrl_Roll";
 	rename -uid "A0FF6706-494A-FD32-D588-4D803710B4F3";
 	setAttr ".tan" 18;
 	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  0.95833331346511841;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  0.95833331346511841;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTU -n "IK_Left_Upper_Leg_ctrl_Twist";
 	rename -uid "3BC50392-485D-E300-E24D-7A91D2473CD2";
 	setAttr ".tan" 18;
 	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  0.95833331346511841;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  0.95833331346511841;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTA -n "IK_Left_Upper_Leg_poleVector_ctrl_rotateX";
 	rename -uid "C10D95AA-4A5D-F2BE-EA24-FD84E96A9E7F";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
 createNode animCurveTA -n "IK_Left_Upper_Leg_poleVector_ctrl_rotateY";
 	rename -uid "222323D5-4B37-E2AC-A501-48A8338FDA20";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
 createNode animCurveTA -n "IK_Left_Upper_Leg_poleVector_ctrl_rotateZ";
 	rename -uid "DD25B866-43A8-2F51-6371-4E84856B8E5F";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
 createNode animCurveTA -n "IK_Right_Sholder_ctrl_rotateX";
 	rename -uid "80CB2B22-462B-20BD-86D3-74AC4BED2F2C";
 	setAttr ".tan" 18;
@@ -4892,15 +5194,15 @@ createNode animCurveTU -n "IK_Right_Upper_Leg_ctrl_Twist";
 createNode animCurveTA -n "IK_Right_Upper_Leg_poleVector_ctrl_rotateX";
 	rename -uid "8F50B80C-4602-3BDA-E446-4F968AE985CC";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
 createNode animCurveTA -n "IK_Right_Upper_Leg_poleVector_ctrl_rotateY";
 	rename -uid "1B36578D-45A6-CFD6-FAA8-60ADB45FB135";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
 createNode animCurveTA -n "IK_Right_Upper_Leg_poleVector_ctrl_rotateZ";
 	rename -uid "5AF31CD3-4FB1-11A7-550C-95B57C0129A4";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
 createNode animCurveTA -n "Jaw_ctrl_rotateX";
 	rename -uid "AFBABA11-46B8-7ED1-FC01-D4920370A487";
 	setAttr ".tan" 18;
@@ -5270,83 +5572,187 @@ createNode animCurveTA -n "Left_Tuft_ctrl_rotateZ";
 createNode animCurveTA -n "Lower_Neck_ctrl_rotateX";
 	rename -uid "CE910B65-4AAE-A4C3-313D-6CAC21A81772";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 7.612 5 6.4464571549603438 10 0.34151480229196746
+		 15 7.5481341926227357 19 0.58716564072732835 24 8.8800438487612432;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 -0.056397289037704468 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 -0.070496611297130585 0 0 0 0;
 createNode animCurveTA -n "Lower_Neck_ctrl_rotateY";
 	rename -uid "28C402BF-45EA-756A-3111-47885785560D";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 -1.349 5 -2.779610508781865 10 -2.7776847287073152
+		 15 1.384259582359012 19 0.52986895728978878 24 -2.1714744106898785;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0.00010083361121360213 0 -0.027581898495554924 
+		0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0.00010083361848955974 0 -0.034477367997169495 
+		0;
 createNode animCurveTA -n "Lower_Neck_ctrl_rotateZ";
 	rename -uid "1E55EC0E-4BB9-7C74-0DB9-1FB96A0E7913";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 -0.11799999999999998 5 -0.39109455741304106
+		 10 -2.2386633919736201 15 0.1215559908600149 19 0.39707689405489749 24 -0.37154889426390519;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 -0.014299198053777218 0 0.018032800406217575 
+		0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 -0.017873996868729591 0 0.01442624069750309 
+		0 0;
 createNode animCurveTU -n "Lower_Neck_ctrl_Follow_Rotate";
 	rename -uid "0A747C23-46D8-6F4D-DDC1-F7878F19A99D";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 5 1 10 1 15 1 19 1 24 1;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTA -n "Lower_Tail_ctrl_rotateX";
 	rename -uid "9CB55302-49A2-82CB-AA23-9AB0E8C7524D";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 8 0 10 10.77249985973072 18 0 20 -18.915525689763459
+		 24 0;
 createNode animCurveTA -n "Lower_Tail_ctrl_rotateY";
 	rename -uid "850F5C82-4224-DDBD-912E-6DAB2C10033A";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 8 21.676590899063271 10 30.908720754782866
+		 18 -21.677000000000003 20 -60.352152153173904 24 -3.703243199414338;
 createNode animCurveTA -n "Lower_Tail_ctrl_rotateZ";
 	rename -uid "F5E87EB8-4CA4-A2DF-0B98-8EAD46A8BE14";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 0 8 0 10 20.324508179218451 18 0 20 -9.3223255670061071
+		 24 0;
 createNode animCurveTU -n "Lower_Tail_ctrl_Follow_Rotate";
 	rename -uid "0D75FECF-44EE-85B6-0FF4-31A34C4B6922";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 8 1 10 1 18 1 20 1 24 1;
 createNode animCurveTA -n "Mid_Tail_ctrl_rotateX";
 	rename -uid "FE8FDB92-4CFC-92D0-CAC9-8CB429777171";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 8 -16.845783941006385 18 16.846 24 0;
 createNode animCurveTA -n "Mid_Tail_ctrl_rotateY";
 	rename -uid "5AAC1AC4-44F6-7C4E-D132-048EC726338B";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 8 46.848652564468168 18 -46.849 24 -3.703243199414338;
 createNode animCurveTA -n "Mid_Tail_ctrl_rotateZ";
 	rename -uid "4463EE1C-4595-31E3-9D60-9690CB907F2D";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 8 -1.162606058235266e-015 18 0 24 0;
 createNode animCurveTU -n "Mid_Tail_ctrl_Follow_Rotate";
 	rename -uid "C1F308A1-468C-2846-A60B-9DB6F1A04050";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 4 ".ktv[0:3]"  1 1 8 1 18 1 24 1;
 createNode animCurveTA -n "Neck_ctrl_rotateX";
 	rename -uid "82451792-414E-B875-FEC1-1E84EC5D568B";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 7.612 5 6.4051775147546861 10 0.20139326266471907
+		 15 7.5481341926227357 19 0.58453174472408198 24 8.8694279644140046;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 -0.057484213262796402 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 -0.071855269372463226 0 0 0 0;
 createNode animCurveTA -n "Neck_ctrl_rotateY";
 	rename -uid "C093A1B6-4235-D2E5-DD0F-689E6E0D5A73";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 -1.349 5 -2.7571623232137057 10 -3.2132267539259614
+		 15 1.384259582359012 19 0.63005974783684826 24 -2.21456990508982;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 -0.014460841193795204 0 0 -0.027916191145777702 
+		0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 -0.018076052889227867 0 0 -0.034895233809947968 
+		0;
 createNode animCurveTA -n "Neck_ctrl_rotateZ";
 	rename -uid "F98AB16E-465D-FEDD-619C-6392FD852961";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 6 ".ktv[0:5]"  1 -0.11799999999999998 5 0.42568597493016097
+		 10 -0.72749092943634452 15 0.1215559908600149 19 0.29802971440232445 24 -0.16830187164485808;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0.0099437283352017403 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0.0079549830406904221 0 0;
 createNode animCurveTU -n "Neck_ctrl_Follow_Rotate";
 	rename -uid "B69FC4B3-414D-AADD-88D3-ECBFAD7AB2AA";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 6 ".ktv[0:5]"  1 1 5 1 10 1 15 1 19 1 24 1;
+	setAttr -s 6 ".kit[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kot[0:5]"  1 18 18 18 18 1;
+	setAttr -s 6 ".kix[0:5]"  0.2083333432674408 0.1666666567325592 0.2083333283662796 
+		0.2083333432674408 0.16666668653488159 0.2083333432674408;
+	setAttr -s 6 ".kiy[0:5]"  0 0 0 0 0 0;
+	setAttr -s 6 ".kox[0:5]"  0.25 0.2083333283662796 0.2083333432674408 
+		0.16666668653488159 0.20833331346511841 0.25;
+	setAttr -s 6 ".koy[0:5]"  0 0 0 0 0 0;
 createNode animCurveTA -n "Right_Clavical_ctrl_rotateX";
 	rename -uid "BBF0F38D-4EB2-65D1-1EB6-85B229052AFD";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 -56.43575729906005 24 -56.43575729906005;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 -48.29293533851191 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Right_Clavical_ctrl_rotateY";
 	rename -uid "0472D764-4D18-2416-7BC0-AB9D05CE1C7A";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 16.370345102792918 24 16.370345102792918;
+	setAttr -s 3 ".ktv[0:2]"  1 22.522842567328837 12 25.719459437460785
+		 24 22.522842567328837;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Right_Clavical_ctrl_rotateZ";
 	rename -uid "6AC87E0C-4B9A-8DE3-A8A0-D688EF5A4AAF";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 10.592192135924195 24 10.592192135924195;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 8.6460644104750024 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTU -n "Right_Clavical_ctrl_Follow_Rotate";
 	rename -uid "DB977ECC-4409-AF5A-1F49-7FB5E31CB26F";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 3 ".ktv[0:2]"  1 1 12 1 24 1;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Right_Ear_Tip_ctrl_rotateX";
 	rename -uid "D653945B-46D8-3A4C-3001-449B7D18E872";
 	setAttr ".tan" 18;
@@ -5398,145 +5804,125 @@ createNode animCurveTU -n "Right_ForeHead_ctrl_Follow_Rotate";
 createNode animCurveTU -n "Right_Hand_ctrl_visibility";
 	rename -uid "1E799231-4DB0-CA49-A142-0381094538D2";
 	setAttr ".tan" 5;
-	setAttr -s 9 ".ktv[0:8]"  1 1 2 1 7 1 11 1 12 1 13 1 19 1 23 1 24 1;
-	setAttr -s 9 ".kit[0:8]"  1 1 1 1 9 1 1 1 
-		1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 1 7 1 11 1 12 1 13 1 19 1 23 1 24 1;
+	setAttr -s 8 ".kit[0:7]"  1 1 1 9 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "Right_Hand_ctrl_rotateX";
 	rename -uid "FB2C82E1-43FF-9B1C-FDCC-F8AFA1BDC8F0";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 -11.394490284675443 2 -11.438061998934414
-		 7 -20.612108068655669 11 -11.438061998934414 12 -11.394490284675443 13 -11.438061998934414
-		 19 -20.612108068655669 23 -11.438061998934414 24 -11.394490284675443;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 -11.394490284675443 7 -20.612108068655669
+		 11 -11.438061998934414 12 -11.394490284675443 13 -11.438061998934414 19 -20.612108068655669
+		 23 -11.438061998934414 24 -11.394490284675443;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "Right_Hand_ctrl_rotateY";
 	rename -uid "F6FDF416-432E-70D1-8950-0B84296756D9";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 1.5864323373873583 2 -5.215887504300845
-		 7 -58.906584058124295 11 -5.215887504300845 12 1.5864323373873583 13 -5.215887504300845
-		 19 -58.906584058124295 23 -5.215887504300845 24 1.5864323373873583;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 1.5864323373873583 7 -58.906584058124295
+		 11 -5.215887504300845 12 1.5864323373873583 13 -5.215887504300845 19 -58.906584058124295
+		 23 -5.215887504300845 24 1.5864323373873583;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "Right_Hand_ctrl_rotateZ";
 	rename -uid "D2D2FA3D-4309-9AAB-A7FB-3FA724ACBF9B";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 -54.315994893122117 2 -52.942579060078764
-		 7 -36.380956222748424 11 -52.942579060078764 12 -54.315994893122117 13 -52.942579060078764
-		 19 -36.380956222748424 23 -52.942579060078764 24 -54.315994893122117;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 -54.315994893122117 7 -36.380956222748424
+		 11 -52.942579060078764 12 -54.315994893122117 13 -52.942579060078764 19 -36.380956222748424
+		 23 -52.942579060078764 24 -54.315994893122117;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "Right_Hand_ctrl_Follow_Rotate";
 	rename -uid "BA45F16B-47EF-1426-F113-B7AA4AD0A25E";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 1 2 1 7 1 11 1 12 1 13 1 19 1 23 1 24 1;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 1 7 1 11 1 12 1 13 1 19 1 23 1 24 1;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "Right_Hand_ctrl_Clench";
 	rename -uid "2CF8FBC3-4CEB-CF4A-A678-718D507593C5";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 0 2 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "Right_Hand_ctrl_Index_Curl";
 	rename -uid "3F58FBBC-41E5-7AA6-52E2-52BDFDBA6A3A";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 0 2 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "Right_Hand_ctrl_Middle_Curl";
 	rename -uid "F7B96CD9-42A0-4446-4DE3-DB9110F6BA57";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 0 2 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "Right_Hand_ctrl_Pinky_Curl";
 	rename -uid "5381932D-4F50-6755-F9C5-97BEE0B1F63F";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 0 2 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "Right_Hand_ctrl_Thumb_Curl";
 	rename -uid "0631AE59-4D4A-F7DB-ECB0-F7904E848EE8";
 	setAttr ".tan" 1;
-	setAttr -s 9 ".ktv[0:8]"  1 0 2 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
-	setAttr -s 9 ".kit[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kot[4:8]"  18 1 1 1 1;
-	setAttr -s 9 ".kix[0:8]"  0.2083333432674408 0.2083333432674408 0.2083333283662796 
-		0.2083333432674408 0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 
-		0.2083333432674408;
-	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
-	setAttr -s 9 ".kox[0:8]"  0.29166668653488159 0.29166668653488159 
-		0.25 0.29166668653488159 0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 
-		0.29166668653488159;
-	setAttr -s 9 ".koy[0:8]"  0 0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".ktv[0:7]"  1 0 7 0 11 0 12 0 13 0 19 0 23 0 24 0;
+	setAttr -s 8 ".kit[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kot[3:7]"  18 1 1 1 1;
+	setAttr -s 8 ".kix[0:7]"  0.2083333432674408 0.2083333283662796 0.2083333432674408 
+		0.041666656732559204 0.2083333432674408 0.2083333283662796 0.2083333432674408 0.2083333432674408;
+	setAttr -s 8 ".kiy[0:7]"  0 0 0 0 0 0 0 0;
+	setAttr -s 8 ".kox[0:7]"  0.29166668653488159 0.25 0.29166668653488159 
+		0.041666686534881592 0.29166668653488159 0.25 0.29166668653488159 0.29166668653488159;
+	setAttr -s 8 ".koy[0:7]"  0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "Right_Hip_Clavical_ctrl_rotateX";
 	rename -uid "BBD12169-4A83-7E8E-A392-4D98A547D4DA";
 	setAttr ".tan" 18;
@@ -5718,24 +6104,25 @@ createNode animCurveTU -n "Right_Pinky_Proximal_ctrl_Follow_Rotate";
 createNode animCurveTU -n "Right_Thumb_Distal_ctrl_visibility";
 	rename -uid "EE8394F7-4265-BC9A-534C-F8975147EDA3";
 	setAttr ".tan" 9;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr -s 3 ".ktv[0:2]"  1 1 6 1 24 1;
+	setAttr -s 3 ".kot[0:2]"  5 5 5;
 createNode animCurveTA -n "Right_Thumb_Distal_ctrl_rotateX";
 	rename -uid "6F478369-4602-A0BE-19A3-6697CB6127DD";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 -30.412623146767086 24 0;
 createNode animCurveTA -n "Right_Thumb_Distal_ctrl_rotateY";
 	rename -uid "8098A38D-4319-956B-672D-1B93B3DC4DB8";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 21.069709874881269 6 26.900171901659604
+		 24 0;
 createNode animCurveTA -n "Right_Thumb_Distal_ctrl_rotateZ";
 	rename -uid "B083EAAD-46EF-A9EC-EC9B-87918769C946";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 6 -14.873136802385366 24 0;
 createNode animCurveTU -n "Right_Thumb_Distal_ctrl_Follow_Rotate";
 	rename -uid "844CCB99-4767-4797-24A7-8685867D8993";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 3 ".ktv[0:2]"  1 1 6 1 24 1;
 createNode animCurveTU -n "Right_Thumb_Metacarpal_ctrl_visibility";
 	rename -uid "63E7CE96-40EB-7198-71A8-69BFD4002488";
 	setAttr ".tan" 9;
@@ -5759,57 +6146,25 @@ createNode animCurveTU -n "Right_Thumb_Metacarpal_ctrl_Follow_Rotate";
 	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
 createNode animCurveTU -n "Right_Thumb_Proximal_ctrl_visibility";
 	rename -uid "BE21ACEC-4891-FCFA-EC29-07900230D7BA";
-	setAttr ".tan" 5;
-	setAttr -s 5 ".ktv[0:4]"  1 1 6 1 12 1 18 1 24 1;
-	setAttr -s 5 ".kit[0:4]"  1 1 9 1 1;
-	setAttr -s 5 ".kix[0:4]"  0.4583333432674408 0.4583333432674408 0.25 
-		0.4583333432674408 0.25;
-	setAttr -s 5 ".kiy[0:4]"  0 0 0 0 0;
+	setAttr ".tan" 9;
+	setAttr ".ktv[0]"  1 1;
+	setAttr ".kot[0]"  5;
 createNode animCurveTA -n "Right_Thumb_Proximal_ctrl_rotateX";
 	rename -uid "9A3EB719-45ED-8FDC-3B45-ED91975FE02F";
-	setAttr ".tan" 1;
-	setAttr -s 5 ".ktv[0:4]"  1 0 6 0 12 0 18 0 24 0;
-	setAttr -s 5 ".kit[2:4]"  18 1 1;
-	setAttr -s 5 ".kot[2:4]"  18 1 1;
-	setAttr -s 5 ".kix[0:4]"  0.4583333432674408 0.4583333432674408 0.25 
-		0.4583333432674408 0.25;
-	setAttr -s 5 ".kiy[0:4]"  0 0 0 0 0;
-	setAttr -s 5 ".kox[0:4]"  0.5 0.5 0.25 0.5 0.25;
-	setAttr -s 5 ".koy[0:4]"  0 0 0 0 0;
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTA -n "Right_Thumb_Proximal_ctrl_rotateY";
 	rename -uid "FCB51FA7-4C6A-A9D8-74A9-C4AABDB126DE";
-	setAttr ".tan" 1;
-	setAttr -s 5 ".ktv[0:4]"  1 0 6 0 12 0 18 0 24 0;
-	setAttr -s 5 ".kit[2:4]"  18 1 1;
-	setAttr -s 5 ".kot[2:4]"  18 1 1;
-	setAttr -s 5 ".kix[0:4]"  0.4583333432674408 0.4583333432674408 0.25 
-		0.4583333432674408 0.25;
-	setAttr -s 5 ".kiy[0:4]"  0 0 0 0 0;
-	setAttr -s 5 ".kox[0:4]"  0.5 0.5 0.25 0.5 0.25;
-	setAttr -s 5 ".koy[0:4]"  0 0 0 0 0;
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  1 35.084149982118063;
 createNode animCurveTA -n "Right_Thumb_Proximal_ctrl_rotateZ";
 	rename -uid "860F2221-4AA0-917C-6839-E2A0B64FB18D";
-	setAttr ".tan" 1;
-	setAttr -s 5 ".ktv[0:4]"  1 37.807488561126362 6 37.807488561126362
-		 12 37.807488561126362 18 37.807488561126362 24 37.807488561126362;
-	setAttr -s 5 ".kit[2:4]"  18 1 1;
-	setAttr -s 5 ".kot[2:4]"  18 1 1;
-	setAttr -s 5 ".kix[0:4]"  0.4583333432674408 0.4583333432674408 0.25 
-		0.4583333432674408 0.25;
-	setAttr -s 5 ".kiy[0:4]"  0 0 0 0 0;
-	setAttr -s 5 ".kox[0:4]"  0.5 0.5 0.25 0.5 0.25;
-	setAttr -s 5 ".koy[0:4]"  0 0 0 0 0;
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  1 0;
 createNode animCurveTU -n "Right_Thumb_Proximal_ctrl_Follow_Rotate";
 	rename -uid "873FD8D8-4178-2909-7932-2396D5CF3D83";
-	setAttr ".tan" 1;
-	setAttr -s 5 ".ktv[0:4]"  1 1 6 1 12 1 18 1 24 1;
-	setAttr -s 5 ".kit[2:4]"  18 1 1;
-	setAttr -s 5 ".kot[2:4]"  18 1 1;
-	setAttr -s 5 ".kix[0:4]"  0.4583333432674408 0.4583333432674408 0.25 
-		0.4583333432674408 0.25;
-	setAttr -s 5 ".kiy[0:4]"  0 0 0 0 0;
-	setAttr -s 5 ".kox[0:4]"  0.5 0.5 0.25 0.5 0.25;
-	setAttr -s 5 ".koy[0:4]"  0 0 0 0 0;
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  1 1;
 createNode animCurveTA -n "Right_Tuft_ctrl_rotateX";
 	rename -uid "E360E547-454D-9851-0B92-49A488BA5F2F";
 	setAttr ".tan" 18;
@@ -5937,19 +6292,19 @@ createNode animCurveTU -n "Tonge_Jnt_06_ctrl_Follow_Rotate";
 createNode animCurveTA -n "Upper_Tail_ctrl_rotateX";
 	rename -uid "C479EB77-48E6-9EF0-58D6-81B4C307D37A";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 8 -23.953690214076811 18 23.954 24 0;
 createNode animCurveTA -n "Upper_Tail_ctrl_rotateY";
 	rename -uid "14D6A018-4812-4A3E-7441-B1A36CFBF2E2";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 8 38.466544352710649 18 -38.467 24 -3.703243199414338;
 createNode animCurveTA -n "Upper_Tail_ctrl_rotateZ";
 	rename -uid "5E91A936-4A3D-0B9A-8360-F6B010719AA4";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 4 ".ktv[0:3]"  1 0 8 -3.1027144570429619 18 3.103 24 0;
 createNode animCurveTU -n "Upper_Tail_ctrl_Follow_Rotate";
 	rename -uid "30EB78D9-45D8-D312-B192-AFAF5217F9BF";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 4 ".ktv[0:3]"  1 1 8 1 18 1 24 1;
 createNode animCurveTA -n "guitar_ctrl_rotateX";
 	rename -uid "48194954-4E29-47BC-69E1-0099BD5B15C6";
 	setAttr ".tan" 18;
@@ -6034,64 +6389,64 @@ createNode animCurveTL -n "COG_ctrl_translateX";
 	rename -uid "2AECE71C-4A7A-33DC-B1F0-92BC515E074B";
 	setAttr ".tan" 18;
 	setAttr -s 5 ".ktv[0:4]"  1 -2.5586717314317924 6 -0.092677962297415206
-		 12 3.1495677875602572 18 -0.092677962297415206 24 -2.5586717314317924;
-	setAttr -s 5 ".kit[3:4]"  1 1;
-	setAttr -s 5 ".kot[3:4]"  1 1;
-	setAttr -s 5 ".kix[3:4]"  0.2083333283662796 0.4583333432674408;
-	setAttr -s 5 ".kiy[3:4]"  2.5946543216705322 0;
-	setAttr -s 5 ".kox[3:4]"  0.25 0.4583333432674408;
-	setAttr -s 5 ".koy[3:4]"  3.1135852336883545 0;
+		 12 3.1495677875602572 18 0.38277128772756575 24 -2.5586717314317924;
+	setAttr -s 5 ".kit[4]"  1;
+	setAttr -s 5 ".kot[4]"  1;
+	setAttr -s 5 ".kix[4]"  0.2083333283662796;
+	setAttr -s 5 ".kiy[4]"  0;
+	setAttr -s 5 ".kox[4]"  0.2083333283662796;
+	setAttr -s 5 ".koy[4]"  0;
 createNode animCurveTL -n "COG_ctrl_translateY";
 	rename -uid "EF90240C-4096-AE94-0D3B-28B547E26E4F";
 	setAttr ".tan" 18;
-	setAttr -s 5 ".ktv[0:4]"  1 -6.8501137298263659 6 -4.7536269990534654
-		 12 -6.8501137298263624 18 -4.7536269990534654 24 -6.8501137298263659;
-	setAttr -s 5 ".kit[3:4]"  1 1;
-	setAttr -s 5 ".kot[3:4]"  1 1;
-	setAttr -s 5 ".kix[3:4]"  0.2083333283662796 0.4583333432674408;
-	setAttr -s 5 ".kiy[3:4]"  0 0;
-	setAttr -s 5 ".kox[3:4]"  0.25 0.4583333432674408;
-	setAttr -s 5 ".koy[3:4]"  0 0;
+	setAttr -s 5 ".ktv[0:4]"  1 -9 6 -4.7536269990534654 12 -9 18 -4.754
+		 24 -9;
+	setAttr -s 5 ".kit[4]"  1;
+	setAttr -s 5 ".kot[4]"  1;
+	setAttr -s 5 ".kix[4]"  0.2083333283662796;
+	setAttr -s 5 ".kiy[4]"  0;
+	setAttr -s 5 ".kox[4]"  0.2083333283662796;
+	setAttr -s 5 ".koy[4]"  0;
 createNode animCurveTL -n "COG_ctrl_translateZ";
 	rename -uid "335E93DB-4ABD-C66E-6D8B-2CACF5B32CF2";
 	setAttr ".tan" 18;
 	setAttr -s 5 ".ktv[0:4]"  1 0 6 0 12 0 18 0 24 0;
-	setAttr -s 5 ".kit[3:4]"  1 1;
-	setAttr -s 5 ".kot[3:4]"  1 1;
-	setAttr -s 5 ".kix[3:4]"  0.2083333283662796 0.4583333432674408;
-	setAttr -s 5 ".kiy[3:4]"  0 0;
-	setAttr -s 5 ".kox[3:4]"  0.25 0.4583333432674408;
-	setAttr -s 5 ".koy[3:4]"  0 0;
+	setAttr -s 5 ".kit[4]"  1;
+	setAttr -s 5 ".kot[4]"  1;
+	setAttr -s 5 ".kix[4]"  0.2083333283662796;
+	setAttr -s 5 ".kiy[4]"  0;
+	setAttr -s 5 ".kox[4]"  0.2083333283662796;
+	setAttr -s 5 ".koy[4]"  0;
 createNode animCurveTA -n "COG_ctrl_rotateX";
 	rename -uid "3527DA3D-4A02-3931-2F1A-32B97B40BF4F";
 	setAttr ".tan" 18;
 	setAttr -s 5 ".ktv[0:4]"  1 0 6 0 12 0 18 0 24 0;
-	setAttr -s 5 ".kit[3:4]"  1 1;
-	setAttr -s 5 ".kot[3:4]"  1 1;
-	setAttr -s 5 ".kix[3:4]"  0.2083333283662796 0.4583333432674408;
-	setAttr -s 5 ".kiy[3:4]"  0 0;
-	setAttr -s 5 ".kox[3:4]"  0.25 0.4583333432674408;
-	setAttr -s 5 ".koy[3:4]"  0 0;
+	setAttr -s 5 ".kit[4]"  1;
+	setAttr -s 5 ".kot[4]"  1;
+	setAttr -s 5 ".kix[4]"  0.2083333283662796;
+	setAttr -s 5 ".kiy[4]"  0;
+	setAttr -s 5 ".kox[4]"  0.2083333283662796;
+	setAttr -s 5 ".koy[4]"  0;
 createNode animCurveTA -n "COG_ctrl_rotateY";
 	rename -uid "4C2EA264-4BB7-41E0-ACE2-A48E01525CD1";
 	setAttr ".tan" 18;
 	setAttr -s 5 ".ktv[0:4]"  1 0 6 0 12 0 18 0 24 0;
-	setAttr -s 5 ".kit[3:4]"  1 1;
-	setAttr -s 5 ".kot[3:4]"  1 1;
-	setAttr -s 5 ".kix[3:4]"  0.2083333283662796 0.4583333432674408;
-	setAttr -s 5 ".kiy[3:4]"  0 0;
-	setAttr -s 5 ".kox[3:4]"  0.25 0.4583333432674408;
-	setAttr -s 5 ".koy[3:4]"  0 0;
+	setAttr -s 5 ".kit[4]"  1;
+	setAttr -s 5 ".kot[4]"  1;
+	setAttr -s 5 ".kix[4]"  0.2083333283662796;
+	setAttr -s 5 ".kiy[4]"  0;
+	setAttr -s 5 ".kox[4]"  0.2083333283662796;
+	setAttr -s 5 ".koy[4]"  0;
 createNode animCurveTA -n "COG_ctrl_rotateZ";
 	rename -uid "D6CB2AB5-4D78-5FCF-529C-E1A4F2564E27";
 	setAttr ".tan" 18;
 	setAttr -s 5 ".ktv[0:4]"  1 0 6 0 12 0 18 0 24 0;
-	setAttr -s 5 ".kit[3:4]"  1 1;
-	setAttr -s 5 ".kot[3:4]"  1 1;
-	setAttr -s 5 ".kix[3:4]"  0.2083333283662796 0.4583333432674408;
-	setAttr -s 5 ".kiy[3:4]"  0 0;
-	setAttr -s 5 ".kox[3:4]"  0.25 0.4583333432674408;
-	setAttr -s 5 ".koy[3:4]"  0 0;
+	setAttr -s 5 ".kit[4]"  1;
+	setAttr -s 5 ".kot[4]"  1;
+	setAttr -s 5 ".kix[4]"  0.2083333283662796;
+	setAttr -s 5 ".kiy[4]"  0;
+	setAttr -s 5 ".kox[4]"  0.2083333283662796;
+	setAttr -s 5 ".koy[4]"  0;
 createNode pairBlend -n "pairBlend1";
 	rename -uid "CBAE7491-494E-7747-34E1-D68893365AC4";
 createNode animCurveTL -n "pairBlend1_inTranslateX1";
@@ -6347,19 +6702,43 @@ createNode animCurveTA -n "Left_Side_Mouth_ctrl_rotateZ";
 createNode animCurveTA -n "Lower_Mid_Torso_ctrl_rotateX";
 	rename -uid "0240DFED-4DF4-A71D-8EE9-F5A532E61CE6";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Lower_Mid_Torso_ctrl_rotateY";
 	rename -uid "35C01650-4BE5-DE31-EFC0-4EB2A6B21FE2";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 -5.438 12 5.4380771591639787 24 -5.438;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Lower_Mid_Torso_ctrl_rotateZ";
 	rename -uid "759220A7-486B-2192-7366-AB80093EE046";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTU -n "Lower_Mid_Torso_ctrl_Follow_Rotate";
 	rename -uid "E74F45FB-4744-9931-EE8B-51A37674F187";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 3 ".ktv[0:2]"  1 1 12 1 24 1;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Right_Side_Mouth_ctrl_rotateX";
 	rename -uid "8BB8CAB6-49E7-6361-0876-029DFDF9AAB2";
 	setAttr ".tan" 18;
@@ -6435,19 +6814,43 @@ createNode animCurveTA -n "Top_Lip_Right_ctrl_rotateZ";
 createNode animCurveTA -n "Upper_Mid_Torso_ctrl_rotateX";
 	rename -uid "01089477-4CD4-38CA-E49C-C685A3505E38";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Upper_Mid_Torso_ctrl_rotateY";
 	rename -uid "42777BE0-4603-CDE6-925C-77B72F29951C";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 -5.438 12 5.4380771591639787 24 -5.438;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Upper_Mid_Torso_ctrl_rotateZ";
 	rename -uid "745E0B4F-4972-BB7B-7E33-939E1B9AC512";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTU -n "Upper_Mid_Torso_ctrl_Follow_Rotate";
 	rename -uid "2B6664F5-4F2C-9007-3C3D-7187447A77E3";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
+	setAttr -s 3 ".ktv[0:2]"  1 1 12 1 24 1;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Upper_Torso_ctrl_rotateX";
 	rename -uid "C0BD57E4-49AB-B803-6F1F-3AA16E3D4482";
 	setAttr ".tan" 18;
@@ -6464,33 +6867,69 @@ createNode animCurveTU -n "Upper_Torso_ctrl_Follow_Rotate";
 	rename -uid "B94B7EEA-477D-015F-7E42-CCAD33BB80E7";
 	setAttr ".tan" 18;
 	setAttr -s 2 ".ktv[0:1]"  1 1 24 1;
-createNode animCurveTL -n "Lower_Torso_Ctrl_translateX";
-	rename -uid "D8802BEF-4722-6975-2C3A-64A1A2B6EB81";
-	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  10 0;
-createNode animCurveTL -n "Lower_Torso_Ctrl_translateY";
-	rename -uid "DB03E4E7-48ED-E7CC-F543-4D808B6718E3";
-	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  10 0;
-createNode animCurveTL -n "Lower_Torso_Ctrl_translateZ";
-	rename -uid "BEF1839B-40DC-0EDC-DE82-4F886357BE95";
-	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  10 0;
 createNode animCurveTA -n "Lower_Torso_Ctrl_rotateX";
-	rename -uid "EF9A64D9-4A9C-27CD-92CD-7B885E4FBCBB";
+	rename -uid "91E057C2-429C-5480-A9E9-24AD6DCE75DC";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  10 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Lower_Torso_Ctrl_rotateY";
-	rename -uid "C68165C7-461B-2AF0-5258-61BB8EE19F8B";
+	rename -uid "C95A630A-48BB-6227-CF3E-79804AEC659A";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  10 0;
+	setAttr -s 3 ".ktv[0:2]"  1 -5.438 12 5.4380771591639787 24 -5.438;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 createNode animCurveTA -n "Lower_Torso_Ctrl_rotateZ";
-	rename -uid "DA91D0B8-49D1-A5E2-EF10-24A79FCE3B0F";
+	rename -uid "6DF3308D-4ACB-8D2E-EB1C-A6814B000CB8";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  10 0;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
+createNode animCurveTL -n "Lower_Torso_Ctrl_translateX";
+	rename -uid "CF5C2D62-4EC4-175C-8BB9-C1BDD7FA52F5";
+	setAttr ".tan" 18;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
+createNode animCurveTL -n "Lower_Torso_Ctrl_translateY";
+	rename -uid "B445B2CD-4885-2FFB-FE07-34A747457F98";
+	setAttr ".tan" 18;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
+createNode animCurveTL -n "Lower_Torso_Ctrl_translateZ";
+	rename -uid "499DBD04-4647-3E88-FE94-13B8BD3ABA32";
+	setAttr ".tan" 18;
+	setAttr -s 3 ".ktv[0:2]"  1 0 12 0 24 0;
+	setAttr -s 3 ".kit[2]"  1;
+	setAttr -s 3 ".kot[2]"  1;
+	setAttr -s 3 ".kix[2]"  0.4583333432674408;
+	setAttr -s 3 ".kiy[2]"  0;
+	setAttr -s 3 ".kox[2]"  0.4583333432674408;
+	setAttr -s 3 ".koy[2]"  0;
 select -ne :time1;
-	setAttr ".o" 7;
-	setAttr ".unw" 7;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -7310,4 +7749,4 @@ connectAttr "pairBlend2_inRotateX1.o" "pairBlend2.irx1";
 connectAttr "pairBlend2_inRotateY1.o" "pairBlend2.iry1";
 connectAttr "pairBlend2_inRotateZ1.o" "pairBlend2.irz1";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of CoyoteIdle05.ma
+// End of CoyoteIdle05.0011.ma
