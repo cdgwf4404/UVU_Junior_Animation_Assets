@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Sequence03-02-01.ma
-//Last modified: Fri, Apr 21, 2017 12:49:19 AM
+//Last modified: Fri, Apr 21, 2017 08:40:00 PM
 //Codeset: 1252
 file -rdi 1 -ns "SnorkyElephant_CookieMonster" -rfn "SnorkyElephant_CookieMonsterRN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Users/Owner/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/01-Characters/E/SnorkyElephant_CookieMonster.ma";
@@ -51,13 +51,13 @@ fileInfo "osv" "Microsoft Windows 8 Business Edition, 64-bit  (Build 9200)\n";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "2C5EC128-41D0-9C45-2F5B-CB9C764E133F";
-	setAttr ".t" -type "double3" 86.195281852131075 150.47004202581269 -297.17449189353692 ;
-	setAttr ".r" -type "double3" 4317.261647566118 4093.3999999750904 0 ;
+	setAttr ".t" -type "double3" 251.96866961246781 145.03299737423418 -333.37983261652846 ;
+	setAttr ".r" -type "double3" 4307.0616480158815 5511.7999999714739 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A0485E62-4FB2-2DA9-F6D2-30A4B7C39821";
 	setAttr -k off ".v";
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 140.40391314303321;
+	setAttr ".coi" 174.4572382850649;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -251,15 +251,15 @@ createNode camera -n "cameraShape1" -p "camera1";
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
 	setAttr ".ovr" 1.3;
-	setAttr ".coi" 54.939792222133704;
+	setAttr ".coi" 41.947369934939957;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
 	setAttr ".man" -type "string" "camera1_mask";
-	setAttr ".tp" -type "double3" 91.057608429243089 5.083291739644153 -541.0065598807206 ;
+	setAttr ".tp" -type "double3" 19.052279023136951 126.23700358723573 -242.05854484455705 ;
 	setAttr ".dr" yes;
 createNode fosterParent -n "SnorkyElephant_CookieMonsterRNfosterParent1";
-	rename -uid "68300116-4EBE-997F-28E7-E686A92FE222";
+	rename -uid "1F0730C4-4AD0-D2CF-70BD-178F68F94095";
 createNode parentConstraint -n "IK_Trunk_06_ctrl_parentConstraint1" -p "SnorkyElephant_CookieMonsterRNfosterParent1";
 	rename -uid "CE42A456-4E0D-E96F-A814-EDB024AB6089";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Transform_ctrlW0" -dv 1 -min 0 -at "double";
@@ -284,7 +284,7 @@ createNode parentConstraint -n "IK_Trunk_06_ctrl_parentConstraint1" -p "SnorkyEl
 	setAttr -k on ".w0";
 createNode reference -n "SnorkyElephant_CookieMonsterRN";
 	rename -uid "023F3624-41E0-228E-2198-1EB50207C917";
-	setAttr -s 266 ".phl";
+	setAttr -s 306 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -551,10 +551,50 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 	setAttr ".phl[264]" 0;
 	setAttr ".phl[265]" 0;
 	setAttr ".phl[266]" 0;
+	setAttr ".phl[267]" 0;
+	setAttr ".phl[268]" 0;
+	setAttr ".phl[269]" 0;
+	setAttr ".phl[270]" 0;
+	setAttr ".phl[271]" 0;
+	setAttr ".phl[272]" 0;
+	setAttr ".phl[273]" 0;
+	setAttr ".phl[274]" 0;
+	setAttr ".phl[275]" 0;
+	setAttr ".phl[276]" 0;
+	setAttr ".phl[277]" 0;
+	setAttr ".phl[278]" 0;
+	setAttr ".phl[279]" 0;
+	setAttr ".phl[280]" 0;
+	setAttr ".phl[281]" 0;
+	setAttr ".phl[282]" 0;
+	setAttr ".phl[283]" 0;
+	setAttr ".phl[284]" 0;
+	setAttr ".phl[285]" 0;
+	setAttr ".phl[286]" 0;
+	setAttr ".phl[287]" 0;
+	setAttr ".phl[288]" 0;
+	setAttr ".phl[289]" 0;
+	setAttr ".phl[290]" 0;
+	setAttr ".phl[291]" 0;
+	setAttr ".phl[292]" 0;
+	setAttr ".phl[293]" 0;
+	setAttr ".phl[294]" 0;
+	setAttr ".phl[295]" 0;
+	setAttr ".phl[296]" 0;
+	setAttr ".phl[297]" 0;
+	setAttr ".phl[298]" 0;
+	setAttr ".phl[299]" 0;
+	setAttr ".phl[300]" 0;
+	setAttr ".phl[301]" 0;
+	setAttr ".phl[302]" 0;
+	setAttr ".phl[303]" 0;
+	setAttr ".phl[304]" 0;
+	setAttr ".phl[305]" 0;
+	setAttr ".phl[306]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SnorkyElephant_CookieMonsterRN"
 		"SnorkyElephant_CookieMonsterRN" 0
-		"SnorkyElephant_CookieMonsterRN" 501
+		"SnorkyElephant_CookieMonsterRN" 558
 		0 "|SnorkyElephant_CookieMonsterRNfosterParent1|IK_Trunk_06_ctrl_parentConstraint1" 
 		"|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl" 
 		"-s -r "
@@ -563,10 +603,10 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant" "translate" " -type \"double3\" 0 0 0"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Skeletons|SnorkyElephant_CookieMonster:RK_jnt_grp|SnorkyElephant_CookieMonster:SkinnedTrunk_jnts|SnorkyElephant_CookieMonster:Trunk_Deformer|SnorkyElephant_CookieMonster:ikHandle5" 
-		"translate" " -type \"double3\" 50.482474297048356 94.693510534838907 -279.29745308512634"
+		"translate" " -type \"double3\" 16.644010794092935 44.267227867901333 -347.96372650787441"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Skeletons|SnorkyElephant_CookieMonster:RK_jnt_grp|SnorkyElephant_CookieMonster:SkinnedTrunk_jnts|SnorkyElephant_CookieMonster:Trunk_Deformer|SnorkyElephant_CookieMonster:ikHandle5" 
-		"rotate" " -type \"double3\" -109.82450245411982 11.148383899599095 -70.791094652492546"
+		"rotate" " -type \"double3\" -106.19885183423753 -3.3159942189256193 -121.62321961361476"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl" 
 		"FkIkTrunkSwitch" " -av -k 1 0"
@@ -577,7 +617,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
 		"visibility" " -av 1"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
-		"translate" " -type \"double3\" -1.4575357852752708 -6.3704972046261101 -191.14211859780539"
+		"translate" " -type \"double3\" 15.873070501356032 -7.2409877592498457 -276.59940084424079"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
 		"translateX" " -av"
@@ -586,7 +626,8 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
-		"rotate" " -type \"double3\" 0 181.52974703312904 0"
+		"rotate" " -type \"double3\" -0.75995384069830552 181.64142802907665 -7.409912186545033"
+		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
@@ -613,7 +654,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_l_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_02_ctrl" 
 		"Follow" " -av -k 1 3"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:u_Rk_arm_l_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_03__ctrl" 
-		"translate" " -type \"double3\" -25.015139398157636 -12.005387939877947 47.285486539238164"
+		"translate" " -type \"double3\" -23.610770917799091 -29.037115933980481 42.949406892715196"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:u_Rk_arm_l_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_03__ctrl" 
 		"translateX" " -av"
@@ -622,7 +663,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:u_Rk_arm_l_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_03__ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl" 
-		"translate" " -type \"double3\" 11.146224604468118 6.2104947337239844 -36.120718022976206"
+		"translate" " -type \"double3\" 23.41352518185057 -0.7814701382136372 -47.50567579736893"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl" 
 		"translateX" " -av"
@@ -632,6 +673,14 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl" 
 		"follow" " -av -k 1 2"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl" 
+		"translate" " -type \"double3\" 0.533460592785581 0 0.014246314979710253"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl" 
+		"translateX" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl" 
+		"translateY" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl" 
+		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_03_l_ctrl_Grp|SnorkyElephant_CookieMonster:Ik_leg_03_l_ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_03_l_ctrl_Grp|SnorkyElephant_CookieMonster:Ik_leg_03_l_ctrl" 
@@ -641,7 +690,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_03_l_ctrl_Grp|SnorkyElephant_CookieMonster:Ik_leg_03_l_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_04_l__ctrl_Grp|SnorkyElephant_CookieMonster:Ik_leg_04_l_ctrl" 
-		"translate" " -type \"double3\" -44.077203272556055 0.71660473568464211 -177.10692169422521"
+		"translate" " -type \"double3\" -41.428531858477307 1.0536209041014759 -268.16035020165987"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_04_l__ctrl_Grp|SnorkyElephant_CookieMonster:Ik_leg_04_l_ctrl" 
 		"translateX" " -av"
@@ -668,7 +717,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_03_r_ctrl_Grp|SnorkyElephant_CookieMonster:Ik_leg_03_r_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_04_r_ctrl_Grp|SnorkyElephant_CookieMonster:Ik_leg_04_r_t_ctrl" 
-		"translate" " -type \"double3\" 48.278081269490158 1.2285581127758458 -179.68730671294099"
+		"translate" " -type \"double3\" 53.746962760732501 1.0739682673105924 -255.81356920365687"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_04_r_ctrl_Grp|SnorkyElephant_CookieMonster:Ik_leg_04_r_t_ctrl" 
 		"translateX" " -av"
@@ -695,7 +744,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 1.8834980716736438 1.3095180484419815"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl" 
@@ -721,7 +770,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl" 
-		"rotate" " -type \"double3\" 8.6544823102844415 -6.7280275584001439 3.1600497840332715"
+		"rotate" " -type \"double3\" 1.1592504289487711 -6.7280275584001599 3.1600497840332791"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl" 
 		"rotateX" " -av"
@@ -730,7 +779,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl" 
-		"rotate" " -type \"double3\" 10.05684496419652 -6.8029018303064994 2.9948356768679893"
+		"rotate" " -type \"double3\" 11.538079620669722 11.752742552245708 15.19010071729282"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl" 
 		"rotateX" " -av"
@@ -761,7 +810,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl" 
-		"rotate" " -type \"double3\" -10.639905861763328 24.419807940304811 35.553393726115949"
+		"rotate" " -type \"double3\" -17.641221237934118 -9.9763108022864309 4.770279750719042"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl" 
 		"rotateX" " -av"
@@ -772,7 +821,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl" 
 		"FullTrunk" " -av -k 1 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_01_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_01_jnt_ctrl" 
-		"rotate" " -type \"double3\" 10.904157117879482 8.3044932821596777 -2.2769837798907067"
+		"rotate" " -type \"double3\" -9.2972541419932195 25.594654290900923 -22.367150642781382"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_01_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_01_jnt_ctrl" 
 		"rotateX" " -av"
@@ -781,7 +830,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_01_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_01_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl" 
-		"rotate" " -type \"double3\" 15.390741893525536 4.7783629919448991 -13.709085219497792"
+		"rotate" " -type \"double3\" -1.8748511237964995 -2.7081770975634885 -15.638083864424082"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl" 
 		"rotateX" " -av"
@@ -790,7 +839,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl" 
-		"rotate" " -type \"double3\" 15.390741893525536 4.7783629919448991 -13.709085219497792"
+		"rotate" " -type \"double3\" -1.8748511237964995 -2.7081770975634885 -15.638083864424082"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl" 
 		"rotateX" " -av"
@@ -799,7 +848,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl" 
-		"rotate" " -type \"double3\" 15.390741893525536 4.7783629919448991 -13.709085219497792"
+		"rotate" " -type \"double3\" -1.8748511237964995 -2.7081770975634885 -15.638083864424082"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl" 
 		"rotateX" " -av"
@@ -808,11 +857,11 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl|SnorkyElephant_CookieMonster:ear_lower_l_ctrl_grp|SnorkyElephant_CookieMonster:lower_l_ear_ctrl_grp|SnorkyElephant_CookieMonster:lower_l_ear_ctrl" 
-		"rotate" " -type \"double3\" -18.214082298094755 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl|SnorkyElephant_CookieMonster:ear_lower_l_ctrl_grp|SnorkyElephant_CookieMonster:lower_l_ear_ctrl_grp|SnorkyElephant_CookieMonster:lower_l_ear_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_01_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_01_jnt_ctrl" 
-		"rotate" " -type \"double3\" 10.904157117879482 8.3044932821596777 -2.2769837798907067"
+		"rotate" " -type \"double3\" -9.2972541419932195 25.594654290900923 -22.367150642781382"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_01_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_01_jnt_ctrl" 
 		"rotateX" " -av"
@@ -821,7 +870,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_01_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_01_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl" 
-		"rotate" " -type \"double3\" 15.390741893525536 4.7783629919448991 -13.709085219497792"
+		"rotate" " -type \"double3\" -1.8748511237964995 -2.7081770975634885 -15.638083864424082"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl" 
 		"rotateX" " -av"
@@ -830,7 +879,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl" 
-		"rotate" " -type \"double3\" 15.390741893525536 4.7783629919448991 -13.709085219497792"
+		"rotate" " -type \"double3\" -1.8748511237964995 -2.7081770975634885 -15.638083864424082"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl" 
 		"rotateX" " -av"
@@ -839,7 +888,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl" 
-		"rotate" " -type \"double3\" 15.390741893525536 4.7783629919448991 -13.709085219497792"
+		"rotate" " -type \"double3\" -1.8748511237964995 -2.7081770975634885 -15.638083864424082"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl" 
 		"rotateX" " -av"
@@ -848,7 +897,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl|SnorkyElephant_CookieMonster:ear_lower_r_ctrl_grp|SnorkyElephant_CookieMonster:lower_r_ear_ctrl_grp|SnorkyElephant_CookieMonster:lower_r_ear_ctrl" 
-		"rotate" " -type \"double3\" -18.214082298094755 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl|SnorkyElephant_CookieMonster:ear_lower_r_ctrl_grp|SnorkyElephant_CookieMonster:lower_r_ear_ctrl_grp|SnorkyElephant_CookieMonster:lower_r_ear_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl|SnorkyElephant_CookieMonster:ear_lower_r_ctrl_grp|SnorkyElephant_CookieMonster:lower_r_ear_ctrl_grp|SnorkyElephant_CookieMonster:lower_r_ear_ctrl" 
@@ -866,7 +915,8 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_01_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_01_ctrl" 
 		"TrunkCtrlFollow" " -av -k 1 1"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 3.0664812828443946 -4.6576922895356772 1.0018810179998581"
+		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl" 
@@ -876,37 +926,40 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl" 
 		"rotate" " -type \"double3\" -15.956766470254639 12.109942672762003 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl" 
-		"rotateY" " -av"
-		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl" 
 		"rotateX" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl" 
+		"rotateY" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 2.7880595516906399 -4.9243826121998326 0.27991127371735219"
+		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"translateX" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl" 
+		"translateY" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl" 
+		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 2.7880595516906403 -4.9243826121998326 0.27991127371735203"
+		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl" 
 		"translateY" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl" 
 		"translateZ" " -av"
-		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 2.7880595516906395 -4.9243826121998335 0.27991127371735269"
+		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl" 
 		"translateY" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl" 
 		"translateZ" " -av"
-		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl" 
-		"translate" " -type \"double3\" 2.547374377602563 -17.168504295208333 -6.1506830055807082"
+		"translate" " -type \"double3\" 2.8348391200918508 -17.553631488038395 -6.1897793195940753"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl" 
 		"translateX" " -av"
@@ -925,7 +978,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl" 
 		"blendParent1" " -k 1"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl" 
-		"translate" " -type \"double3\" -0.7764281983465583 2.0885333144651348 0.074530670884665667"
+		"translate" " -type \"double3\" -1.0074521334267821 2.0456975019454138 0.46008286630589335"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl" 
 		"translateX" " -av"
@@ -933,6 +986,8 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		"translateY" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl" 
 		"translateZ" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl" 
+		"rotateZ" " -av 5.7234303618199327"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl" 
 		"rotatePivot" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl" 
@@ -963,6 +1018,8 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		"translateY" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl" 
 		"translateZ" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:clavical_r_ctrl_grp|SnorkyElephant_CookieMonster:clavical_r_ctrl" 
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl" 
 		"rotate" " -type \"double3\" -3.0437439839771891 24.167437356974805 -41.364881730368154"
 		
@@ -972,8 +1029,30 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		"rotateY" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl" 
 		"rotateZ" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl" 
+		"rotateX" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl" 
+		"rotateY" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl" 
+		"rotateZ" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl" 
+		"rotateX" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl" 
+		"rotateY" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl" 
+		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl" 
+		"rotateX" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl" 
+		"rotateY" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl" 
+		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl" 
@@ -1035,13 +1114,13 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nRigid_elephant01|SnorkyElephant_CookieMonster:nRigid_elephant0Shape1" 
-		"cacheWidth" " 153"
+		"cacheWidth" " 182"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth_BowTie01|SnorkyElephant_CookieMonster:nCloth_BowTie0Shape1" 
-		"cacheWidth" " 153"
+		"cacheWidth" " 182"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth_shirt01|SnorkyElephant_CookieMonster:nCloth_shirt0Shape1" 
-		"cacheWidth" " 153"
+		"cacheWidth" " 182"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth1|SnorkyElephant_CookieMonster:nClothShape1" 
-		"cacheWidth" " 153"
+		"cacheWidth" " 182"
 		2 "SnorkyElephant_CookieMonster:coatlayer" "visibility" " 0"
 		2 "SnorkyElephant_CookieMonster:shirtLayer" "displayType" " 2"
 		2 "SnorkyElephant_CookieMonster:shirtLayer" "visibility" " 0"
@@ -1333,252 +1412,332 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[142]" ""
 		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[143]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl.rotateY" 
-		"SnorkyElephant_CookieMonsterRN.placeHolderList[144]" ""
 		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl.rotateX" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[144]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[145]" ""
 		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_02_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[146]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.translateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[147]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.translateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[148]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.translateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[149]" ""
-		5 3 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotatePivot" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[150]" ""
-		5 3 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotatePivotTranslate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[151]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_03_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[152]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[153]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[154]" ""
-		5 3 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotateOrder" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[155]" ""
-		5 3 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.parentInverseMatrix" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[156]" ""
-		5 3 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.blendParent1" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[157]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.blendParent1" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_04_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[158]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl.translateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[159]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl.translateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[160]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl.translateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[161]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[162]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl.translateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[163]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl.translateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_05_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[164]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl.translateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[165]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.translateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[166]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.translateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[167]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.translateZ" 
+		5 3 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotatePivot" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[168]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.rotateX" 
+		5 3 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotatePivotTranslate" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[169]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[170]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[171]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.translateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[172]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.translateY" 
+		5 3 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.rotateOrder" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[173]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.translateZ" 
+		5 3 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.blendParent1" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[174]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.blendParent1" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[175]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.rotateY" 
+		5 3 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl.parentInverseMatrix" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[176]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[177]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.translateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[178]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.translateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[179]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.translateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:eye_r_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl.Secondary_Ctrl" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[180]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:eye_r_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl.SmartBlink" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[181]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:eye_r_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[182]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:eye_r_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[183]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.translateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:eye_r_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[184]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.translateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:eye_r_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[185]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.translateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:eye_r_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[186]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:eye_r_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_topMain_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[187]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[188]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[189]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl.FingerCtrls" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[190]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[191]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[192]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[193]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl.FingerCtrls" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[194]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[195]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[196]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[197]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl.ToeCtrls" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[198]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[199]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[200]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[201]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[202]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[203]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:bro_l_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl.Secondary_Ctrl" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[204]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:bro_l_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl.SmartBlink" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[205]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:bro_l_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[206]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:bro_l_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[207]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:bro_l_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[208]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:bro_l_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[209]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:bro_l_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[210]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:bro_l_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_topMain_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[211]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[212]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[213]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[214]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[215]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[216]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_l_cluster_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[217]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.translateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[218]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.translateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[219]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.translateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[220]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[221]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[222]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[223]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl.FingerCtrls" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[224]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[225]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[226]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[227]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl.FingerCtrls" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[228]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[229]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[230]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[231]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl.ToeCtrls" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[232]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[233]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[234]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[235]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[236]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[237]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl_grp|SnorkyElephant_CookieMonster:leg_l_ctrl|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_l_02_jnt_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[238]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[239]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[240]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_foot_r_02_jnt_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[241]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl.followRotate" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[242]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[243]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[244]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_r_jnt_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[245]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl.followRotate" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[246]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[247]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[248]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_r_jnt_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[249]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[250]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[251]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_r_jnt_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[252]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[253]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[254]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[255]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl.followRotate" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[256]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[257]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[258]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl.followRotate" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_03_l_jnt_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[259]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl.rotateX" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl.followRotate" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[260]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl.rotateY" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[261]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl.rotateZ" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[262]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth_shirt01|SnorkyElephant_CookieMonster:nCloth_shirt0Shape1.positions" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_04_l_jnt_ctrl.rotateZ" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[263]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth_shirt01|SnorkyElephant_CookieMonster:nCloth_shirt0Shape1.playFromCache" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl.rotateX" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[264]" ""
-		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth1|SnorkyElephant_CookieMonster:nClothShape1.positions" 
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl.rotateY" 
 		"SnorkyElephant_CookieMonsterRN.placeHolderList[265]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl.rotateZ" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[266]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl.followRotate" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[267]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl.rotateX" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[268]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl.rotateY" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[269]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl.rotateZ" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[270]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl.followRotate" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[271]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl.rotateX" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[272]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl.rotateY" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[273]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl.rotateZ" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[274]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl.followRotate" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[275]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl.rotateX" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[276]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl.rotateY" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[277]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl.rotateZ" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[278]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl.followRotate" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[279]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl.rotateX" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[280]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl.rotateY" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[281]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl.rotateZ" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[282]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl.followRotate" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[283]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl.rotateX" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[284]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl.rotateY" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[285]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl.rotateZ" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[286]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl.followRotate" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[287]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl.rotateX" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[288]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl.rotateY" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[289]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl.rotateZ" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[290]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl.followRotate" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[291]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl.rotateX" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[292]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl.rotateY" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[293]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl.rotateZ" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[294]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl.followRotate" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[295]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl.rotateX" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[296]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl.rotateY" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[297]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl.rotateZ" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[298]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl.followRotate" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[299]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl.rotateX" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[300]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl.rotateY" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[301]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl.rotateZ" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[302]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth_shirt01|SnorkyElephant_CookieMonster:nCloth_shirt0Shape1.positions" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[303]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth_shirt01|SnorkyElephant_CookieMonster:nCloth_shirt0Shape1.playFromCache" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[304]" ""
+		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth1|SnorkyElephant_CookieMonster:nClothShape1.positions" 
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[305]" ""
 		5 4 "SnorkyElephant_CookieMonsterRN" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth1|SnorkyElephant_CookieMonster:nClothShape1.playFromCache" 
-		"SnorkyElephant_CookieMonsterRN.placeHolderList[266]" "";
+		"SnorkyElephant_CookieMonsterRN.placeHolderList[306]" "";
 lockNode -l 1 ;
 createNode reference -n "CookieRN";
 	rename -uid "9B78478A-48B0-58F4-0B4F-93A6024A6927";
@@ -1604,7 +1763,7 @@ createNode reference -n "PlateRN";
 lockNode -l 1 ;
 createNode reference -n "PianoRN";
 	rename -uid "07120669-45F0-E4DC-E3FC-5A8382E0444E";
-	setAttr -s 66 ".phl";
+	setAttr -s 73 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -1671,14 +1830,22 @@ createNode reference -n "PianoRN";
 	setAttr ".phl[64]" 0;
 	setAttr ".phl[65]" 0;
 	setAttr ".phl[66]" 0;
+	setAttr ".phl[67]" 0;
+	setAttr ".phl[68]" 0;
+	setAttr ".phl[69]" 0;
+	setAttr ".phl[70]" 0;
+	setAttr ".phl[71]" 0;
+	setAttr ".phl[72]" 0;
+	setAttr ".phl[73]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"PianoRN"
 		"PianoRN" 0
-		"PianoRN" 104
+		"PianoRN" 118
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL" 
 		"visibility" " -av 1"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL" 
-		"translate" " -type \"double3\" 0 1.8725102498779582 -375.24368930622069"
+		"translate" " -type \"double3\" -21.064713980034924 1.8725102498779582 -444.48630410363654"
+		
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL" 
 		"translateX" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL" 
@@ -1713,22 +1880,35 @@ createNode reference -n "PianoRN";
 		"translateZ" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL" 
 		"translate" " -type \"double3\" 0 5.4820955867682484 -367.09402098469354"
+		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL" 
+		"translate" " -type \"double3\" 37.895398518116252 0.11067880446846597 -0.28150430012611188"
+		
+		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL" 
+		"translateX" " -av"
+		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL" 
+		"translateY" " -av"
+		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL" 
+		"translateZ" " -av"
+		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL" 
+		"rotate" " -type \"double3\" 0 -25.804496263632419 0"
+		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL" 
+		"rotateY" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL" 
-		"rotate" " -type \"double3\" 0 0 -12.704743892518678"
+		"rotate" " -type \"double3\" 0 0 -4.2311196192953329"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL" 
 		"rotateZ" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL" 
-		"rotate" " -type \"double3\" 0 0 -12.704743892518678"
+		"rotate" " -type \"double3\" 0 0 -4.2311196192953329"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL" 
 		"rotateZ" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL" 
-		"rotate" " -type \"double3\" 0 0 -12.704743892518678"
+		"rotate" " -type \"double3\" 0 0 -4.2311196192953329"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL" 
 		"rotateZ" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL" 
-		"rotate" " -type \"double3\" 0 0 9.7712505056889007"
+		"rotate" " -type \"double3\" 0 0 1.68889797366865"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL" 
 		"rotateX" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL" 
@@ -1736,7 +1916,7 @@ createNode reference -n "PianoRN";
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL" 
 		"rotateZ" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL" 
-		"rotate" " -type \"double3\" 0 0 9.7712505056889007"
+		"rotate" " -type \"double3\" 0 0 1.68889797366865"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL" 
 		"rotateX" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL" 
@@ -1744,20 +1924,21 @@ createNode reference -n "PianoRN";
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL" 
 		"rotateZ" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL" 
-		"rotate" " -type \"double3\" 0 0 9.7712505056889007"
+		"rotate" " -type \"double3\" 0 0 1.68889797366865"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL" 
 		"rotateX" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL" 
 		"rotateY" " -av"
 		2 "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL" 
 		"rotateZ" " -av"
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL.translateX" 
-		"PianoRN.placeHolderList[1]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL.translateY" 
-		"PianoRN.placeHolderList[2]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL.translateZ" 
-		"PianoRN.placeHolderList[3]" ""
+		2 "Piano:PianoMesh_layer" "visibility" " 1"
 		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL.visibility" 
+		"PianoRN.placeHolderList[1]" ""
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL.translateX" 
+		"PianoRN.placeHolderList[2]" ""
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL.translateY" 
+		"PianoRN.placeHolderList[3]" ""
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL.translateZ" 
 		"PianoRN.placeHolderList[4]" ""
 		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL.rotateX" 
 		"PianoRN.placeHolderList[5]" ""
@@ -1799,90 +1980,104 @@ createNode reference -n "PianoRN";
 		"PianoRN.placeHolderList[23]" ""
 		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Transform|Piano:Piano_Transform_CTRL|Piano:Piano_Body_Joint_Ctrl_Group|Piano:Piano_Body_Joint_Ctrl.rotateZ" 
 		"PianoRN.placeHolderList[24]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.FollowRotate" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL.FollowRotate" 
 		"PianoRN.placeHolderList[25]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.translateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL.translateX" 
 		"PianoRN.placeHolderList[26]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.translateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL.translateY" 
 		"PianoRN.placeHolderList[27]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.translateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL.translateZ" 
 		"PianoRN.placeHolderList[28]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.rotateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL.rotateX" 
 		"PianoRN.placeHolderList[29]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.rotateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL.rotateY" 
 		"PianoRN.placeHolderList[30]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.rotateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL.rotateZ" 
 		"PianoRN.placeHolderList[31]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.FollowRotate" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.FollowRotate" 
 		"PianoRN.placeHolderList[32]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.translateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.translateX" 
 		"PianoRN.placeHolderList[33]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.translateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.translateY" 
 		"PianoRN.placeHolderList[34]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.translateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.translateZ" 
 		"PianoRN.placeHolderList[35]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.rotateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.rotateX" 
 		"PianoRN.placeHolderList[36]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.rotateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.rotateY" 
 		"PianoRN.placeHolderList[37]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.rotateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL.rotateZ" 
 		"PianoRN.placeHolderList[38]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.FollowRotate" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.FollowRotate" 
 		"PianoRN.placeHolderList[39]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.translateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.translateX" 
 		"PianoRN.placeHolderList[40]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.translateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.translateY" 
 		"PianoRN.placeHolderList[41]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.translateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.translateZ" 
 		"PianoRN.placeHolderList[42]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.rotateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.rotateX" 
 		"PianoRN.placeHolderList[43]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.rotateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.rotateY" 
 		"PianoRN.placeHolderList[44]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.rotateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL.rotateZ" 
 		"PianoRN.placeHolderList[45]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.FollowRotate" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.FollowRotate" 
 		"PianoRN.placeHolderList[46]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.translateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.translateX" 
 		"PianoRN.placeHolderList[47]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.translateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.translateY" 
 		"PianoRN.placeHolderList[48]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.translateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.translateZ" 
 		"PianoRN.placeHolderList[49]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.rotateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.rotateX" 
 		"PianoRN.placeHolderList[50]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.rotateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.rotateY" 
 		"PianoRN.placeHolderList[51]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.rotateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Innter_Left_CTRL_GRP|Piano:Piano_Cushion_Inner_Left_CTRL|Piano:Piano_Cushion_Center_Left_CTRL_GRP|Piano:Piano_Cushion_Center_Left_CTRL|Piano:Piano_Cushion_Outer_Left_Ctrl_GRP|Piano:Piano_Cushion_Outer_Left_CTRL.rotateZ" 
 		"PianoRN.placeHolderList[52]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.FollowRotate" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.FollowRotate" 
 		"PianoRN.placeHolderList[53]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.translateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.translateX" 
 		"PianoRN.placeHolderList[54]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.translateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.translateY" 
 		"PianoRN.placeHolderList[55]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.translateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.translateZ" 
 		"PianoRN.placeHolderList[56]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.rotateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.rotateX" 
 		"PianoRN.placeHolderList[57]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.rotateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.rotateY" 
 		"PianoRN.placeHolderList[58]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.rotateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL.rotateZ" 
 		"PianoRN.placeHolderList[59]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.FollowRotate" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.FollowRotate" 
 		"PianoRN.placeHolderList[60]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.translateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.translateX" 
 		"PianoRN.placeHolderList[61]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.translateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.translateY" 
 		"PianoRN.placeHolderList[62]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.translateZ" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.translateZ" 
 		"PianoRN.placeHolderList[63]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.rotateX" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.rotateX" 
 		"PianoRN.placeHolderList[64]" ""
-		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.rotateY" 
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.rotateY" 
 		"PianoRN.placeHolderList[65]" ""
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Center_Right_CTRL.rotateZ" 
+		"PianoRN.placeHolderList[66]" ""
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.FollowRotate" 
+		"PianoRN.placeHolderList[67]" ""
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.translateX" 
+		"PianoRN.placeHolderList[68]" ""
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.translateY" 
+		"PianoRN.placeHolderList[69]" ""
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.translateZ" 
+		"PianoRN.placeHolderList[70]" ""
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.rotateX" 
+		"PianoRN.placeHolderList[71]" ""
+		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.rotateY" 
+		"PianoRN.placeHolderList[72]" ""
 		5 4 "PianoRN" "|Piano:Piano|Piano:Piano_Skeleton_and_Ctrls|Piano:Piano_Ctrl_Groups|Piano:Piano_Chair_Transform_CTRL_GRP|Piano:Piano_Chair_Transform_CTRL|Piano:Piano_Chair_COG_CTRL_GRP|Piano:Piano_Chair_COG_CTRL|Piano:Piano_Cushion_Center_CTRL_GrP|Piano:Piano_Cusion_Center_CTRL|Piano:Piano_Cushion_Inner_Right_CTRL_GRP|Piano:Piano_Cushion_Innter_Right_CTRL|Piano:Piano_Cushion_Center_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Right_CTRL_GRP|Piano:Piano_Cushion_Outer_Righrt_CTRL.rotateZ" 
-		"PianoRN.placeHolderList[66]" "";
+		"PianoRN.placeHolderList[73]" "";
 lockNode -l 1 ;
 createNode reference -n "Cup_MilkRN";
 	rename -uid "11E6E96D-4FF4-C4DF-E5ED-20B3360441F4";
@@ -1906,12 +2101,36 @@ createNode reference -n "Cup_MilkRN";
 	setAttr ".phl[17]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Cup_MilkRN"
-		"Cup_MilkRN" 0
-		"Cup_MilkRN" 52
+		"Cup_MilkRN" 10
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"enableLiquidCache" " -k 1 1"
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"enableSolidCache" " -k 1 1"
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"liquidCacheControl" " -k 1 1"
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"liquidCacheFileName" " -k 1 -type \"string\" \"Cup_Milk_bifrostLiquidContainer1\""
+		
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"liquidCachePath" " -k 1 -type \"string\" \"C:/Users/Owner/UVU_Junior_Animation_Assets/Maya_DoubleBooked//cache/bifrost/Sequence03-02-01/\""
+		
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"liquidCompressionQuality" " -k 1 0"
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"solidCacheControl" " -k 1 1"
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"solidCacheFileName" " -k 1 -type \"string\" \"Cup_Milk_bifrostLiquidContainer1\""
+		
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"solidCachePath" " -k 1 -type \"string\" \"C:/Users/Owner/UVU_Junior_Animation_Assets/Maya_DoubleBooked//cache/bifrost/Sequence03-02-01/\""
+		
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"solidCompressionQuality" " -k 1 0"
+		"Cup_MilkRN" 54
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl" 
 		"visibility" " -av 1"
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl" 
-		"translate" " -type \"double3\" 90.059706728680894 95.249409098560008 -269.43285026909496"
+		"translate" " -type \"double3\" 69.186973371933419 95.249409098560008 -338.78724725664762"
 		
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl" 
 		"translateX" " -av"
@@ -1938,33 +2157,32 @@ createNode reference -n "Cup_MilkRN";
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquid1|Cup_Milk:bifrostLiquidContainer1" 
 		"enable" " 1"
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
-		"enableLiquidCache" " -k 1 1"
+		"enableLiquidCache" " 1"
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
-		"enableSolidCache" " -k 1 1"
+		"enableSolidCache" " 1"
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
-		"liquidCacheControl" " -k 1 1"
+		"liquidCacheControl" " 1"
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
-		"liquidCacheFileName" " -k 1 -type \"string\" \"Cup_Milk_bifrostLiquidContainer1\""
+		"liquidCacheFileName" " -type \"string\" \"Cup_Milk_bifrostLiquidContainer1\""
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"liquidCachePath" " -type \"string\" \"C:/Users/Owner/UVU_Junior_Animation_Assets/Maya_DoubleBooked//cache/bifrost/Sequence03-02-01/\""
 		
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
-		"liquidCachePath" " -k 1 -type \"string\" \"C:/Users/Owner/Documents/maya/projects/\""
+		"liquidCompressionQuality" " 0"
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"solidCacheControl" " 1"
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"solidCacheFileName" " -type \"string\" \"Cup_Milk_bifrostLiquidContainer1\""
+		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
+		"solidCachePath" " -type \"string\" \"C:/Users/Owner/UVU_Junior_Animation_Assets/Maya_DoubleBooked//cache/bifrost/Sequence03-02-01/\""
 		
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
-		"liquidCompressionQuality" " -k 1 0"
-		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
-		"solidCacheControl" " -k 1 1"
-		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
-		"solidCacheFileName" " -k 1 -type \"string\" \"Cup_Milk_bifrostLiquidContainer1\""
-		
-		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
-		"solidCachePath" " -k 1 -type \"string\" \"C:/Users/Owner/Documents/maya/projects/\""
-		
-		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquidProperties1|Cup_Milk:bifrostLiquidPropertiesContainer1" 
-		"solidCompressionQuality" " -k 1 0"
+		"solidCompressionQuality" " 0"
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostGuideProperties1|Cup_Milk:bifrostGuidePropertiesContainer1" 
 		"guideCacheFileName" " -type \"string\" \"Cup_Milk_bifrostLiquidContainer1\""
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostGuideProperties1|Cup_Milk:bifrostGuidePropertiesContainer1" 
-		"guideCachePath" " -type \"string\" \"C:/Users/Owner/Documents/maya/projects/\""
+		"guideCachePath" " -type \"string\" \"C:/Users/Owner/UVU_Junior_Animation_Assets/Maya_DoubleBooked//cache/bifrost/Sequence03-02-01/\""
+		
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostGuideProperties1|Cup_Milk:bifrostGuidePropertiesContainer1" 
 		"guideCompressionQuality" " 0"
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquid1Mesh|Cup_Milk:bifrostLiquid1MeshShape" 
@@ -1981,24 +2199,26 @@ createNode reference -n "Cup_MilkRN";
 		"colorSet[1].clamped" " 0"
 		2 "|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquid1Mesh|Cup_Milk:bifrostLiquid1MeshShape" 
 		"colorSet[1].representation" " 4"
+		2 "Cup_Milk:CupLayer" "visibility" " 1"
 		2 "Cup_Milk:layer1" "displayType" " 2"
-		5 3 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.translate" 
+		2 "Cup_Milk:layer1" "visibility" " 0"
+		5 3 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.rotate" 
 		"Cup_MilkRN.placeHolderList[1]" ""
-		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.translateX" 
+		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.rotateX" 
 		"Cup_MilkRN.placeHolderList[2]" ""
-		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.translateY" 
+		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.rotateY" 
 		"Cup_MilkRN.placeHolderList[3]" ""
-		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.translateZ" 
+		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.rotateZ" 
 		"Cup_MilkRN.placeHolderList[4]" ""
 		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.visibility" 
 		"Cup_MilkRN.placeHolderList[5]" ""
-		5 3 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.rotate" 
+		5 3 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.translate" 
 		"Cup_MilkRN.placeHolderList[6]" ""
-		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.rotateX" 
+		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.translateX" 
 		"Cup_MilkRN.placeHolderList[7]" ""
-		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.rotateY" 
+		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.translateY" 
 		"Cup_MilkRN.placeHolderList[8]" ""
-		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.rotateZ" 
+		5 4 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.translateZ" 
 		"Cup_MilkRN.placeHolderList[9]" ""
 		5 3 "Cup_MilkRN" "|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl.scale" 
 		"Cup_MilkRN.placeHolderList[10]" ""
@@ -2041,9 +2261,9 @@ createNode reference -n "CurtainsRN";
 		" -type \"double3\" 423.952 423.952 423.952";
 lockNode -l 1 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A75346B6-4FE6-2DCA-01E6-6DB60544C5B9";
-	setAttr -s 302 ".lnk";
-	setAttr -s 302 ".slnk";
+	rename -uid "D9158E49-4954-BE39-058A-40998F0A5CC9";
+	setAttr -s 343 ".lnk";
+	setAttr -s 343 ".slnk";
 createNode timeEditor -s -n "timeEditor";
 	rename -uid "65F386D3-4C8F-DD84-2F8A-779495F55213";
 	setAttr -s 4 ".cmp";
@@ -2053,18 +2273,18 @@ createNode RedshiftOptions -s -n "redshiftOptions";
 	addAttr -s false -ci true -h true -sn "physicalSky" -ln "physicalSky" -at "message";
 	setAttr ".imageFilePrefix" -type "string" "";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "54866623-4D46-FF66-2B94-EB92A41FACE8";
+	rename -uid "23D29D54-4A6A-D786-2874-65BBF94F1AED";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 1 0 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "85B927A8-4927-686F-6CE8-02B3349566A6";
+	rename -uid "FCE020D8-43DA-508F-87CD-45802EB8BF81";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "BDD8D6C6-4184-7D4B-C2C4-FD96870B1BEA";
+	rename -uid "8A905C91-4D8F-5E91-771B-46864887AC18";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "30BDB727-4484-D720-8266-4DBDD19A5B77";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "F9E09F04-4CFA-A14D-E816-21A487AB18A3";
+	rename -uid "7EF8B032-415E-F52E-1BB5-0B9F8A8AA02D";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4382E42A-44C6-C779-A3BA-588BCADF12E2";
 	setAttr ".g" yes;
@@ -2077,84 +2297,84 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n"
 		+ "            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n"
-		+ "                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 1\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n"
-		+ "                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -renderFilterIndex 0\n                -selectionOrder \"chronological\" \n                -expandAttribute 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 0\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n"
-		+ "            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 1\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n"
-		+ "            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n"
-		+ "                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n"
-		+ "                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n"
-		+ "            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n"
-		+ "            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n"
+		+ "                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n"
+		+ "                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 0\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n"
+		+ "            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n"
+		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n"
+		+ "                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n"
+		+ "                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n"
+		+ "            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n"
+		+ "            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n"
+		+ "                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n"
+		+ "                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n"
+		+ "            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n"
+		+ "            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n"
 		+ "                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n"
 		+ "                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n"
 		+ "            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n"
-		+ "            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n"
-		+ "                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n"
-		+ "                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n"
-		+ "            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n"
-		+ "            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n"
-		+ "                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n"
-		+ "                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n"
-		+ "            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n"
-		+ "            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n"
-		+ "\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"top\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n"
-		+ "                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n"
-		+ "                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n"
-		+ "                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 986\n                -height 714\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
-		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
-		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n"
-		+ "            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 986\n            -height 714\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"side\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n"
-		+ "                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n"
-		+ "                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n"
-		+ "                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1\n                -height 1\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
-		+ "                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n"
-		+ "            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n"
-		+ "            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n"
-		+ "        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"front\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n"
-		+ "                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n"
-		+ "                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n"
-		+ "                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1\n                -height 1\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n"
-		+ "            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n"
-		+ "            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n"
-		+ "            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels `;\n"
-		+ "\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"camera1\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 1\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n"
-		+ "                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"base_OpenGL_Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 0\n"
-		+ "                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 0\n                -imagePlane 1\n                -joints 0\n                -ikHandles 0\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 0\n                -locators 0\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 0\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n"
-		+ "                -width 1447\n                -height 714\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"camera1\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n"
-		+ "            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"base_OpenGL_Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n"
-		+ "            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 0\n            -ikHandles 0\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 0\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n"
-		+ "            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1447\n            -height 714\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"renderWindowPanel\" -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n"
-		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"Stereo\" -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels `;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n"
-		+ "                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n"
-		+ "                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n"
-		+ "                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n"
-		+ "                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n"
-		+ "                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n"
-		+ "                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
-		+ "                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"graphEditor\" -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n"
-		+ "                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n"
-		+ "                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n"
-		+ "                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n"
-		+ "                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n"
-		+ "                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n"
-		+ "                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n"
-		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dopeSheetPanel\" -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n"
-		+ "                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n"
-		+ "                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n"
-		+ "                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n"
-		+ "                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n"
-		+ "                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"timeEditorPanel\" -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"clipEditorPanel\" -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n"
-		+ "                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n"
-		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"sequenceEditorPanel\" -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n"
-		+ "                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"hyperGraphPanel\" -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n"
-		+ "                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n"
-		+ "            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n"
-		+ "                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"visorPanel\" -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"createNodePanel\" -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tshapePanel -unParent -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
-		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tposePanel -unParent -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n"
-		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
+		+ "            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"top\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n"
+		+ "                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n"
+		+ "                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n"
+		+ "                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1470\n                -height 714\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n"
+		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
+		+ "            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n"
+		+ "            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1470\n            -height 714\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"side\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n"
+		+ "                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n"
+		+ "                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n"
+		+ "                -width 1\n                -height 1\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n"
+		+ "            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n"
+		+ "            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n"
+		+ "            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"front\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n"
+		+ "                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n"
+		+ "                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n"
+		+ "                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1\n                -height 1\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n"
+		+ "            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n"
+		+ "            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n"
+		+ "            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"camera1\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 1\n"
+		+ "                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"base_OpenGL_Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n"
+		+ "                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 0\n                -imagePlane 1\n                -joints 0\n                -ikHandles 0\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 0\n                -locators 0\n"
+		+ "                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 0\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1027\n                -height 714\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"camera1\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n"
+		+ "            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"base_OpenGL_Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n"
+		+ "            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 0\n            -ikHandles 0\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n"
+		+ "            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 0\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1027\n            -height 714\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"renderWindowPanel\" -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"Stereo\" -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels `;\nstring $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n"
+		+ "                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n"
+		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n"
+		+ "                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\nstring $editorName = ($panelName+\"Editor\");\n"
+		+ "            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n"
+		+ "                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n"
+		+ "                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n"
+		+ "                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"graphEditor\" -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n"
+		+ "                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n"
+		+ "                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n"
+		+ "                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 1\n                -classicMode 1\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n"
+		+ "                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n"
+		+ "                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n"
+		+ "                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 1\n                -classicMode 1\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n"
+		+ "                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n"
+		+ "                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n"
+		+ "                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n"
+		+ "            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n"
+		+ "            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\tif ($useSceneConfig) {\n\t\tscriptedPanel -e -to $panelName;\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dopeSheetPanel\" -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n"
+		+ "                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n"
+		+ "                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n"
+		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n"
+		+ "                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n"
+		+ "                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"timeEditorPanel\" -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"clipEditorPanel\" -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\t}\n\t} else {\n"
+		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"sequenceEditorPanel\" -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n"
+		+ "            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n"
+		+ "                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"hyperGraphPanel\" -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n"
+		+ "                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n"
+		+ "                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n"
+		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"visorPanel\" -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"createNodePanel\" -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n"
+		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"polyTexturePlacementPanel\" -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\tshapePanel -unParent -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n"
+		+ "\t\t\tposePanel -unParent -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels ;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynRelEdPanel\" -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n"
+		+ "\t\t\t$panelName = `scriptedPanel -unParent  -type \"relationshipPanel\" -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"componentEditorPanel\" -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n"
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"dynPaintScriptedPanelType\" -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n"
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"profilerPanel\" -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"contentBrowserPanel\" -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n"
 		+ "\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"hyperShadePanel\" -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels `;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n"
@@ -2212,18 +2432,39 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n"
 		+ "            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n"
-		+ "                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n"
+		+ "                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n"
+		+ "                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n"
+		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n"
+		+ "            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n"
+		+ "                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n"
+		+ "                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n"
+		+ "            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n"
+		+ "            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n"
+		+ "                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n"
+		+ "                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n"
+		+ "            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n"
+		+ "            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n"
+		+ "\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n"
+		+ "                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n"
+		+ "                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n"
+		+ "            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n"
+		+ "                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n"
 		+ "                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -renderFilterIndex 0\n                -selectionOrder \"chronological\" \n                -expandAttribute 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n"
-		+ "            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"0\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n"
-		+ "            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n"
-		+ "\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"base_OpenGL_Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 0\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1447\\n    -height 714\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"base_OpenGL_Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 0\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 0\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1447\\n    -height 714\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n"
+		+ "            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n"
+		+ "                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n"
+		+ "                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 1\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -renderFilterIndex 0\n                -selectionOrder \"chronological\" \n                -expandAttribute 0\n"
+		+ "                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n"
+		+ "            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 1\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n"
+		+ "            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"base_OpenGL_Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 0\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1027\\n    -height 714\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"base_OpenGL_Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 0\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1027\\n    -height 714\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ttimeControl -e -displaySound 1 -sound HungarianDance $gPlayBackSlider;\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "2C9278D6-4139-3368-88F0-69A775AFD1E1";
-	setAttr ".b" -type "string" "playbackOptions -min 30 -max 182 -ast 1 -aet 182 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 182 -ast 1 -aet 182 ";
 	setAttr ".st" 6;
 createNode reference -n "StageRN";
 	rename -uid "D699DAC0-4205-2256-6567-BCBE60F48D45";
@@ -2258,139 +2499,82 @@ createNode place2dTexture -n "place2dTexture1";
 createNode animCurveTL -n "COG_ctrl_translateX";
 	rename -uid "75EA3FB6-4F18-28FE-2D35-019D1CF46B0A";
 	setAttr ".tan" 18;
-	setAttr -s 17 ".ktv[0:16]"  10 0 24 -1.4575357852752708 40 -1.4575357852752708
-		 52 -1.4575357852752708 68 -1.4575357852752708 75 -1.4575357852752708 84 -1.4575357852752708
-		 92 -1.4575357852752708 96 -1.4575357852752708 106 -1.4575357852752708 132 -1.4575357852752708
-		 141 -1.4575357852752708 144 -1.4575357852752708 147 -1.4575357852752708 151 -1.4575357852752708
-		 158 -1.4575357852752708 164 -1.4575357852752708;
-	setAttr -s 17 ".kit[16]"  1;
-	setAttr -s 17 ".kot[16]"  1;
-	setAttr -s 17 ".kix[16]"  0.16666650772094727;
-	setAttr -s 17 ".kiy[16]"  0;
-	setAttr -s 17 ".kox[16]"  0.29166698455810547;
-	setAttr -s 17 ".koy[16]"  0;
+	setAttr -s 15 ".ktv[0:14]"  10 0 24 -1.4575357852752708 40 -1.4575357852752708
+		 52 -1.4575357852752708 68 -1.4575357852752708 89 -1.4575357852752708 95 -0.43553242545751925
+		 109 3.2739604612642985 114 -1.1584218097513452 125 6.5857038918505184 137 4.9219952640209357
+		 148 -1.1904781594789708 162 4.4442970591063924 166 -1.4575357852752708 176 15.873070501356032;
 createNode animCurveTL -n "COG_ctrl_translateY";
 	rename -uid "2C85D163-4CB0-3A9B-29E2-A198C2C6E2DE";
 	setAttr ".tan" 18;
-	setAttr -s 17 ".ktv[0:16]"  10 0 24 -11.454884738102136 40 -11.454884738102136
-		 52 -6.3704972046261101 68 -6.3704972046261101 75 -6.3704972046261101 84 -6.3704972046261101
-		 92 -6.3704972046261101 96 -6.3704972046261101 106 -6.3704972046261101 132 -6.3704972046261101
-		 141 -6.3704972046261101 144 -6.3704972046261101 147 -6.3704972046261101 151 -9.0183727379968897
-		 158 -4.6124096460382216 164 -9.0183727379968897;
-	setAttr -s 17 ".kit[16]"  1;
-	setAttr -s 17 ".kot[16]"  1;
-	setAttr -s 17 ".kix[16]"  0.16666650772094727;
-	setAttr -s 17 ".kiy[16]"  0;
-	setAttr -s 17 ".kox[16]"  0.29166698455810547;
-	setAttr -s 17 ".koy[16]"  0;
+	setAttr -s 15 ".ktv[0:14]"  10 0 24 -11.454884738102136 40 -11.454884738102136
+		 52 -0.59191776695221254 68 -2.1972711092519348 89 -3.3858372948205333 95 -3.684131770628805
+		 109 -4.3297124648246754 114 -4.5464372926969281 125 -5.0408530048332434 137 -5.5802299685672558
+		 148 -6.0435310931077453 162 -6.4977803415944386 166 -6.5372749910752983 176 -7.2409877592498457;
 createNode animCurveTL -n "COG_ctrl_translateZ";
 	rename -uid "4806C056-4C52-61D9-6835-E694A6E47BEA";
 	setAttr ".tan" 18;
-	setAttr -s 17 ".ktv[0:16]"  10 0 24 -169.46105980017907 40 -169.46105980017907
-		 52 -191.14211859780539 68 -191.14211859780539 75 -195.13960297225776 84 -206.91061887267139
-		 92 -228.296389171583 96 -228.296389171583 106 -228.296389171583 132 -280.61296929398918
-		 141 -289.11048936533291 144 -292.42560488703191 147 -295.57381527092991 151 -298.16966021154275
-		 158 -305.54618992829711 164 -298.16966021154275;
-	setAttr -s 17 ".kit[2:16]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 17 ".kot[2:16]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 1;
-	setAttr -s 17 ".kix[2:16]"  1.5070223808288574 0.50000011920928955 
-		0.66666650772094727 0.29166674613952637 0.375 0.33333325386047363 0.16666674613952637 
-		0.41666650772094727 1.0833334922790527 0.375 0.125 0.125 0.16666650772094727 0.29166698455810547 
-		0.16666650772094727;
-	setAttr -s 17 ".kiy[2:16]"  0 0 0 -6.8987197875976562 -17.553594589233398 
-		0 0 0 -45.176189422607422 -8.8594770431518555 -3.2316629886627197 -2.4617393016815186 
-		-3.6263134479522705 0 -3.6263134479522705;
-	setAttr -s 17 ".kox[2:16]"  1.3403557538986206 0.66666650772094727 
-		0.29166674613952637 0.375 0.33333325386047363 0.16666674613952637 0.41666650772094727 
-		1.0833334922790527 0.375 0.125 0.125 0.16666650772094727 0.29166698455810547 0.25 
-		0.29166698455810547;
-	setAttr -s 17 ".koy[2:16]"  0 0 0 -8.8697805404663086 -15.603191375732422 
-		0 0 0 -15.637909889221191 -2.9531588554382324 -3.2316629886627197 -3.2823159694671631 
-		-6.3460612297058105 0 -6.3460612297058105;
+	setAttr -s 15 ".ktv[0:14]"  10 0 24 -169.46105980017907 40 -169.46105980017907
+		 52 -191.14211859780539 68 -191.14211859780539 89 -193.53468936271528 95 -196.75792095515686
+		 109 -208.5033746854331 114 -213.67128982644158 125 -221.75410154267848 137 -238.60444785558369
+		 148 -261.90603709843651 162 -275.90671762502393 166 -276.12471794523458 176 -276.59940084424079;
+	setAttr -s 15 ".kit[2:14]"  1 18 18 18 18 18 18 1 
+		18 18 18 1 18;
+	setAttr -s 15 ".kot[2:14]"  1 18 18 18 18 18 18 1 
+		18 18 18 18 18;
+	setAttr -s 15 ".ktl[13:14]" no yes;
+	setAttr -s 15 ".kix[2:14]"  1.5070223808288574 0.50000011920928955 
+		0.66666650772094727 0.875 0.25 0.58333325386047363 0.20833349227905273 0.94105619192123413 
+		0.5 0.45833301544189453 0.58333349227905273 0.86470186710357666 0.41666698455810547;
+	setAttr -s 15 ".kiy[2:14]"  0 0 0 -4.3678464889526367 -4.4906058311462402 
+		-12.462479591369629 -4.1408534049987793 -10.227283477783203 -20.948843002319336 -16.412990570068359 
+		-2.289006233215332 5.8756809234619141 0;
+	setAttr -s 15 ".kox[2:14]"  1.3403557538986206 0.66666650772094727 
+		0.875 0.25 0.58333325386047363 0.20833349227905273 0.45833349227905273 0.98318600654602051 
+		0.45833301544189453 0.58333349227905273 0.16666650772094727 0.41666698455810547 0.41666698455810547;
+	setAttr -s 15 ".koy[2:14]"  0 0 0 -1.2479560375213623 -10.478078842163086 
+		-4.4508895874023437 -9.1098737716674805 -10.68515682220459 -19.203092575073242 -20.889280319213867 
+		-0.65400093793869019 -0.4947739839553833 0;
 createNode animCurveTU -n "COG_ctrl_visibility";
 	rename -uid "4A7174FB-4CBF-5849-B042-95B0C7747442";
-	setAttr ".tan" 5;
-	setAttr -s 17 ".ktv[0:16]"  10 1 24 1 40 1 52 1 68 1 75 1 84 1 92 1
-		 96 1 106 1 132 1 141 1 144 1 147 1 151 1 158 1 164 1;
-	setAttr -s 17 ".kit[0:16]"  9 9 9 9 9 9 9 9 
-		9 9 9 9 9 9 9 9 1;
-	setAttr -s 17 ".kix[16]"  0.16666650772094727;
-	setAttr -s 17 ".kiy[16]"  0;
+	setAttr ".tan" 9;
+	setAttr -s 15 ".ktv[0:14]"  10 1 24 1 40 1 52 1 68 1 89 1 95 1 109 1
+		 114 1 125 1 137 1 148 1 162 1 166 1 176 1;
+	setAttr -s 15 ".kot[0:14]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5;
 createNode animCurveTA -n "COG_ctrl_rotateX";
 	rename -uid "14E7E238-4A29-3D2E-3BFC-119DB0452C3C";
 	setAttr ".tan" 18;
-	setAttr -s 17 ".ktv[0:16]"  10 0 24 0 40 0 52 0 68 0 75 8.2856147314770485
-		 84 16.977247077921316 92 3.4601401019482605 96 3.4601401019482605 106 18.661352199883574
-		 132 18.661352199883574 141 2.8261663660952605 144 11.30830200590017 147 -3.3004051342494285
-		 151 2.8261663660952605 158 10.261582709260406 164 2.8261663660952605;
-	setAttr -s 17 ".kit[16]"  1;
-	setAttr -s 17 ".kot[16]"  1;
-	setAttr -s 17 ".kix[16]"  0.16666650772094727;
-	setAttr -s 17 ".kiy[16]"  0.086073100566864014;
-	setAttr -s 17 ".kox[16]"  0.29166698455810547;
-	setAttr -s 17 ".koy[16]"  0.15062823891639709;
+	setAttr -s 15 ".ktv[0:14]"  10 0 24 0 40 0 52 0 68 0 89 -0.11397546505769041
+		 95 -4.2081819440813497 109 -1.8579990318948951 114 -0.41999821746758537 125 -0.55540257293270878
+		 137 -0.70313641676436878 148 -0.830035549996749 162 -0.95445592596937556 166 -0.96527365728055725
+		 176 -0.75995384069830552;
 createNode animCurveTA -n "COG_ctrl_rotateY";
 	rename -uid "8D1C5C14-401E-ADDE-FAF6-D98BF8D1C0E6";
 	setAttr ".tan" 18;
-	setAttr -s 17 ".ktv[0:16]"  10 0 24 181.52974703312904 40 181.52974703312904
-		 52 181.52974703312904 68 181.52974703312904 75 181.52974703312904 84 174.1956486785119
-		 92 174.1956486785119 96 174.1956486785119 106 174.1956486785119 132 174.1956486785119
-		 141 174.1956486785119 144 175.08915536110359 147 174.73748332808552 151 174.1956486785119
-		 158 174.1956486785119 164 174.1956486785119;
-	setAttr -s 17 ".kit[16]"  1;
-	setAttr -s 17 ".kot[16]"  1;
-	setAttr -s 17 ".kix[16]"  0.16666650772094727;
-	setAttr -s 17 ".kiy[16]"  0;
-	setAttr -s 17 ".kox[16]"  0.29166698455810547;
-	setAttr -s 17 ".koy[16]"  0;
+	setAttr -s 15 ".ktv[0:14]"  10 0 24 181.52974703312904 40 181.52974703312904
+		 52 181.52974703312904 68 181.52974703312904 89 181.52974703312904 95 181.11027838729584
+		 109 181.49783185349196 114 181.52974703312904 125 181.52974703312904 137 181.52974703312904
+		 148 181.52974703312904 162 181.52974703312904 166 181.52974703312904 176 181.64142802907665;
 createNode animCurveTA -n "COG_ctrl_rotateZ";
 	rename -uid "F637D647-44C7-1A75-1FCE-1681F38DA098";
 	setAttr ".tan" 18;
-	setAttr -s 17 ".ktv[0:16]"  10 0 24 0 40 0 52 0 68 0 75 0 84 4.338157466035736
-		 92 4.338157466035736 96 4.338157466035736 106 4.338157466035736 132 4.338157466035736
-		 141 4.338157466035736 144 8.9121706038071977 147 7.1119014725839396 151 4.338157466035736
-		 158 4.338157466035736 164 4.338157466035736;
-	setAttr -s 17 ".kit[16]"  1;
-	setAttr -s 17 ".kot[16]"  1;
-	setAttr -s 17 ".kix[16]"  0.16666650772094727;
-	setAttr -s 17 ".kiy[16]"  0;
-	setAttr -s 17 ".kox[16]"  0.29166698455810547;
-	setAttr -s 17 ".koy[16]"  0;
+	setAttr -s 15 ".ktv[0:14]"  10 0 24 0 40 0 52 0 68 0 89 0 95 5.7897302007734783
+		 109 4.3689768965680909 114 0 125 0 137 0 148 0 162 0 166 0 176 -7.409912186545033;
 createNode animCurveTU -n "COG_ctrl_scaleX";
 	rename -uid "F9239D47-41FB-7028-0F27-D681BE39BC36";
 	setAttr ".tan" 18;
-	setAttr -s 17 ".ktv[0:16]"  10 1 24 1 40 1 52 1 68 1 75 1 84 1 92 1
-		 96 1 106 1 132 1 141 1 144 1 147 1 151 1 158 1 164 1;
-	setAttr -s 17 ".kit[16]"  1;
-	setAttr -s 17 ".kot[16]"  1;
-	setAttr -s 17 ".kix[16]"  0.16666650772094727;
-	setAttr -s 17 ".kiy[16]"  0;
-	setAttr -s 17 ".kox[16]"  0.29166698455810547;
-	setAttr -s 17 ".koy[16]"  0;
+	setAttr -s 15 ".ktv[0:14]"  10 1 24 1 40 1 52 1 68 1 89 1 95 1 109 1
+		 114 1 125 1 137 1 148 1 162 1 166 1 176 1;
 createNode animCurveTU -n "COG_ctrl_scaleY";
 	rename -uid "2EDFC0A7-4D1A-4A62-701F-A3B2B2A137B9";
 	setAttr ".tan" 18;
-	setAttr -s 17 ".ktv[0:16]"  10 1 24 1 40 1 52 1 68 1 75 1 84 1 92 1
-		 96 1 106 1 132 1 141 1 144 1 147 1 151 1 158 1 164 1;
-	setAttr -s 17 ".kit[16]"  1;
-	setAttr -s 17 ".kot[16]"  1;
-	setAttr -s 17 ".kix[16]"  0.16666650772094727;
-	setAttr -s 17 ".kiy[16]"  0;
-	setAttr -s 17 ".kox[16]"  0.29166698455810547;
-	setAttr -s 17 ".koy[16]"  0;
+	setAttr -s 15 ".ktv[0:14]"  10 1 24 1 40 1 52 1 68 1 89 1 95 1 109 1
+		 114 1 125 1 137 1 148 1 162 1 166 1 176 1;
 createNode animCurveTU -n "COG_ctrl_scaleZ";
 	rename -uid "09BA12AA-4D71-B6C3-B607-D2AAB516B00D";
 	setAttr ".tan" 18;
-	setAttr -s 17 ".ktv[0:16]"  10 1 24 1 40 1 52 1 68 1 75 1 84 1 92 1
-		 96 1 106 1 132 1 141 1 144 1 147 1 151 1 158 1 164 1;
-	setAttr -s 17 ".kit[16]"  1;
-	setAttr -s 17 ".kot[16]"  1;
-	setAttr -s 17 ".kix[16]"  0.16666650772094727;
-	setAttr -s 17 ".kiy[16]"  0;
-	setAttr -s 17 ".kox[16]"  0.29166698455810547;
-	setAttr -s 17 ".koy[16]"  0;
+	setAttr -s 15 ".ktv[0:14]"  10 1 24 1 40 1 52 1 68 1 89 1 95 1 109 1
+		 114 1 125 1 137 1 148 1 162 1 166 1 176 1;
 createNode animCurveTA -n "hip_r_ctrl_rotateX";
 	rename -uid "4D28D1E9-4EBB-E25A-D1B7-0FAD20184F1E";
 	setAttr ".tan" 18;
@@ -2444,35 +2628,46 @@ createNode animCurveTA -n "Fk_leg_02_r_jnt_ctrl_rotateZ";
 createNode animCurveTA -n "torso_ctrl_rotateX";
 	rename -uid "C807FDC3-41A9-619B-FA37-E1BCCD70D823";
 	setAttr ".tan" 18;
-	setAttr -s 6 ".ktv[0:5]"  10 0 24 0 40 0 44 0 46 0 50 0;
+	setAttr -s 17 ".ktv[0:16]"  10 0 24 0 40 0 44 0 46 0 50 0 85 -4.1436032332658765
+		 95 -1.2302087339113335 104 2.8935291025732113 112 5.3574796213113576 118 5.2443771157254169
+		 126 5.4383296492631734 134 5.585840864728512 140 5.4383296492631734 148 4.8619625009022434
+		 158 5.4006241094789802 166 0;
 createNode animCurveTA -n "torso_ctrl_rotateY";
 	rename -uid "0ED4DF20-41AC-DE3E-1139-508DC3DF7F50";
 	setAttr ".tan" 18;
-	setAttr -s 6 ".ktv[0:5]"  10 0 24 0 40 0 44 0 46 0 50 0;
+	setAttr -s 17 ".ktv[0:16]"  10 0 24 0 40 0 44 0 46 0 50 0 85 0 95 -0.13793095491755145
+		 104 -0.79806857266047937 112 -0.14523586797224339 118 1.6172297513526759 126 1.7713814684365192
+		 134 1.2275796255713967 140 1.7713814684365192 148 3.0144549257498139 158 1.8834980716736438
+		 166 1.8834980716736438;
 createNode animCurveTA -n "torso_ctrl_rotateZ";
 	rename -uid "74FA6D4F-4E30-DFD6-8CFD-79AC24F2B590";
 	setAttr ".tan" 18;
-	setAttr -s 6 ".ktv[0:5]"  10 0 24 0 40 0 44 0 46 0 50 0;
+	setAttr -s 17 ".ktv[0:16]"  10 0 24 0 40 0 44 0 46 0 50 0 85 0 95 -6.3963022336097746
+		 104 6.0424315702743376 112 1.5483226891434942 118 -6.4144058515554851 126 2.4918590609497735
+		 134 8.1243670218433 140 2.4918590609497735 148 -11.245739058983157 158 1.3095180484419815
+		 166 1.3095180484419815;
 createNode animCurveTL -n "torso_ctrl_translateX";
 	rename -uid "44F62A7E-4C44-D245-ECB7-EE8EA4C06AEB";
 	setAttr ".tan" 18;
-	setAttr -s 6 ".ktv[0:5]"  10 0 24 0 40 0 44 -2.9987090142386944e-015
-		 46 -2.1786137589133861e-015 50 0;
+	setAttr -s 17 ".ktv[0:16]"  10 0 24 0 40 0 44 -2.9987090142386944e-015
+		 46 -2.1786137589133861e-015 50 0 85 0 95 0 104 0 112 0 118 0 126 0 134 0 140 0 148 0
+		 158 0 166 0;
 createNode animCurveTL -n "torso_ctrl_translateY";
 	rename -uid "56DA080A-4530-C19A-A0DA-3482F5C92CAD";
 	setAttr ".tan" 18;
-	setAttr -s 6 ".ktv[0:5]"  10 0 24 0 40 0 44 1.3997259355043994 46 2.2023434373840916
-		 50 0;
+	setAttr -s 17 ".ktv[0:16]"  10 0 24 0 40 0 44 1.3997259355043994 46 2.2023434373840916
+		 50 0 85 0 95 0 104 0 112 0 118 0 126 0 134 0 140 0 148 0 158 0 166 0;
 createNode animCurveTL -n "torso_ctrl_translateZ";
 	rename -uid "4DA35A33-49F1-F8C1-11EF-82AD66531BAD";
 	setAttr ".tan" 18;
-	setAttr -s 6 ".ktv[0:5]"  10 0 24 0 40 0 44 1.7051097337367338e-013
-		 46 1.8281968864893632e-013 50 0;
+	setAttr -s 17 ".ktv[0:16]"  10 0 24 0 40 0 44 1.7051097337367338e-013
+		 46 1.8281968864893632e-013 50 0 85 0 95 0 104 0 112 0 118 0 126 0 134 0 140 0 148 0
+		 158 0 166 0;
 createNode animCurveTU -n "torso_ctrl_CooshieButt";
 	rename -uid "0DD1BC22-4CEE-8C85-4CE5-FBB79D766480";
 	setAttr ".tan" 18;
-	setAttr -s 6 ".ktv[0:5]"  10 0 24 1 40 1 44 0.64799967041009343 46 0.39111103608867948
-		 50 0;
+	setAttr -s 17 ".ktv[0:16]"  10 0 24 1 40 1 44 0.64799967041009343 46 0.39111103608867948
+		 50 0 85 0 95 0 104 0 112 0 118 0 126 0 134 0 140 0 148 0 158 0 166 0;
 createNode animCurveTA -n "Fk_main_trunk_02_jnt_ctrl_rotateX";
 	rename -uid "6306F15A-4111-E6B9-2C48-59B6C94CA1C3";
 	setAttr ".tan" 18;
@@ -2606,208 +2801,190 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 createNode animCurveTA -n "ear_r_04_jnt_ctrl_rotateX";
 	rename -uid "39F4D988-4AE0-1910-25D5-98882977AF82";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 4.3443322133004161 30 4.6742808707017263
-		 47 4.6742808707017263 53 16.026842825409606 60 4.4526718934924281 85 4.1099529049065007
-		 96 3.9885766049503557 109 4.0598096237969257 116 9.0219383654793539 129 10.781356194980646
-		 141 10.836601000383872 145 10.80766401055881 149 11.496404357628435 157 11.61034468533472
-		 167 11.443954271359095;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 4.3443322133004161 30 4.6742808707017263
+		 47 4.6742808707017263 53 16.026842825409609 83 -2.6389268606905674 113 -0.64078238552346267
+		 163 -2.0398574385024708 168 -1.8748511237964995;
 createNode animCurveTA -n "ear_r_04_jnt_ctrl_rotateY";
 	rename -uid "6ABC8457-4DC1-7A12-8D3E-56B4F6F0B3B9";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
-		 47 -3.2516676036198842 53 4.8897252759388392 60 2.8793492186478762 85 13.985702928120906
-		 96 1.0407313083746341 109 -10.789788816590706 116 2.5463434945782515 129 5.4581546929873781
-		 141 -5.4310036456744113 145 3.4908719494991418 149 -5.9403460772527552 157 9.9359671228695365
-		 167 -2.3934784627907448;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
+		 47 -3.2516676036198842 53 4.8897252759388392 83 -20.222927486980936 113 15.920263280460579
+		 163 16.552744909195429 168 -2.7081770975634885;
 createNode animCurveTA -n "ear_r_04_jnt_ctrl_rotateZ";
 	rename -uid "7A668EB3-46F5-6982-D6B4-C0A6A1B9BA0D";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -12.040988223449768 30 -17.493777061550379
-		 47 -17.493777061550379 53 -13.242217855437913 60 -21.670376267558868 85 -11.971901992358234
-		 96 -12.894239150805481 109 -13.728053084455782 116 -11.903504133329617 129 -4.0937060330350317
-		 141 -5.5829505006104272 145 -3.8790435827650112 149 -11.432358685703495 157 -8.1961474127454963
-		 167 -10.710879824097704;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -12.040988223449768 30 -17.493777061550379
+		 47 -17.493777061550379 53 -13.242217855437913 83 -13.242217855437929 113 -4.0409227232039138
+		 163 -14.544187719595936 168 -15.638083864424082;
 createNode animCurveTU -n "ear_r_04_jnt_ctrl_followRotate";
 	rename -uid "871B5753-4D58-D298-C597-5F94D9876C1E";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 1 24 1 30 1 47 1 53 1 60 1 85 1 96 1
-		 109 1 116 1 129 1 141 1 145 1 149 1 157 1 167 1;
+	setAttr -s 9 ".ktv[0:8]"  23 1 24 1 30 1 47 1 53 1 83 1 113 1 163 1
+		 168 1;
 createNode animCurveTA -n "ear_r_03_jnt_ctrl_rotateX";
 	rename -uid "9ECA21BC-4CAE-9549-4769-5DB7E77734CD";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 4.3443322133004161 30 4.6742808707017263
-		 47 4.6742808707017263 53 16.026842825409606 60 4.4526718934924281 85 4.1099529049065007
-		 96 3.9885766049503557 109 4.0598096237969257 116 9.0219383654793539 129 10.781356194980646
-		 141 10.836601000383872 145 10.80766401055881 149 11.496404357628435 157 11.61034468533472
-		 167 11.443954271359095;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 4.3443322133004161 30 4.6742808707017263
+		 47 4.6742808707017263 53 16.026842825409609 83 -2.6389268606905674 113 -0.64078238552346267
+		 163 -2.0398574385024708 168 -1.8748511237964995;
 createNode animCurveTA -n "ear_r_03_jnt_ctrl_rotateY";
 	rename -uid "7346444C-4F7E-827F-05E3-5FA3359CD3C4";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
-		 47 -3.2516676036198842 53 4.8897252759388392 60 2.8793492186478762 85 13.985702928120906
-		 96 1.0407313083746341 109 -10.789788816590706 116 2.5463434945782515 129 5.4581546929873781
-		 141 -5.4310036456744113 145 3.4908719494991418 149 -5.9403460772527552 157 9.9359671228695365
-		 167 -2.3934784627907448;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
+		 47 -3.2516676036198842 53 4.8897252759388392 83 -20.222927486980936 113 15.920263280460579
+		 163 16.552744909195429 168 -2.7081770975634885;
 createNode animCurveTA -n "ear_r_03_jnt_ctrl_rotateZ";
 	rename -uid "169FF824-4794-BFE4-BFCC-FE898041BFDD";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -12.040988223449768 30 -17.493777061550379
-		 47 -17.493777061550379 53 -13.242217855437913 60 -21.670376267558868 85 -11.971901992358234
-		 96 -12.894239150805481 109 -13.728053084455782 116 -11.903504133329617 129 -4.0937060330350317
-		 141 -5.5829505006104272 145 -3.8790435827650112 149 -11.432358685703495 157 -8.1961474127454963
-		 167 -10.710879824097704;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -12.040988223449768 30 -17.493777061550379
+		 47 -17.493777061550379 53 -13.242217855437913 83 -13.242217855437929 113 -4.0409227232039138
+		 163 -14.544187719595936 168 -15.638083864424082;
 createNode animCurveTU -n "ear_r_03_jnt_ctrl_followRotate";
 	rename -uid "7E0F3304-4431-88CF-495D-AA9C0C34C224";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 1 24 1 30 1 47 1 53 1 60 1 85 1 96 1
-		 109 1 116 1 129 1 141 1 145 1 149 1 157 1 167 1;
+	setAttr -s 9 ".ktv[0:8]"  23 1 24 1 30 1 47 1 53 1 83 1 113 1 163 1
+		 168 1;
 createNode animCurveTA -n "ear_r_02_jnt_ctrl_rotateX";
 	rename -uid "09FEEF3B-4661-34D1-9135-448752D61DD3";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 4.3443322133004161 30 4.6742808707017263
-		 47 4.6742808707017263 53 16.026842825409606 60 4.4526718934924281 85 4.1099529049065007
-		 96 3.9885766049503557 109 4.0598096237969257 116 9.0219383654793539 129 10.781356194980646
-		 141 10.836601000383872 145 10.80766401055881 149 11.496404357628435 157 11.61034468533472
-		 167 11.443954271359095;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 4.3443322133004161 30 4.6742808707017263
+		 47 4.6742808707017263 53 16.026842825409609 83 -2.6389268606905674 113 -0.64078238552346267
+		 163 -2.0398574385024708 168 -1.8748511237964995;
 createNode animCurveTA -n "ear_r_02_jnt_ctrl_rotateY";
 	rename -uid "3C8C66A7-4BB8-8642-A77E-388FCF7708C7";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
-		 47 -3.2516676036198842 53 4.8897252759388392 60 2.8793492186478762 85 13.985702928120906
-		 96 1.0407313083746341 109 -10.789788816590706 116 2.5463434945782515 129 5.4581546929873781
-		 141 -5.4310036456744113 145 3.4908719494991418 149 -5.9403460772527552 157 9.9359671228695365
-		 167 -2.3934784627907448;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
+		 47 -3.2516676036198842 53 4.8897252759388392 83 -20.222927486980936 113 15.920263280460579
+		 163 16.552744909195429 168 -2.7081770975634885;
 createNode animCurveTA -n "ear_r_02_jnt_ctrl_rotateZ";
 	rename -uid "634FEF4B-4E25-9FA3-84E3-2082AF510C5E";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -12.040988223449768 30 -17.493777061550379
-		 47 -17.493777061550379 53 -13.242217855437913 60 -21.670376267558868 85 -11.971901992358234
-		 96 -12.894239150805481 109 -13.728053084455782 116 -11.903504133329617 129 -4.0937060330350317
-		 141 -5.5829505006104272 145 -3.8790435827650112 149 -11.432358685703495 157 -8.1961474127454963
-		 167 -10.710879824097704;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -12.040988223449768 30 -17.493777061550379
+		 47 -17.493777061550379 53 -13.242217855437913 83 -13.242217855437929 113 -4.0409227232039138
+		 163 -14.544187719595936 168 -15.638083864424082;
 createNode animCurveTU -n "ear_r_02_jnt_ctrl_followRotate";
 	rename -uid "9C419677-4192-1B50-79B0-DC876A5CA8C7";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 1 24 1 30 1 47 1 53 1 60 1 85 1 96 1
-		 109 1 116 1 129 1 141 1 145 1 149 1 157 1 167 1;
+	setAttr -s 9 ".ktv[0:8]"  23 1 24 1 30 1 47 1 53 1 83 1 113 1 163 1
+		 168 1;
 createNode animCurveTA -n "ear_l_02_jnt_ctrl_rotateX";
 	rename -uid "3A7479DE-407F-228A-9850-E8BF234EE2C3";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 4.3443322133004161 30 4.6742808707017263
-		 47 4.6742808707017263 53 16.026842825409606 60 4.4526718934924281 85 4.1099529049065007
-		 96 3.9885766049503557 109 4.0598096237969257 116 9.0219383654793539 129 10.781356194980646
-		 141 10.836601000383872 145 10.80766401055881 149 11.496404357628435 157 11.61034468533472
-		 167 11.443954271359095;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 4.3443322133004161 30 4.6742808707017263
+		 47 4.6742808707017263 53 16.026842825409609 83 -2.6389268606905674 113 -0.64078238552346267
+		 163 -2.0398574385024708 168 -1.8748511237964995;
 createNode animCurveTA -n "ear_l_02_jnt_ctrl_rotateY";
 	rename -uid "0152F1AD-4A71-10E3-32DE-95A95CC26C67";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
-		 47 -3.2516676036198842 53 4.8897252759388392 60 2.8793492186478762 85 13.985702928120906
-		 96 1.0407313083746341 109 -10.789788816590706 116 2.5463434945782515 129 5.4581546929873781
-		 141 -5.4310036456744113 145 3.4908719494991418 149 -5.9403460772527552 157 9.9359671228695365
-		 167 -2.3934784627907448;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
+		 47 -3.2516676036198842 53 4.8897252759388392 83 -20.222927486980936 113 15.920263280460579
+		 163 16.552744909195429 168 -2.7081770975634885;
 createNode animCurveTA -n "ear_l_02_jnt_ctrl_rotateZ";
 	rename -uid "2560E05C-4C0A-A7C3-36B8-E2BD9B34999A";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -12.040988223449768 30 -17.493777061550379
-		 47 -17.493777061550379 53 -13.242217855437913 60 -21.670376267558868 85 -11.971901992358234
-		 96 -12.894239150805481 109 -13.728053084455782 116 -11.903504133329617 129 -4.0937060330350317
-		 141 -5.5829505006104272 145 -3.8790435827650112 149 -11.432358685703495 157 -8.1961474127454963
-		 167 -10.710879824097704;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -12.040988223449768 30 -17.493777061550379
+		 47 -17.493777061550379 53 -13.242217855437913 83 -13.242217855437929 113 -4.0409227232039138
+		 163 -14.544187719595936 168 -15.638083864424082;
 createNode animCurveTU -n "ear_l_02_jnt_ctrl_followRotate";
 	rename -uid "73CBE4D0-4757-19EC-E91D-4C8E5D7D05AD";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 1 24 1 30 1 47 1 53 1 60 1 85 1 96 1
-		 109 1 116 1 129 1 141 1 145 1 149 1 157 1 167 1;
+	setAttr -s 9 ".ktv[0:8]"  23 1 24 1 30 1 47 1 53 1 83 1 113 1 163 1
+		 168 1;
 createNode animCurveTA -n "ear_l_03_jnt_ctrl_rotateX";
 	rename -uid "1C9B1FAA-4054-F58B-7A9A-6790CC8AFBD0";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 4.3443322133004161 30 4.6742808707017263
-		 47 4.6742808707017263 53 16.026842825409606 60 4.4526718934924281 85 4.1099529049065007
-		 96 3.9885766049503557 109 4.0598096237969257 116 9.0219383654793539 129 10.781356194980646
-		 141 10.836601000383872 145 10.80766401055881 149 11.496404357628435 157 11.61034468533472
-		 167 11.443954271359095;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 4.3443322133004161 30 4.6742808707017263
+		 47 4.6742808707017263 53 16.026842825409609 83 -2.6389268606905674 113 -0.64078238552346267
+		 163 -2.0398574385024708 168 -1.8748511237964995;
 createNode animCurveTA -n "ear_l_03_jnt_ctrl_rotateY";
 	rename -uid "C1D4A584-42DA-0D0C-3E02-2F8C1091F19F";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
-		 47 -3.2516676036198842 53 4.8897252759388392 60 2.8793492186478762 85 13.985702928120906
-		 96 1.0407313083746341 109 -10.789788816590706 116 2.5463434945782515 129 5.4581546929873781
-		 141 -5.4310036456744113 145 3.4908719494991418 149 -5.9403460772527552 157 9.9359671228695365
-		 167 -2.3934784627907448;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
+		 47 -3.2516676036198842 53 4.8897252759388392 83 -20.222927486980936 113 15.920263280460579
+		 163 16.552744909195429 168 -2.7081770975634885;
 createNode animCurveTA -n "ear_l_03_jnt_ctrl_rotateZ";
 	rename -uid "131C41BC-4F27-8A38-4927-029AF30811E3";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -12.040988223449768 30 -17.493777061550379
-		 47 -17.493777061550379 53 -13.242217855437913 60 -21.670376267558868 85 -11.971901992358234
-		 96 -12.894239150805481 109 -13.728053084455782 116 -11.903504133329617 129 -4.0937060330350317
-		 141 -5.5829505006104272 145 -3.8790435827650112 149 -11.432358685703495 157 -8.1961474127454963
-		 167 -10.710879824097704;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -12.040988223449768 30 -17.493777061550379
+		 47 -17.493777061550379 53 -13.242217855437913 83 -13.242217855437929 113 -4.0409227232039138
+		 163 -14.544187719595936 168 -15.638083864424082;
 createNode animCurveTU -n "ear_l_03_jnt_ctrl_followRotate";
 	rename -uid "EC3EFFAB-4F2C-9457-AC06-2E833F9831C0";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 1 24 1 30 1 47 1 53 1 60 1 85 1 96 1
-		 109 1 116 1 129 1 141 1 145 1 149 1 157 1 167 1;
+	setAttr -s 9 ".ktv[0:8]"  23 1 24 1 30 1 47 1 53 1 83 1 113 1 163 1
+		 168 1;
 createNode animCurveTA -n "ear_l_04_jnt_ctrl_rotateX";
 	rename -uid "8CDED805-41C5-5005-DD57-AA952E56B868";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 4.3443322133004161 30 4.6742808707017263
-		 47 4.6742808707017263 53 16.026842825409606 60 4.4526718934924281 85 4.1099529049065007
-		 96 3.9885766049503557 109 4.0598096237969257 116 9.0219383654793539 129 10.781356194980646
-		 141 10.836601000383872 145 10.80766401055881 149 11.496404357628435 157 11.61034468533472
-		 167 11.443954271359095;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 4.3443322133004161 30 4.6742808707017263
+		 47 4.6742808707017263 53 16.026842825409609 83 -2.6389268606905674 113 -0.64078238552346267
+		 163 -2.0398574385024708 168 -1.8748511237964995;
 createNode animCurveTA -n "ear_l_04_jnt_ctrl_rotateY";
 	rename -uid "F91406AC-4B85-EB26-C323-7CA2CAB515CC";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
-		 47 -3.2516676036198842 53 4.8897252759388392 60 2.8793492186478762 85 13.985702928120906
-		 96 1.0407313083746341 109 -10.789788816590706 116 2.5463434945782515 129 5.4581546929873781
-		 141 -5.4310036456744113 145 3.4908719494991418 149 -5.9403460772527552 157 9.9359671228695365
-		 167 -2.3934784627907448;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -3.6812410607337762 30 -3.2516676036198842
+		 47 -3.2516676036198842 53 4.8897252759388392 83 -20.222927486980936 113 15.920263280460579
+		 163 16.552744909195429 168 -2.7081770975634885;
 createNode animCurveTA -n "ear_l_04_jnt_ctrl_rotateZ";
 	rename -uid "AB1C10C5-442A-6636-1E9F-438DA2B4A5EF";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 0 24 -12.040988223449768 30 -17.493777061550379
-		 47 -17.493777061550379 53 -13.242217855437913 60 -21.670376267558868 85 -11.971901992358234
-		 96 -12.894239150805481 109 -13.728053084455782 116 -11.903504133329617 129 -4.0937060330350317
-		 141 -5.5829505006104272 145 -3.8790435827650112 149 -11.432358685703495 157 -8.1961474127454963
-		 167 -10.710879824097704;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 -12.040988223449768 30 -17.493777061550379
+		 47 -17.493777061550379 53 -13.242217855437913 83 -13.242217855437929 113 -4.0409227232039138
+		 163 -14.544187719595936 168 -15.638083864424082;
 createNode animCurveTU -n "ear_l_04_jnt_ctrl_followRotate";
 	rename -uid "C260726A-4B28-10F7-3AD3-EA8E39662AD5";
 	setAttr ".tan" 18;
-	setAttr -s 16 ".ktv[0:15]"  23 1 24 1 30 1 47 1 53 1 60 1 85 1 96 1
-		 109 1 116 1 129 1 141 1 145 1 149 1 157 1 167 1;
+	setAttr -s 9 ".ktv[0:8]"  23 1 24 1 30 1 47 1 53 1 83 1 113 1 163 1
+		 168 1;
 createNode animCurveTA -n "head_ctrl_rotateX";
 	rename -uid "128A54B1-4A5B-31DA-5D85-8AA3E25E61C9";
 	setAttr ".tan" 18;
-	setAttr -s 15 ".ktv[0:14]"  23 0 24 0 30 -16.110733875964119 46 -10.639905861763328
-		 65 -10.639905861763328 73 -16.698780550682482 80 -16.698780550682482 89 4.1664264105408666
-		 99 34.886248291250283 107 39.298302893699599 122 33.318898375111182 137 31.342665121635054
-		 149 19.473790709458921 158 32.743291408959841 172 -5.6034841714665262;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 0 30 -16.110733875964119 52 -15.531118716231864
+		 77 -15.531118716231864 85 11.78436952154151 154 9.6885980578266135 169 8.3597762198239085
+		 180 -17.641221237934118;
+	setAttr -s 9 ".kit[7:8]"  1 18;
+	setAttr -s 9 ".kot[7:8]"  1 18;
+	setAttr -s 9 ".ktl[7:8]" no yes;
+	setAttr -s 9 ".kix[7:8]"  0.65887165069580078 0.45833349227905273;
+	setAttr -s 9 ".kiy[7:8]"  0.040999803692102432 0;
+	setAttr -s 9 ".kox[7:8]"  1.8585588932037354 0.45833349227905273;
+	setAttr -s 9 ".koy[7:8]"  0.0027625709772109985 0;
 createNode animCurveTA -n "head_ctrl_rotateY";
 	rename -uid "354F8C47-48DD-394E-DCAD-EA998D950141";
 	setAttr ".tan" 18;
-	setAttr -s 15 ".ktv[0:14]"  23 0 24 0 30 -16.639975133114355 46 24.419807940304811
-		 65 24.419807940304811 73 20.886903408835455 80 20.886903408835455 89 14.261874100696406
-		 99 14.261874100696414 107 14.784191343529736 122 1.7244647669200854 137 12.051660202036889
-		 149 14.642224527691106 158 -6.7641484643200078 172 5.9274836114176432;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 0 30 -16.639975133114355 52 -6.8074707377628654
+		 77 -6.8074707377628654 85 7.4336761865468128 154 4.8215465209750503 169 6.6401938609839446
+		 180 -9.9763108022864309;
+	setAttr -s 9 ".kit[7:8]"  1 18;
+	setAttr -s 9 ".kot[7:8]"  1 18;
+	setAttr -s 9 ".ktl[7:8]" no yes;
+	setAttr -s 9 ".kix[7:8]"  0.6455390453338623 0.45833349227905273;
+	setAttr -s 9 ".kiy[7:8]"  0.040999803692102432 0;
+	setAttr -s 9 ".kox[7:8]"  1.5721585750579834 0.45833349227905273;
+	setAttr -s 9 ".koy[7:8]"  0.0096530020236968994 0;
 createNode animCurveTA -n "head_ctrl_rotateZ";
 	rename -uid "2E36DDF3-414C-7D6C-9B9D-3BB51D07BCB1";
 	setAttr ".tan" 18;
-	setAttr -s 15 ".ktv[0:14]"  23 0 24 8.8415514871106691 30 29.045900081883662
-		 46 35.553393726115949 65 35.553393726115949 73 19.913042279845993 80 19.913042279845993
-		 89 44.816114432452025 99 33.190873374663994 107 22.999800600870888 122 44.012103485860052
-		 137 27.710000577563733 149 35.734692081397164 158 57.012527289459243 172 12.730163570564718;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 8.8415514871106691 30 29.045900081883662
+		 52 26.204413759975221 77 26.204413759975221 85 1.0777061422819534 154 -0.036356777415646649
+		 169 -12.395657743431785 180 4.770279750719042;
+	setAttr -s 9 ".kit[7:8]"  1 18;
+	setAttr -s 9 ".kot[7:8]"  1 18;
+	setAttr -s 9 ".ktl[7:8]" no yes;
+	setAttr -s 9 ".kix[7:8]"  0.72955989837646484 0.45833349227905273;
+	setAttr -s 9 ".kiy[7:8]"  0 0;
+	setAttr -s 9 ".kox[7:8]"  1.6141693592071533 0.45833349227905273;
+	setAttr -s 9 ".koy[7:8]"  0.0068333004601299763 0;
 createNode animCurveTU -n "head_ctrl_TuskControls";
 	rename -uid "2AB83A49-4B54-366C-56E3-ECB07EC02676";
 	setAttr ".tan" 18;
-	setAttr -s 15 ".ktv[0:14]"  23 0 24 0 30 0 46 0 65 0 73 0 80 0 89 0
-		 99 0 107 0 122 0 137 0 149 0 158 0 172 0;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 0 30 0 52 0 77 0 85 0 154 0 169 0
+		 180 0;
 createNode animCurveTU -n "head_ctrl_FullTrunk";
 	rename -uid "A603261F-406E-0E97-876C-9BBFF64E5F2A";
 	setAttr ".tan" 18;
-	setAttr -s 15 ".ktv[0:14]"  23 0 24 0 30 0 46 0 65 0 73 0 80 0 89 0
-		 99 0 107 0 122 0 137 0 149 0 158 0 172 0;
+	setAttr -s 9 ".ktv[0:8]"  23 0 24 0 30 0 52 0 77 0 85 0 154 0 169 0
+		 180 0;
 createNode animCurveTA -n "neck_ctrl_rotateX";
 	rename -uid "14F743E3-4F05-A5FE-7370-269744E6E399";
 	setAttr ".tan" 18;
@@ -2847,140 +3024,136 @@ createNode animCurveTA -n "spine_03_ctrl_rotateZ";
 createNode animCurveTA -n "spine_02_ctrl_rotateX";
 	rename -uid "72E28B4C-41C6-2FC2-7728-0CA35083821C";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  23 0 24 5.0959149895703835 40 10.05684496419652;
+	setAttr -s 5 ".ktv[0:4]"  23 0 24 5.0959149895703835 40 10.05684496419652
+		 164 10.05684496419652 179 11.538079620669722;
 createNode animCurveTA -n "spine_02_ctrl_rotateY";
 	rename -uid "00EED141-4C4B-9D69-8344-5ABDF0ED1BCF";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 40 -6.8029018303064994;
+	setAttr -s 5 ".ktv[0:4]"  23 0 24 0 40 -6.8029018303064994 164 -6.8029018303064994
+		 179 11.752742552245708;
 createNode animCurveTA -n "spine_02_ctrl_rotateZ";
 	rename -uid "901B2388-466C-41CE-62DE-578E8BBEFFB2";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 40 2.9948356768679893;
+	setAttr -s 5 ".ktv[0:4]"  23 0 24 0 40 2.9948356768679893 164 2.9948356768679893
+		 179 15.19010071729282;
 createNode animCurveTA -n "spine_01_ctrl_rotateX";
 	rename -uid "AE3B137D-4865-F177-CF7A-AAA80CCD5ABA";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  23 0 24 3.7013066086088475 40 8.6544823102844415;
+	setAttr -s 8 ".ktv[0:7]"  23 0 24 3.7013066086088475 40 8.6544823102844415
+		 75 8.6544823102844415 81 17.929896578256127 90 17.929896578256127 153 17.929896578256127
+		 169 1.1592504289487711;
 createNode animCurveTA -n "spine_01_ctrl_rotateY";
 	rename -uid "61E08CD6-436C-0A00-AE24-8988D95BE6E8";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 40 -6.7280275584001439;
+	setAttr -s 8 ".ktv[0:7]"  23 0 24 0 40 -6.7280275584001439 75 -6.7280275584001439
+		 81 -6.7280275584001474 90 -6.7280275584001474 153 -6.7280275584001474 169 -6.7280275584001599;
 createNode animCurveTA -n "spine_01_ctrl_rotateZ";
 	rename -uid "D856F67D-4FD7-D106-201B-C3AC40911726";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 40 3.1600497840332715;
+	setAttr -s 8 ".ktv[0:7]"  23 0 24 0 40 3.1600497840332715 75 3.1600497840332715
+		 81 3.1600497840332733 90 3.1600497840332733 153 3.1600497840332733 169 3.1600497840332791;
 createNode animCurveTL -n "spine_01_ctrl_translateX";
 	rename -uid "6BDD6657-4A77-A1C1-21DE-5B9ED6C4BB22";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 40 0;
+	setAttr -s 8 ".ktv[0:7]"  23 0 24 0 40 0 75 0 81 0 90 0 153 0 169 0;
 createNode animCurveTL -n "spine_01_ctrl_translateY";
 	rename -uid "965B03FC-43E4-3C4D-C5CF-098F030A4DD8";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 40 0;
+	setAttr -s 8 ".ktv[0:7]"  23 0 24 0 40 0 75 0 81 0 90 0 153 0 169 0;
 createNode animCurveTL -n "spine_01_ctrl_translateZ";
 	rename -uid "65E85A8F-4F64-2FCB-412D-D9BF2CAB5742";
 	setAttr ".tan" 18;
-	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 40 0;
+	setAttr -s 8 ".ktv[0:7]"  23 0 24 0 40 0 75 0 81 0 90 0 153 0 169 0;
 createNode animCurveTA -n "lower_l_ear_ctrl_rotateX";
 	rename -uid "F6879E78-4B8F-1A0F-0F58-C98F0BBDD08C";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  23 0 24 -18.214082298094755;
+	setAttr -s 3 ".ktv[0:2]"  23 0 24 -18.214082298094755 30 0;
 createNode animCurveTA -n "lower_l_ear_ctrl_rotateY";
 	rename -uid "24E55CCD-4795-30DF-1CD0-BBBD1911166D";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  23 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 30 0;
 createNode animCurveTA -n "lower_l_ear_ctrl_rotateZ";
 	rename -uid "73CBB91F-48FD-BEBE-D771-0583D1F24FFD";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  23 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 30 0;
 createNode animCurveTA -n "lower_r_ear_ctrl_rotateX";
 	rename -uid "8EAF94F4-4C23-60B5-7E84-FB9B8B571758";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  23 0 24 -18.214082298094755;
+	setAttr -s 3 ".ktv[0:2]"  23 0 24 -18.214082298094755 30 0;
 createNode animCurveTA -n "lower_r_ear_ctrl_rotateY";
 	rename -uid "22DD517A-4CE0-D8D3-4E7A-14862D344D9C";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  23 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 30 0;
 createNode animCurveTA -n "lower_r_ear_ctrl_rotateZ";
 	rename -uid "321B082C-4A51-167C-3114-F98B5BB8ED4C";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  23 0 24 0;
+	setAttr -s 3 ".ktv[0:2]"  23 0 24 0 30 0;
 createNode animCurveTL -n "Rk_arm_l_03__ctrl_translateX";
 	rename -uid "9B54447F-44EF-87F0-6943-8389434A981F";
 	setAttr ".tan" 18;
-	setAttr -s 24 ".ktv[0:23]"  17 0 24 -24.38014351099784 35 -38.840586928158196
-		 40 -42.182994766525404 44 -30.302470499705112 46 -39.580411690024121 52 -26.276416240466379
-		 59 -24.291929599408842 62 -35.201397748938341 67 -30.072486580294978 75 -35.765655800417306
-		 79 -42.545830685261024 82 -30.986340430474201 91 -26.269681691859283 94 -31.251311783097716
-		 98 -20.063639025327504 106 -17.138975384074264 111 -28.97048953830587 115 -21.411546256206915
-		 119 -20.975064993815103 122 -12.284588325076527 124 -11.715953456312736 127 -18.982100005005833
-		 131 -14.413229501360444;
+	setAttr -s 5 ".ktv[0:4]"  17 0 24 -24.38014351099784 35 -27.373059878429025
+		 42 -27.373059878429025 52 -23.610770917799091;
 createNode animCurveTL -n "Rk_arm_l_03__ctrl_translateY";
 	rename -uid "7AFB3B03-4FDD-F420-7DBB-64954B5F1DAE";
 	setAttr ".tan" 18;
-	setAttr -s 24 ".ktv[0:23]"  17 0 24 -16.225779429326927 35 -25.624348773011072
-		 40 -20.201478616519406 44 -10.832923262867764 46 6.9341942837766881 52 -12.014907723151357
-		 59 -11.606746554528877 62 -8.5718434528612271 67 -27.530985950498163 75 -23.346799247394863
-		 79 9.3061726506558031 82 -4.2122473905579154 91 -3.2695585956312607 94 4.9113689113609631
-		 98 -7.735090637547211 106 -5.6454575037253871 111 11.653036488775181 115 4.1015253510607419
-		 119 7.1202183562814465 122 -1.2348375618513889 124 -0.83290567360537249 127 9.5406926323222372
-		 131 6.401821139072859;
+	setAttr -s 5 ".ktv[0:4]"  17 0 24 -16.225779429326927 35 -17.800342407160375
+		 42 -17.800342407160375 52 -29.037115933980481;
 createNode animCurveTL -n "Rk_arm_l_03__ctrl_translateZ";
 	rename -uid "BDE38F65-4087-EC28-B61F-9085FADACA62";
 	setAttr ".tan" 18;
-	setAttr -s 24 ".ktv[0:23]"  17 0 24 42.339799809171105 35 43.629554482093837
-		 40 43.538558222124685 44 42.334703300107591 46 47.166823044026096 52 47.315402027586536
-		 59 47.164504676050917 62 47.464974683307936 67 48.127903636215358 75 38.466706531995008
-		 79 42.703754007325074 82 47.730544022631925 91 47.088960760168248 94 46.074054234958503
-		 98 46.764708320166619 106 45.839691636675397 111 38.299903286249524 115 41.574283112013774
-		 119 40.251633228585419 122 43.874203580032109 124 43.689609250433477 127 39.162537885117146
-		 131 40.506729809603755;
+	setAttr -s 5 ".ktv[0:4]"  17 0 24 42.339799809171105 35 42.585073668511718
+		 42 42.585073668511718 52 42.949406892715196;
 createNode animCurveTU -n "Rk_arm_l_03__ctrl_follow";
 	rename -uid "F89361DF-4E19-975E-B290-8C81599B66F3";
 	setAttr ".tan" 9;
-	setAttr -s 24 ".ktv[0:23]"  17 2 24 2 35 2 40 2 44 2 46 2 52 2 59 2
-		 62 2 67 2 75 2 79 2 82 2 91 2 94 2 98 2 106 2 111 2 115 2 119 2 122 2 124 2 127 2
-		 131 2;
-	setAttr -s 24 ".kot[0:23]"  5 5 5 5 5 5 5 5 
-		5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5;
+	setAttr -s 5 ".ktv[0:4]"  17 2 24 2 35 2 42 2 52 2;
+	setAttr -s 5 ".kot[0:4]"  5 5 5 5 5;
 createNode animCurveTL -n "Rk_arm_r_03_ctrl_translateX";
 	rename -uid "5478B824-46E2-B96D-174A-F9A8B7D12BFA";
 	setAttr ".tan" 18;
-	setAttr -s 26 ".ktv[0:25]"  17 0 24 24.181235151388474 35 4.7515124458395874
-		 40 9.4083398989851634 44 21.951204612279714 46 30.069423553965759 51 11.086422169442336
-		 56 11.36328497228147 67 28.374612383135322 75 24.585064314087262 79 32.033055119992675
-		 83 28.904561489161335 89 29.198240296560854 94 34.853264435867757 97 27.462486971291931
-		 105 28.621540343534026 111 30.264052973330834 115 23.708506340420652 119 31.898731240120188
-		 122 26.124449036793802 125 28.617180354847822 128 37.081189918490914 131 32.758364704005523
-		 137 28.782562233492921 139 33.315509136107451 142 25.710540269789174;
+	setAttr -s 15 ".ktv[0:14]"  17 0 24 24.181235151388474 35 16.161102355889422
+		 48 21.191019078764821 52 10.1199269938179 56 10.1199269938179 62 14.9377270306546
+		 67 10.978165895088065 71 17.316683886196532 76 17.316683886196532 82 8.3263051914056874
+		 93 8.3263051914056874 97 -2.3632307793708458 167 12.960154748257739 180 23.41352518185057;
+	setAttr -s 15 ".kit[13:14]"  1 18;
+	setAttr -s 15 ".kot[13:14]"  1 18;
+	setAttr -s 15 ".kix[13:14]"  4.117769718170166 0.54166650772094727;
+	setAttr -s 15 ".kiy[13:14]"  14.42655086517334 0;
+	setAttr -s 15 ".kox[13:14]"  1.6550014019012451 0.54166650772094727;
+	setAttr -s 15 ".koy[13:14]"  5.798276424407959 0;
 createNode animCurveTL -n "Rk_arm_r_03_ctrl_translateY";
 	rename -uid "DCDB1B74-4E90-4EF2-DDFE-E9B75B9AF8B3";
 	setAttr ".tan" 18;
-	setAttr -s 26 ".ktv[0:25]"  17 0 24 15.047000539205442 35 1.8068820116720854
-		 40 -2.4025907454496656 44 8.0748202350387874 46 -7.3419550856352087 51 6.1237195122796786
-		 56 6.2958925599967754 67 8.332961281213036 75 16.922781699674093 79 5.9229332226307179
-		 83 12.202660677942573 89 11.983484612198311 94 3.1041645730231506 97 16.117018946211285
-		 105 14.854562281898117 111 -12.548499601680629 115 2.1508977332519841 119 -5.1919576944451871
-		 122 9.0894888943600449 125 8.5741711439778001 128 1.0391007004403556 131 11.922516001119289
-		 137 18.561812973670488 139 10.861753309663905 142 21.896479266643336;
+	setAttr -s 15 ".ktv[0:14]"  17 0 24 15.047000539205442 35 9.5817908484546113
+		 48 0.98001104416820572 52 14.457595405711658 56 14.457595405711658 62 6.6621413193167278
+		 67 13.319165126837342 71 2.7513625656703402 76 2.7513625656703402 82 17.443656472840662
+		 93 17.443656472840662 97 14.885959140715469 167 11.814250561493438 180 -0.7814701382136372;
+	setAttr -s 15 ".kit[13:14]"  1 18;
+	setAttr -s 15 ".kot[13:14]"  1 18;
+	setAttr -s 15 ".kix[13:14]"  4.0509738922119141 0.54166650772094727;
+	setAttr -s 15 ".kiy[13:14]"  0.12134083360433578 0;
+	setAttr -s 15 ".kox[13:14]"  1.6550014019012451 0.54166650772094727;
+	setAttr -s 15 ".koy[13:14]"  0.049573898315429688 0;
 createNode animCurveTL -n "Rk_arm_r_03_ctrl_translateZ";
 	rename -uid "0CAE2D40-4A53-8D16-830B-7B9D9D89B2D0";
 	setAttr ".tan" 18;
-	setAttr -s 26 ".ktv[0:25]"  17 0 24 -38.162150070981738 35 -35.124321634691796
-		 40 -35.249117601637806 44 -37.399674196056814 46 -36.951783925528431 51 -36.114781930565897
-		 56 -36.142263809049524 67 -38.005826041877803 75 -39.836222179422236 79 -36.58386339357677
-		 83 -38.908698824882691 89 -38.893795856815991 94 -38.175114232634002 97 -39.353400093457175
-		 105 -39.242556274633671 111 -38.823117553423693 115 -43.893131204262801 119 -38.895904126342877
-		 122 -43.746526706434416 125 -42.402355421138708 128 -37.343341739120881 131 -40.528952594134161
-		 137 -41.889058313520245 139 -41.045061402561828 142 -42.361074530696975;
+	setAttr -s 15 ".ktv[0:14]"  17 0 24 -38.162150070981738 35 -36.908205903161438
+		 48 -36.509549267922104 52 -24.044313545559149 56 -24.044313545559149 62 -26.106935193739648
+		 67 -25.790792043643691 71 -26.788335580486532 76 -26.788335580486532 82 -23.697492338629569
+		 93 -23.697492338629569 97 -20.887679282140834 167 -21.356276537636791 180 -47.50567579736893;
+	setAttr -s 15 ".kit[13:14]"  1 18;
+	setAttr -s 15 ".kot[13:14]"  1 18;
+	setAttr -s 15 ".kix[13:14]"  3.7267780303955078 0.54166650772094727;
+	setAttr -s 15 ".kiy[13:14]"  -0.71999078989028931 0;
+	setAttr -s 15 ".kox[13:14]"  1.3513648509979248 0.54166650772094727;
+	setAttr -s 15 ".koy[13:14]"  -0.26107549667358398 0;
 createNode animCurveTU -n "Rk_arm_r_03_ctrl_follow";
 	rename -uid "A73CEF21-46B0-3494-C124-41AD217D7535";
 	setAttr ".tan" 9;
-	setAttr -s 26 ".ktv[0:25]"  17 2 24 2 35 2 40 2 44 2 46 2 51 2 56 2
-		 67 2 75 2 79 2 83 2 89 2 94 2 97 2 105 2 111 2 115 2 119 2 122 2 125 2 128 2 131 2
-		 137 2 139 2 142 2;
-	setAttr -s 26 ".kot[0:25]"  5 5 5 5 5 5 5 5 
-		5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
-		5;
+	setAttr -s 15 ".ktv[0:14]"  17 2 24 2 35 2 48 2 52 2 56 2 62 2 67 2
+		 71 2 76 2 82 2 93 2 97 2 167 2 180 2;
+	setAttr -s 15 ".kot[0:14]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5 5;
 createNode animCurveTL -n "Rk_arm_l_02_ctrl_translateX";
 	rename -uid "3E1B7B38-4E2D-7060-1FE2-338AA152DD65";
 	setAttr ".tan" 18;
@@ -2996,15 +3169,15 @@ createNode animCurveTL -n "Rk_arm_l_02_ctrl_translateZ";
 createNode animCurveTL -n "Rk_arm_r_02_ctrl_translateX";
 	rename -uid "C84BF1E8-4499-A95F-77D2-3C938F9AB7CD";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  23 0;
+	setAttr -s 2 ".ktv[0:1]"  23 0 52 0.533460592785581;
 createNode animCurveTL -n "Rk_arm_r_02_ctrl_translateY";
 	rename -uid "F02D62ED-4511-7871-8D54-6FBF4BC195E7";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  23 0;
+	setAttr -s 2 ".ktv[0:1]"  23 0 52 4.2632564145605986e-014;
 createNode animCurveTL -n "Rk_arm_r_02_ctrl_translateZ";
 	rename -uid "CC423EC0-47DE-6673-90F9-0DA3E1C48766";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  23 0;
+	setAttr -s 2 ".ktv[0:1]"  23 0 52 0.014246314979710253;
 createNode animCurveTU -n "Rk_arm_l_02_ctrl_Follow";
 	rename -uid "96826D86-4BA4-C8D5-A083-80A884CAE1FA";
 	setAttr ".tan" 9;
@@ -3013,8 +3186,8 @@ createNode animCurveTU -n "Rk_arm_l_02_ctrl_Follow";
 createNode animCurveTU -n "Rk_arm_r_02_ctrl_Follow";
 	rename -uid "06396EE5-47A0-7796-03B3-699F741D79DF";
 	setAttr ".tan" 9;
-	setAttr ".ktv[0]"  23 2;
-	setAttr ".kot[0]"  5;
+	setAttr -s 2 ".ktv[0:1]"  23 2 52 2;
+	setAttr -s 2 ".kot[0:1]"  5 5;
 createNode animCurveTA -n "Fk_main_trunk_03_jnt_ctrl_rotateX";
 	rename -uid "698D7B1F-4E8F-143A-0DA0-8C809905F9BD";
 	setAttr ".tan" 18;
@@ -3196,44 +3369,44 @@ createNode animCurveTU -n "Piano_Lid_Ctrl_FollowRotate";
 createNode animCurveTL -n "camera1_translateX";
 	rename -uid "9F69C7AB-4EE6-7CD3-F49F-36BD8E84F831";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 385.80028835278057;
+	setAttr ".ktv[0]"  89 252.30060906570105;
 createNode animCurveTL -n "camera1_translateY";
 	rename -uid "1F1A1538-4CE6-AFF6-63BD-DC8A3A8816E9";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 86.164656159278536;
+	setAttr ".ktv[0]"  89 111.72949835668841;
 createNode animCurveTL -n "camera1_translateZ";
 	rename -uid "7F2275A0-4C94-D992-5B04-37B0A176E0F3";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 -706.63345537079567;
+	setAttr ".ktv[0]"  89 -609.93540045219288;
 createNode animCurveTU -n "camera1_visibility";
 	rename -uid "4651B379-451F-CDEF-87A3-889FCB18E996";
 	setAttr ".tan" 9;
-	setAttr ".ktv[0]"  30 1;
+	setAttr ".ktv[0]"  89 1;
 	setAttr ".kot[0]"  5;
 createNode animCurveTA -n "camera1_rotateX";
 	rename -uid "76F9BE85-4364-68C3-9C89-7293B381EC8E";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 -5.3999999999999693;
+	setAttr ".ktv[0]"  89 -1.200000000000027;
 createNode animCurveTA -n "camera1_rotateY";
 	rename -uid "9C77851E-4682-6546-4458-3B91F5D97952";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 135.59999999997936;
+	setAttr ".ktv[0]"  89 145.19999999997759;
 createNode animCurveTA -n "camera1_rotateZ";
 	rename -uid "1757E915-4936-1E66-5FDC-8FBF89195A71";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 0;
+	setAttr ".ktv[0]"  89 0;
 createNode animCurveTU -n "camera1_scaleX";
 	rename -uid "945864B5-4276-90CF-5065-EABB2066517F";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 1;
+	setAttr ".ktv[0]"  89 1;
 createNode animCurveTU -n "camera1_scaleY";
 	rename -uid "5D7D16D2-41DE-99EE-D986-B2ADE454D71E";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 1;
+	setAttr ".ktv[0]"  89 1;
 createNode animCurveTU -n "camera1_scaleZ";
 	rename -uid "1B1F4153-4E11-78DC-BABB-3996E9281A08";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 1;
+	setAttr ".ktv[0]"  89 1;
 createNode animCurveTA -n "Fk_leg_03_r_jnt_ctrl_rotateX";
 	rename -uid "58261BC8-4DA2-9A3D-6343-44B7D0FD0AC5";
 	setAttr ".tan" 18;
@@ -3398,233 +3571,285 @@ createNode animCurveTU -n "Piano_Body_Joint_Ctrl_FollowRotate";
 createNode animCurveTL -n "Transform_ctrl_translateX1";
 	rename -uid "A9B1B881-4F42-C110-F5BD-C5B81B39CB4A";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  40 90.059706728680894 51 90.059706728680894
-		 74 90.059706728680894 87 90.059706728680894 99 90.059706728680894 127 90.059706728680894
-		 139 90.059706728680894 144 90.059706728680894 149 90.059706728680894 153 90.059706728680894
-		 154 90.059706728680894 159 90.059706728680894 161 90.059706728680894;
+	setAttr -s 12 ".ktv[0:11]"  40 90.059706728680894 51 90.059706728680894
+		 77 90.059706728680894 156 69.918290859228549 161 69.278387731680724 163 69.206718962970669
+		 166 69.186973371933419 169 69.186973371933419 172 69.186973371933419 175 69.186973371933419
+		 178 69.203297347780321 181 69.186973371933419;
+	setAttr -s 12 ".kit[2:11]"  1 18 18 18 18 18 18 18 
+		18 18;
+	setAttr -s 12 ".kot[2:11]"  1 18 18 18 18 18 18 18 
+		18 18;
+	setAttr -s 12 ".kix[2:11]"  4.117042064666748 3.2916667461395264 0.20833349227905273 
+		0.083333015441894531 0.125 0.125 0.125 0.125 0.125 0.125;
+	setAttr -s 12 ".kiy[2:11]"  -1.9891740083694458 -19.544334411621094 
+		-0.50826632976531982 -0.036565661430358887 0 0 0 0 0 0;
+	setAttr -s 12 ".kox[2:11]"  6.3253698348999023 0.20833349227905273 
+		0.083333015441894531 0.125 0.125 0.125 0.125 0.125 0.125 0.125;
+	setAttr -s 12 ".koy[2:11]"  -3.0561537742614746 -1.2369841337203979 
+		-0.20330558717250824 -0.054848700761795044 0 0 0 0 0 0;
 createNode animCurveTL -n "Transform_ctrl_translateY1";
 	rename -uid "20549D14-4D4A-EDA2-DA05-599D73DF1983";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  40 95.249409098560008 51 95.249409098560008
-		 74 95.249409098560008 87 95.249409098560008 99 95.249409098560008 127 95.249409098560008
-		 139 95.249409098560008 144 95.249409098560008 149 95.249409098560008 153 95.249409098560008
-		 154 95.50710682348776 159 102.59691797196979 161 102.29926053214481;
+	setAttr -s 12 ".ktv[0:11]"  40 95.249409098560008 51 95.249409098560008
+		 77 95.249409098560008 156 95.249409098560008 161 95.249409098560008 163 95.249409098560008
+		 166 95.249409098560008 169 95.249409098560008 172 95.249409098560008 175 95.249409098560008
+		 178 94.567648165184238 181 95.249409098560008;
+	setAttr -s 12 ".kit[2:11]"  1 18 18 18 18 18 18 18 
+		18 18;
+	setAttr -s 12 ".kot[2:11]"  1 18 18 18 18 18 18 18 
+		18 18;
+	setAttr -s 12 ".kix[2:11]"  4.117042064666748 3.2916667461395264 0.20833349227905273 
+		0.083333015441894531 0.125 0.125 0.125 0.125 0.125 0.125;
+	setAttr -s 12 ".kiy[2:11]"  -1.9891740083694458 0 0 0 0 0 0 0 0 0;
+	setAttr -s 12 ".kox[2:11]"  6.3253698348999023 0.20833349227905273 
+		0.083333015441894531 0.125 0.125 0.125 0.125 0.125 0.125 0.125;
+	setAttr -s 12 ".koy[2:11]"  -3.0561537742614746 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "Transform_ctrl_translateZ1";
 	rename -uid "56949174-463C-C7CF-4565-7BA2FBBBF213";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  40 -261.28318194756775 51 -269.40721821700129
-		 74 -269.40721821700129 87 -320.31253648750385 99 -320.31253648750385 127 -397.12823190630411
-		 139 -397.12823190630411 144 -401.34069895114311 149 -398.17875461438689 153 -398.17875461438689
-		 154 -398.17875461438689 159 -398.17875461438689 161 -398.17875461438689;
-	setAttr -s 13 ".kit[2:12]"  1 1 1 1 18 18 18 18 
-		18 18 18;
-	setAttr -s 13 ".kot[2:12]"  1 18 1 1 18 18 18 18 
-		18 18 18;
-	setAttr -s 13 ".ktl[3:12]" no no yes yes yes yes yes yes yes yes;
-	setAttr -s 13 ".kix[2:12]"  1.5468893051147461 0.44572770595550537 
-		1.8196958303451538 1.0494072437286377 0.5 0.20833349227905273 0.20833349227905273 
-		0.16666650772094727 0.041666507720947266 0.20833349227905273 0.083333492279052734;
-	setAttr -s 13 ".kiy[2:12]"  1.5026443004608154 -42.86383056640625 2.1460788047988899e-005 
-		-77.154899597167969 0 0 0 0 0 0 0;
-	setAttr -s 13 ".kox[2:12]"  0.92189145088195801 0.5 3.5155935287475586 
-		1.0494071245193481 0.20833349227905273 0.20833349227905273 0.16666650772094727 0.041666507720947266 
-		0.20833349227905273 0.083333492279052734 0.083333492279052734;
-	setAttr -s 13 ".koy[2:12]"  0.89551210403442383 0 -102.87319946289062 
-		-77.154914855957031 0 0 0 0 0 0 0;
+	setAttr -s 12 ".ktv[0:11]"  40 -261.28318194756775 51 -269.40721821700129
+		 77 -269.40721821700129 156 -333.8707673902299 161 -335.73822870089742 163 -335.94738327190743
+		 166 -336.00500782847581 169 -336.00500782847581 172 -336.00500782847581 175 -336.00500782847581
+		 178 -338.33035608041462 181 -338.78724725664762;
+	setAttr -s 12 ".kot[2:11]"  1 18 18 18 18 18 18 18 
+		18 18;
+	setAttr -s 12 ".ktl[2:11]" no yes yes yes yes yes yes yes yes yes;
+	setAttr -s 12 ".kox[2:11]"  6.7101955413818359 0.20833349227905273 
+		0.083333015441894531 0.125 0.125 0.125 0.125 0.125 0.125 0.125;
+	setAttr -s 12 ".koy[2:11]"  -28.191425323486328 -3.9482772350311279 
+		-0.59331691265106201 -0.16006772220134735 0 0 0 0 -1.3706735372543335 0;
 createNode animCurveTL -n "Piano_Transform_CTRL_translateX";
 	rename -uid "164DC6B9-40E6-1581-BEA8-0C9FEE9A7E95";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  40 0 51 0 74 0 87 0 99 0 127 0 139 0 144 0
-		 149 0 153 0 158 0 164 0;
+	setAttr -s 4 ".ktv[0:3]"  40 0 51 0 77 0 166 -21.064713980034924;
+	setAttr -s 4 ".kit[2:3]"  1 18;
+	setAttr -s 4 ".kot[2:3]"  1 18;
+	setAttr -s 4 ".kix[2:3]"  4.1170549392700195 3.7083332538604736;
+	setAttr -s 4 ".kiy[2:3]"  -1.866253137588501 0;
+	setAttr -s 4 ".kox[2:3]"  6.7420434951782227 3.7083332538604736;
+	setAttr -s 4 ".koy[2:3]"  -3.0561537742614746 0;
 createNode animCurveTL -n "Piano_Transform_CTRL_translateY";
 	rename -uid "5097315A-4BA5-ADE7-FC68-51B12E8BB486";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  40 1.8725102498779582 51 1.8725102498779582
-		 74 1.8725102498779582 87 1.8725102498779582 99 1.8725102498779582 127 1.8725102498779582
-		 139 1.8725102498779582 144 1.8725102498779582 149 1.8725102498779582 153 1.8725102498779582
-		 158 4.3503939301644827 164 4.3503939301644827;
+	setAttr -s 4 ".ktv[0:3]"  40 1.8725102498779582 51 1.8725102498779582
+		 77 1.8725102498779582 166 1.8725102498779582;
+	setAttr -s 4 ".kit[2:3]"  1 18;
+	setAttr -s 4 ".kot[2:3]"  1 18;
+	setAttr -s 4 ".kix[2:3]"  4.1170549392700195 3.7083332538604736;
+	setAttr -s 4 ".kiy[2:3]"  -1.866253137588501 0;
+	setAttr -s 4 ".kox[2:3]"  6.7420434951782227 3.7083332538604736;
+	setAttr -s 4 ".koy[2:3]"  -3.0561537742614746 0;
 createNode animCurveTL -n "Piano_Transform_CTRL_translateZ";
 	rename -uid "8F2E4AFC-4C5F-A014-140F-C6B41E007834";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  40 -367.09402098469349 51 -375.21805725412702
-		 74 -375.21805725412702 87 -426.12337552462958 99 -426.12337552462958 127 -502.9390709434299
-		 139 -502.9390709434299 144 -507.1515379882689 149 -503.98959365151268 153 -503.98959365151268
-		 158 -503.98959365151268 164 -503.98959365151268;
-	setAttr -s 12 ".kit[2:11]"  1 1 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 12 ".kot[2:11]"  1 18 1 1 18 18 18 18 
-		18 18;
-	setAttr -s 12 ".ktl[3:11]" no no yes yes yes yes yes yes yes;
-	setAttr -s 12 ".kix[2:11]"  1.5468893051147461 0.44572770595550537 
-		1.8196958303451538 1.0494072437286377 0.5 0.20833349227905273 0.20833349227905273 
-		0.16666650772094727 0.20833349227905273 0.25;
-	setAttr -s 12 ".kiy[2:11]"  1.5026443004608154 -42.86383056640625 2.1460788047988899e-005 
-		-77.154899597167969 0 0 0 0 0 0;
-	setAttr -s 12 ".kox[2:11]"  0.92189145088195801 0.5 3.5155935287475586 
-		1.0494071245193481 0.20833349227905273 0.20833349227905273 0.16666650772094727 0.20833349227905273 
-		0.25 0.25;
-	setAttr -s 12 ".koy[2:11]"  0.89551210403442383 0 -102.87319946289062 
-		-77.154914855957031 0 0 0 0 0 0;
+	setAttr -s 4 ".ktv[0:3]"  40 -367.09402098469349 51 -375.21805725412702
+		 77 -375.21805725412702 166 -444.48630410363654;
+	setAttr -s 4 ".kit[3]"  1;
+	setAttr -s 4 ".kot[2:3]"  1 18;
+	setAttr -s 4 ".ktl[2:3]" no yes;
+	setAttr -s 4 ".kix[3]"  0.52244007587432861;
+	setAttr -s 4 ".kiy[3]"  18.469982147216797;
+	setAttr -s 4 ".kox[2:3]"  6.7101955413818359 3.7083332538604736;
+	setAttr -s 4 ".koy[2:3]"  -28.191425323486328 0;
 createNode animCurveTU -n "Piano_Transform_CTRL_visibility";
 	rename -uid "974DFC2A-4A23-121C-DF1B-6EB6002A7AB9";
 	setAttr ".tan" 9;
-	setAttr -s 12 ".ktv[0:11]"  40 1 51 1 74 1 87 1 99 1 127 1 139 1 144 1
-		 149 1 153 1 158 1 164 1;
-	setAttr -s 12 ".kot[0:11]"  5 5 5 5 5 5 5 5 
-		5 5 5 5;
+	setAttr -s 4 ".ktv[0:3]"  40 1 51 1 77 1 166 1;
+	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
 createNode animCurveTA -n "Piano_Transform_CTRL_rotateX";
 	rename -uid "3F22C628-4E11-DD62-0CA4-E0B8268DBC6B";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  40 0 51 0 74 0 87 0 99 0 127 0 139 0 144 0
-		 149 0 153 0 158 -2.8374240681876155 164 0;
+	setAttr -s 4 ".ktv[0:3]"  40 0 51 0 77 0 166 0;
 createNode animCurveTA -n "Piano_Transform_CTRL_rotateY";
 	rename -uid "05050A13-487C-CCE8-F56D-B9965B331E8B";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  40 0 51 0 74 0 87 0 99 0 127 0 139 0 144 0
-		 149 0 153 0 158 0 164 0;
+	setAttr -s 4 ".ktv[0:3]"  40 0 51 0 77 0 166 0;
 createNode animCurveTA -n "Piano_Transform_CTRL_rotateZ";
 	rename -uid "1CB287BE-462B-C7AA-3BE4-D187FA1AC060";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  40 0 51 0 74 0 87 0 99 0 127 0 139 0 144 0
-		 149 0 153 0 158 0 164 0;
+	setAttr -s 4 ".ktv[0:3]"  40 0 51 0 77 0 166 0;
 createNode animCurveTU -n "Piano_Transform_CTRL_scaleX";
 	rename -uid "812EAC73-4DDA-F21A-44DB-5281B4B03760";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  40 1 51 1 74 1 87 1 99 1 127 1 139 1 144 1
-		 149 1 153 1 158 1 164 1;
+	setAttr -s 4 ".ktv[0:3]"  40 1 51 1 77 1 166 1;
 createNode animCurveTU -n "Piano_Transform_CTRL_scaleY";
 	rename -uid "C2567118-4328-CD25-879D-0B9B247A269F";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  40 1 51 1 74 1 87 1 99 1 127 1 139 1 144 1
-		 149 1 153 1 158 1 164 1;
+	setAttr -s 4 ".ktv[0:3]"  40 1 51 1 77 1 166 1;
 createNode animCurveTU -n "Piano_Transform_CTRL_scaleZ";
 	rename -uid "E245E0E7-4117-05EF-6FE7-8ABE4DD2D347";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  40 1 51 1 74 1 87 1 99 1 127 1 139 1 144 1
-		 149 1 153 1 158 1 164 1;
+	setAttr -s 4 ".ktv[0:3]"  40 1 51 1 77 1 166 1;
 createNode animCurveTU -n "Transform_ctrl_visibility1";
 	rename -uid "E97746A2-4CE4-D96D-A737-29A062C47EA0";
 	setAttr ".tan" 9;
-	setAttr -s 13 ".ktv[0:12]"  40 1 51 1 74 1 87 1 99 1 127 1 139 1 144 1
-		 149 1 153 1 154 1 159 1 161 1;
-	setAttr -s 13 ".kot[0:12]"  5 5 5 5 5 5 5 5 
-		5 5 5 5 5;
+	setAttr -s 12 ".ktv[0:11]"  40 1 51 1 77 1 156 1 161 1 163 1 166 1 169 1
+		 172 1 175 1 178 1 181 1;
+	setAttr -s 12 ".kot[0:11]"  5 5 5 5 5 5 5 5 
+		5 5 5 5;
 createNode animCurveTA -n "Transform_ctrl_rotateX1";
 	rename -uid "A1098126-48F9-844F-C971-7B9352FED5AE";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  40 0 51 0 74 0 87 0 99 0 127 0 139 0 144 0
-		 149 0 153 0 154 -0.29508960926794808 159 -2.6272460109001972 161 -1.7024536832371144;
+	setAttr -s 12 ".ktv[0:11]"  40 0 51 0 77 0 156 0 161 -15.060249035879169
+		 163 3.2877814372245489 166 10.19150668563716 169 -2.0371985902605205 172 -8.1980617552251545
+		 175 3.7906257166939645 178 9.4074707054547684 181 0;
 createNode animCurveTA -n "Transform_ctrl_rotateY1";
 	rename -uid "89251F33-4711-7365-9362-33936D8843D9";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  40 0 51 0 74 0 87 0 99 0 127 0 139 0 144 0
-		 149 0 153 0 154 0 159 0 161 0;
+	setAttr -s 12 ".ktv[0:11]"  40 0 51 0 77 0 156 0 161 0 163 -2.2766718906996228
+		 166 0 169 2.8698907190232807 172 4.9739566574173857 175 6.8837244902626766 178 3.4418622451313379
+		 181 0;
 createNode animCurveTA -n "Transform_ctrl_rotateZ1";
 	rename -uid "9EA45B9D-48C6-8723-4327-77A829003E1E";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  40 0 51 0 74 0 87 0 99 0 127 0 139 0 144 0
-		 149 0 153 0 154 0 159 0 161 0;
+	setAttr -s 12 ".ktv[0:11]"  40 0 51 0 77 0 156 0 161 0 163 14.191273735195313
+		 166 0 169 -16.191784412269186 172 -2.4299539108244108 175 12.195494245659045 178 6.0977471228295244
+		 181 0;
 createNode animCurveTU -n "Transform_ctrl_scaleX";
 	rename -uid "FB932BD9-44FD-B937-CB57-738D0B81DDA6";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  40 1 51 1 74 1 87 1 99 1 127 1 139 1 144 1
-		 149 1 153 1 154 1 159 1 161 1;
+	setAttr -s 12 ".ktv[0:11]"  40 1 51 1 77 1 156 1 161 1 163 1 166 1 169 1
+		 172 1 175 1 178 1 181 1;
 createNode animCurveTU -n "Transform_ctrl_scaleY";
 	rename -uid "1094CB5A-491D-4EFE-2667-3A864751BEDB";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  40 1 51 1 74 1 87 1 99 1 127 1 139 1 144 1
-		 149 1 153 1 154 1 159 1 161 1;
+	setAttr -s 12 ".ktv[0:11]"  40 1 51 1 77 1 156 1 161 1 163 1 166 1 169 1
+		 172 1 175 1 178 1 181 1;
 createNode animCurveTU -n "Transform_ctrl_scaleZ";
 	rename -uid "009097BF-4C11-4A27-41F0-90BF2C435FA1";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  40 1 51 1 74 1 87 1 99 1 127 1 139 1 144 1
-		 149 1 153 1 154 1 159 1 161 1;
+	setAttr -s 12 ".ktv[0:11]"  40 1 51 1 77 1 156 1 161 1 163 1 166 1 169 1
+		 172 1 175 1 178 1 181 1;
 createNode animCurveTA -n "Ik_leg_04_l_ctrl_rotateX";
 	rename -uid "70757EAE-4680-B66F-E04F-77AB869C02F8";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  1 0 23 0 54 0 87 0 90 0 93 0 127 0 132 0
-		 137 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 23 0 54 0 97 0 101 36.222483262243991
+		 105 41.709642287274733 129 41.709642287274733 136 41.709642287274733 144 41.709642287274733
+		 156 41.709642287274733 163 20.854846714825499 170 0;
 createNode animCurveTA -n "Ik_leg_04_l_ctrl_rotateY";
 	rename -uid "AD21DB23-4E29-486C-9B07-BFB9C9E6490A";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  1 0 23 177.79018424111669 54 177.79018424111669
-		 87 177.79018424111669 90 177.79018424111669 93 177.79018424111669 127 177.79018424111669
-		 132 177.79018424111669 137 177.79018424111669;
+	setAttr -s 12 ".ktv[0:11]"  1 0 23 177.79018424111669 54 177.79018424111669
+		 97 177.79018424111669 101 177.79018424111669 105 177.79018424111669 129 177.79018424111669
+		 136 177.79018424111669 144 177.79018424111669 156 177.79018424111669 163 177.79018424111669
+		 170 177.79018424111669;
 createNode animCurveTA -n "Ik_leg_04_l_ctrl_rotateZ";
 	rename -uid "901E75D3-4DC9-A762-CCF7-338F6D423D9C";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  1 0 23 0 54 0 87 0 90 0 93 0 127 0 132 0
-		 137 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 23 0 54 0 97 0 101 0 105 0 129 0 136 0
+		 144 0 156 0 163 0 170 0;
 createNode animCurveTA -n "Ik_leg_04_r_t_ctrl_rotateX";
 	rename -uid "E866435E-43D0-E732-D517-33B7C5883179";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  1 0 23 0 54 0 79 0 83 0 87 0 119 0 123 0
-		 127 0 141 0 147 0 151 0;
+	setAttr -s 14 ".ktv[0:13]"  1 0 23 0 54 0 61 0 68 12.772204576549383
+		 71 6.3861022882746914 74 0 82 28.573807828597793 105 28.573807828597793 118 28.573807828597793
+		 128 28.573807828597793 143 28.573807828597793 150 28.573807828597793 157 0;
 createNode animCurveTA -n "Ik_leg_04_r_t_ctrl_rotateY";
 	rename -uid "4945573D-4EC5-3DD5-3FC1-62A685F2701A";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  1 0 23 177.79018424111669 54 177.79018424111669
-		 79 177.79018424111669 83 177.79018424111669 87 177.79018424111669 119 177.79018424111669
-		 123 177.79018424111669 127 177.79018424111669 141 177.79018424111669 147 177.79018424111669
-		 151 177.79018424111669;
+	setAttr -s 14 ".ktv[0:13]"  1 0 23 177.79018424111669 54 177.79018424111669
+		 61 177.79018424111669 68 177.79018424111669 71 177.79018424111669 74 177.79018424111669
+		 82 177.79018424111669 105 177.79018424111669 118 177.79018424111669 128 177.79018424111669
+		 143 177.79018424111669 150 177.79018424111669 157 177.79018424111669;
 createNode animCurveTA -n "Ik_leg_04_r_t_ctrl_rotateZ";
 	rename -uid "A10BBFB5-4770-88B9-AD33-F4A955D29167";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  1 0 23 0 54 0 79 0 83 0 87 0 119 0 123 0
-		 127 0 141 0 147 0 151 0;
+	setAttr -s 14 ".ktv[0:13]"  1 0 23 0 54 0 61 0 68 0 71 0 74 0 82 0 105 0
+		 118 0 128 0 143 0 150 0 157 0;
 createNode animCurveTL -n "Ik_leg_04_r_t_ctrl_translateX";
 	rename -uid "59B86E8A-413E-CEBE-86A2-798FB8E1C6A4";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  1 0 23 48.278081269490158 54 48.278081269490158
-		 79 48.278081269490158 83 48.382805449405595 87 48.876697728132285 119 48.876697728132285
-		 123 48.876697728131283 127 51.146697208037487 141 51.146697208037487 147 52.45884277355389
-		 151 53.49960942308693;
+	setAttr -s 14 ".ktv[0:13]"  1 0 23 48.278081269490158 54 48.278081269490158
+		 61 48.278081269490158 68 48.83177139627697 71 49.013294574826901 74 49.034879982504677
+		 82 53.74696276073297 105 53.74696276073297 118 53.307487227067483 128 53.746962760732735
+		 143 53.746962760732735 150 53.746962760732572 157 53.746962760732501;
 createNode animCurveTL -n "Ik_leg_04_r_t_ctrl_translateY";
 	rename -uid "6C413516-4752-D774-0AD3-36B702383BB2";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  1 0 23 1.2285581127758458 54 1.2285581127758458
-		 79 1.2285581127758458 83 9.9600184302855848 87 0.79198510861157112 119 0.79198510861157112
-		 123 14.791469416350553 127 0.72678711968757181 141 0.72678711968757181 147 11.446013966618052
-		 151 0.3145091640168351;
+	setAttr -s 14 ".ktv[0:13]"  1 0 23 1.2285581127758458 54 1.2285581127758458
+		 61 1.2285581127758458 68 8.9957981325100338 71 4.7949957009187063 74 0.98978475739799243
+		 82 4.5422776666100759 105 4.5422776666100759 118 8.9010217005620795 128 4.5422776666100777
+		 143 4.5422776666100777 150 8.5879802070784095 157 1.0739682673105924;
+	setAttr -s 14 ".kit[3:13]"  1 18 18 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 14 ".kot[3:13]"  1 18 18 1 18 18 18 18 
+		18 18 18;
+	setAttr -s 14 ".kix[3:13]"  0.67730522155761719 0.29166650772094727 
+		0.125 0.52545619010925293 0.33333349227905273 0.95833325386047363 0.54166650772094727 
+		0.41666698455810547 0.625 0.29166650772094727 0.29166650772094727;
+	setAttr -s 14 ".kiy[3:13]"  0 0 -4.0030064582824707 -4.1559467315673828 
+		0 0 0 0 0 0 0;
+	setAttr -s 14 ".kox[3:13]"  0.67730498313903809 0.125 0.125 0.60866940021514893 
+		0.95833325386047363 0.54166650772094727 0.41666698455810547 0.625 0.29166650772094727 
+		0.29166650772094727 0.29166650772094727;
+	setAttr -s 14 ".koy[3:13]"  0 0 -4.0030064582824707 -4.8140983581542969 
+		0 0 0 0 0 0 0;
 createNode animCurveTL -n "Ik_leg_04_r_t_ctrl_translateZ";
 	rename -uid "837B50F2-49E6-A9E0-0086-4F994B4B4C29";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  1 0 23 -179.68730671294099 54 -179.68730671294099
-		 79 -179.68730671294099 83 -199.12292441509706 87 -213.31022199934452 119 -213.31022199934452
-		 123 -261.12283978652511 127 -257.90751005221477 141 -257.90751005221477 147 -284.31296366945833
-		 151 -289.6197150181988;
+	setAttr -s 14 ".ktv[0:13]"  1 0 23 -179.68730671294099 54 -179.68730671294099
+		 61 -179.68730671294099 68 -178.31950595248423 71 -172.72456798498769 74 -173.51536621302319
+		 82 -178.67657791158501 105 -180.66427043087771 118 -204.88668705835272 128 -218.17589175362431
+		 143 -218.17589175362431 150 -244.06192404075031 157 -255.81356920365687;
+	setAttr -s 14 ".kit[7:13]"  1 1 18 18 1 18 18;
+	setAttr -s 14 ".kot[4:13]"  1 18 18 1 1 18 18 1 
+		18 18;
+	setAttr -s 14 ".kix[7:13]"  0.6225624680519104 1.7433590888977051 0.54166650772094727 
+		0.41666698455810547 1.1208209991455078 0.29166650772094727 0.29166650772094727;
+	setAttr -s 14 ".kiy[7:13]"  -2.0779733657836914 -2.7305433750152588 
+		-21.202211380004883 0 0 -18.818838119506836 0;
+	setAttr -s 14 ".kox[4:13]"  0.62186568975448608 0.125 0.33333349227905273 
+		1.2474009990692139 1.3267163038253784 0.41666698455810547 0.625 0.78748762607574463 
+		0.29166650772094727 0.29166650772094727;
+	setAttr -s 14 ".koy[4:13]"  1.4392304420471191 0 -4.3287348747253418 
+		-4.163543701171875 -2.0779733657836914 -16.309410095214844 0 0 -18.818838119506836 
+		0;
 createNode animCurveTU -n "Ik_leg_04_r_t_ctrl_Follow";
 	rename -uid "46A71C59-497A-AE03-F5FF-8DB9E79AA90E";
 	setAttr ".tan" 9;
-	setAttr -s 12 ".ktv[0:11]"  1 0 23 0 54 0 79 0 83 0 87 0 119 0 123 0
-		 127 0 141 0 147 0 151 0;
-	setAttr -s 12 ".kot[0:11]"  5 5 5 5 5 5 5 5 
-		5 5 5 5;
+	setAttr -s 14 ".ktv[0:13]"  1 0 23 0 54 0 61 0 68 0 71 0 74 0 82 0 105 0
+		 118 0 128 0 143 0 150 0 157 0;
+	setAttr -s 14 ".kot[0:13]"  5 5 5 5 5 5 5 5 
+		5 5 5 5 5 5;
 createNode animCurveTL -n "Ik_leg_04_l_ctrl_translateX";
 	rename -uid "8B946A2E-4C0E-225B-5609-EFA29E312308";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  1 0 23 -44.077203272556055 54 -44.077203272556055
-		 87 -44.077203272556055 90 -43.196653269025568 93 -42.456900187627134 127 -45.19136637437682
-		 132 -50.416243184605747 137 -52.034597795081808;
+	setAttr -s 12 ".ktv[0:11]"  1 0 23 -44.077203272556055 54 -44.077203272556055
+		 97 -44.077203272556055 101 -44.077203272556048 105 -41.428531858476774 129 -41.428531858476774
+		 136 -43.467392493827759 144 -41.428531858476994 156 -41.428531858476994 163 -41.42853185847715
+		 170 -41.428531858477307;
 createNode animCurveTL -n "Ik_leg_04_l_ctrl_translateY";
 	rename -uid "F947FDDB-4598-7FFE-F5B3-3B8157862F2B";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  1 0 23 0.71660473568464211 54 0.71660473568464211
-		 87 0.71660473568464211 90 7.3532028066699811 93 0.67236518889073082 127 0.67236518889072805
-		 132 9.9422824130867742 137 0.79554822567302363;
+	setAttr -s 12 ".ktv[0:11]"  1 0 23 0.71660473568464211 54 0.71660473568464211
+		 97 0.71660473568464211 101 3.5254058041715028 105 4.1342165224252767 129 4.1342165224252767
+		 136 6.6164566341335718 144 4.1342165224252598 156 4.1342165224252598 163 10.220564281511166
+		 170 1.0536209041014759;
 createNode animCurveTL -n "Ik_leg_04_l_ctrl_translateZ";
 	rename -uid "4A7864A5-4632-42F1-1AF1-A0B5F534646F";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  1 0 23 -177.10692169422521 54 -177.10692169422521
-		 87 -177.10692169422521 90 -225.95608393638841 93 -233.41145933365979 127 -233.41145933365979
-		 132 -286.45854703859362 137 -295.90351323813479;
+	setAttr -s 12 ".ktv[0:11]"  1 0 23 -177.10692169422521 54 -177.10692169422521
+		 97 -177.10692169422521 101 -177.10692169422521 105 -199.96743938380052 129 -199.96743938380052
+		 136 -221.33100053906188 144 -231.26804353783766 156 -231.26804353783766 163 -258.93456539424096
+		 170 -268.16035020165987;
+	setAttr -s 12 ".kit[4:11]"  1 18 1 18 18 1 18 18;
+	setAttr -s 12 ".kot[4:11]"  1 18 1 18 18 1 18 18;
+	setAttr -s 12 ".kix[4:11]"  0.37555459141731262 0.16666650772094727 
+		1.3431723117828369 0.29166650772094727 0.33333349227905273 0.75364923477172852 0.29166650772094727 
+		0.29166698455810547;
+	setAttr -s 12 ".kiy[4:11]"  0 0 0 -14.606940269470215 0 0 -18.446138381958008 
+		0;
+	setAttr -s 12 ".kox[4:11]"  0.37555411458015442 1 0.63483893871307373 
+		0.33333349227905273 0.5 0.54531574249267578 0.29166698455810547 0.29166698455810547;
+	setAttr -s 12 ".koy[4:11]"  0 0 0 -16.693662643432617 0 0 -18.446168899536133 
+		0;
 createNode animCurveTU -n "Ik_leg_04_l_ctrl_Follow";
 	rename -uid "A7904ABE-45A6-71DD-5633-65ACB66165EE";
 	setAttr ".tan" 9;
-	setAttr -s 9 ".ktv[0:8]"  1 0 23 0 54 0 87 0 90 0 93 0 127 0 132 0
-		 137 0;
-	setAttr -s 9 ".kot[0:8]"  5 5 5 5 5 5 5 5 
-		5;
+	setAttr -s 12 ".ktv[0:11]"  1 0 23 0 54 0 97 0 101 0 105 0 129 0 136 0
+		 144 0 156 0 163 0 170 0;
+	setAttr -s 12 ".kot[0:11]"  5 5 5 5 5 5 5 5 
+		5 5 5 5;
 createNode animCurveTL -n "Ik_leg_03_l_ctrl_translateX";
 	rename -uid "111A90B2-40D5-2370-F8C8-04A730E268EC";
 	setAttr ".tan" 18;
@@ -3850,19 +4075,22 @@ createNode animCurveTA -n "hand_l_ctrl_rotateZ";
 createNode animCurveTA -n "hand_r_ctrl_rotateX";
 	rename -uid "FE2DB308-4BF1-CABA-AB6E-F39B86455BC3";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  50 -12.918005116199732;
+	setAttr -s 3 ".ktv[0:2]"  50 -12.918005116199732 166 -12.918005116199732
+		 180 0;
 createNode animCurveTA -n "hand_r_ctrl_rotateY";
 	rename -uid "AF070FB2-48D1-26CF-253E-F1B4446F9FF9";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  50 20.816596128271584;
+	setAttr -s 3 ".ktv[0:2]"  50 20.816596128271588 166 20.816596128271588
+		 180 0;
 createNode animCurveTA -n "hand_r_ctrl_rotateZ";
 	rename -uid "4CA0E6B2-4E0C-FFD0-8067-01B8351FDAE3";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  50 -66.803002736526565;
+	setAttr -s 3 ".ktv[0:2]"  50 -66.803002736526565 166 -66.803002736526565
+		 180 0;
 createNode animCurveTU -n "hand_r_ctrl_FingerCtrls";
 	rename -uid "0D52D101-4AE0-AE6F-A1E9-429346FF33E9";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  50 0;
+	setAttr -s 3 ".ktv[0:2]"  50 0 166 0 180 0;
 createNode animCurveTU -n "hand_l_ctrl_FingerCtrls";
 	rename -uid "91DDD990-4854-AC4F-CAC2-1B8A1EB5B338";
 	setAttr ".tan" 18;
@@ -3870,37 +4098,35 @@ createNode animCurveTU -n "hand_l_ctrl_FingerCtrls";
 createNode animCurveTU -n "head_ctrl_PlateMover";
 	rename -uid "37208C32-4AAB-5D60-7E66-D1BD7028D86A";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  30 0 46 0 65 0 73 0 80 0 89 0 99 0 107 0
-		 122 0 137 0 149 0 158 0 172 0;
+	setAttr -s 7 ".ktv[0:6]"  30 0 52 0 77 0 85 0 154 0 169 0 180 0;
 createNode animCurveTU -n "head_ctrl_ThePlateMaker";
 	rename -uid "B463185C-49AA-D901-C3B2-C4BBB55DE8FE";
 	setAttr ".tan" 18;
-	setAttr -s 13 ".ktv[0:12]"  30 0 46 0 65 0 73 0 80 0 89 0 99 0 107 0
-		 122 0 137 0 149 0 158 0 172 0;
+	setAttr -s 7 ".ktv[0:6]"  30 0 52 0 77 0 85 0 154 0 169 0 180 0;
 createNode animCurveTA -n "IK_Trunk_02_ctrl_rotateX";
 	rename -uid "09EF89CD-43AD-4F68-0898-869277510E76";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 -15.956766470254639;
+	setAttr -s 2 ".ktv[0:1]"  41 -15.956766470254639 52 -15.956766470254639;
 createNode animCurveTA -n "IK_Trunk_02_ctrl_rotateY";
 	rename -uid "EF38E04B-4D59-005B-6330-78AA540F2412";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 12.109942672762003;
+	setAttr -s 2 ".ktv[0:1]"  41 12.109942672762003 52 12.109942672762003;
 createNode animCurveTA -n "IK_Trunk_02_ctrl_rotateZ";
 	rename -uid "D44519C9-412F-EB04-B33C-0AA193FF4B54";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 -6.0992679746531903e-016;
+	setAttr -s 2 ".ktv[0:1]"  41 0 52 -6.0992679746531903e-016;
 createNode animCurveTL -n "IK_Trunk_02_ctrl_translateX";
 	rename -uid "CD04B195-4B19-A8E1-8979-FEB86D74B61A";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 0;
+	setAttr -s 2 ".ktv[0:1]"  41 0 52 3.0664812828443946;
 createNode animCurveTL -n "IK_Trunk_02_ctrl_translateY";
 	rename -uid "1B46BEB4-4133-7EA9-0B43-6BA16DEE066F";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 0;
+	setAttr -s 2 ".ktv[0:1]"  41 0 52 -4.6576922895356772;
 createNode animCurveTL -n "IK_Trunk_02_ctrl_translateZ";
 	rename -uid "877DAE8C-447C-FA46-1BD3-219D566A1EF9";
 	setAttr ".tan" 18;
-	setAttr ".ktv[0]"  30 0;
+	setAttr -s 2 ".ktv[0:1]"  41 0 52 1.0018810179998581;
 createNode animCurveTA -n "IK_Trunk_01_ctrl_rotateX";
 	rename -uid "08BB451E-4118-A3D2-D817-0E91DC88BBE8";
 	setAttr ".tan" 18;
@@ -3927,83 +4153,66 @@ createNode pairBlend -n "pairBlend1";
 createNode animCurveTL -n "pairBlend1_inTranslateX1";
 	rename -uid "83B2290A-4638-8B08-A2FD-5684746568C3";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  30 0.83364769301879305 39 11.681567853010305
-		 53 2.8348391200918508 68 1.198021867554667 81 -5.5171367614009759 84 -0.89057644463578345
-		 88 8.8687972429933222 90 0.63846978357337558 93 -22.17410845574684;
+	setAttr -s 3 ".ktv[0:2]"  30 0.83364769301879305 39 11.681567853010305
+		 53 2.8348391200918508;
 createNode animCurveTL -n "pairBlend1_inTranslateY1";
 	rename -uid "9507B137-4D2E-AF77-19A4-50AA6717391A";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  30 -23.431762891277206 39 -22.523767577997674
-		 53 -17.553631488038395 68 -9.8515073755341813 81 24.592282426790398 84 21.976393769300529
-		 88 -16.644295580554861 90 -37.058482367287425 93 -21.732660330932788;
+	setAttr -s 3 ".ktv[0:2]"  30 -23.431762891277206 39 -22.523767577997674
+		 53 -17.553631488038395;
 createNode animCurveTL -n "pairBlend1_inTranslateZ1";
 	rename -uid "9326D9A1-405F-6653-BE2D-2A9B9866F6C7";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  30 4.9414399787633467 39 18.840810546052282
-		 53 -6.1897793195940753 68 1.5720640361260847 81 20.718183399066973 84 34.373389283377421
-		 88 12.090751260886108 90 -5.0078100171541573 93 -6.2787505445465248;
+	setAttr -s 3 ".ktv[0:2]"  30 4.9414399787633467 39 18.840810546052282
+		 53 -6.1897793195940753;
 createNode animCurveTA -n "IK_Trunk_06_ctrl_rotateX";
 	rename -uid "A2631306-40FD-D31C-4B75-3DA8AFCECEBD";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  30 0 39 0 53 0 68 0 81 0 84 0 88 0 90 0
-		 93 0;
+	setAttr -s 3 ".ktv[0:2]"  30 0 39 0 53 0;
 createNode animCurveTA -n "IK_Trunk_06_ctrl_rotateY";
 	rename -uid "44FC88EE-43E8-546D-41C3-5BBD17E4E259";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  30 0 39 0 53 0 68 0 81 0 84 0 88 0 90 0
-		 93 0;
+	setAttr -s 3 ".ktv[0:2]"  30 0 39 0 53 0;
 createNode animCurveTA -n "IK_Trunk_06_ctrl_rotateZ";
 	rename -uid "1763E51E-4F2C-D812-464F-DFB3E2887E66";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  30 0 39 0 53 0 68 0 81 0 84 0 88 0 90 0
-		 93 0;
+	setAttr -s 3 ".ktv[0:2]"  30 0 39 0 53 0;
 createNode animCurveTU -n "IK_Trunk_06_ctrl_blendParent1";
 	rename -uid "88CA5B03-4732-E559-3555-669558866BD0";
 	setAttr ".tan" 18;
-	setAttr -s 9 ".ktv[0:8]"  30 0 39 0 53 0 68 0 81 0 84 0 88 0 90 0
-		 93 0;
+	setAttr -s 3 ".ktv[0:2]"  30 0 39 0 53 0;
 createNode animCurveTA -n "ear_l_01_jnt_ctrl_rotateX";
 	rename -uid "0C0613DF-4B77-DB8D-F14F-9D96C604D676";
 	setAttr ".tan" 18;
-	setAttr -s 14 ".ktv[0:13]"  30 0 47 0 53 11.557688992088737 60 -0.47082250191697145
-		 85 -1.3400644668348387 96 -1.2891219936158991 109 -1.3020297985998803 116 3.7721909409234824
-		 129 5.8509565457166355 141 5.8789612787083803 145 5.9100581305370152 149 6.2730030589929617
-		 157 6.4121110281209335 167 6.2603250998907578;
+	setAttr -s 7 ".ktv[0:6]"  30 0 47 0 53 11.557688992088737 83 -8.2434063536295525
+		 113 -2.3578581589619181 163 -10.751900750522857 168 -9.2972541419932195;
 createNode animCurveTA -n "ear_l_01_jnt_ctrl_rotateY";
 	rename -uid "F0CDF049-4B03-9DFC-080D-CB871CF1F1B8";
 	setAttr ".tan" 18;
-	setAttr -s 14 ".ktv[0:13]"  30 0 47 0 53 8.4536812654751596 60 5.7604539093508178
-		 85 16.155868132454255 96 3.1821694902970679 109 -8.6743702970603174 116 4.772272580951773
-		 129 8.3646145062113568 141 -2.6120415454438728 145 6.4228905925159028 149 -3.6362576704528173
-		 157 12.466219430809135 167 -0.03876878507304371;
+	setAttr -s 7 ".ktv[0:6]"  30 0 47 0 53 8.4536812654751596 83 8.453681265475149
+		 113 45.092030266078197 163 44.819736534256691 168 25.594654290900923;
 createNode animCurveTA -n "ear_l_01_jnt_ctrl_rotateZ";
 	rename -uid "D52A430B-493A-3B11-B806-4FBC7F67CAB4";
 	setAttr ".tan" 18;
-	setAttr -s 14 ".ktv[0:13]"  30 -5.4597176154901783 47 -5.4597176154901783
-		 53 -1.8606442069228688 60 -10.140271187804766 85 -13.019017234698961 96 -12.717651951058414
-		 109 -12.44967634498947 116 -11.867651564446536 129 -4.3163462162906159 141 -4.863736923398486
-		 145 -3.9314137125446247 149 -10.624743051225384 157 -8.8356265657611335 167 -10.22955829615718;
+	setAttr -s 7 ".ktv[0:6]"  30 -5.4597176154901783 47 -5.4597176154901783
+		 53 -1.8606442069228688 83 -17.857031916079439 113 -11.133029874170413 163 -24.343801404515663
+		 168 -22.367150642781382;
 createNode animCurveTA -n "ear_r_01_jnt_ctrl_rotateX";
 	rename -uid "377DA87E-45FA-AD18-B0D9-799A1588A58E";
 	setAttr ".tan" 18;
-	setAttr -s 14 ".ktv[0:13]"  30 0 47 0 53 11.557688992088737 60 -0.47082250191697145
-		 85 -1.3400644668348387 96 -1.2891219936158991 109 -1.3020297985998803 116 3.7721909409234824
-		 129 5.8509565457166355 141 5.8789612787083803 145 5.9100581305370152 149 6.2730030589929617
-		 157 6.4121110281209335 167 6.2603250998907578;
+	setAttr -s 7 ".ktv[0:6]"  30 0 47 0 53 11.557688992088737 83 -8.2434063536295525
+		 113 -2.3578581589619181 163 -10.751900750522857 168 -9.2972541419932195;
 createNode animCurveTA -n "ear_r_01_jnt_ctrl_rotateY";
 	rename -uid "FE3A793F-46DF-0917-2EB8-F2BE2F2F77A9";
 	setAttr ".tan" 18;
-	setAttr -s 14 ".ktv[0:13]"  30 0 47 0 53 8.4536812654751596 60 5.7604539093508178
-		 85 16.155868132454255 96 3.1821694902970679 109 -8.6743702970603174 116 4.772272580951773
-		 129 8.3646145062113568 141 -2.6120415454438728 145 6.4228905925159028 149 -3.6362576704528173
-		 157 12.466219430809135 167 -0.03876878507304371;
+	setAttr -s 7 ".ktv[0:6]"  30 0 47 0 53 8.4536812654751596 83 8.453681265475149
+		 113 45.092030266078197 163 44.819736534256691 168 25.594654290900923;
 createNode animCurveTA -n "ear_r_01_jnt_ctrl_rotateZ";
 	rename -uid "3D5DC5EA-43A6-3E44-6AB2-DF8DA604D996";
 	setAttr ".tan" 18;
-	setAttr -s 14 ".ktv[0:13]"  30 -5.4597176154901783 47 -5.4597176154901783
-		 53 -1.8606442069228688 60 -10.140271187804766 85 -13.019017234698961 96 -12.717651951058414
-		 109 -12.44967634498947 116 -11.867651564446536 129 -4.3163462162906159 141 -4.863736923398486
-		 145 -3.9314137125446247 149 -10.624743051225384 157 -8.8356265657611335 167 -10.22955829615718;
+	setAttr -s 7 ".ktv[0:6]"  30 -5.4597176154901783 47 -5.4597176154901783
+		 53 -1.8606442069228688 83 -17.857031916079439 113 -11.133029874170413 163 -24.343801404515663
+		 168 -22.367150642781382;
 createNode animCurveTL -n "broIN_r_ctrl_translateX";
 	rename -uid "FD2D2F35-46F3-0758-DE3F-79982BB32F57";
 	setAttr ".tan" 18;
@@ -4055,19 +4264,23 @@ createNode animCurveTA -n "broIN_l_ctrl_rotateZ";
 createNode animCurveTL -n "middleBro_ctrl_translateX";
 	rename -uid "F40D48EC-4FD5-51CD-37A5-5082F601AA22";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  43 -0.14567600345039236 51 -0.7764281983465583;
+	setAttr -s 6 ".ktv[0:5]"  43 -0.14567600345039236 51 -0.81724266480272567
+		 60 -0.81724266480272567 86 -0.52720538237193526 158 -0.52720538237193526 167 -1.0074521334267821;
 createNode animCurveTL -n "middleBro_ctrl_translateY";
 	rename -uid "CF40243F-465B-D1D0-BA76-BD96F6A292A4";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  43 0.39827394038206504 51 2.0885333144651348;
+	setAttr -s 6 ".ktv[0:5]"  43 0.39827394038206504 51 0.14789748824052221
+		 60 0.14789748824052221 86 -2.7459266865185508 158 -2.7459266865185508 167 2.0456975019454138;
 createNode animCurveTL -n "middleBro_ctrl_translateZ";
 	rename -uid "1397FED5-437C-0D7D-F6F2-CEAEE7ECECD6";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  43 0.014270515689521814 51 0.074530670884665667;
+	setAttr -s 6 ".ktv[0:5]"  43 0.014270515689521814 51 0.4600828663059644
+		 60 0.4600828663059644 86 0.46008286630592177 158 0.46008286630592177 167 0.46008286630589335;
 createNode animCurveTA -n "middleBro_ctrl_rotateZ";
 	rename -uid "24E6146E-477C-9832-0FD2-86BE56B99660";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  43 0 51 0;
+	setAttr -s 6 ".ktv[0:5]"  43 0 51 5.7234303618199327 60 5.7234303618199327
+		 86 5.7234303618199327 158 5.7234303618199327 167 5.7234303618199327;
 createNode animCurveTL -n "main_eye_ctrl_translateX";
 	rename -uid "FCBCB9CA-4EEA-0BE2-0083-81A1221839B0";
 	setAttr ".tan" 18;
@@ -4128,10 +4341,225 @@ createNode animCurveTA -n "Tusk_l_cluster_ctrl_rotateZ";
 	rename -uid "1E02119D-4552-96A8-71DA-27A3713FA377";
 	setAttr ".tan" 18;
 	setAttr -s 2 ".ktv[0:1]"  48 0 53 0;
+createNode animCurveTL -n "IK_Trunk_03_ctrl_translateX";
+	rename -uid "8F340717-4469-CC7A-1BCC-9D85DB8A2E98";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 2.7880595516906399;
+createNode animCurveTL -n "IK_Trunk_03_ctrl_translateY";
+	rename -uid "4C4D48D6-4F28-9DEA-8D9A-F28F776E2B77";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 -4.9243826121998326;
+createNode animCurveTL -n "IK_Trunk_03_ctrl_translateZ";
+	rename -uid "2233D2E6-4973-256F-3D50-178DD133BE39";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0.27991127371735219;
+createNode animCurveTL -n "IK_Trunk_04_ctrl_translateX";
+	rename -uid "BA3A8A23-4D0D-901F-C579-5FB05433B284";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 2.7880595516906403;
+createNode animCurveTL -n "IK_Trunk_04_ctrl_translateY";
+	rename -uid "7329EB28-4A2D-AED2-1573-27B98A146AD0";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 -4.9243826121998326;
+createNode animCurveTL -n "IK_Trunk_04_ctrl_translateZ";
+	rename -uid "0204C2A0-4050-7138-ECCC-A0A9EF63C7C4";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0.27991127371735203;
+createNode animCurveTL -n "IK_Trunk_05_ctrl_translateX";
+	rename -uid "3696D381-4317-8764-F190-6996635D611E";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 2.7880595516906395;
+createNode animCurveTL -n "IK_Trunk_05_ctrl_translateY";
+	rename -uid "42665990-4A72-459A-087D-22BA50712651";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 -4.9243826121998335;
+createNode animCurveTL -n "IK_Trunk_05_ctrl_translateZ";
+	rename -uid "6DA81ADC-487C-3DB2-5BA6-5997F8E1B4E8";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0.27991127371735269;
+createNode animCurveTA -n "IK_Trunk_05_ctrl_rotateX";
+	rename -uid "849B3499-48A7-5A53-5BEA-AD91232FA74D";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0;
+createNode animCurveTA -n "IK_Trunk_05_ctrl_rotateY";
+	rename -uid "1FEF081E-462A-EE37-9F31-3DB765E3FF15";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0;
+createNode animCurveTA -n "IK_Trunk_05_ctrl_rotateZ";
+	rename -uid "C320BFF6-4DF0-8BF2-DA35-A282A2855EBF";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0;
+createNode animCurveTA -n "IK_Trunk_04_ctrl_rotateX";
+	rename -uid "0F85F27D-472D-39D6-68E3-D696EACEB8AC";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0;
+createNode animCurveTA -n "IK_Trunk_04_ctrl_rotateY";
+	rename -uid "BE781C9C-4DF2-6B14-BA70-238A5D8EB964";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0;
+createNode animCurveTA -n "IK_Trunk_04_ctrl_rotateZ";
+	rename -uid "76A1A8F9-4944-F384-D235-80AB04EE5B80";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0;
+createNode animCurveTA -n "IK_Trunk_03_ctrl_rotateX";
+	rename -uid "594A9549-4571-F30D-AF32-F19502C4BD5C";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0;
+createNode animCurveTA -n "IK_Trunk_03_ctrl_rotateY";
+	rename -uid "6CB3E14A-46EB-C511-282E-5FBA605A219F";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0;
+createNode animCurveTA -n "IK_Trunk_03_ctrl_rotateZ";
+	rename -uid "B2915646-4FB4-D3A7-6BAF-628B9AB42E30";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  52 0;
+createNode animCurveTA -n "Fk_foot_r_02_jnt_ctrl_rotateX";
+	rename -uid "60450495-437C-9DDD-2BB7-5E9BC7C5999E";
+	setAttr ".tan" 18;
+	setAttr -s 3 ".ktv[0:2]"  76 0 82 -1.1294146946426853e-016 156 0;
+createNode animCurveTA -n "Fk_foot_r_02_jnt_ctrl_rotateY";
+	rename -uid "D906A17E-46B8-DA6F-A708-B08CBCD6586D";
+	setAttr ".tan" 18;
+	setAttr -s 3 ".ktv[0:2]"  76 0 82 -28.353534203452821 156 0;
+createNode animCurveTA -n "Fk_foot_r_02_jnt_ctrl_rotateZ";
+	rename -uid "D40850EE-4387-C4A9-BB6E-07987F8297E0";
+	setAttr ".tan" 18;
+	setAttr -s 3 ".ktv[0:2]"  76 0 82 -2.5192284917707255 156 0;
+createNode animCurveTL -n "Piano_Chair_COG_CTRL_translateX";
+	rename -uid "AF72F4B7-46ED-841C-2DC7-B4965476C1A2";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  66 0 84 37.895398518116252;
+createNode animCurveTL -n "Piano_Chair_COG_CTRL_translateY";
+	rename -uid "0F5C40EC-4AA0-E5F3-991B-6183A8E5D916";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  66 0 84 0.11067880446846597;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.5680055618286133;
+	setAttr -s 2 ".kiy[1]"  -0.047923360019922256;
+	setAttr -s 2 ".kox[1]"  1.5680055618286133;
+	setAttr -s 2 ".koy[1]"  -0.047923322767019272;
+createNode animCurveTL -n "Piano_Chair_COG_CTRL_translateZ";
+	rename -uid "8025EACD-4AB0-2518-F5E1-778358473A46";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  66 0 84 -0.28150430012611188;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.5680055618286133;
+	setAttr -s 2 ".kiy[1]"  -0.047923360019922256;
+	setAttr -s 2 ".kox[1]"  1.5680055618286133;
+	setAttr -s 2 ".koy[1]"  -0.047923322767019272;
+createNode animCurveTA -n "Piano_Chair_COG_CTRL_rotateX";
+	rename -uid "D58D404A-4188-61C6-C1D3-E4922529D169";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  66 0 84 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.5680058002471924;
+	setAttr -s 2 ".kiy[1]"  -0.00083642016397789121;
+	setAttr -s 2 ".kox[1]"  1.5680055618286133;
+	setAttr -s 2 ".koy[1]"  -0.00083641993114724755;
+createNode animCurveTA -n "Piano_Chair_COG_CTRL_rotateY";
+	rename -uid "1FA71E19-41E3-DADD-C34E-748D0636C45A";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  66 0 84 -25.804496263632419;
+createNode animCurveTA -n "Piano_Chair_COG_CTRL_rotateZ";
+	rename -uid "859F33F5-4C12-B803-C0E8-C997652E5910";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  66 0 84 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.5680058002471924;
+	setAttr -s 2 ".kiy[1]"  -0.00083642016397789121;
+	setAttr -s 2 ".kox[1]"  1.5680055618286133;
+	setAttr -s 2 ".koy[1]"  -0.00083641993114724755;
+createNode animCurveTU -n "Piano_Chair_COG_CTRL_FollowRotate";
+	rename -uid "1365092A-4F76-CAD0-D3D3-9AA637DEA7CE";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  66 1 84 1;
+createNode animCurveTA -n "Fk_foot_l_02_jnt_ctrl_rotateX";
+	rename -uid "0F962311-48B4-C176-6306-C5BAB9E22134";
+	setAttr ".tan" 18;
+	setAttr -s 4 ".ktv[0:3]"  98 0 101 0 156 -3.3645287053336139e-017
+		 170 0;
+createNode animCurveTA -n "Fk_foot_l_02_jnt_ctrl_rotateY";
+	rename -uid "F3D1505C-4E5E-EE36-818B-A1B8438671AB";
+	setAttr ".tan" 18;
+	setAttr -s 4 ".ktv[0:3]"  98 0 101 -48.142268998608678 156 -42.393581007562616
+		 170 0;
+createNode animCurveTA -n "Fk_foot_l_02_jnt_ctrl_rotateZ";
+	rename -uid "1DC14C96-4400-C998-EDC8-33950B6B185C";
+	setAttr ".tan" 18;
+	setAttr -s 4 ".ktv[0:3]"  98 0 101 1.9420071561057868 156 0.20740196856269302
+		 170 0;
+createNode animCurveTL -n "eye_l_topMain_ctrl_translateX";
+	rename -uid "59320BEE-4C6B-97F9-579C-B699892C30BC";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 -1.421085471520154e-014;
+createNode animCurveTL -n "eye_l_topMain_ctrl_translateY";
+	rename -uid "09A6B0ED-4902-32C2-E705-9584454EC7F6";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 -0.57840630775433033;
+createNode animCurveTL -n "eye_l_topMain_ctrl_translateZ";
+	rename -uid "A68814AD-4FCE-0150-F658-F99A1ED9629D";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 -2.8421709430403073e-014;
+createNode animCurveTL -n "eye_r_topMain_ctrl_translateX";
+	rename -uid "AC1B6B48-47F9-3C56-A111-EFAF964C03B7";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 -1.421085471520154e-014;
+createNode animCurveTL -n "eye_r_topMain_ctrl_translateY";
+	rename -uid "D39E1FAE-4674-FDF4-CEBA-04A11F0318F9";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 -0.57840630775433033;
+createNode animCurveTL -n "eye_r_topMain_ctrl_translateZ";
+	rename -uid "E1EE6223-4833-17EE-E132-1E81D1587299";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 -2.8421709430403073e-014;
+createNode animCurveTA -n "eye_r_topMain_ctrl_rotateX";
+	rename -uid "768F294A-4D9E-E0FD-BA3C-CDBFA6ED2071";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 0;
+createNode animCurveTA -n "eye_r_topMain_ctrl_rotateY";
+	rename -uid "3000F527-4B99-0B5F-EA5E-CC88E253E8C2";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 0;
+createNode animCurveTA -n "eye_r_topMain_ctrl_rotateZ";
+	rename -uid "A74F21B8-4906-922C-7C97-D3B383BD3CCD";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 0;
+createNode animCurveTU -n "eye_r_topMain_ctrl_Secondary_Ctrl";
+	rename -uid "95AE855A-4757-8DC5-34CF-4885579D7E53";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 0;
+createNode animCurveTU -n "eye_r_topMain_ctrl_SmartBlink";
+	rename -uid "02F98035-4F1A-C7C8-B34D-21BF407391EC";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 0.2;
+createNode animCurveTA -n "eye_l_topMain_ctrl_rotateX";
+	rename -uid "0C809894-4F7C-9EAA-4160-7C9CFB62F237";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 0;
+createNode animCurveTA -n "eye_l_topMain_ctrl_rotateY";
+	rename -uid "3CDBA239-4AF4-FEFA-D535-3F92BC4AA863";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 0;
+createNode animCurveTA -n "eye_l_topMain_ctrl_rotateZ";
+	rename -uid "9184034E-48FE-70DA-8F69-51AF1EC0184C";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 0;
+createNode animCurveTU -n "eye_l_topMain_ctrl_Secondary_Ctrl";
+	rename -uid "07E40998-439E-007F-3C99-7697DA61F7B2";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 0;
+createNode animCurveTU -n "eye_l_topMain_ctrl_SmartBlink";
+	rename -uid "CCD26E0E-49FA-759C-4CD3-9590024D7E14";
+	setAttr ".tan" 18;
+	setAttr ".ktv[0]"  30 0.2;
 select -ne :time1;
 	setAttr ".ihi" 0;
-	setAttr ".o" 54;
-	setAttr ".unw" 54;
+	setAttr ".o" 182;
+	setAttr ".unw" 182;
 select -ne :renderPartition;
 	setAttr -s 302 ".st";
 select -ne :renderGlobalsList1;
@@ -4403,236 +4831,316 @@ connectAttr "IK_Trunk_02_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[
 		;
 connectAttr "IK_Trunk_02_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[143]"
 		;
-connectAttr "IK_Trunk_02_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[144]"
+connectAttr "IK_Trunk_02_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[144]"
 		;
-connectAttr "IK_Trunk_02_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[145]"
+connectAttr "IK_Trunk_02_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[145]"
 		;
 connectAttr "IK_Trunk_02_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[146]"
 		;
-connectAttr "pairBlend1.otx" "SnorkyElephant_CookieMonsterRN.phl[147]";
-connectAttr "pairBlend1.oty" "SnorkyElephant_CookieMonsterRN.phl[148]";
-connectAttr "pairBlend1.otz" "SnorkyElephant_CookieMonsterRN.phl[149]";
-connectAttr "SnorkyElephant_CookieMonsterRN.phl[150]" "IK_Trunk_06_ctrl_parentConstraint1.crp"
+connectAttr "IK_Trunk_03_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[147]"
 		;
-connectAttr "SnorkyElephant_CookieMonsterRN.phl[151]" "IK_Trunk_06_ctrl_parentConstraint1.crt"
+connectAttr "IK_Trunk_03_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[148]"
 		;
-connectAttr "IK_Trunk_06_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[152]"
+connectAttr "IK_Trunk_03_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[149]"
 		;
-connectAttr "IK_Trunk_06_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[153]"
+connectAttr "IK_Trunk_03_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[150]"
 		;
-connectAttr "IK_Trunk_06_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[154]"
+connectAttr "IK_Trunk_03_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[151]"
 		;
-connectAttr "SnorkyElephant_CookieMonsterRN.phl[155]" "IK_Trunk_06_ctrl_parentConstraint1.cro"
+connectAttr "IK_Trunk_03_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[152]"
 		;
-connectAttr "SnorkyElephant_CookieMonsterRN.phl[156]" "IK_Trunk_06_ctrl_parentConstraint1.cpim"
+connectAttr "IK_Trunk_04_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[153]"
 		;
-connectAttr "SnorkyElephant_CookieMonsterRN.phl[157]" "pairBlend1.w";
-connectAttr "IK_Trunk_06_ctrl_blendParent1.o" "SnorkyElephant_CookieMonsterRN.phl[158]"
+connectAttr "IK_Trunk_04_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[154]"
 		;
-connectAttr "main_eye_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[159]"
+connectAttr "IK_Trunk_04_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[155]"
 		;
-connectAttr "main_eye_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[160]"
+connectAttr "IK_Trunk_04_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[156]"
 		;
-connectAttr "main_eye_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[161]"
+connectAttr "IK_Trunk_04_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[157]"
 		;
-connectAttr "middleBro_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[162]"
+connectAttr "IK_Trunk_04_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[158]"
 		;
-connectAttr "middleBro_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[163]"
+connectAttr "IK_Trunk_05_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[159]"
 		;
-connectAttr "middleBro_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[164]"
+connectAttr "IK_Trunk_05_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[160]"
 		;
-connectAttr "middleBro_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[165]"
+connectAttr "IK_Trunk_05_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[161]"
 		;
-connectAttr "broIN_r_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[166]"
+connectAttr "IK_Trunk_05_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[162]"
 		;
-connectAttr "broIN_r_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[167]"
+connectAttr "IK_Trunk_05_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[163]"
 		;
-connectAttr "broIN_r_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[168]"
+connectAttr "IK_Trunk_05_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[164]"
 		;
-connectAttr "broIN_r_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[169]";
-connectAttr "broIN_r_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[170]";
-connectAttr "broIN_r_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[171]";
-connectAttr "broIN_l_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[172]"
+connectAttr "pairBlend1.otx" "SnorkyElephant_CookieMonsterRN.phl[165]";
+connectAttr "pairBlend1.oty" "SnorkyElephant_CookieMonsterRN.phl[166]";
+connectAttr "pairBlend1.otz" "SnorkyElephant_CookieMonsterRN.phl[167]";
+connectAttr "SnorkyElephant_CookieMonsterRN.phl[168]" "IK_Trunk_06_ctrl_parentConstraint1.crp"
 		;
-connectAttr "broIN_l_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[173]"
+connectAttr "SnorkyElephant_CookieMonsterRN.phl[169]" "IK_Trunk_06_ctrl_parentConstraint1.crt"
 		;
-connectAttr "broIN_l_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[174]"
+connectAttr "IK_Trunk_06_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[170]"
 		;
-connectAttr "broIN_l_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[175]";
-connectAttr "broIN_l_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[176]";
-connectAttr "broIN_l_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[177]";
-connectAttr "Tusk_l_cluster_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[178]"
+connectAttr "IK_Trunk_06_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[171]"
 		;
-connectAttr "Tusk_l_cluster_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[179]"
+connectAttr "IK_Trunk_06_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[172]"
 		;
-connectAttr "Tusk_l_cluster_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[180]"
+connectAttr "SnorkyElephant_CookieMonsterRN.phl[173]" "IK_Trunk_06_ctrl_parentConstraint1.cro"
 		;
-connectAttr "Tusk_l_cluster_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[181]"
+connectAttr "SnorkyElephant_CookieMonsterRN.phl[174]" "pairBlend1.w";
+connectAttr "IK_Trunk_06_ctrl_blendParent1.o" "SnorkyElephant_CookieMonsterRN.phl[175]"
 		;
-connectAttr "Tusk_l_cluster_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[182]"
+connectAttr "SnorkyElephant_CookieMonsterRN.phl[176]" "IK_Trunk_06_ctrl_parentConstraint1.cpim"
 		;
-connectAttr "Tusk_l_cluster_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[183]"
+connectAttr "main_eye_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[177]"
 		;
-connectAttr "Tusk_r_cluster_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[184]"
+connectAttr "main_eye_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[178]"
 		;
-connectAttr "Tusk_r_cluster_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[185]"
+connectAttr "main_eye_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[179]"
 		;
-connectAttr "Tusk_r_cluster_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[186]"
+connectAttr "eye_r_topMain_ctrl_Secondary_Ctrl.o" "SnorkyElephant_CookieMonsterRN.phl[180]"
 		;
-connectAttr "Tusk_r_cluster_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[187]"
+connectAttr "eye_r_topMain_ctrl_SmartBlink.o" "SnorkyElephant_CookieMonsterRN.phl[181]"
 		;
-connectAttr "Tusk_r_cluster_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[188]"
+connectAttr "eye_r_topMain_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[182]"
 		;
-connectAttr "Tusk_r_cluster_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[189]"
+connectAttr "eye_r_topMain_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[183]"
 		;
-connectAttr "hand_l_ctrl_FingerCtrls.o" "SnorkyElephant_CookieMonsterRN.phl[190]"
+connectAttr "eye_r_topMain_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[184]"
 		;
-connectAttr "hand_l_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[191]";
-connectAttr "hand_l_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[192]";
-connectAttr "hand_l_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[193]";
-connectAttr "hand_r_ctrl_FingerCtrls.o" "SnorkyElephant_CookieMonsterRN.phl[194]"
+connectAttr "eye_r_topMain_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[185]"
 		;
-connectAttr "hand_r_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[195]";
-connectAttr "hand_r_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[196]";
-connectAttr "hand_r_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[197]";
-connectAttr "leg_l_ctrl_ToeCtrls.o" "SnorkyElephant_CookieMonsterRN.phl[198]";
-connectAttr "leg_l_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[199]";
-connectAttr "leg_l_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[200]";
-connectAttr "leg_l_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[201]";
-connectAttr "Fk_leg_04_r_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[202]"
+connectAttr "eye_r_topMain_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[186]"
 		;
-connectAttr "Fk_leg_04_r_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[203]"
+connectAttr "eye_r_topMain_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[187]"
 		;
-connectAttr "Fk_leg_04_r_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[204]"
+connectAttr "middleBro_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[188]"
 		;
-connectAttr "Fk_leg_04_r_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[205]"
+connectAttr "middleBro_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[189]"
 		;
-connectAttr "Fk_leg_03_r_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[206]"
+connectAttr "middleBro_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[190]"
 		;
-connectAttr "Fk_leg_03_r_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[207]"
+connectAttr "middleBro_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[191]"
 		;
-connectAttr "Fk_leg_03_r_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[208]"
+connectAttr "broIN_r_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[192]"
 		;
-connectAttr "Fk_leg_03_r_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[209]"
+connectAttr "broIN_r_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[193]"
 		;
-connectAttr "Fk_leg_02_r_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[210]"
+connectAttr "broIN_r_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[194]"
 		;
-connectAttr "Fk_leg_02_r_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[211]"
+connectAttr "broIN_r_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[195]";
+connectAttr "broIN_r_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[196]";
+connectAttr "broIN_r_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[197]";
+connectAttr "broIN_l_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[198]"
 		;
-connectAttr "Fk_leg_02_r_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[212]"
+connectAttr "broIN_l_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[199]"
 		;
-connectAttr "Fk_leg_02_l_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[213]"
+connectAttr "broIN_l_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[200]"
 		;
-connectAttr "Fk_leg_02_l_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[214]"
+connectAttr "broIN_l_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[201]";
+connectAttr "broIN_l_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[202]";
+connectAttr "broIN_l_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[203]";
+connectAttr "eye_l_topMain_ctrl_Secondary_Ctrl.o" "SnorkyElephant_CookieMonsterRN.phl[204]"
 		;
-connectAttr "Fk_leg_02_l_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[215]"
+connectAttr "eye_l_topMain_ctrl_SmartBlink.o" "SnorkyElephant_CookieMonsterRN.phl[205]"
 		;
-connectAttr "Fk_leg_03_l_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[216]"
+connectAttr "eye_l_topMain_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[206]"
 		;
-connectAttr "Fk_leg_03_l_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[217]"
+connectAttr "eye_l_topMain_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[207]"
 		;
-connectAttr "Fk_leg_03_l_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[218]"
+connectAttr "eye_l_topMain_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[208]"
 		;
-connectAttr "Fk_leg_03_l_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[219]"
+connectAttr "eye_l_topMain_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[209]"
 		;
-connectAttr "Fk_leg_04_l_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[220]"
+connectAttr "eye_l_topMain_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[210]"
 		;
-connectAttr "Fk_leg_04_l_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[221]"
+connectAttr "eye_l_topMain_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[211]"
 		;
-connectAttr "Fk_leg_04_l_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[222]"
+connectAttr "Tusk_l_cluster_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[212]"
 		;
-connectAttr "Fk_leg_04_l_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[223]"
+connectAttr "Tusk_l_cluster_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[213]"
 		;
-connectAttr "Fk_main_trunk_02_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[224]"
+connectAttr "Tusk_l_cluster_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[214]"
 		;
-connectAttr "Fk_main_trunk_02_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[225]"
+connectAttr "Tusk_l_cluster_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[215]"
 		;
-connectAttr "Fk_main_trunk_02_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[226]"
+connectAttr "Tusk_l_cluster_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[216]"
 		;
-connectAttr "Fk_main_trunk_03_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[227]"
+connectAttr "Tusk_l_cluster_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[217]"
 		;
-connectAttr "Fk_main_trunk_03_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[228]"
+connectAttr "Tusk_r_cluster_ctrl_translateX.o" "SnorkyElephant_CookieMonsterRN.phl[218]"
 		;
-connectAttr "Fk_main_trunk_03_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[229]"
+connectAttr "Tusk_r_cluster_ctrl_translateY.o" "SnorkyElephant_CookieMonsterRN.phl[219]"
 		;
-connectAttr "Fk_main_trunk_03_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[230]"
+connectAttr "Tusk_r_cluster_ctrl_translateZ.o" "SnorkyElephant_CookieMonsterRN.phl[220]"
 		;
-connectAttr "Fk_main_trunk_04_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[231]"
+connectAttr "Tusk_r_cluster_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[221]"
 		;
-connectAttr "Fk_main_trunk_04_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[232]"
+connectAttr "Tusk_r_cluster_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[222]"
 		;
-connectAttr "Fk_main_trunk_04_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[233]"
+connectAttr "Tusk_r_cluster_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[223]"
 		;
-connectAttr "Fk_main_trunk_04_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[234]"
+connectAttr "hand_l_ctrl_FingerCtrls.o" "SnorkyElephant_CookieMonsterRN.phl[224]"
 		;
-connectAttr "Fk_main_trunk_05_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[235]"
+connectAttr "hand_l_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[225]";
+connectAttr "hand_l_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[226]";
+connectAttr "hand_l_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[227]";
+connectAttr "hand_r_ctrl_FingerCtrls.o" "SnorkyElephant_CookieMonsterRN.phl[228]"
 		;
-connectAttr "Fk_main_trunk_05_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[236]"
+connectAttr "hand_r_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[229]";
+connectAttr "hand_r_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[230]";
+connectAttr "hand_r_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[231]";
+connectAttr "leg_l_ctrl_ToeCtrls.o" "SnorkyElephant_CookieMonsterRN.phl[232]";
+connectAttr "leg_l_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[233]";
+connectAttr "leg_l_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[234]";
+connectAttr "leg_l_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[235]";
+connectAttr "Fk_foot_l_02_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[236]"
 		;
-connectAttr "Fk_main_trunk_05_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[237]"
+connectAttr "Fk_foot_l_02_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[237]"
 		;
-connectAttr "Fk_main_trunk_05_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[238]"
+connectAttr "Fk_foot_l_02_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[238]"
 		;
-connectAttr "Fk_main_trunk_06_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[239]"
+connectAttr "Fk_foot_r_02_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[239]"
 		;
-connectAttr "Fk_main_trunk_06_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[240]"
+connectAttr "Fk_foot_r_02_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[240]"
 		;
-connectAttr "Fk_main_trunk_06_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[241]"
+connectAttr "Fk_foot_r_02_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[241]"
 		;
-connectAttr "Fk_main_trunk_06_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[242]"
+connectAttr "Fk_leg_04_r_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[242]"
 		;
-connectAttr "Fk_main_trunk_07_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[243]"
+connectAttr "Fk_leg_04_r_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[243]"
 		;
-connectAttr "Fk_main_trunk_07_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[244]"
+connectAttr "Fk_leg_04_r_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[244]"
 		;
-connectAttr "Fk_main_trunk_07_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[245]"
+connectAttr "Fk_leg_04_r_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[245]"
 		;
-connectAttr "Fk_main_trunk_07_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[246]"
+connectAttr "Fk_leg_03_r_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[246]"
 		;
-connectAttr "Fk_main_trunk_08_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[247]"
+connectAttr "Fk_leg_03_r_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[247]"
 		;
-connectAttr "Fk_main_trunk_08_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[248]"
+connectAttr "Fk_leg_03_r_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[248]"
 		;
-connectAttr "Fk_main_trunk_08_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[249]"
+connectAttr "Fk_leg_03_r_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[249]"
 		;
-connectAttr "Fk_main_trunk_08_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[250]"
+connectAttr "Fk_leg_02_r_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[250]"
 		;
-connectAttr "Fk_main_trunk_09_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[251]"
+connectAttr "Fk_leg_02_r_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[251]"
 		;
-connectAttr "Fk_main_trunk_09_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[252]"
+connectAttr "Fk_leg_02_r_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[252]"
 		;
-connectAttr "Fk_main_trunk_09_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[253]"
+connectAttr "Fk_leg_02_l_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[253]"
 		;
-connectAttr "Fk_main_trunk_09_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[254]"
+connectAttr "Fk_leg_02_l_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[254]"
 		;
-connectAttr "Fk_main_trunk_10_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[255]"
+connectAttr "Fk_leg_02_l_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[255]"
 		;
-connectAttr "Fk_main_trunk_10_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[256]"
+connectAttr "Fk_leg_03_l_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[256]"
 		;
-connectAttr "Fk_main_trunk_10_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[257]"
+connectAttr "Fk_leg_03_l_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[257]"
 		;
-connectAttr "Fk_main_trunk_10_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[258]"
+connectAttr "Fk_leg_03_l_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[258]"
 		;
-connectAttr "Fk_main_trunk_11_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[259]"
+connectAttr "Fk_leg_03_l_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[259]"
 		;
-connectAttr "Fk_main_trunk_11_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[260]"
+connectAttr "Fk_leg_04_l_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[260]"
 		;
-connectAttr "Fk_main_trunk_11_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[261]"
+connectAttr "Fk_leg_04_l_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[261]"
 		;
-connectAttr "Fk_main_trunk_11_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[262]"
+connectAttr "Fk_leg_04_l_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[262]"
 		;
-connectAttr "SnorkyElephant_CookieMonster_nCloth_shirt0Shape1Cache1.ocd[0]" "SnorkyElephant_CookieMonsterRN.phl[263]"
+connectAttr "Fk_leg_04_l_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[263]"
 		;
-connectAttr "SnorkyElephant_CookieMonster_nCloth_shirt0Shape1Cache1.ir" "SnorkyElephant_CookieMonsterRN.phl[264]"
+connectAttr "Fk_main_trunk_02_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[264]"
 		;
-connectAttr "SnorkyElephant_CookieMonster_nClothShape1Cache1.ocd[0]" "SnorkyElephant_CookieMonsterRN.phl[265]"
+connectAttr "Fk_main_trunk_02_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[265]"
 		;
-connectAttr "SnorkyElephant_CookieMonster_nClothShape1Cache1.ir" "SnorkyElephant_CookieMonsterRN.phl[266]"
+connectAttr "Fk_main_trunk_02_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[266]"
 		;
-connectAttr "Piano_Transform_CTRL_translateX.o" "PianoRN.phl[1]";
-connectAttr "Piano_Transform_CTRL_translateY.o" "PianoRN.phl[2]";
-connectAttr "Piano_Transform_CTRL_translateZ.o" "PianoRN.phl[3]";
-connectAttr "Piano_Transform_CTRL_visibility.o" "PianoRN.phl[4]";
+connectAttr "Fk_main_trunk_03_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[267]"
+		;
+connectAttr "Fk_main_trunk_03_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[268]"
+		;
+connectAttr "Fk_main_trunk_03_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[269]"
+		;
+connectAttr "Fk_main_trunk_03_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[270]"
+		;
+connectAttr "Fk_main_trunk_04_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[271]"
+		;
+connectAttr "Fk_main_trunk_04_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[272]"
+		;
+connectAttr "Fk_main_trunk_04_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[273]"
+		;
+connectAttr "Fk_main_trunk_04_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[274]"
+		;
+connectAttr "Fk_main_trunk_05_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[275]"
+		;
+connectAttr "Fk_main_trunk_05_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[276]"
+		;
+connectAttr "Fk_main_trunk_05_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[277]"
+		;
+connectAttr "Fk_main_trunk_05_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[278]"
+		;
+connectAttr "Fk_main_trunk_06_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[279]"
+		;
+connectAttr "Fk_main_trunk_06_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[280]"
+		;
+connectAttr "Fk_main_trunk_06_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[281]"
+		;
+connectAttr "Fk_main_trunk_06_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[282]"
+		;
+connectAttr "Fk_main_trunk_07_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[283]"
+		;
+connectAttr "Fk_main_trunk_07_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[284]"
+		;
+connectAttr "Fk_main_trunk_07_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[285]"
+		;
+connectAttr "Fk_main_trunk_07_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[286]"
+		;
+connectAttr "Fk_main_trunk_08_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[287]"
+		;
+connectAttr "Fk_main_trunk_08_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[288]"
+		;
+connectAttr "Fk_main_trunk_08_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[289]"
+		;
+connectAttr "Fk_main_trunk_08_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[290]"
+		;
+connectAttr "Fk_main_trunk_09_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[291]"
+		;
+connectAttr "Fk_main_trunk_09_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[292]"
+		;
+connectAttr "Fk_main_trunk_09_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[293]"
+		;
+connectAttr "Fk_main_trunk_09_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[294]"
+		;
+connectAttr "Fk_main_trunk_10_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[295]"
+		;
+connectAttr "Fk_main_trunk_10_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[296]"
+		;
+connectAttr "Fk_main_trunk_10_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[297]"
+		;
+connectAttr "Fk_main_trunk_10_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[298]"
+		;
+connectAttr "Fk_main_trunk_11_jnt_ctrl_followRotate.o" "SnorkyElephant_CookieMonsterRN.phl[299]"
+		;
+connectAttr "Fk_main_trunk_11_jnt_ctrl_rotateX.o" "SnorkyElephant_CookieMonsterRN.phl[300]"
+		;
+connectAttr "Fk_main_trunk_11_jnt_ctrl_rotateY.o" "SnorkyElephant_CookieMonsterRN.phl[301]"
+		;
+connectAttr "Fk_main_trunk_11_jnt_ctrl_rotateZ.o" "SnorkyElephant_CookieMonsterRN.phl[302]"
+		;
+connectAttr "SnorkyElephant_CookieMonster_nCloth_shirt0Shape1Cache1.ocd[0]" "SnorkyElephant_CookieMonsterRN.phl[303]"
+		;
+connectAttr "SnorkyElephant_CookieMonster_nCloth_shirt0Shape1Cache1.ir" "SnorkyElephant_CookieMonsterRN.phl[304]"
+		;
+connectAttr "SnorkyElephant_CookieMonster_nClothShape1Cache1.ocd[0]" "SnorkyElephant_CookieMonsterRN.phl[305]"
+		;
+connectAttr "SnorkyElephant_CookieMonster_nClothShape1Cache1.ir" "SnorkyElephant_CookieMonsterRN.phl[306]"
+		;
+connectAttr "Piano_Transform_CTRL_visibility.o" "PianoRN.phl[1]";
+connectAttr "Piano_Transform_CTRL_translateX.o" "PianoRN.phl[2]";
+connectAttr "Piano_Transform_CTRL_translateY.o" "PianoRN.phl[3]";
+connectAttr "Piano_Transform_CTRL_translateZ.o" "PianoRN.phl[4]";
 connectAttr "Piano_Transform_CTRL_rotateX.o" "PianoRN.phl[5]";
 connectAttr "Piano_Transform_CTRL_rotateY.o" "PianoRN.phl[6]";
 connectAttr "Piano_Transform_CTRL_rotateZ.o" "PianoRN.phl[7]";
@@ -4653,57 +5161,64 @@ connectAttr "Piano_Body_Joint_Ctrl_translateZ.o" "PianoRN.phl[21]";
 connectAttr "Piano_Body_Joint_Ctrl_rotateX.o" "PianoRN.phl[22]";
 connectAttr "Piano_Body_Joint_Ctrl_rotateY.o" "PianoRN.phl[23]";
 connectAttr "Piano_Body_Joint_Ctrl_rotateZ.o" "PianoRN.phl[24]";
-connectAttr "Piano_Cushion_Inner_Left_CTRL_FollowRotate.o" "PianoRN.phl[25]";
-connectAttr "Piano_Cushion_Inner_Left_CTRL_translateX.o" "PianoRN.phl[26]";
-connectAttr "Piano_Cushion_Inner_Left_CTRL_translateY.o" "PianoRN.phl[27]";
-connectAttr "Piano_Cushion_Inner_Left_CTRL_translateZ.o" "PianoRN.phl[28]";
-connectAttr "Piano_Cushion_Inner_Left_CTRL_rotateZ.o" "PianoRN.phl[29]";
-connectAttr "Piano_Cushion_Inner_Left_CTRL_rotateX.o" "PianoRN.phl[30]";
-connectAttr "Piano_Cushion_Inner_Left_CTRL_rotateY.o" "PianoRN.phl[31]";
-connectAttr "Piano_Cushion_Center_Left_CTRL_FollowRotate.o" "PianoRN.phl[32]";
-connectAttr "Piano_Cushion_Center_Left_CTRL_translateX.o" "PianoRN.phl[33]";
-connectAttr "Piano_Cushion_Center_Left_CTRL_translateY.o" "PianoRN.phl[34]";
-connectAttr "Piano_Cushion_Center_Left_CTRL_translateZ.o" "PianoRN.phl[35]";
-connectAttr "Piano_Cushion_Center_Left_CTRL_rotateZ.o" "PianoRN.phl[36]";
-connectAttr "Piano_Cushion_Center_Left_CTRL_rotateX.o" "PianoRN.phl[37]";
-connectAttr "Piano_Cushion_Center_Left_CTRL_rotateY.o" "PianoRN.phl[38]";
-connectAttr "Piano_Cushion_Outer_Left_CTRL_FollowRotate.o" "PianoRN.phl[39]";
-connectAttr "Piano_Cushion_Outer_Left_CTRL_translateX.o" "PianoRN.phl[40]";
-connectAttr "Piano_Cushion_Outer_Left_CTRL_translateY.o" "PianoRN.phl[41]";
-connectAttr "Piano_Cushion_Outer_Left_CTRL_translateZ.o" "PianoRN.phl[42]";
-connectAttr "Piano_Cushion_Outer_Left_CTRL_rotateZ.o" "PianoRN.phl[43]";
-connectAttr "Piano_Cushion_Outer_Left_CTRL_rotateX.o" "PianoRN.phl[44]";
-connectAttr "Piano_Cushion_Outer_Left_CTRL_rotateY.o" "PianoRN.phl[45]";
-connectAttr "Piano_Cushion_Innter_Right_CTRL_FollowRotate.o" "PianoRN.phl[46]";
-connectAttr "Piano_Cushion_Innter_Right_CTRL_translateX.o" "PianoRN.phl[47]";
-connectAttr "Piano_Cushion_Innter_Right_CTRL_translateY.o" "PianoRN.phl[48]";
-connectAttr "Piano_Cushion_Innter_Right_CTRL_translateZ.o" "PianoRN.phl[49]";
-connectAttr "Piano_Cushion_Innter_Right_CTRL_rotateX.o" "PianoRN.phl[50]";
-connectAttr "Piano_Cushion_Innter_Right_CTRL_rotateY.o" "PianoRN.phl[51]";
-connectAttr "Piano_Cushion_Innter_Right_CTRL_rotateZ.o" "PianoRN.phl[52]";
-connectAttr "Piano_Cushion_Center_Right_CTRL_FollowRotate.o" "PianoRN.phl[53]";
-connectAttr "Piano_Cushion_Center_Right_CTRL_translateX.o" "PianoRN.phl[54]";
-connectAttr "Piano_Cushion_Center_Right_CTRL_translateY.o" "PianoRN.phl[55]";
-connectAttr "Piano_Cushion_Center_Right_CTRL_translateZ.o" "PianoRN.phl[56]";
-connectAttr "Piano_Cushion_Center_Right_CTRL_rotateX.o" "PianoRN.phl[57]";
-connectAttr "Piano_Cushion_Center_Right_CTRL_rotateY.o" "PianoRN.phl[58]";
-connectAttr "Piano_Cushion_Center_Right_CTRL_rotateZ.o" "PianoRN.phl[59]";
-connectAttr "Piano_Cushion_Outer_Righrt_CTRL_FollowRotate.o" "PianoRN.phl[60]";
-connectAttr "Piano_Cushion_Outer_Righrt_CTRL_translateX.o" "PianoRN.phl[61]";
-connectAttr "Piano_Cushion_Outer_Righrt_CTRL_translateY.o" "PianoRN.phl[62]";
-connectAttr "Piano_Cushion_Outer_Righrt_CTRL_translateZ.o" "PianoRN.phl[63]";
-connectAttr "Piano_Cushion_Outer_Righrt_CTRL_rotateX.o" "PianoRN.phl[64]";
-connectAttr "Piano_Cushion_Outer_Righrt_CTRL_rotateY.o" "PianoRN.phl[65]";
-connectAttr "Piano_Cushion_Outer_Righrt_CTRL_rotateZ.o" "PianoRN.phl[66]";
-connectAttr "Cup_MilkRN.phl[1]" "IK_Trunk_06_ctrl_parentConstraint1.tg[0].tt";
-connectAttr "Transform_ctrl_translateX1.o" "Cup_MilkRN.phl[2]";
-connectAttr "Transform_ctrl_translateY1.o" "Cup_MilkRN.phl[3]";
-connectAttr "Transform_ctrl_translateZ1.o" "Cup_MilkRN.phl[4]";
+connectAttr "Piano_Chair_COG_CTRL_FollowRotate.o" "PianoRN.phl[25]";
+connectAttr "Piano_Chair_COG_CTRL_translateX.o" "PianoRN.phl[26]";
+connectAttr "Piano_Chair_COG_CTRL_translateY.o" "PianoRN.phl[27]";
+connectAttr "Piano_Chair_COG_CTRL_translateZ.o" "PianoRN.phl[28]";
+connectAttr "Piano_Chair_COG_CTRL_rotateX.o" "PianoRN.phl[29]";
+connectAttr "Piano_Chair_COG_CTRL_rotateY.o" "PianoRN.phl[30]";
+connectAttr "Piano_Chair_COG_CTRL_rotateZ.o" "PianoRN.phl[31]";
+connectAttr "Piano_Cushion_Inner_Left_CTRL_FollowRotate.o" "PianoRN.phl[32]";
+connectAttr "Piano_Cushion_Inner_Left_CTRL_translateX.o" "PianoRN.phl[33]";
+connectAttr "Piano_Cushion_Inner_Left_CTRL_translateY.o" "PianoRN.phl[34]";
+connectAttr "Piano_Cushion_Inner_Left_CTRL_translateZ.o" "PianoRN.phl[35]";
+connectAttr "Piano_Cushion_Inner_Left_CTRL_rotateX.o" "PianoRN.phl[36]";
+connectAttr "Piano_Cushion_Inner_Left_CTRL_rotateY.o" "PianoRN.phl[37]";
+connectAttr "Piano_Cushion_Inner_Left_CTRL_rotateZ.o" "PianoRN.phl[38]";
+connectAttr "Piano_Cushion_Center_Left_CTRL_FollowRotate.o" "PianoRN.phl[39]";
+connectAttr "Piano_Cushion_Center_Left_CTRL_translateX.o" "PianoRN.phl[40]";
+connectAttr "Piano_Cushion_Center_Left_CTRL_translateY.o" "PianoRN.phl[41]";
+connectAttr "Piano_Cushion_Center_Left_CTRL_translateZ.o" "PianoRN.phl[42]";
+connectAttr "Piano_Cushion_Center_Left_CTRL_rotateX.o" "PianoRN.phl[43]";
+connectAttr "Piano_Cushion_Center_Left_CTRL_rotateY.o" "PianoRN.phl[44]";
+connectAttr "Piano_Cushion_Center_Left_CTRL_rotateZ.o" "PianoRN.phl[45]";
+connectAttr "Piano_Cushion_Outer_Left_CTRL_FollowRotate.o" "PianoRN.phl[46]";
+connectAttr "Piano_Cushion_Outer_Left_CTRL_translateX.o" "PianoRN.phl[47]";
+connectAttr "Piano_Cushion_Outer_Left_CTRL_translateY.o" "PianoRN.phl[48]";
+connectAttr "Piano_Cushion_Outer_Left_CTRL_translateZ.o" "PianoRN.phl[49]";
+connectAttr "Piano_Cushion_Outer_Left_CTRL_rotateX.o" "PianoRN.phl[50]";
+connectAttr "Piano_Cushion_Outer_Left_CTRL_rotateY.o" "PianoRN.phl[51]";
+connectAttr "Piano_Cushion_Outer_Left_CTRL_rotateZ.o" "PianoRN.phl[52]";
+connectAttr "Piano_Cushion_Innter_Right_CTRL_FollowRotate.o" "PianoRN.phl[53]";
+connectAttr "Piano_Cushion_Innter_Right_CTRL_translateX.o" "PianoRN.phl[54]";
+connectAttr "Piano_Cushion_Innter_Right_CTRL_translateY.o" "PianoRN.phl[55]";
+connectAttr "Piano_Cushion_Innter_Right_CTRL_translateZ.o" "PianoRN.phl[56]";
+connectAttr "Piano_Cushion_Innter_Right_CTRL_rotateX.o" "PianoRN.phl[57]";
+connectAttr "Piano_Cushion_Innter_Right_CTRL_rotateY.o" "PianoRN.phl[58]";
+connectAttr "Piano_Cushion_Innter_Right_CTRL_rotateZ.o" "PianoRN.phl[59]";
+connectAttr "Piano_Cushion_Center_Right_CTRL_FollowRotate.o" "PianoRN.phl[60]";
+connectAttr "Piano_Cushion_Center_Right_CTRL_translateX.o" "PianoRN.phl[61]";
+connectAttr "Piano_Cushion_Center_Right_CTRL_translateY.o" "PianoRN.phl[62]";
+connectAttr "Piano_Cushion_Center_Right_CTRL_translateZ.o" "PianoRN.phl[63]";
+connectAttr "Piano_Cushion_Center_Right_CTRL_rotateX.o" "PianoRN.phl[64]";
+connectAttr "Piano_Cushion_Center_Right_CTRL_rotateY.o" "PianoRN.phl[65]";
+connectAttr "Piano_Cushion_Center_Right_CTRL_rotateZ.o" "PianoRN.phl[66]";
+connectAttr "Piano_Cushion_Outer_Righrt_CTRL_FollowRotate.o" "PianoRN.phl[67]";
+connectAttr "Piano_Cushion_Outer_Righrt_CTRL_translateX.o" "PianoRN.phl[68]";
+connectAttr "Piano_Cushion_Outer_Righrt_CTRL_translateY.o" "PianoRN.phl[69]";
+connectAttr "Piano_Cushion_Outer_Righrt_CTRL_translateZ.o" "PianoRN.phl[70]";
+connectAttr "Piano_Cushion_Outer_Righrt_CTRL_rotateX.o" "PianoRN.phl[71]";
+connectAttr "Piano_Cushion_Outer_Righrt_CTRL_rotateY.o" "PianoRN.phl[72]";
+connectAttr "Piano_Cushion_Outer_Righrt_CTRL_rotateZ.o" "PianoRN.phl[73]";
+connectAttr "Cup_MilkRN.phl[1]" "IK_Trunk_06_ctrl_parentConstraint1.tg[0].tr";
+connectAttr "Transform_ctrl_rotateX1.o" "Cup_MilkRN.phl[2]";
+connectAttr "Transform_ctrl_rotateY1.o" "Cup_MilkRN.phl[3]";
+connectAttr "Transform_ctrl_rotateZ1.o" "Cup_MilkRN.phl[4]";
 connectAttr "Transform_ctrl_visibility1.o" "Cup_MilkRN.phl[5]";
-connectAttr "Cup_MilkRN.phl[6]" "IK_Trunk_06_ctrl_parentConstraint1.tg[0].tr";
-connectAttr "Transform_ctrl_rotateX1.o" "Cup_MilkRN.phl[7]";
-connectAttr "Transform_ctrl_rotateY1.o" "Cup_MilkRN.phl[8]";
-connectAttr "Transform_ctrl_rotateZ1.o" "Cup_MilkRN.phl[9]";
+connectAttr "Cup_MilkRN.phl[6]" "IK_Trunk_06_ctrl_parentConstraint1.tg[0].tt";
+connectAttr "Transform_ctrl_translateX1.o" "Cup_MilkRN.phl[7]";
+connectAttr "Transform_ctrl_translateY1.o" "Cup_MilkRN.phl[8]";
+connectAttr "Transform_ctrl_translateZ1.o" "Cup_MilkRN.phl[9]";
 connectAttr "Cup_MilkRN.phl[10]" "IK_Trunk_06_ctrl_parentConstraint1.tg[0].ts";
 connectAttr "Transform_ctrl_scaleX.o" "Cup_MilkRN.phl[11]";
 connectAttr "Transform_ctrl_scaleY.o" "Cup_MilkRN.phl[12]";
