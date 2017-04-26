@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Sequence_04_Scene_03_01.ma
-//Last modified: Fri, Apr 21, 2017 11:46:46 AM
+//Last modified: Wed, Apr 26, 2017 12:40:35 PM
 //Codeset: 1252
 file -rdi 1 -ns "SnorkyElephant_CookieMonster" -rfn "SnorkyElephant_CookieMonsterRN"
 		 -op "v=0;" -typ "mayaAscii" "C:/Users/Owner/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/01-Characters/E/SnorkyElephant_CookieMonster.ma";
@@ -50,8 +50,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "2C5EC128-41D0-9C45-2F5B-CB9C764E133F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 191.28105128767825 135.09776837166305 -284.73860167089322 ;
-	setAttr ".r" -type "double3" 2.6616472704653229 -613.00000000001251 0 ;
+	setAttr ".t" -type "double3" 186.99671909370153 33.804413876854213 -300.0944589093956 ;
+	setAttr ".r" -type "double3" 26.66164727046915 -607.80000000000121 0 ;
 	setAttr ".rp" -type "double3" 0 1.7763568394002505e-015 0 ;
 	setAttr ".rpt" -type "double3" -5.2342820855524152e-016 -7.8877389089903932e-017 
 		-5.4815277780400713e-018 ;
@@ -60,7 +60,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".ovr" 1.3;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 216.3543084662945;
+	setAttr ".coi" 216.35430846459957;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -225,40 +225,34 @@ createNode RedshiftPhysicalLight -n "rsPhysicalLightShape6" -p "rsPhysicalLight6
 	setAttr ".spotConeFalloffAngle" 180;
 createNode transform -n "workspace_Camera";
 	rename -uid "79C0BFAA-45A6-0003-572E-56984137D527";
-	setAttr ".t" -type "double3" 396.11420679933133 780.44813733092474 -457.16148878113893 ;
-	setAttr -av ".tx";
-	setAttr -av ".ty";
-	setAttr -av ".tz";
-	setAttr ".r" -type "double3" -55.79999999999297 119.99999999998307 0 ;
-	setAttr -av ".rx";
-	setAttr -av ".ry";
-	setAttr -av ".rz";
 createNode camera -n "workspace_CameraShape" -p "workspace_Camera";
 	rename -uid "7F4A0BA5-4E24-4828-E552-CDAAF605647A";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
-	setAttr ".coi" 778.67104743869891;
+	setAttr ".coi" 296.68983790508662;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
 	setAttr ".man" -type "string" "camera1_mask";
+	setAttr ".tp" -type "double3" -0.84108353451449602 79.82058547274444 -221.81764951305058 ;
 createNode fosterParent -n "SnorkyElephant_CookieMonsterRNfosterParent1";
-	rename -uid "AB4970E3-4F27-D26D-3E91-2E8629BD0BE8";
+	rename -uid "3B1986A7-4C02-A3D7-1648-A98D888D45B6";
 createNode transform -n "Glass_Child" -p "SnorkyElephant_CookieMonsterRNfosterParent1";
 	rename -uid "8787E417-40CE-488A-5BFB-1E8DA74EDB51";
 	setAttr ".t" -type "double3" -103.2353880411185 208.67838922823753 246.08679379480552 ;
 	setAttr ".r" -type "double3" 0.43174496511135591 -14.505308460869221 -89.090319623788062 ;
 	setAttr ".s" -type "double3" 0.99999999999999967 0.99999999999999978 0.99999999999999978 ;
 createNode fosterParent -n "Cup_MilkRNfosterParent1";
-	rename -uid "CAE3BCCE-4A65-ABFC-EA5B-D5951E3CA342";
+	rename -uid "5F50476E-48F0-88D4-09DF-5C867B719D0B";
 createNode transform -n "cookie_Child" -p "Cup_MilkRNfosterParent1";
 	rename -uid "DB1F8625-415C-C58F-DF01-9C86E5521B30";
 	setAttr ".t" -type "double3" -81.557013080368918 -80.208245790570572 236.61498201383623 ;
 	setAttr ".s" -type "double3" 0.90558825964282019 0.90558825964282019 0.90558825964282019 ;
 createNode reference -n "SnorkyElephant_CookieMonsterRN";
 	rename -uid "023F3624-41E0-228E-2198-1EB50207C917";
+	setAttr ".fn[0]" -type "string" "C:/Users/10588285/UVU_Junior_Animation_Assets/Maya_DoubleBooked//scenes/01-Characters/E/SnorkyElephant_CookieMonster.ma";
 	setAttr -s 649 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
@@ -912,7 +906,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"SnorkyElephant_CookieMonsterRN"
 		"SnorkyElephant_CookieMonsterRN" 0
-		"SnorkyElephant_CookieMonsterRN" 1062
+		"SnorkyElephant_CookieMonsterRN" 1063
 		0 "|SnorkyElephant_CookieMonsterRNfosterParent1|Glass_Child" "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:trunk_tip_ctrl_grp|SnorkyElephant_CookieMonster:trunk_tip_ctrl" 
 		"-s -r "
 		2 "|SnorkyElephant_CookieMonster:Elephant" "translate" " -type \"double3\" 0 0 0"
@@ -930,10 +924,10 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Skeletons|SnorkyElephant_CookieMonster:RK_jnt_grp|SnorkyElephant_CookieMonster:Fk_foot_r_01_jnt" 
 		"visibility" " 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Skeletons|SnorkyElephant_CookieMonster:RK_jnt_grp|SnorkyElephant_CookieMonster:SkinnedTrunk_jnts|SnorkyElephant_CookieMonster:Trunk_Deformer|SnorkyElephant_CookieMonster:ikHandle5" 
-		"translate" " -type \"double3\" 44.248121383473325 153.16759658691225 -234.83810741011402"
+		"translate" " -type \"double3\" 5.7663013975157451 13.863545292594107 -224.27241542317896"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Skeletons|SnorkyElephant_CookieMonster:RK_jnt_grp|SnorkyElephant_CookieMonster:SkinnedTrunk_jnts|SnorkyElephant_CookieMonster:Trunk_Deformer|SnorkyElephant_CookieMonster:ikHandle5" 
-		"rotate" " -type \"double3\" -6.5993869974358725 30.790801664502965 -21.55836659009244"
+		"rotate" " -type \"double3\" -5.032005993704205 -30.499350038839978 -167.97870121387319"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Skeletons|SnorkyElephant_CookieMonster:RK_jnt_grp|SnorkyElephant_CookieMonster:face_jnts|SnorkyElephant_CookieMonster:Eye_l_Top_jnts|SnorkyElephant_CookieMonster:Top_20" 
 		"visibility" " 0"
@@ -1118,13 +1112,13 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl" 
 		"FkIkTrunkSwitch" " -av -k 1 1"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl" 
-		"FkIkLeftLegSwitch" " -av -k 1 0"
+		"FkIkLeftLegSwitch" " -av -k 1 0.896"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl" 
-		"FkIkRightLegSwitch" " -av -k 1 0"
+		"FkIkRightLegSwitch" " -av -k 1 0.896"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
 		"visibility" " -av 1"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
-		"translate" " -type \"double3\" -1.3126275418019868 6.1168366101009708 -213.40510675934809"
+		"translate" " -type \"double3\" 0.22465174205840355 -15.837872076870063 -221.86065678314748"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
 		"translateX" " -av"
@@ -1133,7 +1127,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
-		"rotate" " -type \"double3\" -3.9928614147826456 136.95974880809811 -3.5081501831664128"
+		"rotate" " -type \"double3\" 89.789164957440349 120.84815331120635 2.4989402074342029"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
 		"rotateX" " -av"
@@ -1150,8 +1144,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl" 
 		"scaleZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_l_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_02_ctrl" 
-		"translate" " -type \"double3\" 45.433234726302388 30.232176628805341 22.084289945906754"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_l_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_02_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_l_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_02_ctrl" 
@@ -1159,7 +1152,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_l_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_02_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:u_Rk_arm_l_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_03__ctrl" 
-		"translate" " -type \"double3\" -61.767019055123583 37.312583631363921 2.7946595437041268"
+		"translate" " -type \"double3\" -24.38014351099784 -16.225779429326927 42.339799809171105"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:u_Rk_arm_l_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_03__ctrl" 
 		"translateX" " -av"
@@ -1170,7 +1163,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_l_ctrl_grp|SnorkyElephant_CookieMonster:u_Rk_arm_l_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_l_03__ctrl|SnorkyElephant_CookieMonster:ikHandle1" 
 		"visibility" " 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl" 
-		"translate" " -type \"double3\" 14.447543787531568 3.6266938111068057 -0.84868857265425257"
+		"translate" " -type \"double3\" 24.181235151388474 15.047000539205442 -38.162150070981738"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl" 
 		"translateX" " -av"
@@ -1181,8 +1174,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_03_ctrl|SnorkyElephant_CookieMonster:ikHandle2" 
 		"visibility" " 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl" 
-		"translate" " -type \"double3\" -1.6637754971308267 5.5718273941166094 -24.835512006867429"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_arm_r_ctrl_grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl_Grp|SnorkyElephant_CookieMonster:Rk_arm_r_02_ctrl" 
@@ -1194,7 +1186,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Ik_switch_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_r_ctrl_grp|SnorkyElephant_CookieMonster:Ik_leg_04_r_ctrl_Grp|SnorkyElephant_CookieMonster:Ik_leg_04_r_t_ctrl|SnorkyElephant_CookieMonster:ikHandle7" 
 		"visibility" " -av 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl" 
-		"rotate" " -type \"double3\" -1.6855309060014547 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl" 
@@ -1204,15 +1196,15 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl" 
 		"CooshieButt" " -av -k 1 1"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl|SnorkyElephant_CookieMonster:hip_r_ctrl_grp|SnorkyElephant_CookieMonster:hip_r_ctrl" 
-		"rotate" " -type \"double3\" 0 9.8734658030909852 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl|SnorkyElephant_CookieMonster:hip_r_ctrl_grp|SnorkyElephant_CookieMonster:hip_r_ctrl" 
 		"rotateY" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl|SnorkyElephant_CookieMonster:hip_l_ctrl_grp|SnorkyElephant_CookieMonster:hip_l_ctrl" 
-		"rotate" " -type \"double3\" 0 9.8734658030909852 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl|SnorkyElephant_CookieMonster:hip_l_ctrl_grp|SnorkyElephant_CookieMonster:hip_l_ctrl" 
 		"rotateY" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl" 
-		"rotate" " -type \"double3\" 1.2274079569741259 0 0"
+		"rotate" " -type \"double3\" 3.7013066086088475 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl" 
@@ -1220,8 +1212,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl" 
-		"rotate" " -type \"double3\" -18.180602135770268 -6.6439347028109808 -0.6993562176302538"
-		
+		"rotate" " -type \"double3\" 5.0959149895703835 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl" 
@@ -1229,8 +1220,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl" 
-		"rotate" " -type \"double3\" -5.6399469222328946 5.1776926097499762 -2.9464022458535015"
-		
+		"rotate" " -type \"double3\" 4.7060720087164487 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl" 
@@ -1238,8 +1228,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl" 
-		"rotate" " -type \"double3\" -5.6399469222328946 5.1776926097499762 -2.9464022458535015"
-		
+		"rotate" " -type \"double3\" 4.7060720087164487 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl" 
@@ -1247,8 +1236,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl" 
-		"rotate" " -type \"double3\" 3.5689604974068336 0.67215383140997509 1.8636290494399812"
-		
+		"rotate" " -type \"double3\" 4.7060720087164487 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl" 
@@ -1256,14 +1244,15 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl" 
-		"rotate" " -type \"double3\" -20.83105891201528 -3.7765295085245683 24.684348088985356"
-		
+		"rotate" " -type \"double3\" 0 0 8.8415514871106691"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl" 
 		"rotateY" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl" 
 		"rotateZ" " -av"
+		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl" 
+		"TuskControls" " -av -k 1 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl" 
 		"FullTrunk" " -av -k 1 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_01_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_01_jnt_ctrl" 
@@ -1275,7 +1264,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_01_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_01_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl" 
-		"rotate" " -type \"double3\" 11.665725818994154 2.6716002408452857 -16.375891984126582"
+		"rotate" " -type \"double3\" 4.3443322133004161 -3.6812410607337762 -12.040988223449768"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl" 
 		"rotateX" " -av"
@@ -1284,7 +1273,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_02_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl" 
-		"rotate" " -type \"double3\" 0.95283624670719191 -5.8676999694399425 -14.743680038082861"
+		"rotate" " -type \"double3\" 4.3443322133004161 -3.6812410607337762 -12.040988223449768"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl" 
 		"rotateX" " -av"
@@ -1293,7 +1282,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_03_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl" 
-		"rotate" " -type \"double3\" 0.95283624670719191 -5.8676999694399425 -14.743680038082861"
+		"rotate" " -type \"double3\" 4.3443322133004161 -3.6812410607337762 -12.040988223449768"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_l_04_jnt_ctrl" 
 		"rotateX" " -av"
@@ -1314,7 +1303,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_01_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_01_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl" 
-		"rotate" " -type \"double3\" 12.30123805559672 -22.138071532922442 -18.405174171934529"
+		"rotate" " -type \"double3\" 4.3443322133004161 -3.6812410607337762 -12.040988223449768"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl" 
 		"rotateX" " -av"
@@ -1323,7 +1312,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_02_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl" 
-		"rotate" " -type \"double3\" 0.40752446018372923 -12.479247269856137 -16.42895916272499"
+		"rotate" " -type \"double3\" 4.3443322133004161 -3.6812410607337762 -12.040988223449768"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl" 
 		"rotateX" " -av"
@@ -1332,7 +1321,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_03_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl" 
-		"rotate" " -type \"double3\" 0.40752446018372923 -12.479247269856137 -16.42895916272499"
+		"rotate" " -type \"double3\" 4.3443322133004161 -3.6812410607337762 -12.040988223449768"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:ear_ctrl_grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:ear_r_04_jnt_ctrl" 
 		"rotateX" " -av"
@@ -1353,7 +1342,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Ik_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Ik_Trunkctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl_grp|SnorkyElephant_CookieMonster:IK_Trunk_06_ctrl" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl|SnorkyElephant_CookieMonster:eye_l_Aim_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_Aim_ctrl" 
-		"EyeBlink" " -av -k 1 0"
+		"EyeBlink" " -av -k 1 1"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl|SnorkyElephant_CookieMonster:eye_r_Aim_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_Aim_ctrl" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl|SnorkyElephant_CookieMonster:eye_r_Aim_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_Aim_ctrl" 
@@ -1363,10 +1352,9 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl|SnorkyElephant_CookieMonster:eye_r_Aim_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_Aim_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:main_eye_ctrl_grp|SnorkyElephant_CookieMonster:main_eye_ctrl|SnorkyElephant_CookieMonster:eye_r_Aim_ctrl_grp|SnorkyElephant_CookieMonster:eye_r_Aim_ctrl" 
-		"EyeBlink" " -av -k 1 0"
+		"EyeBlink" " -av -k 1 1"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl" 
-		"rotate" " -type \"double3\" -3.3983558138264405 -2.4598520042822538 -14.070298351343904"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl" 
@@ -1374,7 +1362,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_middle_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_middle_ctrl" 
-		"translate" " -type \"double3\" 0 -2.1338270459590531 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_middle_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_middle_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_middle_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_middle_ctrl" 
@@ -1382,7 +1370,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_middle_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_middle_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl" 
-		"translate" " -type \"double3\" 0 2.4240078611445632 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl" 
@@ -1390,11 +1378,11 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl" 
-		"rotate" " -type \"double3\" 27.811000973203722 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_left_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl" 
-		"translate" " -type \"double3\" 0.58838759077037395 2.4240078611445632 0"
+		"translate" " -type \"double3\" 0.58838759077037395 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl" 
@@ -1402,11 +1390,11 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl" 
-		"rotate" " -type \"double3\" 27.811000973203722 0 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_right_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_l_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_l_ctrl" 
-		"translate" " -type \"double3\" 0 -1.5536661381284573 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_l_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_l_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_l_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_l_ctrl" 
@@ -1414,7 +1402,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_l_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_l_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_r_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_r_ctrl" 
-		"translate" " -type \"double3\" 0 -1.5536661381284573 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_r_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_r_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:lowerJaw_ctrl_grp|SnorkyElephant_CookieMonster:lowerJaw_ctrl|SnorkyElephant_CookieMonster:BottomMouth_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_r_ctrl_grp|SnorkyElephant_CookieMonster:BottomMouth_midlip_r_ctrl" 
@@ -1436,7 +1424,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:eye_l_ctrl_grp|SnorkyElephant_CookieMonster:eye_l_secondaryD_ctrl_grp" 
 		"visibility" " 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_middle_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_middle_ctrl" 
-		"translate" " -type \"double3\" 0 0.0062105682582669908 -2.4612784025768457"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_middle_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_middle_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_middle_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_middle_ctrl" 
@@ -1444,8 +1432,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_middle_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_middle_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_l_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_l_ctrl" 
-		"translate" " -type \"double3\" 0.32926913822111259 -0.52196977322860949 0.22762838539093588"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_l_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_l_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_l_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_l_ctrl" 
@@ -1453,7 +1440,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_l_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_l_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_l_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_l_ctrl" 
-		"translate" " -type \"double3\" 0 2.4240078611445632 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_l_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_l_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_l_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_l_ctrl" 
@@ -1461,7 +1448,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_l_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_l_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_r_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_r_ctrl" 
-		"translate" " -type \"double3\" 0 2.4240078611445632 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_r_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_r_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_r_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_r_ctrl" 
@@ -1469,8 +1456,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_r_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_corner_r_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_r_ctrl_grp1|SnorkyElephant_CookieMonster:TopMouth_side_r_ctrl" 
-		"translate" " -type \"double3\" -0.19078463884040842 -0.59282188057123164 -0.21177518948972593"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_r_ctrl_grp1|SnorkyElephant_CookieMonster:TopMouth_side_r_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:TopMouth_ctrl_grp|SnorkyElephant_CookieMonster:TopMouth_side_r_ctrl_grp1|SnorkyElephant_CookieMonster:TopMouth_side_r_ctrl" 
@@ -1510,7 +1496,8 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:eye_r_ctrl_grp|SnorkyElephant_CookieMonster:R_eye_skinned_jnt_grp|SnorkyElephant_CookieMonster:R_eye_skinned_jnt_8" 
 		"visibility" " 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl" 
-		"translate" " -type \"double3\" 0 0.20786899010810689 0"
+		"translate" " -type \"double3\" 0.044744156614013014 -2.6975686842066748 0.61012858764270872"
+		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl" 
@@ -1518,7 +1505,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl" 
-		"translate" " -type \"double3\" 0 0.89557899935337848 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl" 
@@ -1526,7 +1513,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_r_ctrl_grp|SnorkyElephant_CookieMonster:broIN_r_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl" 
-		"translate" " -type \"double3\" 0 0.89557899935337848 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl" 
@@ -1534,7 +1521,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broIN_l_ctrl_grp|SnorkyElephant_CookieMonster:broIN_l_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broMiddle_l_ctrl_grp|SnorkyElephant_CookieMonster:broMiddle_l_ctrl" 
-		"translate" " -type \"double3\" 0 -1.740417986892635 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broMiddle_l_ctrl_grp|SnorkyElephant_CookieMonster:broMiddle_l_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broMiddle_l_ctrl_grp|SnorkyElephant_CookieMonster:broMiddle_l_ctrl" 
@@ -1542,7 +1529,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broMiddle_l_ctrl_grp|SnorkyElephant_CookieMonster:broMiddle_l_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broMiddle_r_ctrl_grp|SnorkyElephant_CookieMonster:broMiddle_r_ctrl" 
-		"translate" " -type \"double3\" 0 -1.740417986892635 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broMiddle_r_ctrl_grp|SnorkyElephant_CookieMonster:broMiddle_r_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:middleBro_ctrl_grp|SnorkyElephant_CookieMonster:middleBro_ctrl|SnorkyElephant_CookieMonster:broMiddle_r_ctrl_grp|SnorkyElephant_CookieMonster:broMiddle_r_ctrl" 
@@ -1580,8 +1567,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:neck_ctrl_grp|SnorkyElephant_CookieMonster:neck_ctrl|SnorkyElephant_CookieMonster:head_ctrl_grp|SnorkyElephant_CookieMonster:head_ctrl|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl_grp|SnorkyElephant_CookieMonster:Tusk_r_cluster_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:clavical_l_ctrl_grp|SnorkyElephant_CookieMonster:clavical_l_ctrl" 
-		"rotate" " -type \"double3\" 2.622656621725481 2.8142754306711248 2.4588120479010152"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:clavical_l_ctrl_grp|SnorkyElephant_CookieMonster:clavical_l_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:clavical_l_ctrl_grp|SnorkyElephant_CookieMonster:clavical_l_ctrl" 
@@ -1589,8 +1575,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:clavical_l_ctrl_grp|SnorkyElephant_CookieMonster:clavical_l_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:clavical_r_ctrl_grp|SnorkyElephant_CookieMonster:clavical_r_ctrl" 
-		"rotate" " -type \"double3\" 2.622656621725481 2.8142754306711248 2.4588120479010152"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:clavical_r_ctrl_grp|SnorkyElephant_CookieMonster:clavical_r_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:clavical_r_ctrl_grp|SnorkyElephant_CookieMonster:clavical_r_ctrl" 
@@ -1598,8 +1583,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:torso_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl_grp|SnorkyElephant_CookieMonster:spine_01_ctrl|SnorkyElephant_CookieMonster:spine_02_ctrl_grp|SnorkyElephant_CookieMonster:spine_02_ctrl|SnorkyElephant_CookieMonster:spine_03_ctrl_grp|SnorkyElephant_CookieMonster:spine_03_ctrl|SnorkyElephant_CookieMonster:spine_04_ctrl_grp|SnorkyElephant_CookieMonster:spine_04_ctrl|SnorkyElephant_CookieMonster:clavical_r_ctrl_grp|SnorkyElephant_CookieMonster:clavical_r_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:trunk_tip_ctrl_grp|SnorkyElephant_CookieMonster:trunk_tip_ctrl" 
-		"rotate" " -type \"double3\" -0.33455157684678027 -4.1964660990259333 -5.2983519181866958"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:trunk_tip_ctrl_grp|SnorkyElephant_CookieMonster:trunk_tip_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:trunk_tip_ctrl_grp|SnorkyElephant_CookieMonster:trunk_tip_ctrl" 
@@ -1607,8 +1591,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:trunk_tip_ctrl_grp|SnorkyElephant_CookieMonster:trunk_tip_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl" 
-		"rotate" " -type \"double3\" -35.309588898282925 3.4209935694211193 12.149118386549379"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl" 
@@ -1616,8 +1599,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl_grp|SnorkyElephant_CookieMonster:hand_l_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl" 
-		"rotate" " -type \"double3\" -13.77149631105026 16.010263619089685 -37.206652828122451"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl" 
@@ -1625,7 +1607,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl_grp|SnorkyElephant_CookieMonster:hand_r_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl" 
-		"rotate" " -type \"double3\" 0 9.115956687783676 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl_grp|SnorkyElephant_CookieMonster:leg_r_ctrl" 
@@ -1657,8 +1639,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_l_ctrl_grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_leg_02_l_jnt_ctrl" 
 		"rotateY" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl" 
-		"rotate" " -type \"double3\" -3.5574128880650662 7.6570523532712356 32.856029419028879"
-		
+		"rotate" " -type \"double3\" 0 0 16.90141982677499"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl" 
@@ -1666,8 +1647,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_02_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl" 
-		"rotate" " -type \"double3\" 0.19842200677331873 12.109921285617389 28.040398263375362"
-		
+		"rotate" " -type \"double3\" 0 0 -4.0548976047985459"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl" 
@@ -1675,8 +1655,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_03_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl" 
-		"rotate" " -type \"double3\" -10.424835259819577 -5.7489244751771214 35.664328465708877"
-		
+		"rotate" " -type \"double3\" 0 0 -4.0548976047985459"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl" 
@@ -1684,8 +1663,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_04_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl" 
-		"rotate" " -type \"double3\" -9.8600538943336549 5.5591256504611781 4.2120499971515706"
-		
+		"rotate" " -type \"double3\" 0 0 -4.5402083732171841"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl" 
@@ -1693,8 +1671,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_05_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl" 
-		"rotate" " -type \"double3\" 6.1838159051042449 -0.89684161339263979 11.588108416961312"
-		
+		"rotate" " -type \"double3\" 0 0 -4.5402083732171841"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl" 
@@ -1702,8 +1679,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_06_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl" 
-		"rotate" " -type \"double3\" 17.441539201600463 -5.5728888692933376 6.2746538135788459"
-		
+		"rotate" " -type \"double3\" 0 0 -6.2462307859350021"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl" 
@@ -1711,7 +1687,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_07_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl" 
-		"rotate" " -type \"double3\" -0.93775890026935027 -7.223559774114432 7.416809849349951"
+		"rotate" " -type \"double3\" 7.9416176426244691 -2.0228032072422888 11.886331716449883"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl" 
 		"rotateX" " -av"
@@ -1720,7 +1696,8 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_08_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl" 
-		"rotate" " -type \"double3\" 0 0 6.6108981743991935"
+		"rotate" " -type \"double3\" 28.5576880794635 7.53360790039779 12.243671959618636"
+		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl" 
@@ -1728,7 +1705,8 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_09_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl" 
-		"rotate" " -type \"double3\" 0 15.450063166243707 0"
+		"rotate" " -type \"double3\" 33.514336601092353 7.6079992869711175 43.594926378082569"
+		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl" 
 		"rotateX" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl" 
@@ -1736,7 +1714,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_10_jnt_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl" 
-		"rotate" " -type \"double3\" 15.816971945857476 -15.156499773869589 10.207882869566967"
+		"rotate" " -type \"double3\" 28.55768807946345 7.5336079003977687 4.4915622816871972"
 		
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:Controls|SnorkyElephant_CookieMonster:Transform_ctrl_grp|SnorkyElephant_CookieMonster:Transform_ctrl|SnorkyElephant_CookieMonster:COG_ctrl_grp|SnorkyElephant_CookieMonster:COG_ctrl|SnorkyElephant_CookieMonster:Fk_switch_ctrl_grp|SnorkyElephant_CookieMonster:Fk_trunk_ctrl_grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl_Grp|SnorkyElephant_CookieMonster:Fk_main_trunk_11_jnt_ctrl" 
 		"rotateX" " -av"
@@ -1747,15 +1725,15 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nRigid_elephant01" 
 		"visibility" " 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nRigid_elephant01|SnorkyElephant_CookieMonster:nRigid_elephant0Shape1" 
-		"cacheWidth" " 71"
+		"cacheWidth" " 191"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth_BowTie01" 
 		"visibility" " 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth_BowTie01|SnorkyElephant_CookieMonster:nCloth_BowTie0Shape1" 
-		"cacheWidth" " 71"
+		"cacheWidth" " 191"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth_shirt01" 
 		"visibility" " 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth_shirt01|SnorkyElephant_CookieMonster:nCloth_shirt0Shape1" 
-		"cacheWidth" " 71"
+		"cacheWidth" " 191"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:dynamicConstraint1" 
 		"visibility" " 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:dynamicConstraint2" 
@@ -1763,7 +1741,7 @@ createNode reference -n "SnorkyElephant_CookieMonsterRN";
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth1" 
 		"visibility" " 0"
 		2 "|SnorkyElephant_CookieMonster:Elephant|SnorkyElephant_CookieMonster:NCloth|SnorkyElephant_CookieMonster:nCloth1|SnorkyElephant_CookieMonster:nClothShape1" 
-		"cacheWidth" " 71"
+		"cacheWidth" " 191"
 		2 "SnorkyElephant_CookieMonster:coatlayer" "visibility" " 0"
 		2 "SnorkyElephant_CookieMonster:shirtLayer" "displayType" " 2"
 		2 "SnorkyElephant_CookieMonster:shirtLayer" "visibility" " 0"
@@ -3237,7 +3215,7 @@ createNode reference -n "Cup_MilkRN";
 		0 "|Cup_MilkRNfosterParent1|cookie_Child" "|SnorkyElephant_CookieMonsterRNfosterParent1|Glass_Child|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl|Cup_Milk:Base_ctrl_grp|Cup_Milk:Base_ctrl" 
 		"-s -r "
 		2 "|SnorkyElephant_CookieMonsterRNfosterParent1|Glass_Child|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl|Cup_Milk:Base_ctrl_grp|Cup_Milk:Base_ctrl" 
-		"translate" " -type \"double3\" -3.059393282252528 6.2566606488264771 0"
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonsterRNfosterParent1|Glass_Child|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl|Cup_Milk:Base_ctrl_grp|Cup_Milk:Base_ctrl" 
 		"translateX" " -av"
 		2 "|SnorkyElephant_CookieMonsterRNfosterParent1|Glass_Child|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl|Cup_Milk:Base_ctrl_grp|Cup_Milk:Base_ctrl" 
@@ -3245,7 +3223,7 @@ createNode reference -n "Cup_MilkRN";
 		2 "|SnorkyElephant_CookieMonsterRNfosterParent1|Glass_Child|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl|Cup_Milk:Base_ctrl_grp|Cup_Milk:Base_ctrl" 
 		"translateZ" " -av"
 		2 "|SnorkyElephant_CookieMonsterRNfosterParent1|Glass_Child|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl|Cup_Milk:Base_ctrl_grp|Cup_Milk:Base_ctrl" 
-		"rotate" " -type \"double3\" 0 0 -94.77410517225934"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|SnorkyElephant_CookieMonsterRNfosterParent1|Glass_Child|Cup_Milk:GlassCup|Cup_Milk:Transform_ctrl_grp|Cup_Milk:Transform_ctrl|Cup_Milk:Base_ctrl_grp|Cup_Milk:Base_ctrl" 
 		"rotateZ" " -av"
 		2 "|SnorkyElephant_CookieMonsterRNfosterParent1|Glass_Child|Cup_Milk:GlassCup|Cup_Milk:Fluid_milk|Cup_Milk:Please_Turn_on_enable_in_all_these|Cup_Milk:bifrostLiquid1|Cup_Milk:bifrostLiquidContainer1" 
@@ -3356,9 +3334,9 @@ createNode reference -n "CurtainsRN";
 		" -type \"double3\" 423.952 423.952 423.952";
 lockNode -l 1 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "491D4B62-441A-1B28-FC70-56833751355F";
-	setAttr -s 305 ".lnk";
-	setAttr -s 305 ".slnk";
+	rename -uid "C399A7E4-4DF6-0B20-2150-D0B16C4EEF5E";
+	setAttr -s 536 ".lnk";
+	setAttr -s 536 ".slnk";
 createNode timeEditor -s -n "timeEditor";
 	rename -uid "65F386D3-4C8F-DD84-2F8A-779495F55213";
 	setAttr -s 2 ".cmp";
@@ -3367,16 +3345,16 @@ createNode RedshiftOptions -s -n "redshiftOptions";
 	rename -uid "7DEA5468-4E53-2E93-5517-0AAF490E664D";
 	setAttr ".imageFilePrefix" -type "string" "";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "DBFBC49D-4F0C-10E3-7251-19AF2BC88B81";
+	rename -uid "6D7B69AA-4387-3BED-792E-9896DC7B88CC";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "8F34CE9B-4AF6-F285-474F-F98725EBEBE4";
+	rename -uid "2A0A0B8A-4840-D0C8-3148-2CAB8ABE51D6";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "89E4D34A-4F53-42F4-8A94-9A9BE05061F6";
+	rename -uid "9FAC7843-421E-AC1D-8296-859F0E27EB72";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "30BDB727-4484-D720-8266-4DBDD19A5B77";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "EB47D8A1-4706-9DC5-5663-A6A059458AB7";
+	rename -uid "84516BE3-4F24-5490-D4F8-CE997959B16C";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "4382E42A-44C6-C779-A3BA-588BCADF12E2";
 	setAttr ".g" yes;
@@ -3386,30 +3364,30 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"top\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n"
 		+ "                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n"
 		+ "                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n"
-		+ "                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 520\n                -height 336\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n"
+		+ "                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1\n                -height 1\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n"
 		+ "                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n"
 		+ "            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n"
-		+ "            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 520\n            -height 336\n            -sceneRenderFilter 0\n            $editorName;\n"
+		+ "            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n"
 		+ "        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"side\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n"
 		+ "                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n"
 		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n"
-		+ "                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 519\n                -height 336\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
+		+ "                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1\n                -height 1\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
 		+ "            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n"
 		+ "            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n"
-		+ "            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 519\n            -height 336\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels `;\n"
+		+ "            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels `;\n"
 		+ "\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"front\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 1\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n"
 		+ "                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 0\n"
 		+ "                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n"
-		+ "                -width 520\n                -height 336\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n"
+		+ "                -width 1\n                -height 1\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n"
 		+ "            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n"
 		+ "            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 0\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n"
-		+ "            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 520\n            -height 336\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"workspace_Camera\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n"
+		+ "            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `modelPanel -unParent -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            modelEditor -e \n                -camera \"workspace_Camera\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"smoothShaded\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n"
 		+ "                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 0\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 1\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -rendererName \"vp2Renderer\" \n                -objectFilterShowInHUD 1\n"
 		+ "                -isFiltered 0\n                -colorResolution 256 256 \n                -bumpResolution 512 512 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 1\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 0\n                -imagePlane 1\n"
-		+ "                -joints 0\n                -ikHandles 0\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 0\n                -locators 0\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 0\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 1046\n                -height 717\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n"
+		+ "                -joints 0\n                -ikHandles 0\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 0\n                -locators 0\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 0\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 961\n                -height 717\n                -sceneRenderFilter 0\n                $editorName;\n            modelEditor -e -viewSelected 0 $editorName;\n            modelEditor -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName;\n"
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"workspace_Camera\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n"
 		+ "            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n"
-		+ "            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 0\n            -ikHandles 0\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 0\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1046\n            -height 717\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n"
+		+ "            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 0\n            -ikHandles 0\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 0\n            -locators 0\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 0\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 961\n            -height 717\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n"
 		+ "        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" == $panelName) {\n\t\tif ($useSceneConfig) {\n\t\t\t$panelName = `outlinerPanel -unParent -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels `;\n\t\t\t$editorName = $panelName;\n            outlinerEditor -e \n                -docTag \"isolOutln_fromSeln\" \n                -showShapes 0\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 0\n                -showConnected 0\n                -showAnimCurvesOnly 0\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 1\n"
 		+ "                -showAssets 1\n                -showContainedOnly 1\n                -showPublishedAsConnected 0\n                -showContainerContents 1\n                -ignoreDagHierarchy 0\n                -expandConnections 0\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 0\n                -highlightActive 1\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"defaultSetFilter\" \n                -showSetMembers 1\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 1\n                -isSetMember 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n"
 		+ "                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 0\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -renderFilterIndex 0\n                -selectionOrder \"chronological\" \n                -expandAttribute 0\n                $editorName;\n\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n"
@@ -3498,13 +3476,13 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t}\n\t} else {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n"
 		+ "            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"workspace_Camera\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 0\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1046\\n    -height 717\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"workspace_Camera\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 0\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1046\\n    -height 717\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"workspace_Camera\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 0\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 961\\n    -height 717\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"workspace_Camera\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 0\\n    -imagePlane 1\\n    -joints 0\\n    -ikHandles 0\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 0\\n    -locators 0\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 0\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 961\\n    -height 717\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        setFocus `paneLayout -q -p1 $gMainPane`;\n        sceneUIReplacement -deleteRemaining;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "2C9278D6-4139-3368-88F0-69A775AFD1E1";
-	setAttr ".b" -type "string" "playbackOptions -min 160 -max 230 -ast 160 -aet 230 ";
+	setAttr ".b" -type "string" "playbackOptions -min 40 -max 230 -ast 40 -aet 230 ";
 	setAttr ".st" 6;
 createNode reference -n "StageRN";
 	rename -uid "D699DAC0-4205-2256-6567-BCBE60F48D45";
@@ -3539,215 +3517,215 @@ createNode place2dTexture -n "place2dTexture1";
 createNode animCurveTL -n "COG_ctrl_translateX";
 	rename -uid "75EA3FB6-4F18-28FE-2D35-019D1CF46B0A";
 	setAttr ".tan" 18;
-	setAttr -s 18 ".ktv[0:17]"  10 0 24 0.22465174205840355 40 0.22465174205840355
+	setAttr -s 19 ".ktv[0:18]"  10 0 24 0.22465174205840355 40 0.22465174205840355
 		 53 -0.84108353451449858 57 -0.84108353451449858 62 -0.84108353451449858 68 -0.84108353451449858
 		 86 -0.84108353451449858 89 -0.84108353451449858 102 -1.3126275418019868 108 -1.3126275418019868
-		 113 -1.3126275418019868 120 -1.3126275418019868 125 -1.3126275418019868 160 -1.5986362418118267
-		 164 -1.4080442884222983 168 -5.8437401999354224 176 -1.3126275418019868;
-	setAttr -s 18 ".kit[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kot[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kix[2:17]"  0.58333337306976318 0.54166662693023682 
+		 113 -1.3126275418019868 120 -1.3126275418019868 125 -1.3126275418019868 155 -1.3126275418019868
+		 160 -1.5986362418118267 164 -1.4080442884222983 168 -5.8437401999354224 176 -1.3126275418019868;
+	setAttr -s 19 ".kit[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kot[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kix[2:18]"  0.58333337306976318 0.54166662693023682 
 		0.16666674613952637 0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 
-		0.20833349227905273 0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 
-		0.16666650772094727 0.33333349227905273;
-	setAttr -s 18 ".kiy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 18 ".kox[2:17]"  0.66666662693023682 0.16666674613952637 
+		0.20833349227905273 0.29166650772094727 0.20833349227905273 0.20833349227905273 0.20833301544189453 
+		0.16666698455810547 0.16666650772094727 0.33333349227905273;
+	setAttr -s 19 ".kiy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 19 ".kox[2:18]"  0.66666662693023682 0.16666674613952637 
 		0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 0.20833349227905273 
-		0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 0.16666650772094727 
-		0.33333349227905273 0.33333349227905273;
-	setAttr -s 18 ".koy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		0.29166650772094727 0.20833349227905273 1.25 1.4583330154418945 0.16666698455810547 
+		0.16666650772094727 0.33333349227905273 0.33333349227905273;
+	setAttr -s 19 ".koy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTL -n "COG_ctrl_translateY";
 	rename -uid "2C85D163-4CB0-3A9B-29E2-A198C2C6E2DE";
 	setAttr ".tan" 18;
-	setAttr -s 18 ".ktv[0:17]"  10 0 24 -15.837872076870063 40 -15.837872076870063
+	setAttr -s 19 ".ktv[0:18]"  10 0 24 -15.837872076870063 40 -15.837872076870063
 		 53 5.6359936513216464 57 5.6359936513216464 62 5.6359936513216464 68 5.6359936513216464
 		 86 5.6359936513216464 89 5.6359936513216464 102 6.1168366101009708 108 6.1168366101009708
-		 113 6.1168366101009708 120 6.1168366101009708 125 6.1168366101009708 160 2.6944239913636587
-		 164 -3.8844791183822904 168 -19.31205444296705 176 6.1168366101009708;
-	setAttr -s 18 ".kit[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kot[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kix[2:17]"  0.58333337306976318 0.54166662693023682 
+		 113 6.1168366101009708 120 6.1168366101009708 125 6.1168366101009708 155 6.1168366101009708
+		 160 2.6944239913636587 164 -3.8844791183822904 168 -19.31205444296705 176 6.1168366101009708;
+	setAttr -s 19 ".kit[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kot[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kix[2:18]"  0.58333337306976318 0.54166662693023682 
 		0.16666674613952637 0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 
-		0.20833349227905273 0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 
-		0.16666650772094727 0.33333349227905273;
-	setAttr -s 18 ".kiy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 -8.9755382537841797 
+		0.20833349227905273 0.29166650772094727 0.20833349227905273 0.20833349227905273 0.20833301544189453 
+		0.16666698455810547 0.16666650772094727 0.33333349227905273;
+	setAttr -s 19 ".kiy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 -5.5562782287597656 
 		-11.003254890441895 0 0;
-	setAttr -s 18 ".kox[2:17]"  0.66666662693023682 0.16666674613952637 
+	setAttr -s 19 ".kox[2:18]"  0.66666662693023682 0.16666674613952637 
 		0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 0.20833349227905273 
-		0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 0.16666650772094727 
-		0.33333349227905273 0.33333349227905273;
-	setAttr -s 18 ".koy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 -1.0257779359817505 
+		0.29166650772094727 0.20833349227905273 1.25 1.4583330154418945 0.16666698455810547 
+		0.16666650772094727 0.33333349227905273 0.33333349227905273;
+	setAttr -s 19 ".koy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 -4.445037841796875 
 		-11.003223419189453 0 0;
 createNode animCurveTL -n "COG_ctrl_translateZ";
 	rename -uid "4806C056-4C52-61D9-6835-E694A6E47BEA";
 	setAttr ".tan" 18;
-	setAttr -s 18 ".ktv[0:17]"  10 0 24 -221.86065678314748 40 -221.86065678314748
+	setAttr -s 19 ".ktv[0:18]"  10 0 24 -221.86065678314748 40 -221.86065678314748
 		 53 -221.8176495130505 57 -221.8176495130505 62 -221.8176495130505 68 -221.8176495130505
 		 86 -221.8176495130505 89 -221.8176495130505 102 -213.40510675934809 108 -213.40510675934809
-		 113 -213.40510675934809 120 -213.40510675934809 125 -213.40510675934809 160 -213.32366410917058
-		 164 -213.95847100119838 168 -210.22827932421058 176 -213.40510675934809;
-	setAttr -s 18 ".kit[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kot[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kix[2:17]"  0.58333337306976318 0.54166662693023682 
+		 113 -213.40510675934809 120 -213.40510675934809 125 -213.40510675934809 155 -213.40510675934809
+		 160 -213.32366410917058 164 -213.95847100119838 168 -210.22827932421058 176 -213.40510675934809;
+	setAttr -s 19 ".kit[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kot[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kix[2:18]"  0.58333337306976318 0.54166662693023682 
 		0.16666674613952637 0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 
-		0.20833349227905273 0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 
-		0.16666650772094727 0.33333349227905273;
-	setAttr -s 18 ".kiy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 18 ".kox[2:17]"  0.66666662693023682 0.16666674613952637 
+		0.20833349227905273 0.29166650772094727 0.20833349227905273 0.20833349227905273 0.20833301544189453 
+		0.16666698455810547 0.16666650772094727 0.33333349227905273;
+	setAttr -s 19 ".kiy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 19 ".kox[2:18]"  0.66666662693023682 0.16666674613952637 
 		0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 0.20833349227905273 
-		0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 0.16666650772094727 
-		0.33333349227905273 0.33333349227905273;
-	setAttr -s 18 ".koy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		0.29166650772094727 0.20833349227905273 1.25 1.4583330154418945 0.16666698455810547 
+		0.16666650772094727 0.33333349227905273 0.33333349227905273;
+	setAttr -s 19 ".koy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "COG_ctrl_visibility";
 	rename -uid "4A7174FB-4CBF-5849-B042-95B0C7747442";
 	setAttr ".tan" 5;
-	setAttr -s 18 ".ktv[0:17]"  10 1 24 1 40 1 53 1 57 1 62 1 68 1 86 1
-		 89 1 102 1 108 1 113 1 120 1 125 1 160 1 164 1 168 1 176 1;
-	setAttr -s 18 ".kit[0:17]"  9 9 1 9 9 9 9 9 
-		9 9 9 9 9 9 18 18 18 18;
-	setAttr -s 18 ".kot[14:17]"  18 18 18 18;
-	setAttr -s 18 ".kix[2:17]"  0.58333337306976318 0.54166662693023682 
+	setAttr -s 19 ".ktv[0:18]"  10 1 24 1 40 1 53 1 57 1 62 1 68 1 86 1
+		 89 1 102 1 108 1 113 1 120 1 125 1 155 1 160 1 164 1 168 1 176 1;
+	setAttr -s 19 ".kit[0:18]"  9 9 1 9 9 9 9 9 
+		9 9 9 9 9 9 1 18 18 18 18;
+	setAttr -s 19 ".kot[15:18]"  18 18 18 18;
+	setAttr -s 19 ".kix[2:18]"  0.58333337306976318 0.54166662693023682 
 		0.16666674613952637 0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 
-		0.20833349227905273 0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 
-		0.16666650772094727 0.33333349227905273;
-	setAttr -s 18 ".kiy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		0.20833349227905273 0.29166650772094727 0.20833349227905273 0.20833349227905273 0.20833301544189453 
+		0.16666698455810547 0.16666650772094727 0.33333349227905273;
+	setAttr -s 19 ".kiy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "COG_ctrl_rotateX";
 	rename -uid "14E7E238-4A29-3D2E-3BFC-119DB0452C3C";
 	setAttr ".tan" 18;
-	setAttr -s 18 ".ktv[0:17]"  10 0 24 87.317873462703417 40 89.789164957440349
+	setAttr -s 19 ".ktv[0:18]"  10 0 24 87.317873462703417 40 89.789164957440349
 		 53 -0.31496119017786195 57 -6.2770156975961413 62 3.2001676020226961 68 5.500032622596569
 		 86 11.476551586261644 89 10.535479266106417 102 -5.7491963817453122 108 -1.2424856571368488
-		 113 1.1544202939828432 120 1.858841095298587 125 1.858841095298587 160 1.858841095298587
-		 164 3.6070321331958022 168 16.156111098996167 176 -3.9928614147826456;
-	setAttr -s 18 ".kit[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kot[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kix[2:17]"  0.58333337306976318 0.54166662693023682 
+		 113 1.1544202939828432 120 1.858841095298587 125 1.858841095298587 155 1.858841095298587
+		 160 1.858841095298587 164 3.6070321331958022 168 16.156111098996167 176 -3.9928614147826456;
+	setAttr -s 19 ".kit[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kot[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kix[2:18]"  0.58333337306976318 0.54166662693023682 
 		0.16666674613952637 0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 
-		0.20833349227905273 0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 
-		0.16666650772094727 0.33333349227905273;
-	setAttr -s 18 ".kiy[2:17]"  0 -1.0145598649978638 0 0.093431010842323303 
+		0.20833349227905273 0.29166650772094727 0.20833349227905273 0.20833349227905273 0.20833301544189453 
+		0.16666698455810547 0.16666650772094727 0.33333349227905273;
+	setAttr -s 19 ".kiy[2:18]"  0 -1.0145598649978638 0 0.093431010842323303 
 		0.03611253947019577 0 -0.049274429678916931 0 0.065722256898880005 0.022553501650691032 
-		0 0 0 0.091535069048404694 0 0;
-	setAttr -s 18 ".kox[2:17]"  0.66666662693023682 0.16666674613952637 
+		0 0 0 0 0.091535069048404694 0 0;
+	setAttr -s 19 ".kox[2:18]"  0.66666662693023682 0.16666674613952637 
 		0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 0.20833349227905273 
-		0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 0.16666650772094727 
-		0.33333349227905273 0.33333349227905273;
-	setAttr -s 18 ".koy[2:17]"  0 -0.31217244267463684 0 0.11211726069450378 
+		0.29166650772094727 0.20833349227905273 1.25 1.4583330154418945 0.16666698455810547 
+		0.16666650772094727 0.33333349227905273 0.33333349227905273;
+	setAttr -s 19 ".koy[2:18]"  0 -0.31217244267463684 0 0.11211726069450378 
 		0.10833761096000671 0 -0.21352256834506989 0 0.05476858839392662 0.031574860215187073 
-		0 0 0 0.091534808278083801 0 0;
+		0 0 0 0 0.091534808278083801 0 0;
 createNode animCurveTA -n "COG_ctrl_rotateY";
 	rename -uid "8D1C5C14-401E-ADDE-FAF6-D98BF8D1C0E6";
 	setAttr ".tan" 18;
-	setAttr -s 18 ".ktv[0:17]"  10 0 24 92.31089166152826 40 120.84815331120635
+	setAttr -s 19 ".ktv[0:18]"  10 0 24 92.31089166152826 40 120.84815331120635
 		 53 111.33899034182301 57 111.33899034182298 62 111.33899034182295 68 111.33899034182288
 		 86 114.72263365745421 89 121.53859668867614 102 134.86396250679101 108 134.88439871631519
-		 113 137.041394158092 120 136.95974880809817 125 136.95974880809817 160 136.95974880809817
-		 164 136.95974880809803 168 136.95974880809803 176 136.95974880809811;
-	setAttr -s 18 ".kit[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kot[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kix[2:17]"  0.58333337306976318 0.54166662693023682 
+		 113 137.041394158092 120 136.95974880809817 125 136.95974880809817 155 136.95974880809817
+		 160 136.95974880809817 164 136.95974880809803 168 136.95974880809803 176 136.95974880809811;
+	setAttr -s 19 ".kit[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kot[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kix[2:18]"  0.58333337306976318 0.54166662693023682 
 		0.16666674613952637 0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 
-		0.20833349227905273 0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 
-		0.16666650772094727 0.33333349227905273;
-	setAttr -s 18 ".kiy[2:17]"  0 0 0 0 0 0.15258575975894928 0.065912336111068726 
-		0.0023184148594737053 0.0010700374841690063 0 0 0 0 0 0 0;
-	setAttr -s 18 ".kox[2:17]"  0.66666662693023682 0.16666674613952637 
+		0.20833349227905273 0.29166650772094727 0.20833349227905273 0.20833349227905273 0.20833301544189453 
+		0.16666698455810547 0.16666650772094727 0.33333349227905273;
+	setAttr -s 19 ".kiy[2:18]"  0 0 0 0 0 0.15258575975894928 0.065912336111068726 
+		0.0023184148594737053 0.0010700374841690063 0 0 0 0 0 0 0 0;
+	setAttr -s 19 ".kox[2:18]"  0.66666662693023682 0.16666674613952637 
 		0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 0.20833349227905273 
-		0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 0.16666650772094727 
-		0.33333349227905273 0.33333349227905273;
-	setAttr -s 18 ".koy[2:17]"  0 0 0 0 0 0.025430958718061447 0.28562015295028687 
-		0.0010700374841690063 0.00089169852435588837 0 0 0 0 0 0 0;
+		0.29166650772094727 0.20833349227905273 1.25 1.4583330154418945 0.16666698455810547 
+		0.16666650772094727 0.33333349227905273 0.33333349227905273;
+	setAttr -s 19 ".koy[2:18]"  0 0 0 0 0 0.025430958718061447 0.28562015295028687 
+		0.0010700374841690063 0.00089169852435588837 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "COG_ctrl_rotateZ";
 	rename -uid "F637D647-44C7-1A75-1FCE-1681F38DA098";
 	setAttr ".tan" 18;
-	setAttr -s 18 ".ktv[0:17]"  10 0 24 0 40 2.4989402074342029 53 2.5478554728409386
+	setAttr -s 19 ".ktv[0:18]"  10 0 24 0 40 2.4989402074342029 53 2.5478554728409386
 		 57 2.5478554728409386 62 2.5478554728409386 68 2.5478554728409386 86 2.6878451677369464
 		 89 -1.4401262194600557 102 1.4710903999681808 108 0.46394067435057074 113 -1.1181346456679506
-		 120 -3.5081501831664128 125 -3.5081501831664128 160 -3.5081501831664128 164 -3.5081501831664124
-		 168 -3.5081501831664124 176 -3.5081501831664128;
-	setAttr -s 18 ".kit[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kot[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kix[2:17]"  0.58333337306976318 0.54166662693023682 
+		 120 -3.5081501831664128 125 -3.5081501831664128 155 -3.5081501831664128 160 -3.5081501831664128
+		 164 -3.5081501831664128 168 -3.5081501831664128 176 -3.5081501831664128;
+	setAttr -s 19 ".kit[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kot[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kix[2:18]"  0.58333337306976318 0.54166662693023682 
 		0.16666674613952637 0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 
-		0.20833349227905273 0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 
-		0.16666650772094727 0.33333349227905273;
-	setAttr -s 18 ".kiy[2:17]"  0 0 0 0 0 0 0 0 -0.024649355560541153 -0.028885882347822189 
-		0 0 0 0 0 0;
-	setAttr -s 18 ".kox[2:17]"  0.66666662693023682 0.16666674613952637 
+		0.20833349227905273 0.29166650772094727 0.20833349227905273 0.20833349227905273 0.20833301544189453 
+		0.16666698455810547 0.16666650772094727 0.33333349227905273;
+	setAttr -s 19 ".kiy[2:18]"  0 0 0 0 0 0 0 0 -0.024649355560541153 -0.028885882347822189 
+		0 0 0 0 0 0 0;
+	setAttr -s 19 ".kox[2:18]"  0.66666662693023682 0.16666674613952637 
 		0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 0.20833349227905273 
-		0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 0.16666650772094727 
-		0.33333349227905273 0.33333349227905273;
-	setAttr -s 18 ".koy[2:17]"  0 0 0 0 0 0 0 0 -0.020541146397590637 -0.040440183132886887 
-		0 0 0 0 0 0;
+		0.29166650772094727 0.20833349227905273 1.25 1.4583330154418945 0.16666698455810547 
+		0.16666650772094727 0.33333349227905273 0.33333349227905273;
+	setAttr -s 19 ".koy[2:18]"  0 0 0 0 0 0 0 0 -0.020541146397590637 -0.040440183132886887 
+		0 0 0 0 0 0 0;
 createNode animCurveTU -n "COG_ctrl_scaleX";
 	rename -uid "F9239D47-41FB-7028-0F27-D681BE39BC36";
 	setAttr ".tan" 18;
-	setAttr -s 18 ".ktv[0:17]"  10 1 24 1 40 1 53 1 57 1 62 1 68 1 86 1
-		 89 1 102 1 108 1 113 1 120 1 125 1 160 1 164 1 168 1 176 1;
-	setAttr -s 18 ".kit[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kot[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kix[2:17]"  0.58333337306976318 0.54166662693023682 
+	setAttr -s 19 ".ktv[0:18]"  10 1 24 1 40 1 53 1 57 1 62 1 68 1 86 1
+		 89 1 102 1 108 1 113 1 120 1 125 1 155 1 160 1 164 1 168 1 176 1;
+	setAttr -s 19 ".kit[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kot[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kix[2:18]"  0.58333337306976318 0.54166662693023682 
 		0.16666674613952637 0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 
-		0.20833349227905273 0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 
-		0.16666650772094727 0.33333349227905273;
-	setAttr -s 18 ".kiy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 18 ".kox[2:17]"  0.66666662693023682 0.16666674613952637 
+		0.20833349227905273 0.29166650772094727 0.20833349227905273 0.20833349227905273 0.20833301544189453 
+		0.16666698455810547 0.16666650772094727 0.33333349227905273;
+	setAttr -s 19 ".kiy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 19 ".kox[2:18]"  0.66666662693023682 0.16666674613952637 
 		0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 0.20833349227905273 
-		0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 0.16666650772094727 
-		0.33333349227905273 0.33333349227905273;
-	setAttr -s 18 ".koy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		0.29166650772094727 0.20833349227905273 1.25 1.4583330154418945 0.16666698455810547 
+		0.16666650772094727 0.33333349227905273 0.33333349227905273;
+	setAttr -s 19 ".koy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "COG_ctrl_scaleY";
 	rename -uid "2EDFC0A7-4D1A-4A62-701F-A3B2B2A137B9";
 	setAttr ".tan" 18;
-	setAttr -s 18 ".ktv[0:17]"  10 1 24 1 40 1 53 1 57 1 62 1 68 1 86 1
-		 89 1 102 1 108 1 113 1 120 1 125 1 160 1 164 1 168 1 176 1;
-	setAttr -s 18 ".kit[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kot[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kix[2:17]"  0.58333337306976318 0.54166662693023682 
+	setAttr -s 19 ".ktv[0:18]"  10 1 24 1 40 1 53 1 57 1 62 1 68 1 86 1
+		 89 1 102 1 108 1 113 1 120 1 125 1 155 1 160 1 164 1 168 1 176 1;
+	setAttr -s 19 ".kit[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kot[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kix[2:18]"  0.58333337306976318 0.54166662693023682 
 		0.16666674613952637 0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 
-		0.20833349227905273 0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 
-		0.16666650772094727 0.33333349227905273;
-	setAttr -s 18 ".kiy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 18 ".kox[2:17]"  0.66666662693023682 0.16666674613952637 
+		0.20833349227905273 0.29166650772094727 0.20833349227905273 0.20833349227905273 0.20833301544189453 
+		0.16666698455810547 0.16666650772094727 0.33333349227905273;
+	setAttr -s 19 ".kiy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 19 ".kox[2:18]"  0.66666662693023682 0.16666674613952637 
 		0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 0.20833349227905273 
-		0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 0.16666650772094727 
-		0.33333349227905273 0.33333349227905273;
-	setAttr -s 18 ".koy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		0.29166650772094727 0.20833349227905273 1.25 1.4583330154418945 0.16666698455810547 
+		0.16666650772094727 0.33333349227905273 0.33333349227905273;
+	setAttr -s 19 ".koy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTU -n "COG_ctrl_scaleZ";
 	rename -uid "09BA12AA-4D71-B6C3-B607-D2AAB516B00D";
 	setAttr ".tan" 18;
-	setAttr -s 18 ".ktv[0:17]"  10 1 24 1 40 1 53 1 57 1 62 1 68 1 86 1
-		 89 1 102 1 108 1 113 1 120 1 125 1 160 1 164 1 168 1 176 1;
-	setAttr -s 18 ".kit[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kot[2:17]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18;
-	setAttr -s 18 ".kix[2:17]"  0.58333337306976318 0.54166662693023682 
+	setAttr -s 19 ".ktv[0:18]"  10 1 24 1 40 1 53 1 57 1 62 1 68 1 86 1
+		 89 1 102 1 108 1 113 1 120 1 125 1 155 1 160 1 164 1 168 1 176 1;
+	setAttr -s 19 ".kit[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kot[2:18]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 1 18 18 18 18;
+	setAttr -s 19 ".kix[2:18]"  0.58333337306976318 0.54166662693023682 
 		0.16666674613952637 0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 
-		0.20833349227905273 0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 
-		0.16666650772094727 0.33333349227905273;
-	setAttr -s 18 ".kiy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
-	setAttr -s 18 ".kox[2:17]"  0.66666662693023682 0.16666674613952637 
+		0.20833349227905273 0.29166650772094727 0.20833349227905273 0.20833349227905273 0.20833301544189453 
+		0.16666698455810547 0.16666650772094727 0.33333349227905273;
+	setAttr -s 19 ".kiy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 19 ".kox[2:18]"  0.66666662693023682 0.16666674613952637 
 		0.20833325386047363 0.25 0.75 0.125 0.54166674613952637 0.25 0.20833349227905273 
-		0.29166650772094727 0.20833349227905273 1.4583330154418945 0.16666698455810547 0.16666650772094727 
-		0.33333349227905273 0.33333349227905273;
-	setAttr -s 18 ".koy[2:17]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+		0.29166650772094727 0.20833349227905273 1.25 1.4583330154418945 0.16666698455810547 
+		0.16666650772094727 0.33333349227905273 0.33333349227905273;
+	setAttr -s 19 ".koy[2:18]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "hip_r_ctrl_rotateX";
 	rename -uid "4D28D1E9-4EBB-E25A-D1B7-0FAD20184F1E";
 	setAttr ".tan" 18;
@@ -4888,137 +4866,141 @@ createNode animCurveTU -n "ear_l_04_jnt_ctrl_followRotate";
 createNode animCurveTA -n "head_ctrl_rotateX";
 	rename -uid "128A54B1-4A5B-31DA-5D85-8AA3E25E61C9";
 	setAttr ".tan" 18;
-	setAttr -s 25 ".ktv[0:24]"  10 0 24 0 40 0 53 0 58 0 62 0 67 0 73 -4.5192858984985689
+	setAttr -s 26 ".ktv[0:25]"  10 0 24 0 40 0 53 0 58 0 62 0 67 0 73 -4.5192858984985689
 		 82 -0.2304147639906462 86 -11.288655902217181 90 -6.5976617161390472 98 -8.9431654276089638
 		 102 -7.4289799663604885 109 -6.5581488422963075 112 -6.079685853949127 118 -6.013164810520002
-		 121 -6.3748253622672966 125 -6.079685853949127 136 -20.83105891201528 163 -6.7284673820871248
-		 171 -6.5071417356240078 175 -6.5071417356240078 184 -20.83105891201528 189 -21.070177178793504
-		 194 -20.83105891201528;
-	setAttr -s 25 ".kit[2:24]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
-	setAttr -s 25 ".kot[2:24]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
-	setAttr -s 25 ".kix[2:24]"  0.58333337306976318 0.54166662693023682 
+		 121 -6.3748253622672966 125 -6.079685853949127 136 -20.83105891201528 159 -8.0936935166134454
+		 163 -6.7284673820871248 171 -6.3748632280501472 175 -5.7174986612872098 184 -20.83105891201528
+		 189 -21.070177178793504 194 -20.83105891201528;
+	setAttr -s 26 ".kit[2:25]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
+	setAttr -s 26 ".kot[2:25]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
+	setAttr -s 26 ".kix[2:25]"  0.58333337306976318 0.54166662693023682 
 		0.20833349227905273 0.16666650772094727 0.20833349227905273 0.25 0.375 0.16666650772094727 
 		0.16666674613952637 0.33333349227905273 0.16666650772094727 0.29166650772094727 0.125 
-		0.25 0.125 0.16666698455810547 0.45833301544189453 1.125 1 1 0.375 0.20833349227905273 
-		0.20833301544189453;
-	setAttr -s 25 ".kiy[2:24]"  0 0 0 0 0 0 0 0 0 0 0.015136865898966789 
-		0.016484735533595085 0.0017415168695151806 0 0 0 0 0.03911145031452179 0 0 -0.022536348551511765 
-		0 0;
-	setAttr -s 25 ".kox[2:24]"  0.58333337306976318 0.20833349227905273 
+		0.25 0.125 0.16666698455810547 0.45833301544189453 0.95833349227905273 0.16666650772094727 
+		1 1 0.375 0.20833349227905273 0.20833301544189453;
+	setAttr -s 26 ".kiy[2:25]"  0 0 0 0 0 0 0 0 0 0 0.015136865898966789 
+		0.016484735533595085 0.0017415168695151806 0 0 0 0 0.20967200398445129 0.0092573221772909164 
+		0 0 -0.022536348551511765 0 0;
+	setAttr -s 26 ".kox[2:25]"  0.58333337306976318 0.20833349227905273 
 		0.16666650772094727 0.20833349227905273 0.25 0.375 0.16666650772094727 0.16666674613952637 
 		0.33333349227905273 0.16666650772094727 0.29166650772094727 0.125 0.25 0.125 0.16666698455810547 
-		0.45833301544189453 1.125 0.33333349227905273 0.41666698455810547 0.41666698455810547 
-		0.20833349227905273 0.20833301544189453 0.20833301544189453;
-	setAttr -s 25 ".koy[2:24]"  0 0 0 0 0 0 0 0 0 0 0.026489526033401489 
-		0.0070648901164531708 0.0034830337390303612 0 0 0 0 0.011588583700358868 0 0 -0.012520203366875648 
-		0 0;
+		0.45833301544189453 0.95833349227905273 0.16666650772094727 0.33333349227905273 0.41666698455810547 
+		0.41666698455810547 0.20833349227905273 0.20833301544189453 0.20833301544189453;
+	setAttr -s 26 ".koy[2:25]"  0 0 0 0 0 0 0 0 0 0 0.026489526033401489 
+		0.0070648901164531708 0.0034830337390303612 0 0 0 0 0.03646465390920639 0.018514670431613922 
+		0 0 -0.012520203366875648 0 0;
 createNode animCurveTA -n "head_ctrl_rotateY";
 	rename -uid "354F8C47-48DD-394E-DCAD-EA998D950141";
 	setAttr ".tan" 18;
-	setAttr -s 25 ".ktv[0:24]"  10 0 24 0 40 0 53 0 58 0 62 0 67 0 73 -2.794380945351457
+	setAttr -s 26 ".ktv[0:25]"  10 0 24 0 40 0 53 0 58 0 62 0 67 0 73 -2.794380945351457
 		 82 -1.0515579490860092 86 1.3164810999039533 90 14.081491834722769 98 9.3126034073813635
 		 102 10.556275299809281 109 8.7730981327005839 112 9.1098447898129304 118 3.3718480500219408
-		 121 1.0624345647333227 125 9.1098447898129304 136 -3.7765295085245683 163 -3.1528543053846616
-		 171 -6.3120803861667758 175 -6.3120803861667758 184 -3.7765295085245683 189 -1.9443828114561963
-		 194 -3.7765295085245683;
-	setAttr -s 25 ".kit[2:24]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
-	setAttr -s 25 ".kot[2:24]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
-	setAttr -s 25 ".kix[2:24]"  0.58333337306976318 0.54166662693023682 
+		 121 1.0624345647333227 125 9.1098447898129304 136 -3.7765295085245683 159 -2.3619222808636415
+		 163 -3.1528543053846616 171 -4.7906089268799246 175 -7.0348003231849816 184 -3.7765295085245683
+		 189 -1.9443828114561963 194 -3.7765295085245683;
+	setAttr -s 26 ".kit[2:25]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
+	setAttr -s 26 ".kot[2:25]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
+	setAttr -s 26 ".kix[2:25]"  0.58333337306976318 0.54166662693023682 
 		0.20833349227905273 0.16666650772094727 0.20833349227905273 0.25 0.375 0.16666650772094727 
 		0.16666674613952637 0.33333349227905273 0.16666650772094727 0.29166650772094727 0.125 
-		0.25 0.125 0.16666698455810547 0.45833301544189453 1.125 1 1 0.375 0.20833349227905273 
-		0.20833301544189453;
-	setAttr -s 25 ".kiy[2:24]"  0 0 0 0 0 0 0.049671761691570282 0.12399023771286011 
-		0 0 0 0 0 -0.093635872006416321 0 0 0 0 0 0 0.049005437642335892 0 0;
-	setAttr -s 25 ".kox[2:24]"  0.58333337306976318 0.20833349227905273 
+		0.25 0.125 0.16666698455810547 0.45833301544189453 0.95833349227905273 0.16666650772094727 
+		1 1 0.375 0.20833349227905273 0.20833301544189453;
+	setAttr -s 26 ".kiy[2:25]"  0 0 0 0 0 0 0.049671761691570282 0.12399023771286011 
+		0 0 0 0 0 -0.093635872006416321 0 0 0 0 -0.014129512943327427 0 0 0.057114336639642715 
+		0 0;
+	setAttr -s 26 ".kox[2:25]"  0.58333337306976318 0.20833349227905273 
 		0.16666650772094727 0.20833349227905273 0.25 0.375 0.16666650772094727 0.16666674613952637 
 		0.33333349227905273 0.16666650772094727 0.29166650772094727 0.125 0.25 0.125 0.16666698455810547 
-		0.45833301544189453 1.125 0.33333349227905273 0.41666698455810547 0.41666698455810547 
-		0.20833349227905273 0.20833301544189453 0.20833301544189453;
-	setAttr -s 25 ".koy[2:24]"  0 0 0 0 0 0 0.022076316177845001 0.12399040907621384 
-		0 0 0 0 0 -0.04681793600320816 0 0 0 0 0 0 0.02722526527941227 0 0;
+		0.45833301544189453 0.95833349227905273 0.16666650772094727 0.33333349227905273 0.41666698455810547 
+		0.41666698455810547 0.20833349227905273 0.20833301544189453 0.20833301544189453;
+	setAttr -s 26 ".koy[2:25]"  0 0 0 0 0 0 0.022076316177845001 0.12399040907621384 
+		0 0 0 0 0 -0.04681793600320816 0 0 0 0 -0.028259065002202988 0 0 0.031730212271213531 
+		0 0;
 createNode animCurveTA -n "head_ctrl_rotateZ";
 	rename -uid "2E36DDF3-414C-7D6C-9B9D-3BB51D07BCB1";
 	setAttr ".tan" 18;
-	setAttr -s 25 ".ktv[0:24]"  10 8.8415514871106691 24 8.8415514871106691
+	setAttr -s 26 ".ktv[0:25]"  10 8.8415514871106691 24 8.8415514871106691
 		 40 8.8415514871106691 53 9.5614827519739727 58 8.7556349088819765 62 20.047443611939542
 		 67 15.281763426184664 73 12.74064979165874 82 5.8333229354911911 86 31.621287787466638
 		 90 24.049811175797629 98 2.3141839580431443 102 11.073883600668402 109 16.971494433543402
 		 112 20.049167167017806 118 20.660318178025165 121 14.265454585983907 125 20.049167167017806
-		 136 24.684348088985356 163 30.109947637620618 171 17.896501866126826 175 17.896501866126826
-		 184 24.684348088985356 189 29.472553494774125 194 24.684348088985356;
-	setAttr -s 25 ".kit[2:24]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
-	setAttr -s 25 ".kot[2:24]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
-	setAttr -s 25 ".kix[2:24]"  0.58333337306976318 0.54166662693023682 
+		 136 24.684348088985356 159 35.851925445927961 163 30.109947637620618 171 3.5197809713337023
+		 175 11.109529667864017 184 24.684348088985356 189 29.472553494774125 194 24.684348088985356;
+	setAttr -s 26 ".kit[2:25]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
+	setAttr -s 26 ".kot[2:25]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
+	setAttr -s 26 ".kix[2:25]"  0.58333337306976318 0.54166662693023682 
 		0.20833349227905273 0.16666650772094727 0.20833349227905273 0.25 0.375 0.16666650772094727 
 		0.16666674613952637 0.33333349227905273 0.16666650772094727 0.29166650772094727 0.125 
-		0.25 0.125 0.16666698455810547 0.45833301544189453 1.125 1 1 0.375 0.20833349227905273 
-		0.20833301544189453;
-	setAttr -s 25 ".kiy[2:24]"  0 0 0 0 -0.057967118918895721 -0.065962560474872589 
+		0.25 0.125 0.16666698455810547 0.45833301544189453 0.95833349227905273 0.16666650772094727 
+		1 1 0.375 0.20833349227905273 0.20833301544189453;
+	setAttr -s 26 ".kiy[2:25]"  0 0 0 0 -0.057967118918895721 -0.065962560474872589 
 		0 0 -0.17050181329250336 0 0.09302482008934021 0.10965375602245331 0.015999896451830864 
-		0 0 0.048491824418306351 0.050829742103815079 0 0 0 0.12988296151161194 0 0;
-	setAttr -s 25 ".kox[2:24]"  0.58333337306976318 0.20833349227905273 
+		0 0 0.048491824418306351 0.089232645928859711 0 -0.18810060620307922 0 0 0.20603258907794952 
+		0 0;
+	setAttr -s 26 ".kox[2:25]"  0.58333337306976318 0.20833349227905273 
 		0.16666650772094727 0.20833349227905273 0.25 0.375 0.16666650772094727 0.16666674613952637 
 		0.33333349227905273 0.16666650772094727 0.29166650772094727 0.125 0.25 0.125 0.16666698455810547 
-		0.45833301544189453 1.125 0.33333349227905273 0.41666698455810547 0.41666698455810547 
-		0.20833349227905273 0.20833301544189453 0.20833301544189453;
-	setAttr -s 25 ".koy[2:24]"  0 0 0 0 -0.069560490548610687 -0.098943836987018585 
+		0.45833301544189453 0.95833349227905273 0.16666650772094727 0.33333349227905273 0.41666698455810547 
+		0.41666698455810547 0.20833349227905273 0.20833301544189453 0.20833301544189453;
+	setAttr -s 26 ".koy[2:25]"  0 0 0 0 -0.069560490548610687 -0.098943836987018585 
 		0 0 -0.34100362658500671 0 0.16279350221157074 0.046994492411613464 0.031999792903661728 
-		0 0 0.13335217535495758 0.12476400285959244 0 0 0 0.072157256305217743 0 0;
+		0 0 0.13335217535495758 0.18657751381397247 0 -0.37620174884796143 0 0 0.11446263641119003 
+		0 0;
 createNode animCurveTU -n "head_ctrl_TuskControls";
 	rename -uid "2AB83A49-4B54-366C-56E3-ECB07EC02676";
 	setAttr ".tan" 18;
-	setAttr -s 25 ".ktv[0:24]"  10 0 24 0 40 0 53 0 58 0 62 0 67 0 73 0
-		 82 0 86 0 90 0 98 0 102 0 109 0 112 0 118 0 121 0 125 0 136 0 163 0 171 0 175 0 184 0
-		 189 0 194 0;
-	setAttr -s 25 ".kit[2:24]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
-	setAttr -s 25 ".kot[2:24]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
-	setAttr -s 25 ".kix[2:24]"  0.58333337306976318 0.54166662693023682 
+	setAttr -s 26 ".ktv[0:25]"  10 0 24 0 40 0 53 0 58 0 62 0 67 0 73 0
+		 82 0 86 0 90 0 98 0 102 0 109 0 112 0 118 0 121 0 125 0 136 0 159 0 163 0 171 0 175 0
+		 184 0 189 0 194 0;
+	setAttr -s 26 ".kit[2:25]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
+	setAttr -s 26 ".kot[2:25]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
+	setAttr -s 26 ".kix[2:25]"  0.58333337306976318 0.54166662693023682 
 		0.20833349227905273 0.16666650772094727 0.20833349227905273 0.25 0.375 0.16666650772094727 
 		0.16666674613952637 0.33333349227905273 0.16666650772094727 0.29166650772094727 0.125 
-		0.25 0.125 0.16666698455810547 0.45833301544189453 1.125 1 1 0.375 0.20833349227905273 
-		0.20833301544189453;
-	setAttr -s 25 ".kiy[2:24]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-		0 0 0;
-	setAttr -s 25 ".kox[2:24]"  0.58333337306976318 0.20833349227905273 
+		0.25 0.125 0.16666698455810547 0.45833301544189453 0.95833349227905273 0.16666650772094727 
+		1 1 0.375 0.20833349227905273 0.20833301544189453;
+	setAttr -s 26 ".kiy[2:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		0 0 0 0;
+	setAttr -s 26 ".kox[2:25]"  0.58333337306976318 0.20833349227905273 
 		0.16666650772094727 0.20833349227905273 0.25 0.375 0.16666650772094727 0.16666674613952637 
 		0.33333349227905273 0.16666650772094727 0.29166650772094727 0.125 0.25 0.125 0.16666698455810547 
-		0.45833301544189453 1.125 0.33333349227905273 0.41666698455810547 0.41666698455810547 
-		0.20833349227905273 0.20833301544189453 0.20833301544189453;
-	setAttr -s 25 ".koy[2:24]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-		0 0 0;
+		0.45833301544189453 0.95833349227905273 0.16666650772094727 0.33333349227905273 0.41666698455810547 
+		0.41666698455810547 0.20833349227905273 0.20833301544189453 0.20833301544189453;
+	setAttr -s 26 ".koy[2:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		0 0 0 0;
 createNode animCurveTU -n "head_ctrl_FullTrunk";
 	rename -uid "A603261F-406E-0E97-876C-9BBFF64E5F2A";
 	setAttr ".tan" 18;
-	setAttr -s 25 ".ktv[0:24]"  10 0 24 0 40 0 53 0 58 0 62 0 67 0 73 0
-		 82 0 86 0 90 0 98 0 102 0 109 0 112 0 118 0 121 0 125 0 136 0 163 0 171 0 175 0 184 0
-		 189 0 194 0;
-	setAttr -s 25 ".kit[2:24]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
-	setAttr -s 25 ".kot[2:24]"  1 18 18 18 18 18 18 18 
-		18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
-	setAttr -s 25 ".kix[2:24]"  0.58333337306976318 0.54166662693023682 
+	setAttr -s 26 ".ktv[0:25]"  10 0 24 0 40 0 53 0 58 0 62 0 67 0 73 0
+		 82 0 86 0 90 0 98 0 102 0 109 0 112 0 118 0 121 0 125 0 136 0 159 0 163 0 171 0 175 0
+		 184 0 189 0 194 0;
+	setAttr -s 26 ".kit[2:25]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
+	setAttr -s 26 ".kot[2:25]"  1 18 18 18 18 18 18 18 
+		18 18 18 18 18 18 18 18 18 18 18 1 1 18 18 18;
+	setAttr -s 26 ".kix[2:25]"  0.58333337306976318 0.54166662693023682 
 		0.20833349227905273 0.16666650772094727 0.20833349227905273 0.25 0.375 0.16666650772094727 
 		0.16666674613952637 0.33333349227905273 0.16666650772094727 0.29166650772094727 0.125 
-		0.25 0.125 0.16666698455810547 0.45833301544189453 1.125 1 1 0.375 0.20833349227905273 
-		0.20833301544189453;
-	setAttr -s 25 ".kiy[2:24]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-		0 0 0;
-	setAttr -s 25 ".kox[2:24]"  0.58333337306976318 0.20833349227905273 
+		0.25 0.125 0.16666698455810547 0.45833301544189453 0.95833349227905273 0.16666650772094727 
+		1 1 0.375 0.20833349227905273 0.20833301544189453;
+	setAttr -s 26 ".kiy[2:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		0 0 0 0;
+	setAttr -s 26 ".kox[2:25]"  0.58333337306976318 0.20833349227905273 
 		0.16666650772094727 0.20833349227905273 0.25 0.375 0.16666650772094727 0.16666674613952637 
 		0.33333349227905273 0.16666650772094727 0.29166650772094727 0.125 0.25 0.125 0.16666698455810547 
-		0.45833301544189453 1.125 0.33333349227905273 0.41666698455810547 0.41666698455810547 
-		0.20833349227905273 0.20833301544189453 0.20833301544189453;
-	setAttr -s 25 ".koy[2:24]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-		0 0 0;
+		0.45833301544189453 0.95833349227905273 0.16666650772094727 0.33333349227905273 0.41666698455810547 
+		0.41666698455810547 0.20833349227905273 0.20833301544189453 0.20833301544189453;
+	setAttr -s 26 ".koy[2:25]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		0 0 0 0;
 createNode animCurveTA -n "neck_ctrl_rotateX";
 	rename -uid "14F743E3-4F05-A5FE-7370-269744E6E399";
 	setAttr ".tan" 18;
@@ -12632,48 +12614,109 @@ createNode animCurveTU -n "Ik_leg_03_l_ctrl_Follow";
 createNode animCurveTL -n "workspace_Camera_translateX";
 	rename -uid "2951CB85-4A92-2D16-618E-87B00A4AECFE";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  169 193.28589446034752 176 308.42645453664585;
+	setAttr -s 4 ".ktv[0:3]"  40 207.26620610569668 163 207.26620610569668
+		 169 193.28589446034752 176 308.42645453664585;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  5.375 0.25 0.29166698455810547;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  5.375 0.29166698455810547 0.29166698455810547;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 createNode animCurveTL -n "workspace_Camera_translateY";
 	rename -uid "7779EE92-4501-8DC1-4061-488096247CCC";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  169 100.95525784882118 176 6.7027617905431969;
+	setAttr -s 4 ".ktv[0:3]"  40 120.70675074657382 163 120.70675074657382
+		 169 100.95525784882118 176 6.7027617905431969;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  5.375 0.25 0.29166698455810547;
+	setAttr -s 4 ".kiy[1:3]"  0 -52.617195129394531 0;
+	setAttr -s 4 ".kox[1:3]"  5.375 0.29166698455810547 0.29166698455810547;
+	setAttr -s 4 ".koy[1:3]"  0 -61.386795043945313 0;
 createNode animCurveTL -n "workspace_Camera_translateZ";
 	rename -uid "F60C0A7A-4CFE-6E7A-6FE8-F78A2962A805";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  169 -303.90372678948381 176 -240.35652011918128;
+	setAttr -s 4 ".ktv[0:3]"  40 -265.60096490693172 163 -265.60096490693172
+		 169 -303.90372678948381 176 -240.35652011918128;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  5.375 0.25 0.29166698455810547;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  5.375 0.29166698455810547 0.29166698455810547;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 createNode animCurveTU -n "workspace_Camera_visibility";
 	rename -uid "8E9D5FBE-4859-1705-5243-C88C81786439";
-	setAttr ".tan" 9;
-	setAttr -s 2 ".ktv[0:1]"  169 1 176 1;
-	setAttr -s 2 ".kot[0:1]"  5 5;
+	setAttr ".tan" 5;
+	setAttr -s 4 ".ktv[0:3]"  40 1 163 1 169 1 176 1;
+	setAttr -s 4 ".kit[0:3]"  9 1 9 9;
+	setAttr -s 4 ".kix[1:3]"  5.375 0.25 0.29166698455810547;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
 createNode animCurveTA -n "workspace_Camera_rotateX";
 	rename -uid "49972616-48A4-688F-0828-B9B8829ACB75";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  169 2.3999999999995709 176 23.999999999994664;
+	setAttr -s 4 ".ktv[0:3]"  40 15.599999999998902 163 15.599999999998902
+		 169 2.3999999999995709 176 23.999999999994664;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  5.375 0.25 0.29166698455810547;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  5.375 0.29166698455810547 0.29166698455810547;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 createNode animCurveTA -n "workspace_Camera_rotateY";
 	rename -uid "39E7D9AE-482D-330D-C000-1CA31070BDF9";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  169 108.79999999998593 176 90.399999999984175;
+	setAttr -s 4 ".ktv[0:3]"  40 100.79999999998527 163 100.79999999998527
+		 169 108.79999999998593 176 90.399999999984175;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  5.375 0.25 0.29166698455810547;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  5.375 0.29166698455810547 0.29166698455810547;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 createNode animCurveTA -n "workspace_Camera_rotateZ";
 	rename -uid "6B33D0F9-4516-790D-55E1-BA97A90E4EA9";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  169 0 176 0;
+	setAttr -s 4 ".ktv[0:3]"  40 0 163 0 169 0 176 0;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  5.375 0.25 0.29166698455810547;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  5.375 0.29166698455810547 0.29166698455810547;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 createNode animCurveTU -n "workspace_Camera_scaleX";
 	rename -uid "55927EF2-4131-3AAF-4A7F-93A32B622172";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  169 1 176 1;
+	setAttr -s 4 ".ktv[0:3]"  40 1 163 1 169 1 176 1;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  5.375 0.25 0.29166698455810547;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  5.375 0.29166698455810547 0.29166698455810547;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 createNode animCurveTU -n "workspace_Camera_scaleY";
 	rename -uid "B859BBD5-46FB-688C-729E-B5AAD31D39BA";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  169 1 176 1;
+	setAttr -s 4 ".ktv[0:3]"  40 1 163 1 169 1 176 1;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  5.375 0.25 0.29166698455810547;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  5.375 0.29166698455810547 0.29166698455810547;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 createNode animCurveTU -n "workspace_Camera_scaleZ";
 	rename -uid "6FF6EC55-40D7-7E9F-E6AD-B18000F224E9";
 	setAttr ".tan" 18;
-	setAttr -s 2 ".ktv[0:1]"  169 1 176 1;
+	setAttr -s 4 ".ktv[0:3]"  40 1 163 1 169 1 176 1;
+	setAttr -s 4 ".kit[1:3]"  1 18 18;
+	setAttr -s 4 ".kot[1:3]"  1 18 18;
+	setAttr -s 4 ".kix[1:3]"  5.375 0.25 0.29166698455810547;
+	setAttr -s 4 ".kiy[1:3]"  0 0 0;
+	setAttr -s 4 ".kox[1:3]"  5.375 0.29166698455810547 0.29166698455810547;
+	setAttr -s 4 ".koy[1:3]"  0 0 0;
 select -ne :time1;
 	setAttr ".ihi" 0;
-	setAttr ".o" 229;
-	setAttr ".unw" 229;
+	setAttr ".o" 40;
+	setAttr ".unw" 40;
 select -ne :renderPartition;
 	setAttr -s 305 ".st";
 select -ne :renderGlobalsList1;
@@ -13868,10 +13911,10 @@ connectAttr "Base_ctrl_visibility.o" "Cup_MilkRN.phl[17]";
 connectAttr "workspace_Camera_translateX.o" "workspace_Camera.tx";
 connectAttr "workspace_Camera_translateY.o" "workspace_Camera.ty";
 connectAttr "workspace_Camera_translateZ.o" "workspace_Camera.tz";
-connectAttr "workspace_Camera_visibility.o" "workspace_Camera.v";
 connectAttr "workspace_Camera_rotateX.o" "workspace_Camera.rx";
 connectAttr "workspace_Camera_rotateY.o" "workspace_Camera.ry";
 connectAttr "workspace_Camera_rotateZ.o" "workspace_Camera.rz";
+connectAttr "workspace_Camera_visibility.o" "workspace_Camera.v";
 connectAttr "workspace_Camera_scaleX.o" "workspace_Camera.sx";
 connectAttr "workspace_Camera_scaleY.o" "workspace_Camera.sy";
 connectAttr "workspace_Camera_scaleZ.o" "workspace_Camera.sz";
